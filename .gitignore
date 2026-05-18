@@ -1,0 +1,44 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environment / secrets ────────────────────────────────────────────────────
+.env
+.env.*
+*.env
+
+# ── DuckDB (large binary; reproduce via setup_database.py) ───────────────────
+mdd_project/data/processed/*.duckdb
+mdd_project/data/processed/*.duckdb.wal
+
+# ── Exported files (reproducible; don't commit large outputs) ────────────────
+mdd_project/data/processed/exports/
+mdd_project/data/processed/geoparquet/
+
+# ── QGIS project file (binary; document steps in QGIS_CONNECTION.md) ────────
+mdd_project/qgis/*.qgz
+mdd_project/qgis/*.qgs
+
+# ── OS / editor ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Keep placeholder files ───────────────────────────────────────────────────
+!mdd_project/data/raw/MDD/.gitkeep
+!mdd_project/data/external/occurrence_data/.gitkeep

@@ -1,0 +1,41 @@
+# Git and editor
+.git
+.gitignore
+.cursor
+.idea
+.vscode
+
+# Python caches and local venvs
+**/__pycache__
+**/*.py[cod]
+.venv
+venv
+env
+*.egg-info
+
+# Secrets
+.env
+.env.*
+*.env
+
+# Frontend — rebuilt in Docker; node_modules is huge
+mdd_project/web/frontend/node_modules
+mdd_project/web/frontend/dist
+
+# Rebuilt during image build (CSVs at repo root are included)
+mdd_project/data/processed/*.duckdb
+mdd_project/data/processed/*.duckdb.wal
+mdd_project/data/processed/exports
+mdd_project/data/processed/geoparquet
+
+# Optional large / non-runtime paths
+mdd_project/qgis
+**/.ipynb_checkpoints
+*.ipynb
+
+# Docs and misc (not needed in image)
+*.md
+!mdd_project/DEPLOY_RENDER.md
+
+# Agent / local tooling
+agent-transcripts

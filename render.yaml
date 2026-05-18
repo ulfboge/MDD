@@ -1,0 +1,14 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Deploy: Dashboard → Blueprints → New Blueprint Instance (connect repo)
+# Or: New Web Service → Docker, point at ./Dockerfile
+
+services:
+  - type: web
+    name: mdd-map
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "10000"

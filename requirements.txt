@@ -1,0 +1,22 @@
+# MDD Project Python dependencies
+# Install with: pip install -r requirements.txt
+#
+# Software requirements (documented per §2 of setup guide):
+#   Python  >= 3.11
+#   DuckDB  >= 1.2   (CLI + Python package)
+#   QGIS    >= 3.32  (GeoParquet) / >= 3.38 (native DuckDB provider)
+#   VS Code / Cursor (recommended editor)
+
+# ── Core (required) ──────────────────────────────────────────────────────────
+duckdb>=1.2.0          # In-process analytical database; reads CSV/Parquet natively
+pyarrow>=18.0.0        # Parquet I/O; required for GeoParquet export/read
+pandas>=2.2.0          # DataFrame-based exploration, harmonize_names.py
+geopandas>=1.0.0       # Spatial joins and GeoPandas ↔ GeoParquet bridge
+shapely>=2.0.0         # Geometry operations (required by geopandas)
+
+# ── HTTP (GBIF import pipeline) ──────────────────────────────────────────────
+requests>=2.32.0       # GBIF occurrence API calls (no API key required)
+
+# ── API (install to run the FastAPI server) ──────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0

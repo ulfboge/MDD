@@ -1,0 +1,28 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f1117;
+  --panel: #1a1d27;
+  --border: #2a2d3a;
+  --accent: #4f9cf9;
+  --accent-dim: #2d5fa0;
+  --text: #e2e8f0;
+  --text-dim: #8892a4;
+  --red: #e05f5f;
+  --green: #4caf7d;
+  --orange: #f0a44a;
+  --panel-w: 340px;
+  --header-h: 54px;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+}
+
+/* maplibre reset */
+.maplibregl-map { font: inherit; }
+.maplibregl-ctrl-attrib { font-size: 11px; }
