@@ -17,7 +17,6 @@ AMB5.39,1,no,AM,Microcebus_arnholdi
 AMG,1,no,AM,Pronolagus_saundersiae
 ASRU,1,no,,Scarturus_heptneri
 ABE,1,no,,Tokudaia_osimensis
-BNHS,1,no,,Latidens_salimalii
 CBK,1,no,,Chiromyscus_langbianis
 CFA-MA-00482,1,no,,Oligoryzomys_brendae
 CFA-MA-11584,1,no,,Ctenomys_dorbignyi
@@ -35,7 +34,6 @@ CVUSB-928,1,no,,Aepeomys_reigi
 CWNU,1,no,,Vernaya_foramena
 CZUS,1,no,,Calomyscus_tsolovi
 DGIBUFRGS,1,no,,Ctenomys_ibicuiensis
-ECOSUR,1,no,,Peromyscus_carolpattonae
 EPIY,1,no,,Hadromys_yunnanensis
 EPRC,1,no,,Melogale_cucphuongensis
 FCV,1,no,,Pygathrix_cinerea
@@ -46,7 +44,6 @@ GNMG,1,no,,Megalomys_camerhogne
 GUNU,1,no,,Murina_liboensis
 GHENT,1,no,,Steno_bredanensis
 HDZ,1,no,,Cheirogaleus_andysabini
-IAVH,1,no,,Cebus_albifrons
 IBE,1,no,,Uropsilus_funiushanensis
 IBVAST,1,no,,Euroscaptor_darwini
 IFAN,1,no,,Miniopterus_villiersi
@@ -96,7 +93,6 @@ NHRC,1,no,,Nesokia_bunnii
 NMU,1,no,,Spermophilus_nilkaensis
 NMZ,1,no,NMZB,Crocidura_ansellorum
 NEUHÄUSER,1,no,,Chionomys_lasistanius
-OMNH:MAMM:34739,1,no,,Eligmodontia_bolsonensis
 PBS,1,no,,Petinomys_mindanensis
 PCM,1,no,,Lophocebus_osmani
 PMS,1,no,,Glis_glis
@@ -104,25 +100,11 @@ PENNANT'S,1,no,,Potos_flavus
 RGM,1,no,,Paulamys_naso
 RGM.444360,1,no,,Cordimus_hooijeri
 RUSCONI,1,no,,Ctenomys_australis
-SDNHM:MAM:4703,1,no,,Dipodomys_gravipes
 SNHM,1,no,,Bubalus_mindorensis
 SEBA,1,no,,Cabassous_unicinctus
 STILLWATER,1,no,,Crocidura_glassi
 TAFO6.1,1,no,,Microcebus_margotmarshae
 TAU,1,no,,Crocidura_ramona
-TCWC:MAMM:11704,1,no,,Lophostoma_occidentale
-TCWC:MAMM:12102,1,no,,Rhinophylla_fischerae
-TCWC:MAMM:12193,1,no,,Platyrrhinus_brachycephalus
-TCWC:MAMM:12199,1,no,,Platyrrhinus_infuscus
-TCWC:MAMM:17142,1,no,,Lophostoma_evote
-TCWC:MAMM:17189,1,no,,Uroderma_magnirostrum
-TCWC:MAMM:19756,1,no,,Rhogeessa_permutandis
-TCWC:MAMM:45304,1,no,,Peromyscus_greenbaumi
-TCWC:MAMM:537,1,no,,Geomys_brazensis
-TCWC:MAMM:57970,1,no,,Scotophilus_ejetai
-TCWC:MAMM:787,1,no,,Geomys_streckeri
-TCWC:MAMM:9517,1,no,,Artibeus_inopinatus
-TCWC:MAMM:9959,1,no,,Sturnira_luisi
 TISTR,1,no,,Megaerops_niphanae
 TASHKENT,1,no,,Allactodipus_bobrinskii
 UFPE,1,no,UF,Sylvilagus_brasiliensis

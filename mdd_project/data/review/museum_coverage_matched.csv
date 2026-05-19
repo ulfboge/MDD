@@ -7,6 +7,8 @@ AHUB,Anhui Normal University,6,6
 AM,Australian Museum,80,41
 ANWC,Australian National Wildlife Collection,4,3
 BPBM,Bernice Pauahi Bishop Museum,12,10
+TCWC,Biodiversity Research and Teaching Collections Texas A&M University,13,3
+BNHS,Bombay Natural History Society,1,0
 CSIRO,CSIRO Australian National Wildlife Collection,6,4
 CAS,California Academy of Sciences,10,3
 CMN,Canadian Museum of Nature,2,1
@@ -36,6 +38,7 @@ DU,Dicle University,2,2
 TM,Ditsong National Museum of Natural History,22,7
 DMNH,Durban Natural Science Museum,4,2
 DNSM,Durban Natural Science Museum,8,7
+ECOSUR,"El Colegio de la Frontera Sur, Colección Mastozoológica",1,1
 QCAZ,"El Museo de Zoología, Pontificia Universidad Católica del Ecuador",9,9
 ENCB,Escuela Nacional de Ciencias Biológicas,2,2
 EBD,Estación Biológica de Doñana,7,6
@@ -56,6 +59,7 @@ BIZ,Institute of Zoology (Beijing) specimen catalog,11,6
 IZK,Institute of Zoology of Kazakhstan,2,0
 TIHO,"Institute of Zoology, University of Veterinary Medicine Hannover",2,2
 IDSM,Instituto de Desenvolvimento Sustentável Mamirauá,2,2
+IAVH,Instituto de Investigación de Recursos Biológicos Alexander von Humboldt,1,1
 ISAM,Iziko South African Museum,3,0
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University",2,2
 KIZ,Kunming Institute of Zoology,23,20
@@ -141,6 +145,8 @@ QM,Queensland Museum,24,18
 IRSNB,Royal Belgian Institute of Natural Sciences,2,1
 RMCA,Royal Museum for Central Africa,33,20
 ROM,Royal Ontario Museum,24,23
+OMNH,Sam Noble Oklahoma Museum of Natural History,1,1
+SDNHM,San Diego Natural History Museum,1,1
 MTD,Senckenberg Museum für Tierkunde Dresden,18,4
 SZM,Siberian Zoological Museum,3,1
 SAF,Sichuan Academy of Forestry,26,26

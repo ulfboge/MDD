@@ -11,6 +11,7 @@ BM,"Natural History Museum, London","London, United Kingdom",British Museum (Nat
 BMNH,"Natural History Museum, London","London, United Kingdom",Catalog prefix BMNH in MDD type vouchers; same institution as BM,https://data.nhm.ac.uk/
 BMNHC,"Natural History Museum, London","London, United Kingdom",Catalog prefix BMNHC in MDD type vouchers; same institution as BM,https://data.nhm.ac.uk/
 BPBM,Bernice Pauahi Bishop Museum,"Honolulu, United States of America",NA,https://www.bishopmuseum.org/vertebrate-zoology/
+BNHS,Bombay Natural History Society,"Mumbai, India",Catalog prefix BNHS in MDD type vouchers,https://www.bnhs.org/
 BRTC,Biodiversity Research and Teaching Collections Texas A&M University,"College Station, United States of America",NA,https://brtc.tamu.edu/collections/mammals/
 BIZ,Institute of Zoology (Beijing) specimen catalog,"Beijing, China",Catalog prefix BIZ in MDD vouchers; same institution as IOZCAS,http://museum.ioz.ac.cn/
 CAS,California Academy of Sciences,"San Francisco, United States of America",NA,https://www.calacademy.org/scientists/ornithology-mammalogy
@@ -40,6 +41,7 @@ DZSJRP,"Universidade Estadual Paulista “Júlio de Mesquita Filho""","São Jos�
 DZUP,"Departamento de Zoologia, Setor de Ciências Biológicas, Universidade Federal do Paraná","Curitiba, Brazil",NA,https://labceas.wordpress.com/colecao-cientifica-de-mastozoologia/
 EBD,Estación Biológica de Doñana,"Seville, Spain",NA,http://www.ebd.csic.es/colecciones-cientificas
 EBRG,Museo de la Estación Biológica de Rancho Grande,"Aragua, Venezuela",NA,https://ilamdir.org/recurso.vm?id=5513
+ECOSUR,"El Colegio de la Frontera Sur, Colección Mastozoológica","San Cristóbal de las Casas, Mexico",Catalog prefix ECOSUR / ECO-SC-M in MDD type vouchers,https://www.ecosur.mx/
 ENCB,Escuela Nacional de Ciencias Biológicas,"Mexico City, Mexico","Colección de Mamíferos, Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional",https://www.biodiversidad.gob.mx/fichas-conabio-war/resources/coleccion/451
 EPN,"Museo de Historia Natural Gustavo Orcés, Escuela Politécnica Nacional","Quito, Ecuador",Catalog prefix EPN in MDD type vouchers; same institution as MEPN,https://www.epn.edu.ec/museo-de-historia-natural/
 E. O. Wilson Biodiversity Laboratory Collection,E. O. Wilson Biodiversity Laboratory Collection at Gorongosa National Park,"Chitengo, Mozambique",NA,https://eowilsonfoundation.org/the-biodiversity-collection/
@@ -61,6 +63,7 @@ ICN,"Colección de Mamíferos Alberto Cadena García, Instituto de Ciencias Natu
 IDSM,Instituto de Desenvolvimento Sustentável Mamirauá,"Tefé, Brazil",Catalog prefix IDSM in MDD type vouchers,https://mamiraua.org.br/
 IEBR,Institute of Ecology and Biological Resources,"Hanoi, Vietnam",NA,http://www.iebr.ac.vn/pages/eiebr.asp
 IES,Institute of Ecology and Systematics,"Havana, Cuba",Catalog prefix IES in MDD type vouchers,NA
+IAVH,"Instituto de Investigación de Recursos Biológicos Alexander von Humboldt","Villa de Leyva, Colombia",Catalog prefix IAvH/IAVH in MDD type vouchers,https://www.humboldt.org.co/
 INPA,National Research Institute of the Amazon,"Manaus, Brazil",NA,https://www.inpa.gov.br/english/
 IOZCAS,"Institute of Zoology, Chinese Academy of Sciences","Beijing, China",Synonyms: BIZ,http://english.ioz.cas.cn/
 IRSNB,Royal Belgian Institute of Natural Sciences,"Brussels, Belgium",Catalog prefix IRSNB in MDD type vouchers; Institut Royal des Sciences Naturelles de Belgique,https://www.naturalsciences.be/
@@ -146,6 +149,7 @@ NUPECCE,Museum of the Deer Research and Conservation Center at Sao Paulo State U
 OUM,Oxford University Museum of Natural History,"Oxford, United Kingdom",Catalog prefix OUM in MDD type vouchers; same institution as OUMNH,https://oumnh.ox.ac.uk/
 OUMNH,Oxford University Museum of Natural History,"Oxford, United Kingdom",NA,https://oumnh.ox.ac.uk/
 OMUS,Ondokuz Mayıs University mammal collection,"Samsun, Turkey",Catalog prefix OMUS in MDD type vouchers; Prof. Dr. Salih Doğramacı Mammal Collection,https://www.omu.edu.tr/en
+OMNH,Sam Noble Oklahoma Museum of Natural History,"Norman, United States of America",Catalog prefix OMNH in MDD type vouchers,https://samnoblemuseum.ou.edu/collections-and-research/mammalogy/
 PBZT,Parc Botanique et Zoologique de Tsimbazaza,"Antananarivo, Madagascar",NA,http://pbzt.recherches.gov.mg/
 PNGM,"National Museum and Art Gallery, Papua New Guinea, Boroko","Port Moresby, Papua New Guinea",NA,https://museumpng.gov.pg/collections/natural-history/
 PNM,National Museum of the Philippines,"Manila, Philippines",NA,https://www.nationalmuseum.gov.ph/nationalmuseumbeta/Collections/Natural%20History.html
@@ -160,6 +164,7 @@ SAMA,South Australian Museum,"Adelaide, Australia",NA,https://www.samuseum.sa.go
 SGMT,State Georgian Museum,"Tbilisi, Georgia",NA,http://museum.ge/index.php?lang_id=GEO&sec_id=120
 SAF,Sichuan Academy of Forestry,"Chengdu, Sichuan, China",Catalog prefix SAF in MDD type vouchers,NA
 SCNU,South China Normal University,"Guangzhou, China",Catalog prefix SCNU in MDD type vouchers,https://english.scnu.edu.cn/
+SDNHM,San Diego Natural History Museum,"San Diego, United States of America",Catalog prefix SDNHM in MDD type vouchers,https://www.sdnhm.org/science/research-library/collections/mammalogy/
 SMF,Forschungsinstitut und Naturmuseum Senckenberg,"Frankfurt, Germany",NA,https://www.senckenberg.de/en/institutes/senckenberg-research-institute-natural-history-museum-frankfurt/division-messel-research-mammalogy/section-mammalogy/mammalogy-collection/
 SMNK,Staatliches Museum für Naturkunde Karlsruhe,"Karlsruhe, Germany",State Museum of Natural History Karlsruhe,https://www.smnk.de/en/collections/zoology/vertebrata/?S=sivviiym&cHash=f2d275b15a8d5eea9542d284e147726c
 SMNS,Museum of Natural History Stuttgart,"Stuttgart, Germany",NA,https://naturkundemuseum-bw.de/en/research/zoology
@@ -167,6 +172,7 @@ SNMB,Staatliches Naturhistorisches Museum Braunschweig,"Braunschweig, Germany",N
 SZM,Siberian Zoological Museum,"Novosibirsk, Russia",Catalog prefix SZM in MDD type vouchers; mammal types at SZMN,https://szmn.eco.nsc.ru/Vertebr/mamtypes.htm
 THUMB,"Department of Biology, Tunghai University","Taichung City, Taiwan",NA,http://eng.thu.edu.tw/web/academics/detail.php?scid=38&sid=28
 TIHO,"Institute of Zoology, University of Veterinary Medicine Hannover","Hannover, Germany",Catalog prefix TiHo/TIHO in MDD type vouchers,https://www.tiho-hannover.de/en/
+TCWC,Biodiversity Research and Teaching Collections Texas A&M University,"College Station, United States of America",Catalog prefix TCWC in MDD type vouchers; same collection as BRTC,https://brtc.tamu.edu/collections/mammals/
 TNRC,Centre for Thai National Reference Collections,"Bangkok, Thailand",Catalog prefix TNRC in MDD vouchers; same institution as CTNRC,NA
 TM,Ditsong National Museum of Natural History,"Pretoria, South Africa",Transvaal Museum,https://ditsong.org.za/museum-of-natural-history/
 TTU,Museum of Texas Tech University,"Lubbock, United States of America",NA,https://www.depts.ttu.edu/nsrl/collections/mammal.php
