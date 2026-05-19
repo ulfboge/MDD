@@ -24,11 +24,21 @@ MUSEUM_MATCH = """
 SKIP = {"UNTRACED", "LOST", "PHOTOGRAPHED", "SPECIMEN", "BUFFON'S", "LINNMUS", "PENNANT'S"}
 
 PRIORITY_NOTES = {
-    "NU": "Not NUPECCE. Turkish Nannospalax types (NU 45 / NU 675); likely Niğde Ömer Halisdemir University, but repository needs confirmation from the 2025 Zoologischer Anzeiger paper.",
     "KURODA": "Do not alias to KU (Kansas) without evidence. Kuroda is a Japanese collector/collection label; repository needs confirmation.",
     "MNHN-ZM-MO-1867-146": "Long Paris MNHN catalog string; treat as MNHN variant or parser issue, not as MN.",
+    "BOHMANN": "Historical Bohmann collection label for Otomys type material; repository not confirmed, so do not add a metadata row yet.",
     "AHNU": "Anhui Normal University (China). Related AHUB already in metadata with zero matches.",
     "SCNU": "South China Normal University (China).",
+}
+
+NON_ACTIONABLE_ALIASES = {
+    "KURODA",
+    "MNHN-ZM-MO-1867-146",
+    "BMNH:PV:M",
+    "BMNH:MAMM:1855.12.24.185",
+    "BMNH:MAMM:1907.1.1.339",
+    "BMNH:MAMM:22A",
+    "BMNH:PV:OR",
 }
 
 
@@ -99,6 +109,8 @@ def main() -> None:
         species_detail = by_prefix.get(prefix, [])
         on_map = sum(1 for s in species_detail if s["matched_abbreviation"])
         unmatched = len(species_detail) - on_map
+        if issue_type == "alias_prefix_missing" and unmatched == 0 and prefix in NON_ACTIONABLE_ALIASES:
+            continue
         backlog.append(
             {
                 "wave_priority": priority,
@@ -219,10 +231,10 @@ def main() -> None:
 
 
 def _suggested_action(priority: str, prefix: str, related: str, issue_type: str) -> str:
-    if prefix == "NU":
-        return "Confirm NU repository from the 2025 Zoologischer Anzeiger paper before adding a new metadata row."
     if prefix == "KURODA":
         return "Research Kuroda collection repository; do not map to KU (Kansas) based only on prefix similarity."
+    if prefix == "BOHMANN":
+        return "Keep in review until the repository for Bohmann collection type material is confirmed."
     if prefix.startswith("MNHN-"):
         return "Treat as an MNHN catalog-number variant; prefer parser/normalization over a long institution alias."
     if issue_type == "alias_prefix_missing" and related and priority == "P4b-easy-alias":

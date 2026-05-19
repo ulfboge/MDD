@@ -6,7 +6,7 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 ## Current snapshot
 
 - **Completely unmatched vouchers:** 518 species
-- **Prefix gaps in this backlog:** 8 rows
+- **Prefix gaps in this backlog:** 1 rows
 - **Not fixable via metadata:** `UNTRACED` (234) + `LOST` (136) = 370 species
 
 ## Priority legend
@@ -25,83 +25,6 @@ No current P4-risky prefixes after the latest metadata fixes.
 
 
 ## P4b — likely aliases (verify institution, then add metadata row)
-
-### `KURODA` (5 sp.)
-
-- **Priority:** P4b-easy-alias
-- **Issue:** alias
-- **On map via shorter code:** 5
-- **Completely unmatched:** 0
-- **Related metadata:** KU
-- **Examples:** Alexandromys_kikuchii; Crocidura_tanakae; Mogera_tokudae
-- **Suggested action:** Research Kuroda collection repository; do not map to KU (Kansas) based only on prefix similarity.
-- **Notes:** Do not alias to KU (Kansas) without evidence. Kuroda is a Japanese collector/collection label; repository needs confirmation.
-
-### `MNHN-ZM-MO-1867-146` (2 sp.)
-
-- **Priority:** P4b-easy-alias
-- **Issue:** alias
-- **On map via shorter code:** 2
-- **Completely unmatched:** 0
-- **Related metadata:** MN; MNHN
-- **Examples:** Cricetulus_longicaudatus; Lasiopodomys_mandarinus
-- **Suggested action:** Treat as an MNHN catalog-number variant; prefer parser/normalization over a long institution alias.
-- **Notes:** Long Paris MNHN catalog string; treat as MNHN variant or parser issue, not as MN.
-
-### `BMNH:PV:M` (4 sp.)
-
-- **Priority:** P4b-variant
-- **Issue:** alias
-- **On map via shorter code:** 4
-- **Completely unmatched:** 0
-- **Related metadata:** BM; BMNH
-- **Examples:** Crocidura_katinka; Myomimus_roachi; Pennatomys_nivalis
-- **Suggested action:** BMNH alias exists; these colon-suffix variants may still match BM/BMNH — low priority.
-- **Notes:** Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-
-### `BMNH:MAMM:1855.12.24.185` (2 sp.)
-
-- **Priority:** P4b-variant
-- **Issue:** alias
-- **On map via shorter code:** 2
-- **Completely unmatched:** 0
-- **Related metadata:** BM; BMNH
-- **Examples:** Leopardus_pardinoides; Phyllotis_xanthopygus
-- **Suggested action:** BMNH alias exists; these colon-suffix variants may still match BM/BMNH — low priority.
-- **Notes:** Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-
-### `BMNH:MAMM:1907.1.1.339` (2 sp.)
-
-- **Priority:** P4b-variant
-- **Issue:** alias
-- **On map via shorter code:** 2
-- **Completely unmatched:** 0
-- **Related metadata:** BM; BMNH
-- **Examples:** Nyctophilus_gouldi; Lyroderma_sinense
-- **Suggested action:** BMNH alias exists; these colon-suffix variants may still match BM/BMNH — low priority.
-- **Notes:** Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-
-### `BMNH:MAMM:22A` (2 sp.)
-
-- **Priority:** P4b-variant
-- **Issue:** alias
-- **On map via shorter code:** 2
-- **Completely unmatched:** 0
-- **Related metadata:** BM; BMNH
-- **Examples:** Hipposideros_fulvus; Sekeetamys_calurus
-- **Suggested action:** BMNH alias exists; these colon-suffix variants may still match BM/BMNH — low priority.
-- **Notes:** Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-
-### `BMNH:PV:OR` (2 sp.)
-
-- **Priority:** P4b-variant
-- **Issue:** alias
-- **On map via shorter code:** 2
-- **Completely unmatched:** 0
-- **Related metadata:** BM; BMNH
-- **Examples:** Alticola_roylei; Lasiorhinus_krefftii
-- **Suggested action:** BMNH alias exists; these colon-suffix variants may still match BM/BMNH — low priority.
-- **Notes:** Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 
 
 ## P4c — orphan prefixes (≥3 species, needs new institution row)
