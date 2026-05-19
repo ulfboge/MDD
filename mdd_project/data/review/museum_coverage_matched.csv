@@ -13,6 +13,7 @@ CEBIOMAS,"Centro de Ecología y Biodiversidad, Lima, Peru",2,2
 CIB,Centro de Investigaciones Biológicas del Noroeste,2,2
 CZL,"Centro de Zoologica, Instituto de Investigação Científica Tropical",1,0
 CML,Colección Mamíferos Lillo,9,9
+CNM,Colección Nacional de Mamíferos (UNAM),3,3
 CNMA,Colección Nacional de Mamíferos (UNAM),7,4
 CTUA,"Colección Teriológica de la Universidad de Antioquia, Medellín",1,1
 ICN,"Colección de Mamíferos Alberto Cadena García, Instituto de Ciencias Naturales, Bogotá",11,8
@@ -24,7 +25,7 @@ DZUP,"Departamento de Zoologia, Setor de Ciências Biológicas, Universidade Fed
 THUMB,"Department of Biology, Tunghai University",1,1
 DZAB,Department of Zoology and Biological Anthropology of the University of Sassari,1,1
 TM,Ditsong National Museum of Natural History,22,7
-DM,Durban Natural Science Museum,4,2
+DMNH,Durban Natural Science Museum,4,2
 DNSM,Durban Natural Science Museum,8,7
 QCAZ,"El Museo de Zoología, Pontificia Universidad Católica del Ecuador",9,9
 ENCB,Escuela Nacional de Ciencias Biológicas,2,2
@@ -44,7 +45,8 @@ KIZ,Kunming Institute of Zoology,23,20
 KUZ,Kyoto University Museum,1,1
 LSUMZ,Louisiana State University Museum of Zoology,11,9
 MMK,McGregor Museum,1,1
-MACN,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,19,9
+MACN,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,2,1
+MACN-MA,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,17,8
 MECN,"Museo Ecuatoriano de Ciencias Naturales, Ecuador",13,13
 MHNSR,Museo Municipal de Historia Natural de San Rafael,1,1
 MNCN,Museo Nacional de Ciencias Naturales,8,2
@@ -64,12 +66,14 @@ MF,Museo di Storia Naturale dell'Università di Firenze,7,3
 MN,"Museu Nacional, Universidade Federal do Rio de Janeiro",60,50
 MPEG,Museu Paraense Emílio Goeldi,14,12
 MZUSP,Museu de Zoologia da Universidade de São Paulo,26,24
-MNHN,Museum National d'Histoire Naturelle,374,74
+MNHN,Museum National d'Histoire Naturelle,370,71
+MNHNU,Museum National d'Histoire Naturelle,4,3
 MZB,Museum Zoologicum Bogoriense,51,48
 MAGNT,Museum and Art Gallery of the Northern Territory,5,5
 ZMB,Museum für Naturkunde,182,20
 SMNS,Museum of Natural History Stuttgart,28,6
 MSNG,Museum of Natural History “Giacomo Doria” (Museo Civico di Storia Naturale Giacomo Doria),26,4
+NMNZ,"Museum of New Zealand, Te Papa Tongarewa",3,2
 MSB,Museum of Southwestern Biology,10,9
 TTU,Museum of Texas Tech University,43,35
 MTQ,Museum of Tropical Queensland,1,1
@@ -80,21 +84,25 @@ MZS,Musée Zoologique de Strasbourg,4,0
 MHNC,Musée d'Histoire Naturelle de la Chaux-de-Fonds,1,1
 MHNN,Muséum d'histoire naturelle de Neuchâtel,7,1
 MHNG,Muséum d'histoire naturelle de la Ville de Genève,29,5
-NMP,"National Museum (Natural History), Prague, Czech Republic",20,19
+NMPH,"National Museum (Natural History), Prague, Czech Republic",5,4
+NMPR,"National Museum (Natural History), Prague, Czech Republic",15,15
 PNGM,"National Museum and Art Gallery, Papua New Guinea, Boroko",4,3
 USNM,"National Museum of Natural History, Smithsonian Institution",622,120
 NMNS,"National Museum of Natural Science, Taichung",2,2
-NSMT,National Museum of Nature and Science,18,6
+NSMT,National Museum of Nature and Science,2,1
+NSMT-M,National Museum of Nature and Science,16,5
 LIVCM,National Museums Liverpool,4,2
 INPA,National Research Institute of the Amazon,18,18
 NTU,National Taiwan University,1,1
 NMB,Natural History Museum Basel,6,2
 LACM,Natural History Museum of Los Angeles County,9,7
-BM,"Natural History Museum, London",1901,323
+BMNH,"Natural History Museum, London",1899,321
+BMNHC,"Natural History Museum, London",2,2
 NHMO,"Natural History Museum, University of Oslo, Norway",6,1
 RMNH,Naturalis Biodiversity Center,220,20
 NMW,Naturhistorisches Museum Wien,39,15
 NHRM,Naturhistoriska riksmuseet,20,2
+OUM,Oxford University Museum of Natural History,2,1
 PBZT,Parc Botanique et Zoologique de Tsimbazaza,2,2
 PSUZC,Princess Maha Chakri Sirindhorn Natural History Museum,5,5
 QM,Queensland Museum,24,18

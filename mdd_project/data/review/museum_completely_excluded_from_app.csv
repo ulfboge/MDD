@@ -327,7 +327,6 @@ Uropsilus_funiushanensis,IBE 00300
 Uropsilus_huanggangensis,AHNU 2022013
 Saccopteryx_antioquensis,MUA 11011
 Nycteris_parisii,lost (number not known)
-Mystacina_robusta,NMNZ DM 1083
 Mystacina_tuberculata,lost (number not known)
 Carollia_monohernandezi,MUA 11014
 Diphylla_ecaudata,lost (number not known)
@@ -350,7 +349,6 @@ Sturnira_koopmanhilli,EPN 9770
 Sturnira_luisi,TCWC:Mamm:9959
 Thyroptera_tricolor,lost (number not known)
 Miniopterus_fuliginosus,untraced (number not known)
-Miniopterus_phillipsi,CNM 2021.03.01.NH
 Miniopterus_villiersi,IFAN 54-1-1
 Miniopterus_wilsoni,JAG 444
 Cynomops_kuizha,UV 2451
@@ -417,7 +415,6 @@ Pteropus_subniger,untraced (number not known)
 Pteropus_vetulus,untraced (number not known)
 Hipposideros_crumeniferus,untraced (number not known)
 Hipposideros_speoris,untraced (number not known)
-Hipposideros_srilankaensis,CNM 2023.08.01NH
 Rhinolophus_ferrumequinum,untraced (number not known)
 Rhinolophus_hilli,ZMUZ 126639
 Rhinolophus_hipposideros,untraced (number not known)
@@ -519,7 +516,6 @@ Paradoxurus_hermaphroditus,untraced (number not known)
 Paradoxurus_zeylonensis,untraced (number not known)
 Civettictis_civetta,Buffon's specimen
 Dicerorhinus_sumatrensis,lost (number not known)
-Ceratotherium_simum,OUM 8221
 Diceros_bicornis,specimen described by Kolbius
 Tapirus_indicus,lost (number not known)
 Tapirus_terrestris,lost (number not known)
@@ -548,12 +544,8 @@ Phocoena_phocoena,lost (number not known)
 Physeter_macrocephalus,lost (number not known)
 Platanista_minor,lost (number not known)
 Hyperoodon_ampullatus,lost (number not known)
-Mesoplodon_bidens,OUM ZC.06998
-Mesoplodon_eueu,NMNZ MM003000
 Mesoplodon_europaeus,lost (number not known)
 Mesoplodon_grayi,lost (number not known)
-Mesoplodon_hotaula,CNM 3WZ5
-Mesoplodon_traversii,NMNZ MM000546
 Tasmacetus_shepherdi,WRM (number not known)
 Alcelaphus_buselaphus,untraced (number not known)
 Connochaetes_gnou,untraced (number not known)

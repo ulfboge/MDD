@@ -1,26 +1,16 @@
 issue_type,voucher_prefix,species_count,related_metadata_abbreviations,example_species,notes
-alias_prefix_missing,BMNH,19,BM,Ctenodactylus_vali; Ctenomys_dorsalis; Olallamys_albicauda,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,MACN-MA,17,MACN,Phocoena_dioptrica; Phyllotis_bonariensis; Balaenoptera_bonaerensis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,NMPR,15,NMP,Rhinolophus_horaceki; Myotis_hyrcanicus; Alionoctula_dhofarensis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,NSMT-M,15,NSMT,Craseomys_rex; Nyctalus_furvus; Sorex_hosonoi,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,CMI,5,CM,Salinomys_delicatus; Akodon_oenos; Phyllotis_pehuenche,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,KURODA,5,KU,Alexandromys_kikuchii; Crocidura_tanakae; Mogera_tokudae,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,NMPH,5,NMP,Ptenochirus_minor; Apomys_gracilirostris; Crateromys_heaneyi,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,BMNH:PV:M,4,BM,Crocidura_katinka; Myomimus_roachi; Pennatomys_nivalis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,DMNH,4,DM,Rattus_tawitawiensis; Podogymnura_aureospinula; Batomys_russatus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,MNHNU,4,MN; MNHN,Leopardus_fasciatus; Akodon_reigi; Oxymycterus_josei,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:PV:M,4,BM; BMNH,Crocidura_katinka; Myomimus_roachi; Pennatomys_nivalis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,MNK,4,MN,Juscelinomys_huanchacae; Oecomys_sydandersoni; Hylaeamys_acritus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,CNM,3,CNMA,Miniopterus_phillipsi; Hipposideros_srilankaensis; Mesoplodon_hotaula,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,UFMG,3,UF,Rhipidomys_tribei; Cyclopes_xinguensis; Cyclopes_rufus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,BMNH:MAMM:1855.12.24.185,2,BM,Leopardus_pardinoides; Phyllotis_xanthopygus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,BMNH:MAMM:1907.1.1.339,2,BM,Nyctophilus_gouldi; Lyroderma_sinense,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,BMNH:MAMM:22A,2,BM,Hipposideros_fulvus; Sekeetamys_calurus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,BMNH:PV:OR,2,BM,Alticola_roylei; Lasiorhinus_krefftii,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,BMNHC,2,BM,Arborimus_pomo; Sorex_rohweri,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:MAMM:1855.12.24.185,2,BM; BMNH,Leopardus_pardinoides; Phyllotis_xanthopygus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:MAMM:1907.1.1.339,2,BM; BMNH,Nyctophilus_gouldi; Lyroderma_sinense,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:MAMM:22A,2,BM; BMNH,Hipposideros_fulvus; Sekeetamys_calurus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:PV:OR,2,BM; BMNH,Alticola_roylei; Lasiorhinus_krefftii,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,CMN,2,CM,Phenacomys_intermedius; Dicrostonyx_nunatakensis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,MNHN-ZM-MO-1867-146,2,MN; MNHN,Cricetulus_longicaudatus; Lasiopodomys_mandarinus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,NU,2,NUPECCE,Nannospalax_karyominor; Nannospalax_colaki,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,OUM,2,OUMNH,Ceratotherium_simum; Mesoplodon_bidens,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,TTU-M,2,TTU,Lepilemur_hollandorum; Cheirogaleus_grovesi,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,UFRGS,2,UF,Ctenomys_lami; Ctenomys_flamarioni,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,ZSIS,2,ZSI,Myotis_himalaicus; Glischropus_meghalayanus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
@@ -36,7 +26,6 @@ prefix_not_in_metadata,EPN,3,,Lonchophylla_orcesi; Anoura_fistulata; Sturnira_ko
 prefix_not_in_metadata,ISAM,3,,Eremitalpa_granti; Cryptochloris_wintoni; Chlorotalpa_sclateri,Voucher prefix not in metadata; no related abbreviation detected.
 prefix_not_in_metadata,IZH,3,,Sigmodon_hirsutus; Gracilinanus_agilis; Molossops_temminckii,Voucher prefix not in metadata; no related abbreviation detected.
 prefix_not_in_metadata,LHB,3,,Nannospalax_hungaricus; Mesocricetus_newtoni; Spalax_giganteus,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,NMNZ,3,,Mystacina_robusta; Mesoplodon_traversii; Mesoplodon_eueu,Voucher prefix not in metadata; no related abbreviation detected.
 prefix_not_in_metadata,OMUS,3,,Spermophilus_taurensis; Microtus_dogramacii; Talpa_hakkariensis,Voucher prefix not in metadata; no related abbreviation detected.
 prefix_not_in_metadata,SCNU,3,,Crocidura_zhadaensis; Crocidura_medogensis; Typhlomys_fengjiensis,Voucher prefix not in metadata; no related abbreviation detected.
 prefix_not_in_metadata,SZM,3,,Spermophilus_vorontsovi; Sorex_camtschaticus; Marmota_kastschenkoi,Voucher prefix not in metadata; no related abbreviation detected.

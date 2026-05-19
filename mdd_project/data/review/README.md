@@ -10,7 +10,8 @@ Generated review files for MDD type-specimen museum prefix matching.
 | `mn_vouchers_for_review_enriched.csv` | Same 54 rows with museum identification columns (Museu Nacional UFRJ). |
 | `deep-research-report.md` | Initial MN prefix research report. |
 | `deep-research-report_2.md` | Updated report with longest-prefix rationale and enriched CSV plan. |
-| `museum_prefix_priority_backlog.csv` | **Prioritized backlog** of museum prefixes to add/fix in metadata (P1–P4). |
+| `museum_prefix_wave4_backlog.csv` | **Wave 4 backlog** — next prefix gaps to research (risky aliases + orphans). |
+| `museum_prefix_wave4_backlog.md` | Human-readable wave 4 investigation guide with priorities and notes. |
 | `nhrm_type_specimens_missing_coords_geocoded.csv` | Proposed coordinates for 18 NHRM specimens (pending NRM review; not imported to MDD). |
 | `museum_coverage_matched.csv` | Museums that appear in the web app filter (≥1 matched type voucher). |
 | `museum_metadata_zero_matches.csv` | Institutions listed in `TypeSpecimenMetadata_v2.4.csv` but with **zero** voucher matches. |
@@ -28,6 +29,7 @@ python mdd_project/scripts/audit_museum_matching.py
 python mdd_project/scripts/summarize_museum_gaps.py
 python mdd_project/scripts/audit_museum_excluded.py
 python mdd_project/scripts/export_mn_vouchers_for_review.py
+python mdd_project/scripts/build_museum_prefix_wave4_backlog.py
 ```
 
 ## Matching rule (web app)
@@ -36,3 +38,5 @@ Institution is matched when `UPPER(type_voucher) LIKE UPPER(abbreviation) || '%'
 Example: `NHRM` does **not** match metadata codes `NR` or `RNHM` in DuckDB — a dedicated `NHRM` row was required for Naturhistoriska riksmuseet.
 
 Example: `MN` matches `MN 31910` and `MN-UFRJ 23075`; longer codes `MNCN`, `MNHN`, and `MNZ` still win for their own vouchers.
+
+P3 alias rows (BMNH, NMPR, MACN-MA, NSMT-M, NMNZ, OUM, CNM, etc.) point to the same institution as the shorter code but match the voucher prefix used in MDD.

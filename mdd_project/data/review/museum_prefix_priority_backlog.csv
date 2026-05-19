@@ -14,14 +14,15 @@ priority,impact,prefix,species_count,suggested_full_name,city_country,fix_type,r
 2,completely_excluded,AHUB,6,Anhui University / Anhui Normal University (verify),"Anhui, China",add_abbreviation,,,Chinese small-mammal types; confirm holding institution.
 2,completely_excluded,IES,5,"Institute of Ecology and Systematics, Cuba (verify)",Cuba,add_abbreviation,,,Capromys / hutia types; verify IES expansion.
 2,completely_excluded,ZMF,5,Zoological Museum Frankfurt (verify),"Frankfurt, Germany",add_abbreviation,SMF,,Distinguish from SMF Senckenberg if separate catalog.
-3,hidden_alias,BMNH,19,"Natural History Museum, London","London, United Kingdom",add_alias,BM,BM,Add BMNH alias so museum filter matches voucher prefix (already on map as BM).
-3,hidden_alias,NMPR,15,"National Museum (Natural History), Prague","Prague, Czech Republic",add_alias,NMP,NMP,Add NMPR alias; vouchers often NMPr (case-insensitive match to NMP today).
-3,hidden_alias,MACN-MA,17,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,"Buenos Aires, Argentina",add_alias,MACN,MACN,Add MACN-MA alias; vouchers use MACN-Ma.
-3,hidden_alias,NSMT-M,15,"National Museum of Nature and Science, Tokyo","Tokyo, Japan",add_alias,NSMT,NSMT,Add NSMT-M alias for mammal sub-collection prefix.
-3,hidden_alias,OUM,2,Oxford University Museum of Natural History,"Oxford, United Kingdom",add_alias,OUMNH (zero matches),OUMNH via longer match? verify,Add OUM alias; metadata OUMNH never matches OUM vouchers.
-3,hidden_alias,NMNZ,3,Museum of New Zealand Te Papa Tongarewa,"Wellington, New Zealand",add_alias,MNZ (zero matches),,Add NMNZ alias; metadata MNZ does not match NMNZ prefix.
-3,hidden_alias,DMNH,4,Durban Natural Science Museum (verify not Denver),"Durban, South Africa",add_alias,DM,DM,Clarify DMNH vs DNSM vs DM — may be same Durban museum.
-3,hidden_alias,MNHNU,4,Museum National d'Histoire Naturelle,"Paris, France",add_alias,MNHN,MNHN,Add MNHNU alias for Paris mammal catalog variant.
+3,added,BMNH,19,"Natural History Museum, London","London, United Kingdom",add_alias,BM,BM,Added BMNH alias; vouchers match BM on map; alias improves filter prefix.
+3,added,NMPR,15,"National Museum (Natural History), Prague","Prague, Czech Republic",add_alias,NMP,NMP,Added NMPR alias.
+3,added,MACN-MA,17,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,"Buenos Aires, Argentina",add_alias,MACN,MACN,Added MACN-MA alias.
+3,added,NSMT-M,15,"National Museum of Nature and Science, Tokyo","Tokyo, Japan",add_alias,NSMT,NSMT,Added NSMT-M alias.
+3,added,OUM,2,Oxford University Museum of Natural History,"Oxford, United Kingdom",add_alias,OUMNH (zero matches),OUMNH via longer match? verify,Added OUM alias; resolves unmatched OUM vouchers.
+3,added,NMNZ,3,Museum of New Zealand Te Papa Tongarewa,"Wellington, New Zealand",add_alias,MNZ (zero matches),,Added NMNZ alias; resolves unmatched NMNZ vouchers.
+3,added,DMNH,4,Durban Natural Science Museum (verify not Denver),"Durban, South Africa",add_alias,DM,DM,Added DMNH alias.
+3,added,MNHNU,4,Museum National d'Histoire Naturelle,"Paris, France",add_alias,MNHN,MNHN,Added MNHNU alias.
+3,added,CNM,3,Colección Nacional de Mamíferos (UNAM),"Mexico City, Mexico",add_alias,CNMA,CNMA,Added CNM alias; resolves unmatched CNM vouchers.
 3,hidden_alias,CML,9,Colección Mamíferos Lillo,"Tucumán, Argentina",add_alias,CML  (trailing space in metadata),CML ,Fix metadata typo (trailing space) and add CML alias row.
 4,zero_match_metadata,IOZCAS,0,"Institute of Zoology, Chinese Academy of Sciences","Beijing, China",add_alias,IOZCAS; BIZ vouchers,,Add BIZ/IZCAS variants; IOZCAS listed but never matched.
 4,zero_match_metadata,CUMV,0,Cornell University Museum of Vertebrates,"Ithaca, United States of America",investigate,CUMV,,"In metadata, no MDD vouchers — no action unless vouchers added."
