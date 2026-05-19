@@ -5,15 +5,15 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 
 ## Current snapshot
 
-- **Completely unmatched vouchers:** 611 species
-- **Prefix gaps in this backlog:** 50 rows
+- **Completely unmatched vouchers:** 581 species
+- **Prefix gaps in this backlog:** 36 rows
 - **Not fixable via metadata:** `UNTRACED` (234) + `LOST` (136) = 370 species
 
 ## Priority legend
 
 | Priority | Meaning |
 |----------|---------|
-| **P4-risky** | Wrong alias would mis-assign museum (for example CMI/CMN→CM) |
+| **P4-risky** | Wrong alias would mis-assign museum |
 | **P4b-easy-alias** | Likely alias to existing institution; verify then add row |
 | **P4b-variant** | Odd BMNH catalog strings; may need parser or extra alias |
 | **P4c-orphan-high/medium** | No related metadata code; needs institution research (≥3 sp.) |
@@ -21,27 +21,7 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 
 ## P4-risky — resolve first
 
-### `CMI` (5 sp.)
-
-- **Priority:** P4-risky
-- **Issue:** alias
-- **On map via shorter code:** 5
-- **Completely unmatched:** 0
-- **Related metadata:** CM
-- **Examples:** Salinomys_delicatus; Akodon_oenos; Phyllotis_pehuenche
-- **Suggested action:** Identify institution per voucher; add CMN (Canadian Museum of Nature) or fix CM row — do NOT alias to Carnegie CM.
-- **Notes:** BLOCKER: CM in metadata = Carnegie Museum (Pittsburgh). Vouchers look South American — likely Canadian Museum of Nature (CMN) or other. Do not alias to CM without verifying institution.
-
-### `CMN` (2 sp.)
-
-- **Priority:** P4-risky
-- **Issue:** alias
-- **On map via shorter code:** 2
-- **Completely unmatched:** 0
-- **Related metadata:** CM
-- **Examples:** Phenacomys_intermedius; Dicrostonyx_nunatakensis
-- **Suggested action:** Identify institution per voucher; add CMN (Canadian Museum of Nature) or fix CM row — do NOT alias to Carnegie CM.
-- **Notes:** BLOCKER: same as CMI — CM is Carnegie in metadata, but CMN usually = Canadian Museum of Nature (Ottawa). May need new CMN row, not CM alias.
+No current P4-risky prefixes after the latest metadata fixes.
 
 
 ## P4b — likely aliases (verify institution, then add metadata row)
@@ -54,19 +34,8 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 - **Completely unmatched:** 0
 - **Related metadata:** KU
 - **Examples:** Alexandromys_kikuchii; Crocidura_tanakae; Mogera_tokudae
-- **Suggested action:** Add KURODA alias row pointing to same institution as KU.
-- **Notes:** Likely alias for KU (University of Kansas). Japanese/E Asian types collected by Kuroda.
-
-### `UFMG` (3 sp.)
-
-- **Priority:** P4b-easy-alias
-- **Issue:** alias
-- **On map via shorter code:** 3
-- **Completely unmatched:** 0
-- **Related metadata:** UF
-- **Examples:** Rhipidomys_tribei; Cyclopes_xinguensis; Cyclopes_rufus
-- **Suggested action:** Add UFMG alias row pointing to same institution as UF.
-- **Notes:** Likely Universidade Federal de Minas Gerais — do not alias to UF (Florida). Needs new UFMG row.
+- **Suggested action:** Research Kuroda collection repository; do not map to KU (Kansas) based only on prefix similarity.
+- **Notes:** Do not alias to KU (Kansas) without evidence. Kuroda is a Japanese collector/collection label; repository needs confirmation.
 
 ### `MNHN-ZM-MO-1867-146` (2 sp.)
 
@@ -76,8 +45,8 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 - **Completely unmatched:** 0
 - **Related metadata:** MN; MNHN
 - **Examples:** Cricetulus_longicaudatus; Lasiopodomys_mandarinus
-- **Suggested action:** Add MNHN-ZM-MO-1867-146 alias row pointing to same institution as MN.
-- **Notes:** Long Paris MNHN catalog string — add alias or normalize matching.
+- **Suggested action:** Treat as an MNHN catalog-number variant; prefer parser/normalization over a long institution alias.
+- **Notes:** Long Paris MNHN catalog string; treat as MNHN variant or parser issue, not as MN.
 
 ### `NU` (2 sp.)
 
@@ -87,41 +56,8 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 - **Completely unmatched:** 2
 - **Related metadata:** NUPECCE
 - **Examples:** Nannospalax_karyominor; Nannospalax_colaki
-- **Suggested action:** Add NU alias row pointing to same institution as NUPECCE.
-- **Notes:** Likely alias for NUPECCE (Jaboticabal, Brazil). 2 Nannospalax species; vouchers NU 45 / NU 675.
-
-### `TTU-M` (2 sp.)
-
-- **Priority:** P4b-easy-alias
-- **Issue:** alias
-- **On map via shorter code:** 2
-- **Completely unmatched:** 0
-- **Related metadata:** TTU
-- **Examples:** Lepilemur_hollandorum; Cheirogaleus_grovesi
-- **Suggested action:** Add TTU-M alias row pointing to same institution as TTU.
-- **Notes:** Likely alias for TTU (Texas Tech) mammal sub-collection.
-
-### `UFRGS` (2 sp.)
-
-- **Priority:** P4b-easy-alias
-- **Issue:** alias
-- **On map via shorter code:** 2
-- **Completely unmatched:** 0
-- **Related metadata:** UF
-- **Examples:** Ctenomys_lami; Ctenomys_flamarioni
-- **Suggested action:** Add UFRGS alias row pointing to same institution as UF.
-- **Notes:** Likely Universidade Federal do Rio Grande do Sul — do not alias to UF (Florida). Needs new UFRGS row.
-
-### `ZSIS` (2 sp.)
-
-- **Priority:** P4b-easy-alias
-- **Issue:** alias
-- **On map via shorter code:** 2
-- **Completely unmatched:** 0
-- **Related metadata:** ZSI
-- **Examples:** Myotis_himalaicus; Glischropus_meghalayanus
-- **Suggested action:** Add ZSIS alias row pointing to same institution as ZSI.
-- **Notes:** Likely alias for ZSI (Zoological Survey of India).
+- **Suggested action:** Confirm NU repository from the 2025 Zoologischer Anzeiger paper before adding a new metadata row.
+- **Notes:** Not NUPECCE. Turkish Nannospalax types (NU 45 / NU 675); likely Niğde Ömer Halisdemir University, but repository needs confirmation from the 2025 Zoologischer Anzeiger paper.
 
 ### `BMNH:PV:M` (4 sp.)
 
@@ -180,83 +116,6 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 
 
 ## P4c — orphan prefixes (≥3 species, needs new institution row)
-
-### `GNMT` (4 sp.)
-
-- **Priority:** P4c-orphan-high
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 4
-- **Related metadata:** —
-- **Examples:** Microtus_transcaspicus; Nannospalax_nehringi; Microtus_schelkovnikovi
-- **Suggested action:** Research institution for GNMT; add new metadata row if confirmed.
-- **Notes:** Possibly Georgian National Museum (Tbilisi)? Metadata has SGMT (State Georgian Museum).
-
-### `KM` (4 sp.)
-
-- **Priority:** P4c-orphan-high
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 4
-- **Related metadata:** —
-- **Examples:** Petromyscus_barbouri; Cryptochloris_zyli; Chrysochloris_visagiei
-- **Suggested action:** Research institution for KM; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `MMUS` (4 sp.)
-
-- **Priority:** P4c-orphan-high
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 4
-- **Related metadata:** —
-- **Examples:** Dendrolagus_dorianus; Petrogale_assimilis; Dorcopsulus_macleayi
-- **Suggested action:** Research institution for MMUS; add new metadata row if confirmed.
-- **Notes:** Metadata lists MMUS as synonym on MAMU (Macleay Museum, Sydney). Vouchers still unmatched — verify prefix.
-
-### `UANT` (4 sp.)
-
-- **Priority:** P4c-orphan-high
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 4
-- **Related metadata:** —
-- **Examples:** Laephotis_robertsi; Voalavo_antsahabensis; Scotophilus_tandrefana
-- **Suggested action:** Research institution for UANT; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `ULPS` (4 sp.)
-
-- **Priority:** P4c-orphan-high
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 4
-- **Related metadata:** —
-- **Examples:** Avahi_meridionalis; Avahi_peyrierasi; Avahi_ramanantsoavani
-- **Suggested action:** Research institution for ULPS; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `ZMNTU` (4 sp.)
-
-- **Priority:** P4c-orphan-high
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 4
-- **Related metadata:** —
-- **Examples:** Murina_gracilis; Harpiola_isodon; Murina_bicolor
-- **Suggested action:** Research institution for ZMNTU; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `AHNU` (3 sp.)
-
-- **Priority:** P4c-orphan-medium
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 3
-- **Related metadata:** —
-- **Examples:** Parablarinella_latimaxillata; Uropsilus_huanggangensis; Mesechinus_orientalis
-- **Suggested action:** Research institution for AHNU; add new metadata row if confirmed.
-- **Notes:** Anhui Normal University (China). Related AHUB already in metadata with zero matches.
 
 ### `CNP` (3 sp.)
 
@@ -323,17 +182,6 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 - **Examples:** Spermophilus_taurensis; Microtus_dogramacii; Talpa_hakkariensis
 - **Suggested action:** Research institution for OMUS; add new metadata row if confirmed.
 - **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `SCNU` (3 sp.)
-
-- **Priority:** P4c-orphan-medium
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 3
-- **Related metadata:** —
-- **Examples:** Crocidura_zhadaensis; Crocidura_medogensis; Typhlomys_fengjiensis
-- **Suggested action:** Research institution for SCNU; add new metadata row if confirmed.
-- **Notes:** South China Normal University (China).
 
 ### `SZM` (3 sp.)
 

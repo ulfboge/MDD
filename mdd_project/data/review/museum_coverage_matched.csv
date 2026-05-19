@@ -1,18 +1,23 @@
 matched_abbreviation,matched_name,vouchers,geocoded
 ANSP,Academy of Natural Sciences of Drexel University,43,3
+KM,Amathole Museum,4,0
 AMNH,American Museum of Natural History,335,81
+AHNU,Anhui Normal University,3,3
 AHUB,Anhui Normal University,6,6
 AM,Australian Museum,80,41
 ANWC,Australian National Wildlife Collection,4,3
 BPBM,Bernice Pauahi Bishop Museum,12,10
 CSIRO,CSIRO Australian National Wildlife Collection,6,4
 CAS,California Academy of Sciences,10,3
-CM,Carnegie Museum of Natural History,30,19
+CMN,Canadian Museum of Nature,2,1
+CM,Carnegie Museum of Natural History,22,13
 TNRC,Centre for Thai National Reference Collections,5,4
+UFMG,"Centro de Coleções Taxonômicas, Universidade Federal de Minas Gerais",3,3
 CEBIOMAS,"Centro de Ecología y Biodiversidad, Lima, Peru",2,2
 CIB,Centro de Investigaciones Biológicas del Noroeste,2,2
 CZL,"Centro de Zoologica, Instituto de Investigação Científica Tropical",1,0
 CML,Colección Mamíferos Lillo,9,9
+CMI,Colección Mastozoológica del IADIZA,6,5
 CNM,Colección Nacional de Mamíferos (UNAM),3,3
 CNMA,Colección Nacional de Mamíferos (UNAM),7,4
 CTUA,"Colección Teriológica de la Universidad de Antioquia, Medellín",1,1
@@ -21,6 +26,7 @@ UACH,Colección de Mamíferos de la Universidad Austral de Chile,4,4
 CVULA,Colección de Vertebrados de la Universidad de los Andes,6,5
 CBF,Coleccíon Boliviana de Fauna,1,1
 CMUFLA,Coleção de Mamíferos da Universidade Federal de Lavras,2,2
+UFRGS,Coleção de Mamíferos do Departamento de Zoologia da UFRGS,2,2
 DZUP,"Departamento de Zoologia, Setor de Ciências Biológicas, Universidade Federal do Paraná",1,1
 THUMB,"Department of Biology, Tunghai University",1,1
 DZAB,Department of Zoology and Biological Anthropology of the University of Sassari,1,1
@@ -31,9 +37,10 @@ QCAZ,"El Museo de Zoología, Pontificia Universidad Católica del Ecuador",9,9
 ENCB,Escuela Nacional de Ciencias Biológicas,2,2
 EBD,Estación Biológica de Doñana,7,6
 FMNH,Field Museum of Natural History,250,159
-UF,"Florida Museum of Natural History, University of Florida",15,13
+UF,"Florida Museum of Natural History, University of Florida",10,8
 SMF,Forschungsinstitut und Naturmuseum Senckenberg,56,20
 FMSM,Fukushima City Museum of Natural History,6,0
+GNMT,Georgian National Museum,4,1
 HZM,Harrison Zoological Institute,6,6
 HNHM,Hungarian Natural History Museum,18,10
 IBSS,"Institute of Biology and Soil Science, Far East Branch of the Russian Academy of Sciences",3,3
@@ -44,6 +51,7 @@ GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South Ch
 KIZ,Kunming Institute of Zoology,23,20
 KUZ,Kyoto University Museum,1,1
 LSUMZ,Louisiana State University Museum of Zoology,11,9
+MMUS,"Macleay Museum, University of Sydney",4,0
 MMK,McGregor Museum,1,1
 MNKG,Mongolian Natural History Museum,1,1
 MACN,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,2,1
@@ -77,9 +85,11 @@ SMNS,Museum of Natural History Stuttgart,28,6
 MSNG,Museum of Natural History “Giacomo Doria” (Museo Civico di Storia Naturale Giacomo Doria),26,4
 NMNZ,"Museum of New Zealand, Te Papa Tongarewa",3,2
 MSB,Museum of Southwestern Biology,10,9
-TTU,Museum of Texas Tech University,43,35
+TTU,Museum of Texas Tech University,10,9
+TTU-M,Museum of Texas Tech University,33,26
 MTQ,Museum of Tropical Queensland,1,1
 MVZ,"Museum of Vertebrate Zoology, Berkeley",29,9
+ZMNTU,"Museum of Zoology, National Taiwan University",4,4
 NUPECCE,Museum of the Deer Research and Conservation Center at Sao Paulo State University,4,4
 NMV,Museums Victoria,15,2
 MZS,Musée Zoologique de Strasbourg,4,0
@@ -113,6 +123,7 @@ ROM,Royal Ontario Museum,24,23
 MTD,Senckenberg Museum für Tierkunde Dresden,18,4
 SAF,Sichuan Academy of Forestry,26,26
 SAMA,South Australian Museum,8,5
+SCNU,South China Normal University,3,3
 SMNK,Staatliches Museum für Naturkunde Karlsruhe,1,0
 MCZ,The Louis Agassiz Museum of Comparative Zoology,62,11
 ZFMK,The Zoological Research Museum Alexander Koenig,38,20
@@ -123,12 +134,15 @@ UFPA,Universidade Federal do Pará,2,2
 KU,University of Kansas Biodiversity Institute and Natural History Museum,33,13
 UMMZ,University of Michigan Museum of Zoology,26,8
 UWBM,University of Washington Burke Museum,1,1
+ULPS,"Université Louis Pasteur, Strasbourg",4,4
+UANT,"Université d'Antananarivo, Département de Biologie animale",4,4
 UUZM,"Uppsala University, Museum of Evolution, Zoology section",10,1
 WAM,Western Australian Museum,37,34
 ZIN,"Zoological Institute, Russian Academy of Sciences",94,21
 ZMF,Zoological Museum Frankfurt,5,5
 ZMUC,Zoological Museum University of Copenhagen,19,2
 ZMMU,Zoological Museum of the Moscow State University,62,26
-ZSI,Zoological Survey of India collections at the Indian Museum,61,11
+ZSI,Zoological Survey of India collections at the Indian Museum,59,9
+ZSIS,"Zoological Survey of India, North Eastern Regional Centre",2,2
 ZSM,Zoologisches Staats-Sammlung München,22,0
 ZMA,"Zoölogisch Museum, Amsterdam",5,4

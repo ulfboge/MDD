@@ -24,19 +24,11 @@ MUSEUM_MATCH = """
 SKIP = {"UNTRACED", "LOST", "PHOTOGRAPHED", "SPECIMEN", "BUFFON'S", "LINNMUS", "PENNANT'S"}
 
 PRIORITY_NOTES = {
-    "CMI": "BLOCKER: CM in metadata = Carnegie Museum (Pittsburgh). Vouchers look South American — likely Canadian Museum of Nature (CMN) or other. Do not alias to CM without verifying institution.",
-    "CMN": "BLOCKER: same as CMI — CM is Carnegie in metadata, but CMN usually = Canadian Museum of Nature (Ottawa). May need new CMN row, not CM alias.",
-    "NU": "Likely alias for NUPECCE (Jaboticabal, Brazil). 2 Nannospalax species; vouchers NU 45 / NU 675.",
-    "KURODA": "Likely alias for KU (University of Kansas). Japanese/E Asian types collected by Kuroda.",
-    "UFMG": "Likely Universidade Federal de Minas Gerais — do not alias to UF (Florida). Needs new UFMG row.",
-    "UFRGS": "Likely Universidade Federal do Rio Grande do Sul — do not alias to UF (Florida). Needs new UFRGS row.",
-    "TTU-M": "Likely alias for TTU (Texas Tech) mammal sub-collection.",
-    "ZSIS": "Likely alias for ZSI (Zoological Survey of India).",
-    "MNHN-ZM-MO-1867-146": "Long Paris MNHN catalog string — add alias or normalize matching.",
+    "NU": "Not NUPECCE. Turkish Nannospalax types (NU 45 / NU 675); likely Niğde Ömer Halisdemir University, but repository needs confirmation from the 2025 Zoologischer Anzeiger paper.",
+    "KURODA": "Do not alias to KU (Kansas) without evidence. Kuroda is a Japanese collector/collection label; repository needs confirmation.",
+    "MNHN-ZM-MO-1867-146": "Long Paris MNHN catalog string; treat as MNHN variant or parser issue, not as MN.",
     "AHNU": "Anhui Normal University (China). Related AHUB already in metadata with zero matches.",
     "SCNU": "South China Normal University (China).",
-    "GNMT": "Possibly Georgian National Museum (Tbilisi)? Metadata has SGMT (State Georgian Museum).",
-    "MMUS": "Metadata lists MMUS as synonym on MAMU (Macleay Museum, Sydney). Vouchers still unmatched — verify prefix.",
 }
 
 
@@ -49,8 +41,6 @@ def voucher_prefix(voucher: str) -> str:
 
 
 def wave_priority(issue_type: str, prefix: str, related: str, count: int) -> str:
-    if prefix in {"CMI", "CMN"}:
-        return "P4-risky"
     if issue_type == "alias_prefix_missing":
         if count >= 2 and prefix not in {"BMNH:PV:M"} and not prefix.startswith("BMNH:"):
             return "P4b-easy-alias"
@@ -164,7 +154,7 @@ def main() -> None:
         "",
         "| Priority | Meaning |",
         "|----------|---------|",
-        "| **P4-risky** | Wrong alias would mis-assign museum (for example CMI/CMN→CM) |",
+        "| **P4-risky** | Wrong alias would mis-assign museum |",
         "| **P4b-easy-alias** | Likely alias to existing institution; verify then add row |",
         "| **P4b-variant** | Odd BMNH catalog strings; may need parser or extra alias |",
         "| **P4c-orphan-high/medium** | No related metadata code; needs institution research (≥3 sp.) |",
@@ -178,6 +168,8 @@ def main() -> None:
         if row["wave_priority"] != "P4-risky":
             continue
         lines += _md_row(row)
+    if not any(row["wave_priority"] == "P4-risky" for row in backlog):
+        lines += ["No current P4-risky prefixes after the latest metadata fixes.", ""]
 
     lines += [
         "",
@@ -227,9 +219,12 @@ def main() -> None:
 
 
 def _suggested_action(priority: str, prefix: str, related: str, issue_type: str) -> str:
-    if priority == "P4-risky":
-        if prefix in {"CMI", "CMN"}:
-            return "Identify institution per voucher; add CMN (Canadian Museum of Nature) or fix CM row — do NOT alias to Carnegie CM."
+    if prefix == "NU":
+        return "Confirm NU repository from the 2025 Zoologischer Anzeiger paper before adding a new metadata row."
+    if prefix == "KURODA":
+        return "Research Kuroda collection repository; do not map to KU (Kansas) based only on prefix similarity."
+    if prefix.startswith("MNHN-"):
+        return "Treat as an MNHN catalog-number variant; prefer parser/normalization over a long institution alias."
     if issue_type == "alias_prefix_missing" and related and priority == "P4b-easy-alias":
         return f"Add {prefix} alias row pointing to same institution as {related.split(';')[0].strip()}."
     if issue_type == "prefix_not_in_metadata":

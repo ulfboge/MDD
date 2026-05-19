@@ -2,26 +2,16 @@ voucher_prefix,species_count,in_metadata,related_metadata_abbreviations,example_
 UNTRACED,234,no,,Tachyglossus_aculeatus; Chironectes_minimus; Didelphis_virginiana
 LOST,136,no,,Phascogale_tapoatafa; Echymipera_kalubu; Thylogale_brunii
 SPECIMEN,7,no,,Diplomesodon_sonnerati; Alouatta_seniculus; Philander_quica
-CMI,5,no,CM,Salinomys_delicatus; Akodon_oenos; Phyllotis_pehuenche
 KURODA,5,no,KU,Alexandromys_kikuchii; Crocidura_tanakae; Mogera_tokudae
 BMNH:PV:M,4,no,BM; BMNH,Crocidura_katinka; Myomimus_roachi; Pennatomys_nivalis
-GNMT,4,no,,Microtus_transcaspicus; Nannospalax_nehringi; Microtus_schelkovnikovi
-KM,4,no,,Petromyscus_barbouri; Cryptochloris_zyli; Chrysochloris_visagiei
-MMUS,4,no,,Dendrolagus_dorianus; Petrogale_assimilis; Dorcopsulus_macleayi
 PHOTOGRAPHED,4,no,,Macaca_selai; Rungwecebus_kipunji; Macaca_leucogenys
-UANT,4,no,,Laephotis_robertsi; Voalavo_antsahabensis; Scotophilus_tandrefana
-ULPS,4,no,,Avahi_meridionalis; Avahi_peyrierasi; Avahi_ramanantsoavani
-ZMNTU,4,no,,Murina_gracilis; Harpiola_isodon; Murina_bicolor
-AHNU,3,no,,Parablarinella_latimaxillata; Uropsilus_huanggangensis; Mesechinus_orientalis
 CNP,3,no,,Tympanoctomys_kirchnerorum; Oecomys_franciscorum; Akodon_philipmyersi
 EPN,3,no,,Lonchophylla_orcesi; Anoura_fistulata; Sturnira_koopmanhilli
 ISAM,3,no,,Eremitalpa_granti; Cryptochloris_wintoni; Chlorotalpa_sclateri
 IZH,3,no,,Sigmodon_hirsutus; Gracilinanus_agilis; Molossops_temminckii
 LHB,3,no,,Nannospalax_hungaricus; Mesocricetus_newtoni; Spalax_giganteus
 OMUS,3,no,,Spermophilus_taurensis; Microtus_dogramacii; Talpa_hakkariensis
-SCNU,3,no,,Crocidura_zhadaensis; Crocidura_medogensis; Typhlomys_fengjiensis
 SZM,3,no,,Spermophilus_vorontsovi; Sorex_camtschaticus; Marmota_kastschenkoi
-UFMG,3,no,UF,Rhipidomys_tribei; Cyclopes_xinguensis; Cyclopes_rufus
 ALP,2,no,,Myotis_izecksohni; Dryadonycteris_capixaba
 BMNH:MAMM:1855.12.24.185,2,no,BM; BMNH,Leopardus_pardinoides; Phyllotis_xanthopygus
 BMNH:MAMM:1907.1.1.339,2,no,BM; BMNH,Nyctophilus_gouldi; Lyroderma_sinense
@@ -29,7 +19,6 @@ BMNH:MAMM:22A,2,no,BM; BMNH,Hipposideros_fulvus; Sekeetamys_calurus
 BMNH:PV:OR,2,no,BM; BMNH,Alticola_roylei; Lasiorhinus_krefftii
 BOHMANN,2,no,,Otomys_zinki; Otomys_sungae
 BUFFON'S,2,no,,Sciurillus_pusillus; Civettictis_civetta
-CMN,2,no,CM,Phenacomys_intermedius; Dicrostonyx_nunatakensis
 DU,2,no,,Nannospalax_garzanensis; Nannospalax_tuncelicus
 FIPI,2,no,,Pseudoryx_nghetinhensis; Muntiacus_vuquangensis
 FURB,2,no,,Scapteromys_meridionalis; Deltamys_araucaria
@@ -46,15 +35,12 @@ MZACUT,2,no,,Sorex_antinorii; Mops_aloysiisabaudiae
 NHMBZ,2,no,,Rhinolophus_sakejiensis; Rhinolophus_smithersi
 NNPM,2,no,,Spalax_arenarius; Apodemus_ponticus
 NU,2,no,NUPECCE,Nannospalax_karyominor; Nannospalax_colaki
-TTU-M,2,no,TTU,Lepilemur_hollandorum; Cheirogaleus_grovesi
 TIHO,2,no,,Lepilemur_otto; Microcebus_jonahi
-UFRGS,2,no,UF,Ctenomys_lami; Ctenomys_flamarioni
 UIMNH,2,no,,Chiropodomys_calamianensis; Peromyscus_hooperi
 USAC,2,no,,Peromyscus_bakeri; Peromyscus_gardneri
 YIO,2,no,,Sorex_leucogaster; Anourosorex_yamashinai
 YPM,2,no,,Cuscomys_oblativus; Cercopithecus_lomamiensis
 ZRC,2,no,,Trachypithecus_selangorensis; Arctonyx_hoevenii
-ZSIS,2,no,ZSI,Myotis_himalaicus; Glischropus_meghalayanus
 """_AVAHI_",1,no,,Avahi_cleesei
 001Y07HELY,1,no,,Microcebus_macarthurii
 002Y09FINA,1,no,,Microcebus_gerpi
@@ -1956,7 +1942,7 @@ CFA-MA-12016,1,no,,Ctenomys_argentinus
 CFA-MA-12170,1,no,,Ctenomys_osvaldoreigi
 CFA-MA-5067,1,no,,Bibimys_torresi
 CMFA,1,no,CM,Ctenomys_roigi
-CMIN,1,no,CM,Ctenomys_miguelchristie
+CMIN,1,no,CM; CMI,Ctenomys_miguelchristie
 CUNRC,1,no,,Ctenomys_heniacamiare
 CVULA-I-1638,1,no,CVULA,Daptomys_mussoi
 CVUSB-928,1,no,,Aepeomys_reigi
@@ -3118,37 +3104,37 @@ TCWC:MAMM:787,1,no,,Geomys_streckeri
 TCWC:MAMM:9517,1,no,,Artibeus_inopinatus
 TCWC:MAMM:9959,1,no,,Sturnira_luisi
 TISTR,1,no,,Megaerops_niphanae
-TTU-M100000,1,no,TTU,Notiosorex_cockrumi
-"TTU-M104444,",1,no,TTU,Lepilemur_petteri
-"TTU-M104446,",1,no,TTU,Lepilemur_betsileo
-"TTU-M104449,",1,no,TTU,Lepilemur_milanoii
-"TTU-M104452,",1,no,TTU,Lepilemur_grewcocki
-"TTU-M104456,",1,no,TTU,Lepilemur_seali
-"TTU-M104459,",1,no,TTU,Lepilemur_wrighti
-"TTU-M104462,",1,no,TTU,Lepilemur_ahmansoni
-"TTU-M104468,",1,no,TTU,Lepilemur_tymerlachsoni
-"TTU-M104471,",1,no,TTU,Lepilemur_jamesi
-"TTU-M104489,",1,no,TTU,Lepilemur_hubbardi
-TTU-M104492,1,no,TTU,Lepilemur_fleuretae
-"TTU-M104516,",1,no,TTU,Lepilemur_scottorum
-"TTU-M104519,",1,no,TTU,Avahi_mooreorum
-TTU-M104808,1,no,TTU,Peromyscus_kilpatricki
-TTU-M105773,1,no,TTU,Micronycteris_buriri
-TTU-M110122,1,no,TTU,Peromyscus_carletoni
-TTU-M122795,1,no,TTU,Cheirogaleus_shethi
-TTU-M12664,1,no,TTU,Uroderma_davisi
-TTU-M136186,1,no,TTU,Cryptotis_eckerlini
-TTU-M19872,1,no,TTU,Geomys_knoxjonesi
-TTU-M19900,1,no,TTU,Chiroderma_improvisum
-TTU-M33358,1,no,TTU,Uroderma_bakeri
-TTU-M36161,1,no,TTU,Rhogeessa_bickhami
-TTU-M36169,1,no,TTU,Rhogeessa_genowaysi
-TTU-M39120,1,no,TTU,Tonatia_bakeri
-TTU-M46187,1,no,TTU,Carollia_benkeithi
-TTU-M61230,1,no,TTU,Rhogeessa_menchuae
-TTU-M82495,1,no,TTU,Carollia_sowelli
-TTU-M9093,1,no,TTU,Glossophaga_bakeri
-TTU-M9774,1,no,TTU,Tonatia_maresi
+TTU-M100000,1,no,TTU; TTU-M,Notiosorex_cockrumi
+"TTU-M104444,",1,no,TTU; TTU-M,Lepilemur_petteri
+"TTU-M104446,",1,no,TTU; TTU-M,Lepilemur_betsileo
+"TTU-M104449,",1,no,TTU; TTU-M,Lepilemur_milanoii
+"TTU-M104452,",1,no,TTU; TTU-M,Lepilemur_grewcocki
+"TTU-M104456,",1,no,TTU; TTU-M,Lepilemur_seali
+"TTU-M104459,",1,no,TTU; TTU-M,Lepilemur_wrighti
+"TTU-M104462,",1,no,TTU; TTU-M,Lepilemur_ahmansoni
+"TTU-M104468,",1,no,TTU; TTU-M,Lepilemur_tymerlachsoni
+"TTU-M104471,",1,no,TTU; TTU-M,Lepilemur_jamesi
+"TTU-M104489,",1,no,TTU; TTU-M,Lepilemur_hubbardi
+TTU-M104492,1,no,TTU; TTU-M,Lepilemur_fleuretae
+"TTU-M104516,",1,no,TTU; TTU-M,Lepilemur_scottorum
+"TTU-M104519,",1,no,TTU; TTU-M,Avahi_mooreorum
+TTU-M104808,1,no,TTU; TTU-M,Peromyscus_kilpatricki
+TTU-M105773,1,no,TTU; TTU-M,Micronycteris_buriri
+TTU-M110122,1,no,TTU; TTU-M,Peromyscus_carletoni
+TTU-M122795,1,no,TTU; TTU-M,Cheirogaleus_shethi
+TTU-M12664,1,no,TTU; TTU-M,Uroderma_davisi
+TTU-M136186,1,no,TTU; TTU-M,Cryptotis_eckerlini
+TTU-M19872,1,no,TTU; TTU-M,Geomys_knoxjonesi
+TTU-M19900,1,no,TTU; TTU-M,Chiroderma_improvisum
+TTU-M33358,1,no,TTU; TTU-M,Uroderma_bakeri
+TTU-M36161,1,no,TTU; TTU-M,Rhogeessa_bickhami
+TTU-M36169,1,no,TTU; TTU-M,Rhogeessa_genowaysi
+TTU-M39120,1,no,TTU; TTU-M,Tonatia_bakeri
+TTU-M46187,1,no,TTU; TTU-M,Carollia_benkeithi
+TTU-M61230,1,no,TTU; TTU-M,Rhogeessa_menchuae
+TTU-M82495,1,no,TTU; TTU-M,Carollia_sowelli
+TTU-M9093,1,no,TTU; TTU-M,Glossophaga_bakeri
+TTU-M9774,1,no,TTU; TTU-M,Tonatia_maresi
 "TTU-TK125580,",1,no,TTU,Microcebus_mamiratra
 "TTU-TK125757,",1,no,TTU,Avahi_betsileo
 TASHKENT,1,no,,Allactodipus_bobrinskii
