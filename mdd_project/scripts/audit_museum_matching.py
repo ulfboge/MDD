@@ -46,11 +46,23 @@ species_with_museum AS (
 """
 
 
-def extract_voucher_prefix(voucher: str) -> str:
+CATALOG_SEPARATORS = {":", ".", "-", "/", " ", "("}
+
+
+def extract_voucher_prefix(voucher: str, inst_abbr: set[str] | None = None) -> str:
     """Best-effort catalog prefix from type_voucher text."""
     v = voucher.strip()
     if not v:
         return ""
+    if inst_abbr:
+        upper_v = v.upper()
+        for abbr in sorted(inst_abbr, key=len, reverse=True):
+            next_char = upper_v[len(abbr) : len(abbr) + 1]
+            if upper_v == abbr or (
+                upper_v.startswith(abbr)
+                and (next_char in CATALOG_SEPARATORS or ("-" in abbr and next_char.isdigit()))
+            ):
+                return abbr
     # e.g. "NHRM A63 3316", "USNM 123", "BMNH 1918.3.1.1"
     m = re.match(r"^([A-Za-z][A-Za-z0-9./\-]{0,15}?)(?:\s|\(|$)", v)
     if m:
@@ -105,7 +117,7 @@ def main() -> None:
     prefix_mismatch: list[dict[str, str]] = []
 
     for row in voucher_rows.to_dict("records"):
-        prefix = extract_voucher_prefix(row["type_voucher"])
+        prefix = extract_voucher_prefix(row["type_voucher"], inst_abbr)
         if not prefix:
             continue
         prefix_counts[prefix] += 1
@@ -120,7 +132,7 @@ def main() -> None:
         """
     ).fetchall():
         sci_name, voucher, matched_abbr_row = row
-        prefix = extract_voucher_prefix(voucher)
+        prefix = extract_voucher_prefix(voucher, inst_abbr)
         if prefix and prefix != matched_abbr_row.upper() and prefix not in inst_abbr:
             prefix_mismatch.append(
                 {

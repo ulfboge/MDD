@@ -24,6 +24,8 @@ SKIP_PREFIXES = {
     "SYNTYPE",
     "LECTOTYPE",
     "NEOTYPE",
+    "BUFFON'S",
+    "LINNMUS",
 }
 
 
