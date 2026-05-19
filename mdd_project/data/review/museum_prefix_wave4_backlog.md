@@ -5,8 +5,8 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 
 ## Current snapshot
 
-- **Completely unmatched vouchers:** 520 species
-- **Prefix gaps in this backlog:** 9 rows
+- **Completely unmatched vouchers:** 518 species
+- **Prefix gaps in this backlog:** 8 rows
 - **Not fixable via metadata:** `UNTRACED` (234) + `LOST` (136) = 370 species
 
 ## Priority legend
@@ -47,17 +47,6 @@ No current P4-risky prefixes after the latest metadata fixes.
 - **Examples:** Cricetulus_longicaudatus; Lasiopodomys_mandarinus
 - **Suggested action:** Treat as an MNHN catalog-number variant; prefer parser/normalization over a long institution alias.
 - **Notes:** Long Paris MNHN catalog string; treat as MNHN variant or parser issue, not as MN.
-
-### `NU` (2 sp.)
-
-- **Priority:** P4b-easy-alias
-- **Issue:** alias
-- **On map via shorter code:** 0
-- **Completely unmatched:** 2
-- **Related metadata:** NUPECCE
-- **Examples:** Nannospalax_karyominor; Nannospalax_colaki
-- **Suggested action:** Confirm NU repository from the 2025 Zoologischer Anzeiger paper before adding a new metadata row.
-- **Notes:** Not NUPECCE. Turkish Nannospalax types (NU 45 / NU 675); likely Niğde Ömer Halisdemir University, but repository needs confirmation from the 2025 Zoologischer Anzeiger paper.
 
 ### `BMNH:PV:M` (4 sp.)
 

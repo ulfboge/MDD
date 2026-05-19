@@ -6,7 +6,6 @@ alias_prefix_missing,BMNH:MAMM:1907.1.1.339,2,BM; BMNH,Nyctophilus_gouldi; Lyrod
 alias_prefix_missing,BMNH:MAMM:22A,2,BM; BMNH,Hipposideros_fulvus; Sekeetamys_calurus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,BMNH:PV:OR,2,BM; BMNH,Alticola_roylei; Lasiorhinus_krefftii,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,MNHN-ZM-MO-1867-146,2,MN; MNHN,Cricetulus_longicaudatus; Lasiopodomys_mandarinus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,NU,2,NUPECCE,Nannospalax_karyominor; Nannospalax_colaki,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 prefix_not_in_metadata,BOHMANN,2,,Otomys_zinki; Otomys_sungae,Voucher prefix not in metadata; no related abbreviation detected.
 prefix_not_in_metadata,BUFFON'S,2,,Sciurillus_pusillus; Civettictis_civetta,Voucher prefix not in metadata; no related abbreviation detected.
 prefix_not_in_metadata,LINNMUS,2,,Talpa_europaea; Sciurus_vulgaris,Voucher prefix not in metadata; no related abbreviation detected.
