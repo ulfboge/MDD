@@ -10,12 +10,14 @@ Docs: http://localhost:8000/docs
 
 from __future__ import annotations
 
+import csv
+import io
 from pathlib import Path
 from typing import Any
 
 import duckdb
 from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, Response
 
 # ---------------------------------------------------------------------------
 # Database path (resolved relative to this file's location)
@@ -51,6 +53,65 @@ def _rows_to_dicts(conn: duckdb.DuckDBPyConnection, sql: str, params: list | Non
     cur = conn.execute(sql, params or [])
     columns = [d[0] for d in cur.description]
     return [dict(zip(columns, row)) for row in cur.fetchall()]
+
+
+# Match type_voucher catalog numbers to institution abbreviations (longest prefix wins).
+_MUSEUM_MATCH = """
+    s.type_voucher IS NOT NULL
+    AND TRIM(s.type_voucher) <> ''
+    AND UPPER(TRIM(s.type_voucher)) LIKE UPPER(tsi.abbreviation) || '%'
+"""
+
+_SPECIES_WITH_MUSEUM_CTE = f"""
+species_with_museum AS (
+    SELECT
+        s.species_id,
+        s.sci_name,
+        REPLACE(s.sci_name, '_', ' ') AS sci_name_space,
+        s.main_common_name,
+        s."order",
+        s.family,
+        s.genus,
+        s.type_voucher,
+        s.type_kind,
+        s.type_locality,
+        s.type_lat,
+        s.type_lon,
+        (
+            SELECT tsi.abbreviation
+            FROM type_specimen_institutions tsi
+            WHERE {_MUSEUM_MATCH}
+            ORDER BY LENGTH(tsi.abbreviation) DESC
+            LIMIT 1
+        ) AS museum_abbreviation,
+        (
+            SELECT tsi.full_name
+            FROM type_specimen_institutions tsi
+            WHERE {_MUSEUM_MATCH}
+            ORDER BY LENGTH(tsi.abbreviation) DESC
+            LIMIT 1
+        ) AS museum_name,
+        (
+            SELECT tsi.city_and_country
+            FROM type_specimen_institutions tsi
+            WHERE {_MUSEUM_MATCH}
+            ORDER BY LENGTH(tsi.abbreviation) DESC
+            LIMIT 1
+        ) AS museum_location,
+        (
+            SELECT TRIM(regexp_extract(tsi.city_and_country, '[^,]+$', 0))
+            FROM type_specimen_institutions tsi
+            WHERE {_MUSEUM_MATCH}
+              AND tsi.city_and_country IS NOT NULL
+              AND TRIM(tsi.city_and_country) <> ''
+              AND UPPER(TRIM(tsi.city_and_country)) <> 'NA'
+            ORDER BY LENGTH(tsi.abbreviation) DESC
+            LIMIT 1
+        ) AS museum_country
+    FROM species s
+    WHERE s.type_voucher IS NOT NULL AND TRIM(s.type_voucher) <> ''
+)
+"""
 
 
 # ---------------------------------------------------------------------------
@@ -319,6 +380,166 @@ def taxonomy_search(
 
 
 # ---------------------------------------------------------------------------
+# Type locality coverage (museum / country statistics & export)
+# ---------------------------------------------------------------------------
+@app.get("/type-localities/coverage/summary", summary="Global type specimen coverage summary")
+def type_locality_coverage_summary() -> dict[str, Any]:
+    """Counts for comparing type vouchers, geocoded localities, and museum matches."""
+    sql = f"""
+        WITH {_SPECIES_WITH_MUSEUM_CTE}
+        SELECT
+            (SELECT COUNT(*) FROM species) AS total_species,
+            (SELECT COUNT(*) FROM species
+             WHERE type_voucher IS NOT NULL AND TRIM(type_voucher) <> '') AS with_type_voucher,
+            (SELECT COUNT(*) FROM species
+             WHERE type_locality IS NOT NULL AND TRIM(type_locality) <> '') AS with_type_locality_text,
+            (SELECT COUNT(*) FROM species
+             WHERE type_lat IS NOT NULL AND type_lon IS NOT NULL) AS geocoded,
+            (SELECT COUNT(*) FROM species_with_museum) AS voucher_with_museum_match,
+            (SELECT COUNT(*) FROM species_with_museum
+             WHERE museum_abbreviation IS NULL) AS voucher_unmatched_museum,
+            (SELECT COUNT(*) FROM species_with_museum
+             WHERE type_lat IS NOT NULL AND type_lon IS NOT NULL) AS voucher_geocoded,
+            (SELECT COUNT(*) FROM species_with_museum
+             WHERE type_lat IS NULL OR type_lon IS NULL) AS voucher_missing_geolocation
+    """
+    with _get_conn() as conn:
+        row = _rows_to_dicts(conn, sql)[0]
+    return row
+
+
+@app.get("/type-localities/coverage/countries", summary="Type voucher counts by museum country")
+def type_locality_coverage_countries() -> list[dict[str, Any]]:
+    """Aggregate species with type vouchers by country of the holding museum."""
+    sql = f"""
+        WITH {_SPECIES_WITH_MUSEUM_CTE}
+        SELECT
+            museum_country AS country,
+            COUNT(DISTINCT museum_abbreviation) AS museum_count,
+            COUNT(*) AS with_type_voucher,
+            COUNT(*) FILTER (
+                WHERE type_lat IS NOT NULL AND type_lon IS NOT NULL
+            ) AS geocoded,
+            COUNT(*) FILTER (
+                WHERE type_lat IS NULL OR type_lon IS NULL
+            ) AS missing_geolocation
+        FROM species_with_museum
+        WHERE museum_country IS NOT NULL AND TRIM(museum_country) <> ''
+        GROUP BY museum_country
+        ORDER BY with_type_voucher DESC, country
+    """
+    with _get_conn() as conn:
+        return _rows_to_dicts(conn, sql)
+
+
+@app.get("/type-localities/coverage/museums", summary="Type voucher counts by museum")
+def type_locality_coverage_museums(
+    country: str | None = Query(None, description="Filter by museum country (from institution metadata)"),
+) -> list[dict[str, Any]]:
+    """Per-museum counts of type vouchers and how many have geocoded type localities in MDD."""
+    conditions = ["museum_abbreviation IS NOT NULL"]
+    params: list[Any] = []
+    if country:
+        conditions.append("museum_country ILIKE ?")
+        params.append(country)
+
+    where = "WHERE " + " AND ".join(conditions)
+    sql = f"""
+        WITH {_SPECIES_WITH_MUSEUM_CTE}
+        SELECT
+            museum_abbreviation AS abbreviation,
+            MAX(museum_name) AS full_name,
+            MAX(museum_location) AS city_and_country,
+            MAX(museum_country) AS country,
+            COUNT(*) AS with_type_voucher,
+            COUNT(*) FILTER (
+                WHERE type_lat IS NOT NULL AND type_lon IS NOT NULL
+            ) AS geocoded,
+            COUNT(*) FILTER (
+                WHERE type_lat IS NULL OR type_lon IS NULL
+            ) AS missing_geolocation
+        FROM species_with_museum
+        {where}
+        GROUP BY museum_abbreviation
+        ORDER BY with_type_voucher DESC, abbreviation
+    """
+    with _get_conn() as conn:
+        return _rows_to_dicts(conn, sql, params)
+
+
+@app.get("/type-localities/coverage/export", summary="Export species missing type locality coordinates")
+def type_locality_coverage_export(
+    museum: str | None = Query(None, description="Museum abbreviation (e.g. USNM, BMNH)"),
+    country: str | None = Query(None, description="Museum country (holding institution)"),
+    missing_geolocation: bool = Query(
+        True,
+        description="If true, only species without type_lat/type_lon in MDD",
+    ),
+) -> Response:
+    """
+    Download CSV of species with type vouchers, optionally filtered by museum or country.
+
+    Intended for museums to review specimens that lack geocoded type localities in MDD.
+    """
+    if not museum and not country:
+        raise HTTPException(
+            status_code=422,
+            detail="Provide museum (abbreviation) or country to export.",
+        )
+
+    conditions = ["1=1"]
+    params: list[Any] = []
+    if museum:
+        conditions.append("museum_abbreviation ILIKE ?")
+        params.append(museum.strip())
+    if country:
+        conditions.append("museum_country ILIKE ?")
+        params.append(country.strip())
+    if missing_geolocation:
+        conditions.append("(type_lat IS NULL OR type_lon IS NULL)")
+
+    where = " AND ".join(conditions)
+    sql = f"""
+        WITH {_SPECIES_WITH_MUSEUM_CTE}
+        SELECT
+            sci_name,
+            sci_name_space,
+            main_common_name,
+            "order",
+            family,
+            genus,
+            type_voucher,
+            type_kind,
+            type_locality,
+            museum_abbreviation,
+            museum_name,
+            museum_location,
+            museum_country
+        FROM species_with_museum
+        WHERE {where}
+        ORDER BY museum_abbreviation, family, sci_name
+    """
+    with _get_conn() as conn:
+        rows = _rows_to_dicts(conn, sql, params)
+
+    if not rows:
+        raise HTTPException(status_code=404, detail="No matching species for export.")
+
+    buf = io.StringIO()
+    writer = csv.DictWriter(buf, fieldnames=list(rows[0].keys()), lineterminator="\n")
+    writer.writeheader()
+    writer.writerows(rows)
+
+    label = (museum or country or "export").replace(" ", "_")
+    filename = f"mdd_type_specimens_missing_coords_{label}.csv"
+    return Response(
+        content=buf.getvalue(),
+        media_type="text/csv; charset=utf-8",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
+
+
+# ---------------------------------------------------------------------------
 # GET /type-localities
 # Export type localities as GeoJSON FeatureCollection for the web map
 # ---------------------------------------------------------------------------
@@ -365,12 +586,6 @@ def get_type_localities(
         params.append(f"%{genus}%")
 
     where = "WHERE " + " AND ".join(conditions)
-    # Museum resolved by longest matching institution abbreviation prefix on type_voucher.
-    museum_match = """
-        s.type_voucher IS NOT NULL
-        AND TRIM(s.type_voucher) <> ''
-        AND UPPER(TRIM(s.type_voucher)) LIKE UPPER(tsi.abbreviation) || '%'
-    """
     sql = f"""
         SELECT
             s.species_id,
@@ -391,21 +606,21 @@ def get_type_localities(
             (
                 SELECT tsi.full_name
                 FROM type_specimen_institutions tsi
-                WHERE {museum_match}
+                WHERE {_MUSEUM_MATCH}
                 ORDER BY LENGTH(tsi.abbreviation) DESC
                 LIMIT 1
             ) AS museum_name,
             (
                 SELECT tsi.abbreviation
                 FROM type_specimen_institutions tsi
-                WHERE {museum_match}
+                WHERE {_MUSEUM_MATCH}
                 ORDER BY LENGTH(tsi.abbreviation) DESC
                 LIMIT 1
             ) AS museum_abbreviation,
             (
                 SELECT tsi.city_and_country
                 FROM type_specimen_institutions tsi
-                WHERE {museum_match}
+                WHERE {_MUSEUM_MATCH}
                 ORDER BY LENGTH(tsi.abbreviation) DESC
                 LIMIT 1
             ) AS museum_location

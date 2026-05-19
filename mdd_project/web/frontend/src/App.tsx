@@ -7,6 +7,7 @@ import maplibregl, {
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
+import TypeCoveragePanel from "./TypeCoveragePanel";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -757,6 +758,8 @@ export default function App() {
             </div>
           </section>
         )}
+
+        <TypeCoveragePanel />
 
         {/* Layer toggles */}
         <section className="section">
