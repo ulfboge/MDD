@@ -1,25 +1,30 @@
 ABBREVIATION,FULL NAME,City and Country,Synonyms/Notes,ONLINE WEBSITE/DATABASE IF AVAILABLE
 ACUNHC,Abilene Christian University Natural History Collection,"Abilene, United States of America",NA,https://csvcoll.org/portal/collections/misc/collprofiles.php?collid=1029
+AHUB,Anhui Normal University,"Wuhu, Anhui, China",Catalog prefix in MDD type vouchers; verify against AHNU if needed,NA
 AM,Australian Museum,"Sydney, Australia",NA,https://australian.museum/learn/collections/natural-science/mammalogy/
 AMNH,American Museum of Natural History,"New York, United States of America",NA,https://sci-web-001.amnh.org/db/emuwebamnh/index.php
 ANSP,Academy of Natural Sciences of Drexel University,"Philadelphia, United States of America",NA,https://ansp.org/research/systematics-evolution/mammalogy/
-ANWC,Australian National Wildlife Collection,"Canberra, Australia",NA,https://www.csiro.au/en/Research/Collections/ANWC
+ANWC,Australian National Wildlife Collection,"Canberra, Australia",Synonyms: CSIRO,https://www.csiro.au/en/Research/Collections/ANWC
 BM,"Natural History Museum, London","London, United Kingdom",British Museum (Natural History),https://data.nhm.ac.uk/
 BPBM,Bernice Pauahi Bishop Museum,"Honolulu, United States of America",NA,https://www.bishopmuseum.org/vertebrate-zoology/
 BRTC,Biodiversity Research and Teaching Collections Texas A&M University,"College Station, United States of America",NA,https://brtc.tamu.edu/collections/mammals/
+BIZ,Institute of Zoology (Beijing) specimen catalog,"Beijing, China",Catalog prefix BIZ in MDD vouchers; same institution as IOZCAS,http://museum.ioz.ac.cn/
 CAS,California Academy of Sciences,"San Francisco, United States of America",NA,https://www.calacademy.org/scientists/ornithology-mammalogy
 CBF,Coleccíon Boliviana de Fauna,"La Paz, Bolivia",NA,http://www.mnhn.gob.bo/zoologia.php
 CEBIOMAS,"Centro de Ecología y Biodiversidad, Lima, Peru","Lima, Peru",NA,https://www.facebook.com/CEBIO.Peru/
 CIB,Centro de Investigaciones Biológicas del Noroeste,"La Paz, Mexico",NA,https://www.cibnor.gob.mx/
 CM,Carnegie Museum of Natural History,"Pittsburgh, United States of America",NA,https://carnegiemnh.org/research/mammals/
-CML ,Colección Mamíferos Lillo,"Tucumán, Argentina",NA,http://pidba.com.ar/?page_id=2452
+CML,Colección Mamíferos Lillo,"Tucumán, Argentina",NA,http://pidba.com.ar/?page_id=2452
+CNMA,Colección Nacional de Mamíferos (UNAM),"Mexico City, Mexico",Catalog prefix CNMA in MDD vouchers; same institution as IBUNAM (CNMA),http://www.ibiologia.unam.mx/cnma/
 CMUFLA,Coleção de Mamíferos da Universidade Federal de Lavras,"Lavras, Brazil",NA,https://sites.google.com/site/lecomuflamg/colecao
-CTNRC,Centre for Thai National Reference Collections,"Bangkok, Thailand",NA,NA
+CTNRC,Centre for Thai National Reference Collections,"Bangkok, Thailand",Synonyms: TNRC,NA
+CSIRO,CSIRO Australian National Wildlife Collection,"Canberra, Australia",Catalog prefix CSIRO in MDD vouchers; same collection as ANWC,https://www.csiro.au/en/Research/Collections/ANWC
 CTUA,"Colección Teriológica de la Universidad de Antioquia, Medellín","Medellín, Colombia",Museo de la Universidad de Antioquia (MUA),NA
 CUMV,Cornell University Museum of Vertebrates,"Ithaca, United States of America",NA,https://www.cumv.cornell.edu/cumvcornellmammalogy.html
 CVULA,Colección de Vertebrados de la Universidad de los Andes,"Bogotá, Colombia",NA,https://museo.uniandes.edu.co/index.php/mamiferos
 CZL,"Centro de Zoologica, Instituto de Investigação Científica Tropical","Lisbon, Portugal",NA,NA
-DM,Durban Natural Science Museum,"Durban, South Africa",NA,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
+DM,Durban Natural Science Museum,"Durban, South Africa",Synonyms: DNSM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
+DNSM,Durban Natural Science Museum,"Durban, South Africa",Catalog prefix DNSM in MDD vouchers; same institution as DM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
 DZAB,Department of Zoology and Biological Anthropology of the University of Sassari,"Sassari, Italy",NA,https://www.uniss.it/
 DZSJRP,"Universidade Estadual Paulista “Júlio de Mesquita Filho""","São José do Rio Preto, Brazil",NA,https://www2.unesp.br/
 DZUP,"Departamento de Zoologia, Setor de Ciências Biológicas, Universidade Federal do Paraná","Curitiba, Brazil",NA,https://labceas.wordpress.com/colecao-cientifica-de-mastozoologia/
@@ -28,18 +33,20 @@ EBRG,Museo de la Estación Biológica de Rancho Grande,"Aragua, Venezuela",NA,ht
 ENCB,Escuela Nacional de Ciencias Biológicas,"Mexico City, Mexico","Colección de Mamíferos, Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional",https://www.biodiversidad.gob.mx/fichas-conabio-war/resources/coleccion/451
 E. O. Wilson Biodiversity Laboratory Collection,E. O. Wilson Biodiversity Laboratory Collection at Gorongosa National Park,"Chitengo, Mozambique",NA,https://eowilsonfoundation.org/the-biodiversity-collection/
 FMNH,Field Museum of Natural History,"Chicago, United States of America",NA,https://collections-zoology.fieldmuseum.org/page/collections-data-mammals
+FMSM,Fukushima City Museum of Natural History,"Fukushima, Japan",Catalog prefix FMSM in MDD type vouchers,NA
 GEC,Grupo de Exploraciones Científicas,"Havana, Cuba",NA,NA
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University","Guangzhou, China",NA,http://english.gzhu.edu.cn/info/1008/1851.htm
 GZNU,Guizhou Normal University,"Guizhou, China",NA,https://e.gznu.edu.cn/
 HNHM,Hungarian Natural History Museum,"Budapest, Hungary",NA,http://www.nhmus.hu/en/collection/department_of_zoology/mammal_collection
 HZM,Harrison Zoological Institute,"Kent, United Kingdom",NA,https://www.harrison-institute.org/
 IADIZA,Instituto Argentino de Investigaciones de las Zonas Aridas,"Mendoza, Argentina",NA,"https://www.mendoza.conicet.gov.ar/portal/iadiza/#:~:text=El%20Instituto%20Argentino%20de%20Investigaciones,y%20el%20Gobierno%20de%20Mendoza."
-IBUNAM (CNMA),"Colección de Mamíferos, Instituto de Biología, Universidad Nacional Autónoma de México","Mexico City, Mexico",NA,http://www.ibiologia.unam.mx/cnma/
+IBUNAM (CNMA),"Colección de Mamíferos, Instituto de Biología, Universidad Nacional Autónoma de México","Mexico City, Mexico",Synonyms: CNMA,http://www.ibiologia.unam.mx/cnma/
 IBSS,"Institute of Biology and Soil Science, Far East Branch of the Russian Academy of Sciences","Vladivostok, Russia",NA,http://old.febras.ru/instlist/bpi_.html
 ICN,"Colección de Mamíferos Alberto Cadena García, Instituto de Ciencias Naturales, Bogotá","Bogotá, Colombia",NA,https://mammalogynotes.org/ojs/index.php/mn/article/view/199/317
 IEBR,Institute of Ecology and Biological Resources,"Hanoi, Vietnam",NA,http://www.iebr.ac.vn/pages/eiebr.asp
+IES,Institute of Ecology and Systematics,"Havana, Cuba",Catalog prefix IES in MDD type vouchers,NA
 INPA,National Research Institute of the Amazon,"Manaus, Brazil",NA,https://www.inpa.gov.br/english/
-IOZCAS,"Institute of Zoology, Chinese Academy of Sciences","Beijing, China",NA,http://english.ioz.cas.cn/
+IOZCAS,"Institute of Zoology, Chinese Academy of Sciences","Beijing, China",Synonyms: BIZ,http://english.ioz.cas.cn/
 KIZ,Kunming Institute of Zoology,"Kunming, China",NA,http://english.kiz.cas.cn/
 KU,University of Kansas Biodiversity Institute and Natural History Museum,"Lawrence, United States of America",NA,https://biodiversity.ku.edu/mammalogy
 KUZ,Kyoto University Museum,"Kyoto, Japan",NA,http://www.museum.kyoto-u.ac.jp/index_e.htm
@@ -55,6 +62,7 @@ MCNM,"Museo Civico di Storia Naturale, Milan","Milan, Italy",NA,https://museodis
 MCZ,The Louis Agassiz Museum of Comparative Zoology,"Cambridge, United States of America","Museum of Comparative Zoology, Harvard",https://mcz.harvard.edu/database
 MECN,"Museo Ecuatoriano de Ciencias Naturales, Ecuador","Quito, Ecuador",NA,https://museosdmqjennifermeza.wordpress.com/category/ciencias-10/
 MEPN,"Museo de Historia Natural - Escuela Politécnica Nacional, Ecuador","Quito, Ecuador",NA,https://www.epn.edu.ec/museo-de-historia-natural/
+MF,"Museo di Storia Naturale dell'Università di Firenze","Florence, Italy",Catalog prefix MF in MDD type vouchers,NA
 MG-ZV-M,Mammal Collection of the Museo Provincial de Ciencias Naturales “Dr. Ángel Gallardo”,"Rosario, Argentina",NA,https://www.museogallardo.gob.ar/zoologia.php
 MHN-UCa,Museo de Historia Natural de la Universidad de Caldas,"Manizales, Colombia",NA,
 MHNC,Musée d'Histoire Naturelle de la Chaux-de-Fonds,"La Chaux-de-Fonds, Switzerland",NA,https://www.chaux-de-fonds.ch/musees/mhnc/collections/zoologie
@@ -74,6 +82,7 @@ MPEG,Museu Paraense Emílio Goeldi,"Belém, Brazil",NA,https://www.museu-goeldi.
 MSB,Museum of Southwestern Biology,"Albuquerque, New Mexico",NA,http://www.msb.unm.edu/divisions/mammals/index.html
 MSNG,Museum of Natural History “Giacomo Doria” (Museo Civico di Storia Naturale Giacomo Doria),"Genoa, Italy",NA,http://www.museidigenova.it/it/content/museo-di-storia-naturale
 MTQ,Museum of Tropical Queensland,"Townsville, Australia",NA,https://mtq.qm.qld.gov.au/Collections
+MTD,Senckenberg Museum für Tierkunde Dresden,"Dresden, Germany",Catalog prefix MTD in MDD type vouchers; Senckenberg Dresden,https://senckenberg.de/
 MUSA,Museo de Historia Natural de la Universidad Nacional de San Agustín,"Arequipa, Peru",NA,NA
 MUSM,"Museo de Historia Natural, Universidad Nacional Mayor de San Marcos","Lima, Peru",NA,https://museohn.unmsm.edu.pe/masto_coleccion.html
 MVZ,"Museum of Vertebrate Zoology, Berkeley","Berkeley, United States of America",NA,https://mvz.berkeley.edu/mvzmamm/
@@ -108,14 +117,17 @@ RNHM,"Royal Natural History Museum, Stockholm","Stockholm, Sweden",Synonym of NH
 ROM,Royal Ontario Museum,"Toronto, Canada",NA,https://collections.rom.on.ca/?_ga=2.143418229.1984832703.1613055521-1445187006.1613055521
 SAMA,South Australian Museum,"Adelaide, Australia",NA,https://www.samuseum.sa.gov.au/collection/biological-sciences-collection
 SGMT,State Georgian Museum,"Tbilisi, Georgia",NA,http://museum.ge/index.php?lang_id=GEO&sec_id=120
+SAF,Sichuan Academy of Forestry,"Chengdu, Sichuan, China",Catalog prefix SAF in MDD type vouchers,NA
 SMF,Forschungsinstitut und Naturmuseum Senckenberg,"Frankfurt, Germany",NA,https://www.senckenberg.de/en/institutes/senckenberg-research-institute-natural-history-museum-frankfurt/division-messel-research-mammalogy/section-mammalogy/mammalogy-collection/
 SMNK,Staatliches Museum für Naturkunde Karlsruhe,"Karlsruhe, Germany",State Museum of Natural History Karlsruhe,https://www.smnk.de/en/collections/zoology/vertebrata/?S=sivviiym&cHash=f2d275b15a8d5eea9542d284e147726c
 SMNS,Museum of Natural History Stuttgart,"Stuttgart, Germany",NA,https://naturkundemuseum-bw.de/en/research/zoology
 SNMB,Staatliches Naturhistorisches Museum Braunschweig,"Braunschweig, Germany",NA,https://3landesmuseen-braunschweig.de/staatliches-naturhistorisches-museum/sammlung/abteilungen/wirbeltiere
 THUMB,"Department of Biology, Tunghai University","Taichung City, Taiwan",NA,http://eng.thu.edu.tw/web/academics/detail.php?scid=38&sid=28
+TNRC,Centre for Thai National Reference Collections,"Bangkok, Thailand",Catalog prefix TNRC in MDD vouchers; same institution as CTNRC,NA
 TM,Ditsong National Museum of Natural History,"Pretoria, South Africa",Transvaal Museum,https://ditsong.org.za/museum-of-natural-history/
 TTU,Museum of Texas Tech University,"Lubbock, United States of America",NA,https://www.depts.ttu.edu/nsrl/collections/mammal.php
 UACH,Colección de Mamíferos de la Universidad Austral de Chile,"Valdivia, Chile",NA,https://www.facebook.com/coleccionmamiferosuach/
+UCLA,UCLA Mammalogy Collection / Dickey Collection,"Los Angeles, United States of America",Catalog prefix UCLA in MDD type vouchers,https://www.laclark.org/
 UADBA,"Université d'Antananarivo, Département de Biologie animale","Antananarivo, Madagascar",NA,https://www.gfar.net/organizations/departement-de-biologie-animale-faculte-des-sciences-universite-dantananarivo
 UF,"Florida Museum of Natural History, University of Florida","Gainsville, United States of America",NA,https://www.floridamuseum.ufl.edu/mammals/
 UFMT,Universidade Federal de Mato Grosso,"Cuiabá, Brazil",NA,NA
@@ -134,7 +146,9 @@ ZIN,"Zoological Institute, Russian Academy of Sciences","Saint Petersburg, Russi
 ZIUZ,"Zoological Institute, Zagreb University","Zagreb, Croatia",NA,https://www.pmf.unizg.hr/biol/en
 ZMA,"Zoölogisch Museum, Amsterdam","Amsterdam, The Netherlands",Merged with RMNH in 2010,https://bioportal.naturalis.nl/
 ZMB,Museum für Naturkunde,"Berlin, Germany",Zoologisches Museum Berlin/Zoological Museum of the Humboldt-University Berlin,https://www.museumfuernaturkunde.berlin/en/science/mammals
+ZMF,Zoological Museum Frankfurt,"Frankfurt, Germany",Catalog prefix ZMF in MDD vouchers; distinct from SMF Senckenberg Frankfurt,NA
 ZMMU,Zoological Museum of the Moscow State University,"Moscow, Russia",NA,http://zmmu.msu.ru/en/about-muzeum/fonds/mammal-collections
+ZMUC,Zoological Museum University of Copenhagen,"Copenhagen, Denmark",Catalog prefix ZMUC in MDD type vouchers,https://snm.ku.dk/english/
 ZMZ,Zoologisches Museum Zürich,"Zürich, Germany",NA,https://www.zm.uzh.ch/de/sammlungen/wissenschaftlichesammlungen.html
 ZSI,Zoological Survey of India collections at the Indian Museum,"Calcutta, India",Indian Museum,http://www.zsicollections.in/search
 ZSM,Zoologisches Staats-Sammlung München,"Munich, Germany",NA,https://www.zsm.mwn.de/?lang=en
