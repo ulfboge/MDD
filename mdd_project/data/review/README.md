@@ -10,6 +10,7 @@ Generated review files for MDD type-specimen museum prefix matching.
 | `mn_vouchers_for_review_enriched.csv` | Same 54 rows with museum identification columns (Museu Nacional UFRJ). |
 | `deep-research-report.md` | Initial MN prefix research report. |
 | `deep-research-report_2.md` | Updated report with longest-prefix rationale and enriched CSV plan. |
+| `deep-research-report_3.md` | Städad v3 (varning om felaktigt auto-CSV; Pavan 2015 / SiBBr-källor). |
 | `museum_prefix_wave4_backlog.csv` | **Wave 4 backlog** — next prefix gaps to research (risky aliases + orphans). |
 | `museum_prefix_wave4_backlog.md` | Human-readable wave 4 investigation guide with priorities and notes. |
 | `nhrm_type_specimens_missing_coords_geocoded.csv` | Proposed coordinates for 18 NHRM specimens (pending NRM review; not imported to MDD). |

@@ -17,10 +17,19 @@ MUSEUM_CITY = "Rio de Janeiro"
 MUSEUM_COUNTRY = "Brazil"
 INSTITUTION_CODE = "MN (MNRJ)"
 CONFIDENCE = "Hög"
-SOURCE_URL = (
+SOURCE_URL_DEFAULT = (
     "https://digitallibrary.amnh.org/server/api/core/bitstreams/"
     "9864b9ec-11a5-4018-819e-59f4053bc3ab/content; "
-    "https://obis.org/institute/13167"
+    "https://obis.org/institute/13167; "
+    "https://collectory.sibbr.gov.br/collectory/public/show/dr797"
+)
+PINOCCHIO_NOTE = (
+    "Holotype MN 78680 at Museu Nacional; Pavan et al. 2015 AMNH Novitates 3832."
+)
+PINOCCHIO_SOURCE_URL = (
+    SOURCE_URL_DEFAULT
+    + "; https://doi.org/10.11606/1807-0205/2025.65.021"
+    + " (Vendramel et al. 2025 MZUSP catalog — secondary; not verified for MNRJ holding)"
 )
 
 
@@ -61,7 +70,11 @@ def main() -> None:
     enriched["museum_country"] = MUSEUM_COUNTRY
     enriched["institution_code"] = INSTITUTION_CODE
     enriched["confidence"] = CONFIDENCE
-    enriched["source_url"] = SOURCE_URL
+    enriched["source_url"] = SOURCE_URL_DEFAULT
+    enriched["notes"] = ""
+    pinocchio = enriched["sci_name"] == "Monodelphis_pinocchio"
+    enriched.loc[pinocchio, "notes"] = PINOCCHIO_NOTE
+    enriched.loc[pinocchio, "source_url"] = PINOCCHIO_SOURCE_URL
     enriched.to_csv(OUT_ENRICHED, index=False)
     print(f"Wrote {len(enriched)} rows to {OUT_ENRICHED}")
 
