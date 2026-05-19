@@ -8,7 +8,6 @@ BMNH:PV:M,4,no,BM; BMNH,Crocidura_katinka; Myomimus_roachi; Pennatomys_nivalis
 GNMT,4,no,,Microtus_transcaspicus; Nannospalax_nehringi; Microtus_schelkovnikovi
 KM,4,no,,Petromyscus_barbouri; Cryptochloris_zyli; Chrysochloris_visagiei
 MMUS,4,no,,Dendrolagus_dorianus; Petrogale_assimilis; Dorcopsulus_macleayi
-MNK,4,no,MN,Juscelinomys_huanchacae; Oecomys_sydandersoni; Hylaeamys_acritus
 PHOTOGRAPHED,4,no,,Macaca_selai; Rungwecebus_kipunji; Macaca_leucogenys
 UANT,4,no,,Laephotis_robertsi; Voalavo_antsahabensis; Scotophilus_tandrefana
 ULPS,4,no,,Avahi_meridionalis; Avahi_peyrierasi; Avahi_ramanantsoavani
@@ -2728,7 +2727,6 @@ MNHNCL,1,no,MN; MNHN; MNHNC,Eligmodontia_puerulus
 MNHNCL:MAMM:1546,1,no,MN; MNHN; MNHNC,Eligmodontia_dunaris
 MNHNH,1,no,MN; MNHN,Atopogale_arredondoi
 MNHNS,1,no,MN; MNHN,Nannospalax_turcicus
-MNKG,1,no,MN,Plecotus_gobiensis
 MRSN,1,no,,Arvicola_persicus
 MSB:MAMM:192163,1,no,MSB,Neotamias_rufus
 MSB:MAMM:239826,1,no,MSB,Tapecomys_primus

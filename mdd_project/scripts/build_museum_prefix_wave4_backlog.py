@@ -26,7 +26,6 @@ SKIP = {"UNTRACED", "LOST", "PHOTOGRAPHED", "SPECIMEN", "BUFFON'S", "LINNMUS", "
 PRIORITY_NOTES = {
     "CMI": "BLOCKER: CM in metadata = Carnegie Museum (Pittsburgh). Vouchers look South American — likely Canadian Museum of Nature (CMN) or other. Do not alias to CM without verifying institution.",
     "CMN": "BLOCKER: same as CMI — CM is Carnegie in metadata, but CMN usually = Canadian Museum of Nature (Ottawa). May need new CMN row, not CM alias.",
-    "MNK": "BLOCKER: MN now matches Museu Nacional (Rio). MNK vouchers currently mis-match to MN. Add dedicated MNK row after identifying holding museum.",
     "NU": "Likely alias for NUPECCE (Jaboticabal, Brazil). 2 Nannospalax species; vouchers NU 45 / NU 675.",
     "KURODA": "Likely alias for KU (University of Kansas). Japanese/E Asian types collected by Kuroda.",
     "UFMG": "Likely Universidade Federal de Minas Gerais — do not alias to UF (Florida). Needs new UFMG row.",
@@ -50,7 +49,7 @@ def voucher_prefix(voucher: str) -> str:
 
 
 def wave_priority(issue_type: str, prefix: str, related: str, count: int) -> str:
-    if prefix in {"CMI", "CMN", "MNK"}:
+    if prefix in {"CMI", "CMN"}:
         return "P4-risky"
     if issue_type == "alias_prefix_missing":
         if count >= 2 and prefix not in {"BMNH:PV:M"} and not prefix.startswith("BMNH:"):
@@ -165,7 +164,7 @@ def main() -> None:
         "",
         "| Priority | Meaning |",
         "|----------|---------|",
-        "| **P4-risky** | Wrong alias would mis-assign museum (CMI/CMN→CM, MNK→MN) |",
+        "| **P4-risky** | Wrong alias would mis-assign museum (for example CMI/CMN→CM) |",
         "| **P4b-easy-alias** | Likely alias to existing institution; verify then add row |",
         "| **P4b-variant** | Odd BMNH catalog strings; may need parser or extra alias |",
         "| **P4c-orphan-high/medium** | No related metadata code; needs institution research (≥3 sp.) |",
@@ -231,8 +230,6 @@ def _suggested_action(priority: str, prefix: str, related: str, issue_type: str)
     if priority == "P4-risky":
         if prefix in {"CMI", "CMN"}:
             return "Identify institution per voucher; add CMN (Canadian Museum of Nature) or fix CM row — do NOT alias to Carnegie CM."
-        if prefix == "MNK":
-            return "Add MNK row for correct museum; prevents false match to Museu Nacional (MN)."
     if issue_type == "alias_prefix_missing" and related and priority == "P4b-easy-alias":
         return f"Add {prefix} alias row pointing to same institution as {related.split(';')[0].strip()}."
     if issue_type == "prefix_not_in_metadata":

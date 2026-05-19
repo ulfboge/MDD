@@ -80,6 +80,8 @@ MIZH,Museum and Zoological Institute of the University Halle,"Halle, Germany",NA
 MLP,Museo de La Plata,"La Plata, Argentina",NA,https://www.museo.fcnym.unlp.edu.ar/div_zoovertebrados
 MMK,McGregor Museum,"Kimberley, South Africa",NA,https://www.museumsnc.co.za/aboutus/depts/zoology/zoology.html#zoocollect
 MN,"Museu Nacional, Universidade Federal do Rio de Janeiro","Rio de Janeiro, Brazil",Catalog prefix MN in MDD type vouchers; also MNRJ; MN-UFRJ alias,https://www.museunacional.ufrj.br/
+MNK,Museo de Historia Natural Noel Kempff Mercado,"Santa Cruz de la Sierra, Bolivia",Catalog prefix MNK in MDD type vouchers; mammal collection at Universidad Autonoma Gabriel Rene Moreno,https://museonoelkempff.org/museo/zoologia-vertebrados/colecciones-cientificas/
+MNKG,Mongolian Natural History Museum,"Ulaanbaatar, Mongolia",Catalog prefix MNKG in MDD type vouchers; distinct from MNK,https://nhm.gov.mn/client/en
 MNCN,Museo Nacional de Ciencias Naturales,"Madrid, Spain",NA,https://www.mncn.csic.es/en/colecciones/cientificas/mammals
 MNHN,Museum National d'Histoire Naturelle,"Paris, France",NA,https://science.mnhn.fr/institution/mnhn/search
 MNHNU,Museum National d'Histoire Naturelle,"Paris, France",Catalog prefix MNHNU in MDD type vouchers; same institution as MNHN,https://science.mnhn.fr/institution/mnhn/search

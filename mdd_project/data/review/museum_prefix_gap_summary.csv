@@ -2,7 +2,6 @@ issue_type,voucher_prefix,species_count,related_metadata_abbreviations,example_s
 alias_prefix_missing,CMI,5,CM,Salinomys_delicatus; Akodon_oenos; Phyllotis_pehuenche,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,KURODA,5,KU,Alexandromys_kikuchii; Crocidura_tanakae; Mogera_tokudae,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,BMNH:PV:M,4,BM; BMNH,Crocidura_katinka; Myomimus_roachi; Pennatomys_nivalis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
-alias_prefix_missing,MNK,4,MN,Juscelinomys_huanchacae; Oecomys_sydandersoni; Hylaeamys_acritus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,UFMG,3,UF,Rhipidomys_tribei; Cyclopes_xinguensis; Cyclopes_rufus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,BMNH:MAMM:1855.12.24.185,2,BM; BMNH,Leopardus_pardinoides; Phyllotis_xanthopygus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 alias_prefix_missing,BMNH:MAMM:1907.1.1.339,2,BM; BMNH,Nyctophilus_gouldi; Lyroderma_sinense,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).

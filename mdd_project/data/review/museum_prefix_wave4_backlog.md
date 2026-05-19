@@ -6,14 +6,14 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 ## Current snapshot
 
 - **Completely unmatched vouchers:** 611 species
-- **Prefix gaps in this backlog:** 51 rows
+- **Prefix gaps in this backlog:** 50 rows
 - **Not fixable via metadata:** `UNTRACED` (234) + `LOST` (136) = 370 species
 
 ## Priority legend
 
 | Priority | Meaning |
 |----------|---------|
-| **P4-risky** | Wrong alias would mis-assign museum (CMI/CMN→CM, MNK→MN) |
+| **P4-risky** | Wrong alias would mis-assign museum (for example CMI/CMN→CM) |
 | **P4b-easy-alias** | Likely alias to existing institution; verify then add row |
 | **P4b-variant** | Odd BMNH catalog strings; may need parser or extra alias |
 | **P4c-orphan-high/medium** | No related metadata code; needs institution research (≥3 sp.) |
@@ -31,17 +31,6 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 - **Examples:** Salinomys_delicatus; Akodon_oenos; Phyllotis_pehuenche
 - **Suggested action:** Identify institution per voucher; add CMN (Canadian Museum of Nature) or fix CM row — do NOT alias to Carnegie CM.
 - **Notes:** BLOCKER: CM in metadata = Carnegie Museum (Pittsburgh). Vouchers look South American — likely Canadian Museum of Nature (CMN) or other. Do not alias to CM without verifying institution.
-
-### `MNK` (4 sp.)
-
-- **Priority:** P4-risky
-- **Issue:** alias
-- **On map via shorter code:** 4
-- **Completely unmatched:** 0
-- **Related metadata:** MN
-- **Examples:** Juscelinomys_huanchacae; Oecomys_sydandersoni; Hylaeamys_acritus
-- **Suggested action:** Add MNK row for correct museum; prevents false match to Museu Nacional (MN).
-- **Notes:** BLOCKER: MN now matches Museu Nacional (Rio). MNK vouchers currently mis-match to MN. Add dedicated MNK row after identifying holding museum.
 
 ### `CMN` (2 sp.)
 
