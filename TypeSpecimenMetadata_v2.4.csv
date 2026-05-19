@@ -34,6 +34,7 @@ CSIRO,CSIRO Australian National Wildlife Collection,"Canberra, Australia",Catalo
 CTUA,"Colección Teriológica de la Universidad de Antioquia, Medellín","Medellín, Colombia",Museo de la Universidad de Antioquia (MUA),NA
 CUMV,Cornell University Museum of Vertebrates,"Ithaca, United States of America",NA,https://www.cumv.cornell.edu/cumvcornellmammalogy.html
 CVULA,Colección de Vertebrados de la Universidad de los Andes,"Bogotá, Colombia",NA,https://museo.uniandes.edu.co/index.php/mamiferos
+CVUSB,"Museo de Ciencias Naturales, Universidad Simón Bolívar","Caracas, Venezuela",Catalog prefix CVUSB in MDD type vouchers; Universidad Simón Bolívar vertebrate/mammal collections,http://www.usb.ve/
 CZL,"Centro de Zoologica, Instituto de Investigação Científica Tropical","Lisbon, Portugal",NA,NA
 DM,Durban Natural Science Museum,"Durban, South Africa",Synonyms: DNSM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
 DNSM,Durban Natural Science Museum,"Durban, South Africa",Catalog prefix DNSM in MDD vouchers; same institution as DM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
@@ -59,6 +60,7 @@ FURB,Universidade Regional de Blumenau,"Blumenau, Brazil",Catalog prefix FURB in
 GEC,Grupo de Exploraciones Científicas,"Havana, Cuba",NA,NA
 GBP,Gene Bank of Primates at the German Primate Center,"Göttingen, Germany",Catalog prefix GBP in MDD type vouchers; Deutsches Primatenzentrum tissue/DNA repository,https://www.dpz.eu/en/unit/gene-bank-of-primates/about-us.html
 GIE,Guangdong Institute of Entomology,"Guangzhou, China",Catalog prefix GIE in MDD type vouchers,NA
+GNMG,Grenada National Museum,"St. George's, Grenada",Catalog prefix GNMG/GNM in MDD type vouchers,https://museum.gd/
 GNMT,Georgian National Museum,"Tbilisi, Georgia",Catalog prefix GNMT in MDD type vouchers; related to SGMT/State Georgian Museum,https://museum.ge/index.php?lng=eng&m=2
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University","Guangzhou, China",NA,http://english.gzhu.edu.cn/info/1008/1851.htm
 GZNU,Guizhou Normal University,"Guizhou, China",NA,https://e.gznu.edu.cn/
@@ -110,10 +112,12 @@ MECN,"Museo Ecuatoriano de Ciencias Naturales, Ecuador","Quito, Ecuador",NA,http
 MEPN,"Museo de Historia Natural - Escuela Politécnica Nacional, Ecuador","Quito, Ecuador",NA,https://www.epn.edu.ec/museo-de-historia-natural/
 MF,"Museo di Storia Naturale dell'Università di Firenze","Florence, Italy",Catalog prefix MF in MDD type vouchers,NA
 MG-ZV-M,Mammal Collection of the Museo Provincial de Ciencias Naturales “Dr. Ángel Gallardo”,"Rosario, Argentina",NA,https://www.museogallardo.gob.ar/zoologia.php
+MGR-ZV-M,Mammal Collection of the Museo Provincial de Ciencias Naturales “Dr. Ángel Gallardo”,"Rosario, Argentina",Catalog prefix MGR-ZV-M in MDD type vouchers; same institution as MG-ZV-M,https://www.museogallardo.gob.ar/zoologia.php
 MHN-UCa,Museo de Historia Natural de la Universidad de Caldas,"Manizales, Colombia",NA,
 MHNC,Musée d'Histoire Naturelle de la Chaux-de-Fonds,"La Chaux-de-Fonds, Switzerland",NA,https://www.chaux-de-fonds.ch/musees/mhnc/collections/zoologie
 MHNC-M,Museo de Historia Natural Alcide d'Orbigny de Cochabamba,"Cochabamba, Bolivia",NA,http://museodorbigny.org/?page_id=708
 MHNG,Muséum d'histoire naturelle de la Ville de Genève,"Geneva, Switzerland",NA,http://institutions.ville-geneve.ch/fr/mhn/notre-recherche/collections/
+MHNJSL,Museo de Historia Natural Joseph Sánchez Labrador,"Pilar, Paraguay",Catalog prefix MHNJSL in MDD type vouchers; Hombre y Naturaleza Paraguay mastozoological collection,NA
 MHNLS,Museo de Historia Natural La Salle,"Caracas, Venezuela",NA,https://fundacionlasalle.org.ve/museos-exhibiciones-y-colecciones/
 MHNN,Muséum d'histoire naturelle de Neuchâtel,"Neuchâtel, Switzerland",NA,https://www.museum-neuchatel.ch/collections/
 MHNUCA,Museo de Historia Natural de la Universidad de Caldas,"Manizales, Colombia",Catalog prefix MHNUCa/MHNUCA in MDD type vouchers,https://www.ucaldas.edu.co/
@@ -143,6 +147,7 @@ MUA,Museo de la Universidad de Antioquia,"Medellín, Colombia",Catalog prefix MU
 MUSA,Museo de Historia Natural de la Universidad Nacional de San Agustín,"Arequipa, Peru",NA,NA
 MUSM,"Museo de Historia Natural, Universidad Nacional Mayor de San Marcos","Lima, Peru",NA,https://museohn.unmsm.edu.pe/masto_coleccion.html
 MVZ,"Museum of Vertebrate Zoology, Berkeley","Berkeley, United States of America",NA,https://mvz.berkeley.edu/mvzmamm/
+MZUH,"Finnish Museum of Natural History, University of Helsinki","Helsinki, Finland",Catalog prefix MZUH in MDD type vouchers,https://www.luomus.fi/en
 MZACUT,Museo Regionale di Scienze Naturali di Torino,"Turin, Italy",Catalog prefix MZACUT in MDD type vouchers; historical University of Turin zoological collections,https://mrsntorino.it/en/zoology/
 MZB,Museum Zoologicum Bogoriense,"Bogor, Indonesia",NA,http://www.museumindonesia.com/museum/42/1/Museum_Zoologi_Bogor_Bogor
 MZFC,"Museo de Zoología “Alfonso L. Herrera,” Universidad Nacional Autónoma de México","Mexico City, Mexico",NA,http://mzfcaves.fciencias.unam.mx/
@@ -215,17 +220,20 @@ UIS-MHN-M,e Colección de Mamíferos del Museo de Historia Natural de la Univers
 UIMNH,University of Illinois Museum of Natural History,"Champaign, United States of America",Catalog prefix UIMNH in MDD type vouchers,https://inhs.illinois.edu/collections/mammals/
 UMCZ,Zoological Collection of the University of Mandalay,"Mandalay, Myanmar",NA,https://www.mu.edu.mm/departments/zoology/#
 UMMZ,University of Michigan Museum of Zoology,"Ann Arbor, United States of America",NA,https://lsa.umich.edu/ummz/mammals/collections.html
+UNAH,"Museo de Historia Natural, Universidad Nacional Autónoma de Honduras","Tegucigalpa, Honduras",Catalog prefix UNAH in MDD type vouchers,https://ciencias.unah.edu.hn/
 USAC,"Museo de Historia Natural, Universidad de San Carlos de Guatemala","Guatemala City, Guatemala",Catalog prefix USAC in MDD type vouchers,https://mushnat.usac.edu.gt/
 UNB,Universidade de Brasília,"Brasília, Brazil",Catalog prefix UNB in MDD type vouchers,https://www.unb.br/
 USNM,"National Museum of Natural History, Smithsonian Institution","Washington, D.C., United States of America",United States National Museum,https://collections.nmnh.si.edu/search/mammals/
 UUZM,"Uppsala University, Museum of Evolution, Zoology section","Uppsala, Sweden","Zoological Museum, Museum of Evolution of Uppsala University",http://www.evolutionsmuseet.uu.se/samling/index.html
 UWBM,University of Washington Burke Museum,"Seattle, United States of America",NA,https://www.burkemuseum.org/collections-and-research/biology/mammalogy
+UV,"Colección de Mamíferos, Universidad del Valle","Cali, Colombia",Catalog prefix UV in MDD type vouchers,https://mammalogynotes.org/ojs/index.php/mn/article/view/318
 WAM,Western Australian Museum,"Perth, Australia",NA,https://museum.wa.gov.au/research/collections/bats/mammalogy-mammals-collection
 YIO,Yamashina Institute for Ornithology,"Abiko, Japan",Catalog prefix YIO in MDD type vouchers; Yamashina/Kuroda mammal type material,https://www.yamashina.or.jp/hp/english/
 YPM,Yale Peabody Museum,"New Haven, United States of America",Catalog prefix YPM in MDD type vouchers,https://peabody.yale.edu/collections/vertebrate-zoology/mammalogy
 ZFMK,The Zoological Research Museum Alexander Koenig,"Bonn, Germany",Zoologisches Forschungsmuseum Alexander Koenig,https://www.zfmk.de/en
 ZIN,"Zoological Institute, Russian Academy of Sciences","Saint Petersburg, Russia",NA,https://www.zin.ru/museum/expositions/mammals.html
 ZIUZ,"Zoological Institute, Zagreb University","Zagreb, Croatia",NA,https://www.pmf.unizg.hr/biol/en
+ZBEU,Zonguldak Bülent Ecevit University,"Zonguldak, Turkey",Catalog prefix ZBEU in MDD type vouchers,https://w3.beun.edu.tr/
 ZMH,Zoological Museum Hamburg,"Hamburg, Germany",Catalog prefix ZMH in MDD type vouchers; Zoologisches Museum Hamburg,https://www.cenak.uni-hamburg.de/en/collections/scientific-collections/zoology.html
 ZMA,"Zoölogisch Museum, Amsterdam","Amsterdam, The Netherlands",Merged with RMNH in 2010,https://bioportal.naturalis.nl/
 ZMB,Museum für Naturkunde,"Berlin, Germany",Zoologisches Museum Berlin/Zoological Museum of the Humboldt-University Berlin,https://www.museumfuernaturkunde.berlin/en/science/mammals
@@ -234,6 +242,7 @@ ZMMU,Zoological Museum of the Moscow State University,"Moscow, Russia",NA,http:/
 ZMNTU,"Museum of Zoology, National Taiwan University","Taipei, Taiwan",Catalog prefix ZMNTU in MDD type vouchers,https://webpageprodvm.ntu.edu.tw/ntuzoologyenglish/SiteMap.aspx
 ZMUC,Zoological Museum University of Copenhagen,"Copenhagen, Denmark",Catalog prefix ZMUC in MDD type vouchers,https://snm.ku.dk/english/
 ZMZ,Zoologisches Museum Zürich,"Zürich, Germany",NA,https://www.zm.uzh.ch/de/sammlungen/wissenschaftlichesammlungen.html
+ZMUZ,Zoological Museum of the University of Zurich,"Zurich, Switzerland",Catalog prefix ZMUZ in MDD type vouchers; same institution as ZMZ,https://www.nmz.uzh.ch/en/wissenschaftlichesammlungen/Zoological-collection.html
 ZRC,"Zoological Reference Collection, Lee Kong Chian Natural History Museum","Singapore, Singapore",Catalog prefix ZRC in MDD type vouchers,https://lkcnhm.nus.edu.sg/research/our-collections/
 ZSI,Zoological Survey of India collections at the Indian Museum,"Calcutta, India",Indian Museum,http://www.zsicollections.in/search
 ZSIS,"Zoological Survey of India, North Eastern Regional Centre","Shillong, India",Catalog prefix ZSIS in MDD type vouchers; ZSI Shillong regional centre,https://zsi.gov.in/regional-centres/en?rc=54

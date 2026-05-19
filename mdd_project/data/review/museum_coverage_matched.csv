@@ -30,6 +30,7 @@ ICN,"Colección de Mamíferos Alberto Cadena García, Instituto de Ciencias Natu
 UACH,Colección de Mamíferos de la Universidad Austral de Chile,4,4
 CUNRC,Colección de Mamíferos de la Universidad Nacional de Río Cuarto,1,1
 CNP,Colección de Mamíferos del Centro Nacional Patagónico,3,3
+UV,"Colección de Mamíferos, Universidad del Valle",1,1
 CVULA,Colección de Vertebrados de la Universidad de los Andes,6,5
 CBF,Coleccíon Boliviana de Fauna,1,1
 ALP,"Coleção Adriano Lúcio Peracchi, Universidade Federal Rural do Rio de Janeiro",2,2
@@ -50,12 +51,14 @@ ENCB,Escuela Nacional de Ciencias Biológicas,2,2
 EBD,Estación Biológica de Doñana,7,6
 FES,"Faculty of Environmental Sciences, National University of Laos",1,1
 FMNH,Field Museum of Natural History,250,159
+MZUH,"Finnish Museum of Natural History, University of Helsinki",1,0
 UF,"Florida Museum of Natural History, University of Florida",10,8
 FIPI,Forest Inventory and Planning Institute,2,0
 SMF,Forschungsinstitut und Naturmuseum Senckenberg,56,20
 FMSM,Fukushima City Museum of Natural History,6,0
 GBP,Gene Bank of Primates at the German Primate Center,2,2
 GNMT,Georgian National Museum,4,1
+GNMG,Grenada National Museum,1,1
 GIE,Guangdong Institute of Entomology,1,0
 GUNU,Guizhou Normal University,1,1
 LZH,Hanoi Zoological Museum,2,2
@@ -80,6 +83,7 @@ KUZ,Kyoto University Museum,1,1
 LIEB-M,Laboratorio de Investigaciones en Evolución y Biodiversidad,2,1
 LSUMZ,Louisiana State University Museum of Zoology,11,9
 MMUS,"Macleay Museum, University of Sydney",4,0
+MGR-ZV-M,Mammal Collection of the Museo Provincial de Ciencias Naturales “Dr. Ángel Gallardo”,1,1
 MMK,McGregor Museum,1,1
 MNKG,Mongolian Natural History Museum,1,1
 MACN,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,2,1
@@ -95,13 +99,16 @@ MZACUT,Museo Regionale di Scienze Naturali di Torino,2,0
 MZUA,Museo Universidad del Azuay,1,1
 MBUCV,"Museo de Biología, Universidad Central de Venezuela",3,1
 MBLUZ,"Museo de Biología, Universidad del Zulia",1,1
+CVUSB,"Museo de Ciencias Naturales, Universidad Simón Bolívar",1,1
 MEPN,"Museo de Historia Natural - Escuela Politécnica Nacional, Ecuador",6,6
 MHNC-M,Museo de Historia Natural Alcide d'Orbigny de Cochabamba,1,1
 EPN,"Museo de Historia Natural Gustavo Orcés, Escuela Politécnica Nacional",3,3
+MHNJSL,Museo de Historia Natural Joseph Sánchez Labrador,1,1
 MHNLS,Museo de Historia Natural La Salle,3,2
 MNK,Museo de Historia Natural Noel Kempff Mercado,4,4
 MUSA,Museo de Historia Natural de la Universidad Nacional de San Agustín,7,7
 MHNUCA,Museo de Historia Natural de la Universidad de Caldas,2,2
+UNAH,"Museo de Historia Natural, Universidad Nacional Autónoma de Honduras",1,1
 MUSM,"Museo de Historia Natural, Universidad Nacional Mayor de San Marcos",42,41
 USAC,"Museo de Historia Natural, Universidad de San Carlos de Guatemala",2,2
 MLP,Museo de La Plata,4,3
@@ -194,12 +201,14 @@ UUZM,"Uppsala University, Museum of Evolution, Zoology section",10,1
 WAM,Western Australian Museum,37,34
 YPM,Yale Peabody Museum,2,1
 YIO,Yamashina Institute for Ornithology,2,0
+ZBEU,Zonguldak Bülent Ecevit University,1,1
 LHB,Zoological Collection of the Royal Agricultural University of Berlin,3,0
 ZIN,"Zoological Institute, Russian Academy of Sciences",94,21
 ZMF,Zoological Museum Frankfurt,5,5
 ZMH,Zoological Museum Hamburg,1,0
 ZMUC,Zoological Museum University of Copenhagen,19,2
 ZMMU,Zoological Museum of the Moscow State University,62,26
+ZMUZ,Zoological Museum of the University of Zurich,1,0
 ZRC,"Zoological Reference Collection, Lee Kong Chian Natural History Museum",2,1
 ZSI,Zoological Survey of India collections at the Indian Museum,59,9
 ZSIS,"Zoological Survey of India, North Eastern Regional Centre",2,2

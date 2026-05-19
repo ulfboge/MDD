@@ -19,12 +19,10 @@ ABE,1,no,,Tokudaia_osimensis
 CBK,1,no,,Chiromyscus_langbianis
 CMFA,1,no,CM,Ctenomys_roigi
 CMIN,1,no,CM; CMI,Ctenomys_miguelchristie
-CVUSB-928,1,no,,Aepeomys_reigi
 CWNU,1,no,,Vernaya_foramena
 CZUS,1,no,,Calomyscus_tsolovi
 EPIY,1,no,,Hadromys_yunnanensis
 FCV,1,no,,Pygathrix_cinerea
-GNMG,1,no,,Megalomys_camerhogne
 GHENT,1,no,,Steno_bredanensis
 IBE,1,no,,Uropsilus_funiushanensis
 IZEA,1,no,,Crocidura_hutanis
@@ -39,9 +37,7 @@ MBL,1,no,MBLUZ,Crocidura_nigricans
 MCLPGC,1,no,,Crocidura_canariensis
 MCZR,1,no,MCZ,Fukomys_ilariae
 MFA-ZV-M,1,no,MF,Molossus_paranaensis
-MGR-ZV-M,1,no,,Molossus_melini
 MHNCI,1,no,MHNC,Oxymycterus_itapeby
-MHNJSL,1,no,,Ctenomys_paraguayensis
 MHNLCF,1,no,,Pipistrellus_inexspectatus
 MHNSAAC,1,no,,Mazama_tschudii
 MLZA,1,no,,Myonycteris_brachycephala
@@ -54,7 +50,6 @@ MNHNS,1,no,MN; MNHN,Nannospalax_turcicus
 MUFAL,1,no,,Holochilus_oxe
 MUHNAC/MB01/006000,1,no,,Crocidura_fingui
 MZUCV,1,no,,Rhipidomys_ochoagrateroli
-MZUH,1,no,,Pusa_saimensis
 MARCGRAVE'S,1,no,,Dasypus_novemcinctus
 NAMRU,1,no,,Dobsonia_emersa
 NHMOU.CHI.08.2017,1,no,NHMO,Miniopterus_srinii
@@ -83,9 +78,7 @@ UIS:M:1608,1,no,,Neacomys_serranensis
 UMRCNRS,1,no,,Chimaerodipus_auritus
 UMAZC,1,no,,Murina_hkakaboraziensis
 UMAH,1,no,,Lepilemur_aeeclis
-UNAH,1,no,,Sorex_cruzi
 UPNG,1,no,,Echymipera_echinista
-UV,1,no,,Cynomops_kuizha
 UZDZ,1,no,,Plecotus_kolombatovici
 VG-Q1,1,no,,Octomys_rosiae
 VRC,1,no,,Millardia_kondana
@@ -97,8 +90,6 @@ XZ2023107,1,no,,Murina_chayuensis
 XZ2024037,1,no,,Murina_beibengensis
 XZ2024038,1,no,,Murina_medogensis
 YEREVAN,1,no,,Meriones_dahli
-ZBEU,1,no,,Dryomys_anatolicus
-ZMUZ,1,no,,Rhinolophus_hilli
 ZMVNU,1,no,,Nomascus_annamensis
 FIGURED,1,no,,Trachypithecus_leucocephalus
 LARGER,1,no,,Molossus_molossus
