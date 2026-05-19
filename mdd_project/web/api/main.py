@@ -280,6 +280,45 @@ def get_occurrences(
 
 
 # ---------------------------------------------------------------------------
+# GET /taxonomy/search
+# Autocomplete search for genera or families (returns name + species count)
+# ---------------------------------------------------------------------------
+@app.get("/taxonomy/search", summary="Search genera or families")
+def taxonomy_search(
+    q: str = Query(..., min_length=1, description="Partial name (case-insensitive)"),
+    rank: str = Query("genus", description="Taxonomic rank: 'genus' or 'family'"),
+    limit: int = Query(15, ge=1, le=100),
+) -> list[dict[str, Any]]:
+    """
+    Return distinct genera or families whose name contains ``q`` (ILIKE),
+    together with the count of accepted species in each.
+
+    Example::
+
+        GET /taxonomy/search?q=gala&rank=genus
+        GET /taxonomy/search?q=ursid&rank=family
+    """
+    if rank not in ("genus", "family"):
+        from fastapi import HTTPException as _HTTPException
+        raise _HTTPException(status_code=422, detail="rank must be 'genus' or 'family'")
+
+    col = "genus" if rank == "genus" else "family"
+    sql = f"""
+        SELECT
+            {col} AS name,
+            COUNT(*) AS species_count
+        FROM species
+        WHERE {col} ILIKE ?
+        GROUP BY {col}
+        ORDER BY {col}
+        LIMIT ?
+    """
+    with _get_conn() as conn:
+        rows = _rows_to_dicts(conn, sql, [f"%{q}%", limit])
+    return [{"rank": rank, "name": r["name"], "species_count": r["species_count"]} for r in rows]
+
+
+# ---------------------------------------------------------------------------
 # GET /type-localities
 # Export type localities as GeoJSON FeatureCollection for the web map
 # ---------------------------------------------------------------------------
@@ -287,6 +326,7 @@ def get_occurrences(
 def get_type_localities(
     order: str | None = Query(None, description="Filter by order"),
     family: str | None = Query(None, description="Filter by family"),
+    genus: str | None = Query(None, description="Filter by genus"),
     species: str | None = Query(
         None,
         description=(
@@ -320,6 +360,9 @@ def get_type_localities(
     if family:
         conditions.append("family ILIKE ?")
         params.append(f"%{family}%")
+    if genus:
+        conditions.append("genus ILIKE ?")
+        params.append(f"%{genus}%")
 
     where = "WHERE " + " AND ".join(conditions)
     # Note: the species table has no type_country column (that column lives on

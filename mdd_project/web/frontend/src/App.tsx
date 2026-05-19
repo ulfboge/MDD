@@ -11,6 +11,8 @@ import "./App.css";
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
+type Rank = "species" | "genus" | "family";
+
 interface SpeciesRecord {
   species_id: number;
   sci_name: string;
@@ -24,6 +26,12 @@ interface SpeciesRecord {
   type_lon: number | null;
   type_locality: string | null;
   country_distribution: string | null;
+}
+
+interface TaxonResult {
+  rank: "genus" | "family";
+  name: string;
+  species_count: number;
 }
 
 interface OccurrenceMeta {
@@ -116,9 +124,12 @@ export default function App() {
   // Mirror of `selected` in a ref so effects can read it without stale closures.
   const selectedRef = useRef<SpeciesRecord | null>(null);
 
+  const [rank, setRank] = useState<Rank>("species");
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<SpeciesRecord[]>([]);
+  const [taxonSuggestions, setTaxonSuggestions] = useState<TaxonResult[]>([]);
   const [selected, setSelected] = useState<SpeciesRecord | null>(null);
+  const [selectedTaxon, setSelectedTaxon] = useState<TaxonResult | null>(null);
   const [occurrenceMeta, setOccurrenceMeta] = useState<OccurrenceMeta | null>(null);
   const [loadingOcc, setLoadingOcc] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -339,24 +350,30 @@ export default function App() {
     }
   }, [showAllTypeLocalities]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ── Species search ────────────────────────────────────────────────────────
-  const handleQueryChange = useCallback(async (value: string) => {
+  // ── Search (species / genus / family) ────────────────────────────────────
+  const handleQueryChange = useCallback(async (value: string, currentRank: Rank) => {
     setQuery(value);
     setError(null);
-    if (value.length < 3) {
-      setSuggestions([]);
-      return;
-    }
+    setSuggestions([]);
+    setTaxonSuggestions([]);
+    if (value.length < 2) return;
     try {
-      const results = await fetchJson<SpeciesRecord[]>(`${API}/species?limit=10`);
-      const q = value.toLowerCase();
-      setSuggestions(
-        results.filter(
-          (r) =>
-            r.sci_name.toLowerCase().includes(q) ||
-            (r.main_common_name ?? "").toLowerCase().includes(q)
-        )
-      );
+      if (currentRank === "species") {
+        const results = await fetchJson<SpeciesRecord[]>(`${API}/species?limit=10`);
+        const q = value.toLowerCase();
+        setSuggestions(
+          results.filter(
+            (r) =>
+              r.sci_name.toLowerCase().includes(q) ||
+              (r.main_common_name ?? "").toLowerCase().includes(q)
+          )
+        );
+      } else {
+        const results = await fetchJson<TaxonResult[]>(
+          `${API}/taxonomy/search?q=${encodeURIComponent(value)}&rank=${currentRank}`
+        );
+        setTaxonSuggestions(results);
+      }
     } catch {
       setError("Search failed — is the API running?");
     }
@@ -377,8 +394,10 @@ export default function App() {
 
   const selectSpecies = useCallback(async (sp: SpeciesRecord) => {
     setSelected(sp);
+    setSelectedTaxon(null);
     selectedRef.current = sp;
     setSuggestions([]);
+    setTaxonSuggestions([]);
     setQuery(sp.sci_name_space ?? sp.sci_name);
     setError(null);
     setOccurrenceMeta(null);
@@ -440,12 +459,66 @@ export default function App() {
     }
   }, []);
 
-  // ── Clear selected species and restore global view ────────────────────────
-  const clearSpecies = useCallback(() => {
+  // ── Select a genus or family — load all member type localities ───────────
+  const selectTaxon = useCallback(async (t: TaxonResult) => {
+    setSelectedTaxon(t);
     setSelected(null);
+    selectedRef.current = null;
+    setSuggestions([]);
+    setTaxonSuggestions([]);
+    setQuery(t.name);
+    setError(null);
+    setOccurrenceMeta(null);
+    setShowAllTypeLocalities(false);
+
+    const map = mapRef.current;
+    if (!map) return;
+
+    // Clear GBIF occurrences (loaded per-species only)
+    (map.getSource(SRC_OCCURRENCES) as GeoJSONSource).setData({
+      type: "FeatureCollection",
+      features: [],
+    });
+
+    // Load type localities for every species in this taxon
+    const paramKey = t.rank === "genus" ? "genus" : "family";
+    try {
+      const fc = await fetchJson<TypeLocFC>(
+        `${API}/type-localities?${paramKey}=${encodeURIComponent(t.name)}&limit=2000`
+      );
+      (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
+        fc as Parameters<GeoJSONSource["setData"]>[0]
+      );
+      setTypeLocalityCount(fc.meta.count);
+
+      // Fit map bounds to the loaded features
+      const coords = (fc.features as Array<{ geometry: { coordinates: [number, number] } }>)
+        .map((f) => f.geometry.coordinates)
+        .filter((c) => c && c.length === 2);
+      if (coords.length) {
+        const lngs = coords.map((c) => c[0]);
+        const lats = coords.map((c) => c[1]);
+        map.fitBounds(
+          [
+            [Math.min(...lngs), Math.min(...lats)],
+            [Math.max(...lngs), Math.max(...lats)],
+          ],
+          { padding: 80, maxZoom: 6, duration: 1200 }
+        );
+      }
+    } catch {
+      setError(`Failed to load type localities for ${t.rank} "${t.name}"`);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // ── Clear selection and restore global view ───────────────────────────────
+  const clearAll = useCallback(() => {
+    setSelected(null);
+    setSelectedTaxon(null);
     selectedRef.current = null;
     setQuery("");
     setSuggestions([]);
+    setTaxonSuggestions([]);
     setOccurrenceMeta(null);
     setShowAllTypeLocalities(false);
     setError(null);
@@ -470,10 +543,11 @@ export default function App() {
   }, []);
 
   // ── Derived display values ────────────────────────────────────────────────
-  const typeLocLayerLabel =
-    selected && !showAllTypeLocalities
-      ? "Type locality (selected species)"
-      : "All MDD type localities";
+  const typeLocLayerLabel = selectedTaxon
+    ? `Type localities — ${selectedTaxon.name} (${typeLocalityCount})`
+    : selected && !showAllTypeLocalities
+    ? "Type locality (selected species)"
+    : "All MDD type localities";
 
   // ── Render ────────────────────────────────────────────────────────────────
   return (
@@ -487,26 +561,56 @@ export default function App() {
 
         {/* Search */}
         <section className="section">
-          <label className="section-label">Species search</label>
+          <label className="section-label">Search</label>
+
+          {/* Rank selector */}
+          <div className="rank-selector">
+            {(["species", "genus", "family"] as const).map((r) => (
+              <button
+                key={r}
+                className={`rank-btn${rank === r ? " rank-btn-active" : ""}`}
+                onClick={() => {
+                  if (rank === r) return;
+                  setRank(r);
+                  setQuery("");
+                  setSuggestions([]);
+                  setTaxonSuggestions([]);
+                  setError(null);
+                  if (selected || selectedTaxon) clearAll();
+                }}
+              >
+                {r.charAt(0).toUpperCase() + r.slice(1)}
+              </button>
+            ))}
+          </div>
+
           <div className="search-wrap">
             <div className="search-input-row">
               <input
                 className="search-input"
                 type="text"
-                placeholder="e.g. Ursus arctos, galago…"
+                placeholder={
+                  rank === "species"
+                    ? "e.g. Ursus arctos, galago…"
+                    : rank === "genus"
+                    ? "e.g. Ursus, Galago…"
+                    : "e.g. Ursidae, Galagidae…"
+                }
                 value={query}
-                onChange={(e) => handleQueryChange(e.target.value)}
+                onChange={(e) => handleQueryChange(e.target.value, rank)}
                 onKeyDown={(e) => {
-                  if (e.key === "Enter") handleSearchSubmit(query);
+                  if (e.key === "Enter" && rank === "species") handleSearchSubmit(query);
                 }}
               />
-              {selected && (
-                <button className="clear-btn" onClick={clearSpecies} title="Clear selection">
+              {(selected || selectedTaxon) && (
+                <button className="clear-btn" onClick={clearAll} title="Clear selection">
                   ×
                 </button>
               )}
             </div>
-            {suggestions.length > 0 && (
+
+            {/* Species autocomplete */}
+            {rank === "species" && suggestions.length > 0 && (
               <ul className="suggestions">
                 {suggestions.map((s) => (
                   <li key={s.species_id} onClick={() => selectSpecies(s)}>
@@ -515,6 +619,18 @@ export default function App() {
                       <span className="sug-common">{s.main_common_name}</span>
                     )}
                     <span className="sug-family">{s.family}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {/* Genus / family autocomplete */}
+            {rank !== "species" && taxonSuggestions.length > 0 && (
+              <ul className="suggestions">
+                {taxonSuggestions.map((t) => (
+                  <li key={`${t.rank}-${t.name}`} onClick={() => selectTaxon(t)}>
+                    <span className="sug-sci">{t.name}</span>
+                    <span className="sug-common">{t.species_count} species</span>
                   </li>
                 ))}
               </ul>
@@ -581,6 +697,27 @@ export default function App() {
           </section>
         )}
 
+        {/* Taxon (genus / family) summary card */}
+        {selectedTaxon && (
+          <section className="section species-card">
+            <div className="taxon-rank-label">
+              {selectedTaxon.rank === "genus" ? "Genus" : "Family"}
+            </div>
+            <div className="species-sci">{selectedTaxon.name}</div>
+            <div className="taxon-species-count">
+              {selectedTaxon.species_count} species
+            </div>
+            <p className="type-locality-text">
+              Showing type localities for all species in this {selectedTaxon.rank}.
+            </p>
+            <div className="occ-status">
+              <span className="occ-empty">
+                GBIF occurrences are loaded per species — select a species to import.
+              </span>
+            </div>
+          </section>
+        )}
+
         {/* Layer toggles */}
         <section className="section">
           <label className="section-label">Layers</label>
@@ -599,7 +736,7 @@ export default function App() {
             <span className="layer-count">{typeLocalityCount.toLocaleString()}</span>
           </div>
 
-          {/* "Show all" sub-toggle — only appears when a species is selected */}
+          {/* "Show all" sub-toggle — only in single-species mode */}
           {selected && (
             <div className="layer-row layer-sub">
               <label className="toggle toggle-sub">
@@ -614,14 +751,20 @@ export default function App() {
             </div>
           )}
 
-          {/* Help text when in species mode */}
+          {/* Help text when in single-species mode */}
           {selected && !showAllTypeLocalities && (
             <p className="type-loc-help">
               Type locality = holotype collection site. One per accepted species in MDD.
             </p>
           )}
-          {/* Hint in global (no species selected) mode */}
-          {!selected && (
+          {/* Taxon hint */}
+          {selectedTaxon && (
+            <p className="layer-hint">
+              Type localities for all species in {selectedTaxon.rank} {selectedTaxon.name} · coloured by IUCN status
+            </p>
+          )}
+          {/* Global hint (nothing selected) */}
+          {!selected && !selectedTaxon && (
             <p className="layer-hint">~1,941 species have geocoded coords in MDD v2.4 · coloured by IUCN status</p>
           )}
 
