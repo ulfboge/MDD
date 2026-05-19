@@ -6,6 +6,7 @@ Generated review files for MDD type-specimen museum prefix matching.
 
 | File | Description |
 |------|-------------|
+| `mn_vouchers_for_review.csv` | **54 species** with ambiguous `MN` voucher prefix (manual museum review). |
 | `museum_prefix_priority_backlog.csv` | **Prioritized backlog** of museum prefixes to add/fix in metadata (P1–P4). |
 | `nhrm_type_specimens_missing_coords_geocoded.csv` | Proposed coordinates for 18 NHRM specimens (pending NRM review; not imported to MDD). |
 | `museum_coverage_matched.csv` | **108 museums** that appear in the web app filter (≥1 matched type voucher). |
