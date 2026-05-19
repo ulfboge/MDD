@@ -1,0 +1,81 @@
+issue_type,voucher_prefix,species_count,related_metadata_abbreviations,example_species,notes
+alias_prefix_missing,MN,53,MNCN; MNHN; MNHNC; MNZ,Rhipidomys_cariri; Trinomys_moojeni; Cryptonanus_agricolai,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH,19,BM,Ctenodactylus_vali; Ctenomys_dorsalis; Olallamys_albicauda,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,MACN-MA,17,MACN,Phocoena_dioptrica; Phyllotis_bonariensis; Balaenoptera_bonaerensis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,NMPR,15,NMP,Rhinolophus_horaceki; Myotis_hyrcanicus; Alionoctula_dhofarensis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,NSMT-M,15,NSMT,Craseomys_rex; Nyctalus_furvus; Sorex_hosonoi,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,CML,9,CM; CML ,Neoeptesicus_ulapesensis; Nyctinomops_mbopicuare; Tympanoctomys_loschalchalerosorum,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,CMI,5,CM,Salinomys_delicatus; Akodon_oenos; Phyllotis_pehuenche,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,KURODA,5,KU,Alexandromys_kikuchii; Crocidura_tanakae; Mogera_tokudae,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,NMPH,5,NMP,Ptenochirus_minor; Apomys_gracilirostris; Crateromys_heaneyi,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:PV:M,4,BM,Crocidura_katinka; Myomimus_roachi; Pennatomys_nivalis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,DMNH,4,DM,Rattus_tawitawiensis; Podogymnura_aureospinula; Batomys_russatus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,MNHNU,4,MNHN,Leopardus_fasciatus; Akodon_reigi; Oxymycterus_josei,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,UFMG,3,UF,Rhipidomys_tribei; Cyclopes_xinguensis; Cyclopes_rufus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:MAMM:1855.12.24.185,2,BM,Leopardus_pardinoides; Phyllotis_xanthopygus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:MAMM:1907.1.1.339,2,BM,Nyctophilus_gouldi; Lyroderma_sinense,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:MAMM:22A,2,BM,Hipposideros_fulvus; Sekeetamys_calurus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNH:PV:OR,2,BM,Alticola_roylei; Lasiorhinus_krefftii,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,BMNHC,2,BM,Arborimus_pomo; Sorex_rohweri,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,CMN,2,CM,Phenacomys_intermedius; Dicrostonyx_nunatakensis,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,MNHN-ZM-MO-1867-146,2,MNHN,Cricetulus_longicaudatus; Lasiopodomys_mandarinus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,NU,2,NUPECCE,Nannospalax_karyominor; Nannospalax_colaki,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,OUM,2,OUMNH,Ceratotherium_simum; Mesoplodon_bidens,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,TTU-M,2,TTU,Lepilemur_hollandorum; Cheirogaleus_grovesi,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,UFRGS,2,UF,Ctenomys_lami; Ctenomys_flamarioni,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+alias_prefix_missing,ZSIS,2,ZSI,Myotis_himalaicus; Glischropus_meghalayanus,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
+prefix_not_in_metadata,SAF,26,,Neodon_medogensis; Neodon_minor; Soriculus_dexingensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,ZMUC,19,,Blarinomys_breviceps; Saimiri_oerstedii; Rhinopoma_microphyllum,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,MTD,18,,Mops_sarasinorum; Rattus_feileri; Rattus_taliabuensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,BIZ,10,,Crocidura_wuchihensis; Orientallactaga_balikunica; Dobsonia_viridis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,DNSM,8,,Rhinolophus_mabuensis; Pseudoromicia_roseveari; Miniopterus_nimbae,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,UCLA,8,,Peromyscus_stirtoni; Peromyscus_cordillerae; Peromyscus_salvadorensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,CNMA,7,,Peromyscus_purepechus; Habromys_delicatulus; Cryptotis_woodmani,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,AHUB,6,,Chodsigoa_dabieshanensis; Moschus_anhuiensis; Uropsilus_dabieshanensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,CSIRO,6,,Petrogale_coenensis; Petrogale_inornata; Petrogale_mareeba,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,FMSM,6,,Crunomys_inflatus; Crunomys_hylomyoides; Rattus_korinchi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,MF,6,,Sciurus_meridionalis; Crocidura_greenwoodi; Huetia_tytonis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,IES,5,,Mesocapromys_auritus; Capromys_garridoi; Mesocapromys_sanfelipensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,TNRC,5,,Leopoldamys_neilli; Rhinolophus_marshalli; Hipposideros_lekaguli,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,ZMF,5,,Crocidura_darvishi; Calomyscus_kiabii; Calomyscus_darvishi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,GNMT,4,,Microtus_transcaspicus; Nannospalax_nehringi; Microtus_schelkovnikovi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,KM,4,,Petromyscus_barbouri; Cryptochloris_zyli; Chrysochloris_visagiei,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,MMUS,4,,Dendrolagus_dorianus; Petrogale_assimilis; Dorcopsulus_macleayi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,MNK,4,,Juscelinomys_huanchacae; Oecomys_sydandersoni; Hylaeamys_acritus,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,UANT,4,,Laephotis_robertsi; Voalavo_antsahabensis; Scotophilus_tandrefana,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,ULPS,4,,Avahi_meridionalis; Avahi_peyrierasi; Avahi_ramanantsoavani,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,ZMNTU,4,,Murina_gracilis; Harpiola_isodon; Murina_bicolor,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,AHNU,3,,Parablarinella_latimaxillata; Uropsilus_huanggangensis; Mesechinus_orientalis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,CNM,3,,Miniopterus_phillipsi; Hipposideros_srilankaensis; Mesoplodon_hotaula,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,CNP,3,,Tympanoctomys_kirchnerorum; Oecomys_franciscorum; Akodon_philipmyersi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,EPN,3,,Lonchophylla_orcesi; Anoura_fistulata; Sturnira_koopmanhilli,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,ISAM,3,,Eremitalpa_granti; Cryptochloris_wintoni; Chlorotalpa_sclateri,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,IZH,3,,Sigmodon_hirsutus; Gracilinanus_agilis; Molossops_temminckii,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,LHB,3,,Nannospalax_hungaricus; Mesocricetus_newtoni; Spalax_giganteus,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,NMNZ,3,,Mystacina_robusta; Mesoplodon_traversii; Mesoplodon_eueu,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,OMUS,3,,Spermophilus_taurensis; Microtus_dogramacii; Talpa_hakkariensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,SCNU,3,,Crocidura_zhadaensis; Crocidura_medogensis; Typhlomys_fengjiensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,SZM,3,,Spermophilus_vorontsovi; Sorex_camtschaticus; Marmota_kastschenkoi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,ALP,2,,Myotis_izecksohni; Dryadonycteris_capixaba,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,BOHMANN,2,,Otomys_zinki; Otomys_sungae,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,BUFFON'S,2,,Sciurillus_pusillus; Civettictis_civetta,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,DU,2,,Nannospalax_garzanensis; Nannospalax_tuncelicus,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,FIPI,2,,Pseudoryx_nghetinhensis; Muntiacus_vuquangensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,FURB,2,,Scapteromys_meridionalis; Deltamys_araucaria,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,GBP,2,,Microcebus_lehilahytsara; Lepilemur_randrianasoloi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,IDSM,2,,Saguinus_kulina; Cacajao_amuna,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,IRSNB,2,,Micropotamogale_ruwenzorii; Gerbillus_syrticus,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,IZK,2,,Selevinia_betpakdalaensis; Sicista_pseudonapaea,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,LZH,2,,Xanthonycticebus_intermedius; Trachypithecus_hatinhensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,LINNMUS,2,,Talpa_europaea; Sciurus_vulgaris,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,MHNUCA,2,,Neoeptesicus_orinocensis; Coendou_vossi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,MUA,2,,Saccopteryx_antioquensis; Carollia_monohernandezi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,MZACUT,2,,Sorex_antinorii; Mops_aloysiisabaudiae,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,NHMBZ,2,,Rhinolophus_sakejiensis; Rhinolophus_smithersi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,NNPM,2,,Spalax_arenarius; Apodemus_ponticus,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,TIHO,2,,Lepilemur_otto; Microcebus_jonahi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,UIMNH,2,,Chiropodomys_calamianensis; Peromyscus_hooperi,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,USAC,2,,Peromyscus_bakeri; Peromyscus_gardneri,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,YIO,2,,Sorex_leucogaster; Anourosorex_yamashinai,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,YPM,2,,Cuscomys_oblativus; Cercopithecus_lomamiensis,Voucher prefix not in metadata; no related abbreviation detected.
+prefix_not_in_metadata,ZRC,2,,Trachypithecus_selangorensis; Arctonyx_hoevenii,Voucher prefix not in metadata; no related abbreviation detected.
