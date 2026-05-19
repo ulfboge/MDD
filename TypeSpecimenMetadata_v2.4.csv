@@ -90,7 +90,8 @@ NMSL,"The National Museum of Sri Lanka, Colombo","Colombo, Sri Lanka",National M
 NMV,Museums Victoria,"Melbourne, Australia",NA,https://collections.museumsvictoria.com.au/
 NMW,Naturhistorisches Museum Wien,"Vienna, Austria",NA,https://www.nhm-wien.ac.at/en/research/1_zoology_vertebrates/mammal_collection
 NMZB,Natural History Museum of Zimbabwe,"Bulawayo, Zimbabwe",NA,https://naturalhistorymuseumzimbabwe.com/mammology/
-NR,Naturhistoriska Riksmuseum,"Stockholm, Sweden",NA,https://www.nrm.se/forskningochsamlingar/zoologi.9000585.html
+NHRM,Naturhistoriska riksmuseet,"Stockholm, Sweden",Catalog prefix used in MDD type vouchers; same institution as NR and RNHM,https://www.nrm.se/forskningochsamlingar/zoologi.9000585.html
+NR,Naturhistoriska Riksmuseum,"Stockholm, Sweden",Synonyms: NHRM; RNHM,https://www.nrm.se/forskningochsamlingar/zoologi.9000585.html
 NSMT,National Museum of Nature and Science,"Tokyo, Japan",NA,https://www.kahaku.go.jp/english/institution/specimen/index.html
 NTU,National Taiwan University,"Taipei, Taiwan",NA,http://www.museums.ntu.edu.tw/english/museums_zoology.jsp
 NUPECCE,Museum of the Deer Research and Conservation Center at Sao Paulo State University,"Jaboticabal, Brazil",NA,https://nupecce.wixsite.com/nupecce?lang=en
@@ -103,7 +104,7 @@ QCAZ,"El Museo de Zoología, Pontificia Universidad Católica del Ecuador","Quit
 QM,Queensland Museum,"South Brisbane, Australia",NA,https://www.qm.qld.gov.au/Explore/Collections/Biodiversity+and+Geosciences/Biodiversity+Collections/Mammals+birds+reptiles+and+amphibians
 RMCA,Royal Museum for Central Africa,"Tervuren, Belgium",NA,https://www.africamuseum.be/en/research/collections_libraries/biology/collections
 RMNH,Naturalis Biodiversity Center,"Leiden, The Netherlands",Rijksmuseum van Natuurlijke Historie,https://bioportal.naturalis.nl/
-RNHM,"Royal Natural History Museum, Stockholm","Stockholm, Sweden",,
+RNHM,"Royal Natural History Museum, Stockholm","Stockholm, Sweden",Synonym of NHRM / NR (Naturhistoriska riksmuseet),
 ROM,Royal Ontario Museum,"Toronto, Canada",NA,https://collections.rom.on.ca/?_ga=2.143418229.1984832703.1613055521-1445187006.1613055521
 SAMA,South Australian Museum,"Adelaide, Australia",NA,https://www.samuseum.sa.gov.au/collection/biological-sciences-collection
 SGMT,State Georgian Museum,"Tbilisi, Georgia",NA,http://museum.ge/index.php?lang_id=GEO&sec_id=120
