@@ -66,6 +66,7 @@ IES,Institute of Ecology and Systematics,"Havana, Cuba",Catalog prefix IES in MD
 IAVH,"Instituto de Investigación de Recursos Biológicos Alexander von Humboldt","Villa de Leyva, Colombia",Catalog prefix IAvH/IAVH in MDD type vouchers,https://www.humboldt.org.co/
 INPA,National Research Institute of the Amazon,"Manaus, Brazil",NA,https://www.inpa.gov.br/english/
 IOZCAS,"Institute of Zoology, Chinese Academy of Sciences","Beijing, China",Synonyms: BIZ,http://english.ioz.cas.cn/
+IPHAS,Ili Prefecture Health and Antiepidemic Station,"Yining, China",Catalog prefix IPHAS in MDD type vouchers for Ili pika type material,NA
 IRSNB,Royal Belgian Institute of Natural Sciences,"Brussels, Belgium",Catalog prefix IRSNB in MDD type vouchers; Institut Royal des Sciences Naturelles de Belgique,https://www.naturalsciences.be/
 ISAM,Iziko South African Museum,"Cape Town, South Africa",Catalog prefix ISAM in MDD type vouchers; South African Museum mammal collection,https://www.iziko.org.za/museums/south-african-museum/
 IZK,Institute of Zoology of Kazakhstan,"Almaty, Kazakhstan",Catalog prefix IZK in MDD type vouchers,https://zool.kz/en/
@@ -100,6 +101,7 @@ MHNLS,Museo de Historia Natural La Salle,"Caracas, Venezuela",NA,https://fundaci
 MHNN,Muséum d'histoire naturelle de Neuchâtel,"Neuchâtel, Switzerland",NA,https://www.museum-neuchatel.ch/collections/
 MHNUCA,Museo de Historia Natural de la Universidad de Caldas,"Manizales, Colombia",Catalog prefix MHNUCa/MHNUCA in MDD type vouchers,https://www.ucaldas.edu.co/
 MHNSR,Museo Municipal de Historia Natural de San Rafael,"San Rafael, Argentina",NA,http://www.sanrafael.gov.ar/museos/museo-historia-natural/
+MIZ,Museum and Institute of Zoology Polish Academy of Sciences,"Warsaw, Poland",Catalog prefix MIZ in MDD type vouchers,https://miiz.waw.pl/en/
 MIZH,Museum and Zoological Institute of the University Halle,"Halle, Germany",NA,https://www.uni-halle.de/central_institutions/?lang=en
 MLP,Museo de La Plata,"La Plata, Argentina",NA,https://www.museo.fcnym.unlp.edu.ar/div_zoovertebrados
 MMK,McGregor Museum,"Kimberley, South Africa",NA,https://www.museumsnc.co.za/aboutus/depts/zoology/zoology.html#zoocollect
@@ -115,6 +117,8 @@ NMNZ,"Museum of New Zealand, Te Papa Tongarewa","Wellington, New Zealand",Catalo
 MPEG,Museu Paraense Emílio Goeldi,"Belém, Brazil",NA,https://www.museu-goeldi.br/assuntos/colecoes/biologicas/colecoes-de-zoologica/colecao-de-mastozoologia
 MSB,Museum of Southwestern Biology,"Albuquerque, New Mexico",NA,http://www.msb.unm.edu/divisions/mammals/index.html
 MSNG,Museum of Natural History “Giacomo Doria” (Museo Civico di Storia Naturale Giacomo Doria),"Genoa, Italy",NA,http://www.museidigenova.it/it/content/museo-di-storia-naturale
+MSNM,Museo Civico di Storia Naturale di Milano,"Milan, Italy",Catalog prefix MSNM in MDD type vouchers,https://museodistorianaturalemilano.it/
+MRSN,Museo Regionale di Scienze Naturali di Torino,"Turin, Italy",Catalog prefix MRSN in MDD type vouchers; same institution as MZACUT,https://mrsntorino.it/en/zoology/
 MTQ,Museum of Tropical Queensland,"Townsville, Australia",NA,https://mtq.qm.qld.gov.au/Collections
 MTD,Senckenberg Museum für Tierkunde Dresden,"Dresden, Germany",Catalog prefix MTD in MDD type vouchers; Senckenberg Dresden,https://senckenberg.de/
 MUA,Museo de la Universidad de Antioquia,"Medellín, Colombia",Catalog prefix MUA in MDD type vouchers; same institution as CTUA,https://www.udea.edu.co/wps/portal/udea/web/inicio/cultura/museo-universitario
@@ -194,6 +198,7 @@ UIMNH,University of Illinois Museum of Natural History,"Champaign, United States
 UMCZ,Zoological Collection of the University of Mandalay,"Mandalay, Myanmar",NA,https://www.mu.edu.mm/departments/zoology/#
 UMMZ,University of Michigan Museum of Zoology,"Ann Arbor, United States of America",NA,https://lsa.umich.edu/ummz/mammals/collections.html
 USAC,"Museo de Historia Natural, Universidad de San Carlos de Guatemala","Guatemala City, Guatemala",Catalog prefix USAC in MDD type vouchers,https://mushnat.usac.edu.gt/
+UNB,Universidade de Brasília,"Brasília, Brazil",Catalog prefix UNB in MDD type vouchers,https://www.unb.br/
 USNM,"National Museum of Natural History, Smithsonian Institution","Washington, D.C., United States of America",United States National Museum,https://collections.nmnh.si.edu/search/mammals/
 UUZM,"Uppsala University, Museum of Evolution, Zoology section","Uppsala, Sweden","Zoological Museum, Museum of Evolution of Uppsala University",http://www.evolutionsmuseet.uu.se/samling/index.html
 UWBM,University of Washington Burke Museum,"Seattle, United States of America",NA,https://www.burkemuseum.org/collections-and-research/biology/mammalogy

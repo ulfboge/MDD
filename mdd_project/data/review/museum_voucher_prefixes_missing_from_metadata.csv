@@ -47,7 +47,6 @@ HDZ,1,no,,Cheirogaleus_andysabini
 IBE,1,no,,Uropsilus_funiushanensis
 IBVAST,1,no,,Euroscaptor_darwini
 IFAN,1,no,,Miniopterus_villiersi
-IPHAS,1,no,,Ochotona_iliensis
 IZEA,1,no,,Crocidura_hutanis
 JAG,1,no,,Miniopterus_wilsoni
 JGUM,1,no,,Cheirogaleus_lavasoensis
@@ -71,7 +70,6 @@ MHNCI,1,no,MHNC,Oxymycterus_itapeby
 MHNJSL,1,no,,Ctenomys_paraguayensis
 MHNLCF,1,no,,Pipistrellus_inexspectatus
 MHNSAAC,1,no,,Mazama_tschudii
-MIZ,1,no,MIZH,Cuniculus_taczanowskii
 MLZA,1,no,,Myonycteris_brachycephala
 MMNH,1,no,,Mus_macedonicus
 MMP,1,no,,Ctenomys_scagliai
@@ -80,8 +78,6 @@ MNHNCL,1,no,MN; MNHN; MNHNC,Eligmodontia_puerulus
 MNHNCL:MAMM:1546,1,no,MN; MNHN; MNHNC,Eligmodontia_dunaris
 MNHNH,1,no,MN; MNHN,Atopogale_arredondoi
 MNHNS,1,no,MN; MNHN,Nannospalax_turcicus
-MRSN,1,no,,Arvicola_persicus
-MSNM,1,no,,Leopardus_jacobita
 MUFAL,1,no,,Holochilus_oxe
 MUHNAC/MB01/006000,1,no,,Crocidura_fingui
 MZUCV,1,no,,Rhipidomys_ochoagrateroli
@@ -115,7 +111,6 @@ UMRCNRS,1,no,,Chimaerodipus_auritus
 UMAZC,1,no,,Murina_hkakaboraziensis
 UMAH,1,no,,Lepilemur_aeeclis
 UNAH,1,no,,Sorex_cruzi
-UNB,1,no,,Phyllomys_centralis
 UPNG,1,no,,Echymipera_echinista
 UV,1,no,,Cynomops_kuizha
 UZDZ,1,no,,Plecotus_kolombatovici
