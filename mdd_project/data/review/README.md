@@ -6,6 +6,7 @@ Generated review files for MDD type-specimen museum prefix matching.
 
 | File | Description |
 |------|-------------|
+| `museum_prefix_priority_backlog.csv` | **Prioritized backlog** of museum prefixes to add/fix in metadata (P1–P4). |
 | `nhrm_type_specimens_missing_coords_geocoded.csv` | Proposed coordinates for 18 NHRM specimens (pending NRM review; not imported to MDD). |
 | `museum_coverage_matched.csv` | **108 museums** that appear in the web app filter (≥1 matched type voucher). |
 | `museum_metadata_zero_matches.csv` | **31 institutions** listed in `TypeSpecimenMetadata_v2.4.csv` but with **zero** voucher matches. |
