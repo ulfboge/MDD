@@ -426,7 +426,7 @@ def type_locality_coverage_countries() -> list[dict[str, Any]]:
         FROM species_with_museum
         WHERE museum_country IS NOT NULL AND TRIM(museum_country) <> ''
         GROUP BY museum_country
-        ORDER BY with_type_voucher DESC, country
+        ORDER BY country
     """
     with _get_conn() as conn:
         return _rows_to_dicts(conn, sql)
@@ -461,7 +461,7 @@ def type_locality_coverage_museums(
         FROM species_with_museum
         {where}
         GROUP BY museum_abbreviation
-        ORDER BY with_type_voucher DESC, abbreviation
+        ORDER BY full_name, abbreviation
     """
     with _get_conn() as conn:
         return _rows_to_dicts(conn, sql, params)
