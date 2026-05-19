@@ -9,7 +9,7 @@ Interactive web map for the Mammal Diversity Database.
 | Build | Vite 6 + TypeScript |
 | UI | React 18 |
 | Map | MapLibre GL JS 5 |
-| Basemap | OpenStreetMap tiles (no API key) |
+| Basemap | CARTO Positron light (no API key) |
 | API | FastAPI proxy at `/api/*` → `:8000` |
 
 ## Getting started

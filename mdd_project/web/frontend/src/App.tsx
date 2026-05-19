@@ -110,6 +110,12 @@ const SRC_OCCURRENCES = "occurrences";
 const LYR_TYPE_LOC = "type-localities-circle";
 const LYR_OCCURRENCES = "occurrences-circle";
 
+// Neutral light basemap — keeps IUCN / GBIF colours readable vs colourful OSM
+const BASEMAP_TILES =
+  "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png";
+const BASEMAP_ATTRIBUTION =
+  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';
+
 // ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
@@ -150,20 +156,19 @@ export default function App() {
         version: 8,
         glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
         sources: {
-          "osm-tiles": {
+          basemap: {
             type: "raster",
-            tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+            tiles: [BASEMAP_TILES],
             tileSize: 256,
-            attribution: "© OpenStreetMap contributors",
+            attribution: BASEMAP_ATTRIBUTION,
             maxzoom: 19,
           },
         },
         layers: [
           {
-            id: "osm-background",
+            id: "basemap",
             type: "raster",
-            source: "osm-tiles",
-            paint: { "raster-opacity": 0.85, "raster-saturation": -0.4 },
+            source: "basemap",
           },
         ],
       },
@@ -211,9 +216,9 @@ export default function App() {
             "DD", IUCN_COLOR.DD,
             "#4f9cf9",
           ],
-          "circle-stroke-width": 0.8,
-          "circle-stroke-color": "rgba(255,255,255,0.4)",
-          "circle-opacity": 0.8,
+          "circle-stroke-width": 1,
+          "circle-stroke-color": "rgba(30,30,40,0.55)",
+          "circle-opacity": 0.9,
         },
       });
 
