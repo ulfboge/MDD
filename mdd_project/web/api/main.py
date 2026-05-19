@@ -401,7 +401,14 @@ def get_type_localities(
                 WHERE {museum_match}
                 ORDER BY LENGTH(tsi.abbreviation) DESC
                 LIMIT 1
-            ) AS museum_abbreviation
+            ) AS museum_abbreviation,
+            (
+                SELECT tsi.city_and_country
+                FROM type_specimen_institutions tsi
+                WHERE {museum_match}
+                ORDER BY LENGTH(tsi.abbreviation) DESC
+                LIMIT 1
+            ) AS museum_location
         FROM species s
         {where}
         ORDER BY s."order", s.family, s.sci_name

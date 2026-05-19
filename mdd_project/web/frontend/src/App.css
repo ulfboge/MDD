@@ -444,58 +444,218 @@ details[open] > .about-summary::before {
 .sidebar-footer a:hover { text-decoration: underline; }
 
 /* ── MapLibre popup ─────────────────────────────────────────────────────── */
-.popup-content {
-  color: #1a1d27;
-  font-size: 12px;
-  line-height: 1.6;
-  max-width: 280px;
+.maplibregl-popup-content {
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(15, 17, 23, 0.18);
+  border: 1px solid #e2e6ef;
+  overflow: hidden;
 }
 
-.popup-content h4 {
-  font-size: 14px;
+.maplibregl-popup-close-button {
+  font-size: 18px;
+  line-height: 1;
+  padding: 8px 10px;
+  color: #6b7280;
+}
+
+.maplibregl-popup-close-button:hover {
+  background: #f3f4f8;
+  color: #1a1d27;
+}
+
+.popup-content {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  color: #1a1d27;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 300px;
+  padding: 14px 16px 12px;
+}
+
+/* Type-locality popup */
+.popup-header {
+  margin-bottom: 12px;
+}
+
+.popup-sci {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 600;
   font-style: italic;
-  margin-bottom: 4px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #0f1117;
+  margin: 0 0 4px;
+  padding-right: 18px;
+}
+
+.popup-common {
+  font-size: 13px;
+  font-weight: 500;
+  color: #4b5563;
+  margin: 0 0 8px;
+}
+
+.popup-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.popup-chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  background: #eef2f8;
+  color: #374151;
+}
+
+.popup-chip-dim {
+  background: transparent;
+  border: 1px solid #d8dde8;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.popup-badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.popup-details {
+  margin: 0;
+  padding: 12px 0 0;
+  border-top: 1px solid #e8ecf2;
+}
+
+.popup-details dt {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin: 10px 0 4px;
+}
+
+.popup-details dt:first-child {
+  margin-top: 0;
+}
+
+.popup-details dd {
+  margin: 0 0 2px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #2d3340;
+}
+
+.popup-content--type-loc .popup-details dt:first-of-type + dd {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.popup-abbr {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.popup-museum-location {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.popup-specimen-kind {
+  font-style: italic;
+  text-transform: capitalize;
+  color: #4b5563;
+  margin-right: 4px;
+}
+
+.popup-specimen-sep {
+  color: #9ca3af;
+  margin: 0 5px;
+}
+
+.popup-catalog {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #1e293b;
+  background: #f4f6fa;
+  padding: 1px 5px;
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+.popup-footer {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e8ecf2;
+}
+
+.popup-link {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.popup-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Occurrence popup (legacy inline markup) */
+.popup-content h4 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 6px;
   color: #0f1117;
 }
 
 .popup-content .common {
-  color: #555;
-  font-size: 12px;
-  margin-bottom: 4px;
+  color: #4b5563;
+  font-size: 13px;
+  margin-bottom: 8px;
 }
 
 .popup-content .label {
   font-weight: 600;
-  color: #555;
+  color: #6b7280;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .popup-content .badge {
   display: inline-block;
-  padding: 0 5px;
-  border-radius: 3px;
+  padding: 2px 7px;
+  border-radius: 4px;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 10px;
   color: #fff;
 }
 
-.popup-content .type-kind {
-  font-style: italic;
-  text-transform: capitalize;
-  color: #666;
-}
-
-.popup-content .popup-link {
-  color: #2563eb;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.popup-content .popup-link:hover {
-  text-decoration: underline;
-}
-
-.popup-content .locality {
-  font-size: 11px;
-  color: #666;
-  margin-top: 2px;
+.popup-content p {
+  margin: 0 0 6px;
+  font-size: 12.5px;
+  line-height: 1.5;
 }

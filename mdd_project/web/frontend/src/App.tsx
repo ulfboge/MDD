@@ -79,11 +79,20 @@ function escapeHtml(text: string): string {
     .replace(/"/g, "&quot;");
 }
 
+function popupDetailRow(label: string, value: string): string {
+  return `<dt>${label}</dt><dd>${value}</dd>`;
+}
+
 function typeLocalityPopupHtml(p: Record<string, string | null>): string {
+  const museumLocation =
+    p.museum_location != null && String(p.museum_location).trim() !== "" && String(p.museum_location).toUpperCase() !== "NA"
+      ? escapeHtml(String(p.museum_location).trim())
+      : null;
   const museum =
     p.museum_name != null && String(p.museum_name).trim() !== ""
       ? escapeHtml(String(p.museum_name)) +
-        (p.museum_abbreviation ? ` (${escapeHtml(String(p.museum_abbreviation))})` : "")
+        (p.museum_abbreviation ? ` <span class="popup-abbr">(${escapeHtml(String(p.museum_abbreviation))})</span>` : "") +
+        (museumLocation ? `<span class="popup-museum-location">${museumLocation}</span>` : "")
       : null;
   const voucher =
     p.type_voucher != null && String(p.type_voucher).trim() !== ""
@@ -98,16 +107,30 @@ function typeLocalityPopupHtml(p: Record<string, string | null>): string {
       ? escapeHtml(String(p.type_voucher_uris).trim())
       : null;
 
+  const specimenValue = voucher
+    ? `${kind ? `<span class="popup-specimen-kind">${kind}</span>` : ""}${kind ? '<span class="popup-specimen-sep">·</span>' : ""}<code class="popup-catalog">${voucher}</code>`
+    : null;
+
+  const details: string[] = [];
+  if (p.type_locality) {
+    details.push(popupDetailRow("Type locality", escapeHtml(String(p.type_locality))));
+  }
+  if (museum) details.push(popupDetailRow("Museum", museum));
+  if (specimenValue) details.push(popupDetailRow("Type specimen", specimenValue));
+
   return `
-    <div class="popup-content">
-      <h4>${escapeHtml(String(p.sci_name_space ?? p.sci_name ?? ""))}</h4>
-      ${p.main_common_name ? `<p class="common">${escapeHtml(String(p.main_common_name))}</p>` : ""}
-      <p><span class="label">Family:</span> ${escapeHtml(String(p.family ?? "—"))} · ${escapeHtml(String(p.order ?? "—"))}</p>
-      ${p.iucn_status ? `<p><span class="label">IUCN:</span> <span class="badge" style="background:${iucnColor(p.iucn_status)}">${escapeHtml(String(p.iucn_status))}</span></p>` : ""}
-      ${p.type_locality ? `<p class="locality"><span class="label">Type locality:</span> ${escapeHtml(String(p.type_locality))}</p>` : ""}
-      ${museum ? `<p><span class="label">Museum:</span> ${museum}</p>` : ""}
-      ${voucher ? `<p><span class="label">Type specimen:</span>${kind ? ` <span class="type-kind">${kind}</span> ·` : ""} ${voucher}</p>` : ""}
-      ${uri ? `<p><a class="popup-link" href="${uri}" target="_blank" rel="noopener noreferrer">View in collection</a></p>` : ""}
+    <div class="popup-content popup-content--type-loc">
+      <header class="popup-header">
+        <h4 class="popup-sci">${escapeHtml(String(p.sci_name_space ?? p.sci_name ?? ""))}</h4>
+        ${p.main_common_name ? `<p class="popup-common">${escapeHtml(String(p.main_common_name))}</p>` : ""}
+        <div class="popup-chips">
+          ${p.family ? `<span class="popup-chip">${escapeHtml(String(p.family))}</span>` : ""}
+          ${p.order ? `<span class="popup-chip popup-chip-dim">${escapeHtml(String(p.order))}</span>` : ""}
+          ${p.iucn_status ? `<span class="popup-badge" style="background:${iucnColor(p.iucn_status)}">${escapeHtml(String(p.iucn_status))}</span>` : ""}
+        </div>
+      </header>
+      ${details.length ? `<dl class="popup-details">${details.join("")}</dl>` : ""}
+      ${uri ? `<footer class="popup-footer"><a class="popup-link" href="${uri}" target="_blank" rel="noopener noreferrer">View in collection ↗</a></footer>` : ""}
     </div>`;
 }
 
