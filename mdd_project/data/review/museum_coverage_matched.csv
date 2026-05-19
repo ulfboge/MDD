@@ -1,15 +1,19 @@
 matched_abbreviation,matched_name,vouchers,geocoded
 ANSP,Academy of Natural Sciences of Drexel University,43,3
 AMNH,American Museum of Natural History,335,81
+AHUB,Anhui Normal University,6,6
 AM,Australian Museum,80,41
 ANWC,Australian National Wildlife Collection,4,3
 BPBM,Bernice Pauahi Bishop Museum,12,10
+CSIRO,CSIRO Australian National Wildlife Collection,6,4
 CAS,California Academy of Sciences,10,3
 CM,Carnegie Museum of Natural History,30,19
+TNRC,Centre for Thai National Reference Collections,5,4
 CEBIOMAS,"Centro de Ecología y Biodiversidad, Lima, Peru",2,2
 CIB,Centro de Investigaciones Biológicas del Noroeste,2,2
 CZL,"Centro de Zoologica, Instituto de Investigação Científica Tropical",1,0
-CML ,Colección Mamíferos Lillo,9,9
+CML,Colección Mamíferos Lillo,9,9
+CNMA,Colección Nacional de Mamíferos (UNAM),7,4
 CTUA,"Colección Teriológica de la Universidad de Antioquia, Medellín",1,1
 ICN,"Colección de Mamíferos Alberto Cadena García, Instituto de Ciencias Naturales, Bogotá",11,8
 UACH,Colección de Mamíferos de la Universidad Austral de Chile,4,4
@@ -21,16 +25,20 @@ THUMB,"Department of Biology, Tunghai University",1,1
 DZAB,Department of Zoology and Biological Anthropology of the University of Sassari,1,1
 TM,Ditsong National Museum of Natural History,22,7
 DM,Durban Natural Science Museum,4,2
+DNSM,Durban Natural Science Museum,8,7
 QCAZ,"El Museo de Zoología, Pontificia Universidad Católica del Ecuador",9,9
 ENCB,Escuela Nacional de Ciencias Biológicas,2,2
 EBD,Estación Biológica de Doñana,7,6
 FMNH,Field Museum of Natural History,250,159
 UF,"Florida Museum of Natural History, University of Florida",15,13
 SMF,Forschungsinstitut und Naturmuseum Senckenberg,56,20
+FMSM,Fukushima City Museum of Natural History,6,0
 HZM,Harrison Zoological Institute,6,6
 HNHM,Hungarian Natural History Museum,18,10
 IBSS,"Institute of Biology and Soil Science, Far East Branch of the Russian Academy of Sciences",3,3
 IEBR,Institute of Ecology and Biological Resources,8,8
+IES,Institute of Ecology and Systematics,5,3
+BIZ,Institute of Zoology (Beijing) specimen catalog,11,6
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University",2,2
 KIZ,Kunming Institute of Zoology,23,20
 KUZ,Kyoto University Museum,1,1
@@ -52,6 +60,8 @@ MUSM,"Museo de Historia Natural, Universidad Nacional Mayor de San Marcos",42,41
 MLP,Museo de La Plata,4,3
 MZFC,"Museo de Zoología “Alfonso L. Herrera,” Universidad Nacional Autónoma de México",4,4
 EBRG,Museo de la Estación Biológica de Rancho Grande,7,5
+MF,Museo di Storia Naturale dell'Università di Firenze,7,3
+MN,"Museu Nacional, Universidade Federal do Rio de Janeiro",60,50
 MPEG,Museu Paraense Emílio Goeldi,14,12
 MZUSP,Museu de Zoologia da Universidade de São Paulo,26,24
 MNHN,Museum National d'Histoire Naturelle,374,74
@@ -90,10 +100,13 @@ PSUZC,Princess Maha Chakri Sirindhorn Natural History Museum,5,5
 QM,Queensland Museum,24,18
 RMCA,Royal Museum for Central Africa,33,20
 ROM,Royal Ontario Museum,24,23
+MTD,Senckenberg Museum für Tierkunde Dresden,18,4
+SAF,Sichuan Academy of Forestry,26,26
 SAMA,South Australian Museum,8,5
 SMNK,Staatliches Museum für Naturkunde Karlsruhe,1,0
 MCZ,The Louis Agassiz Museum of Comparative Zoology,62,11
 ZFMK,The Zoological Research Museum Alexander Koenig,38,20
+UCLA,UCLA Mammalogy Collection / Dickey Collection,8,5
 UFPB,Universidade Federal da Paraiba,8,7
 UFMT,Universidade Federal de Mato Grosso,5,5
 UFPA,Universidade Federal do Pará,2,2
@@ -103,6 +116,8 @@ UWBM,University of Washington Burke Museum,1,1
 UUZM,"Uppsala University, Museum of Evolution, Zoology section",10,1
 WAM,Western Australian Museum,37,34
 ZIN,"Zoological Institute, Russian Academy of Sciences",94,21
+ZMF,Zoological Museum Frankfurt,5,5
+ZMUC,Zoological Museum University of Copenhagen,19,2
 ZMMU,Zoological Museum of the Moscow State University,62,26
 ZSI,Zoological Survey of India collections at the Indian Museum,61,11
 ZSM,Zoologisches Staats-Sammlung München,22,0

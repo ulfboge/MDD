@@ -3,7 +3,7 @@ priority,impact,prefix,species_count,suggested_full_name,city_country,fix_type,r
 1,completely_excluded,MTD,18,Senckenberg Museum für Tierkunde Dresden,"Dresden, Germany",add_abbreviation,SMF (Senckenberg Frankfurt),,Add MTD row; Dresden collection distinct from Frankfurt SMF.
 1,completely_excluded,SAF,26,Sichuan Academy of Forestry,"Sichuan, China",add_abbreviation,,,Add SAF row; many Ochotona vouchers (often with SCNU numbers).
 1,completely_excluded,BIZ,10,Institute of Zoology (Beijing) / Beijing specimen catalog prefix BIZ,"Beijing, China",add_alias,IOZCAS (zero matches),,Add BIZ alias; likely overlaps IOZCAS collection (verify with IOZ).
-1,needs_review,MN,53,Ambiguous — verify per voucher (not one museum?),,manual_review,MNCN; MNHN; MNZ,,Do not bulk-add MN. Vouchers mix MNCN refs and bare MN numbers; MN 78680 cited as AMNH in literature. Split by voucher before adding.
+1,added,MN,54,"Museu Nacional, Universidade Federal do Rio de Janeiro","Rio de Janeiro, Brazil",add_abbreviation,MNCN; MNHN; MNZ,,Added MN row (deep-research-report_2); MN-UFRJ covered by MN prefix; longest-prefix avoids Madrid/Paris/NZ false positives.
 2,completely_excluded,DNSM,8,Durban Natural Science Museum,"Durban, South Africa",add_alias,DM,,Add DNSM alias for DM (NRM-style; vouchers say DNSM not DM).
 2,completely_excluded,CNMA,7,Colección Nacional de Mamíferos (UNAM),"Mexico City, Mexico",add_alias,IBUNAM (CNMA),,Add CNMA row pointing to same institution as IBUNAM (CNMA).
 2,completely_excluded,UCLA,8,UCLA Mammalogy Collection / Dickey Collection,"Los Angeles, United States of America",add_abbreviation,,,Add UCLA row for mammal vouchers (incl. Dickey collection numbers).

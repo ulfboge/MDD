@@ -1,43 +1,27 @@
 voucher_prefix,species_count,in_metadata,related_metadata_abbreviations,example_species
 UNTRACED,234,no,,Tachyglossus_aculeatus; Chironectes_minimus; Didelphis_virginiana
 LOST,136,no,,Phascogale_tapoatafa; Echymipera_kalubu; Thylogale_brunii
-MN,53,no,MNCN; MNHN; MNHNC; MNZ,Rhipidomys_cariri; Trinomys_moojeni; Cryptonanus_agricolai
-SAF,26,no,,Neodon_medogensis; Neodon_minor; Soriculus_dexingensis
 BMNH,19,no,BM,Ctenodactylus_vali; Ctenomys_dorsalis; Olallamys_albicauda
-ZMUC,19,no,,Blarinomys_breviceps; Saimiri_oerstedii; Rhinopoma_microphyllum
-MTD,18,no,,Mops_sarasinorum; Rattus_feileri; Rattus_taliabuensis
 MACN-MA,17,no,MACN,Phocoena_dioptrica; Phyllotis_bonariensis; Balaenoptera_bonaerensis
 NMPR,15,no,NMP,Rhinolophus_horaceki; Myotis_hyrcanicus; Alionoctula_dhofarensis
 NSMT-M,15,no,NSMT,Craseomys_rex; Nyctalus_furvus; Sorex_hosonoi
-BIZ,10,no,,Crocidura_wuchihensis; Orientallactaga_balikunica; Dobsonia_viridis
-CML,9,no,CM; CML ,Neoeptesicus_ulapesensis; Nyctinomops_mbopicuare; Tympanoctomys_loschalchalerosorum
-DNSM,8,no,,Rhinolophus_mabuensis; Pseudoromicia_roseveari; Miniopterus_nimbae
-UCLA,8,no,,Peromyscus_stirtoni; Peromyscus_cordillerae; Peromyscus_salvadorensis
-CNMA,7,no,,Peromyscus_purepechus; Habromys_delicatulus; Cryptotis_woodmani
 SPECIMEN,7,no,,Diplomesodon_sonnerati; Alouatta_seniculus; Philander_quica
-AHUB,6,no,,Chodsigoa_dabieshanensis; Moschus_anhuiensis; Uropsilus_dabieshanensis
-CSIRO,6,no,,Petrogale_coenensis; Petrogale_inornata; Petrogale_mareeba
-FMSM,6,no,,Crunomys_inflatus; Crunomys_hylomyoides; Rattus_korinchi
-MF,6,no,,Sciurus_meridionalis; Crocidura_greenwoodi; Huetia_tytonis
 CMI,5,no,CM,Salinomys_delicatus; Akodon_oenos; Phyllotis_pehuenche
-IES,5,no,,Mesocapromys_auritus; Capromys_garridoi; Mesocapromys_sanfelipensis
 KURODA,5,no,KU,Alexandromys_kikuchii; Crocidura_tanakae; Mogera_tokudae
 NMPH,5,no,NMP,Ptenochirus_minor; Apomys_gracilirostris; Crateromys_heaneyi
-TNRC,5,no,,Leopoldamys_neilli; Rhinolophus_marshalli; Hipposideros_lekaguli
-ZMF,5,no,,Crocidura_darvishi; Calomyscus_kiabii; Calomyscus_darvishi
 BMNH:PV:M,4,no,BM,Crocidura_katinka; Myomimus_roachi; Pennatomys_nivalis
 DMNH,4,no,DM,Rattus_tawitawiensis; Podogymnura_aureospinula; Batomys_russatus
 GNMT,4,no,,Microtus_transcaspicus; Nannospalax_nehringi; Microtus_schelkovnikovi
 KM,4,no,,Petromyscus_barbouri; Cryptochloris_zyli; Chrysochloris_visagiei
 MMUS,4,no,,Dendrolagus_dorianus; Petrogale_assimilis; Dorcopsulus_macleayi
-MNHNU,4,no,MNHN,Leopardus_fasciatus; Akodon_reigi; Oxymycterus_josei
-MNK,4,no,,Juscelinomys_huanchacae; Oecomys_sydandersoni; Hylaeamys_acritus
+MNHNU,4,no,MN; MNHN,Leopardus_fasciatus; Akodon_reigi; Oxymycterus_josei
+MNK,4,no,MN,Juscelinomys_huanchacae; Oecomys_sydandersoni; Hylaeamys_acritus
 PHOTOGRAPHED,4,no,,Macaca_selai; Rungwecebus_kipunji; Macaca_leucogenys
 UANT,4,no,,Laephotis_robertsi; Voalavo_antsahabensis; Scotophilus_tandrefana
 ULPS,4,no,,Avahi_meridionalis; Avahi_peyrierasi; Avahi_ramanantsoavani
 ZMNTU,4,no,,Murina_gracilis; Harpiola_isodon; Murina_bicolor
 AHNU,3,no,,Parablarinella_latimaxillata; Uropsilus_huanggangensis; Mesechinus_orientalis
-CNM,3,no,,Miniopterus_phillipsi; Hipposideros_srilankaensis; Mesoplodon_hotaula
+CNM,3,no,CNMA,Miniopterus_phillipsi; Hipposideros_srilankaensis; Mesoplodon_hotaula
 CNP,3,no,,Tympanoctomys_kirchnerorum; Oecomys_franciscorum; Akodon_philipmyersi
 EPN,3,no,,Lonchophylla_orcesi; Anoura_fistulata; Sturnira_koopmanhilli
 ISAM,3,no,,Eremitalpa_granti; Cryptochloris_wintoni; Chlorotalpa_sclateri
@@ -67,7 +51,7 @@ IZK,2,no,,Selevinia_betpakdalaensis; Sicista_pseudonapaea
 LZH,2,no,,Xanthonycticebus_intermedius; Trachypithecus_hatinhensis
 LINNMUS,2,no,,Talpa_europaea; Sciurus_vulgaris
 MHNUCA,2,no,,Neoeptesicus_orinocensis; Coendou_vossi
-MNHN-ZM-MO-1867-146,2,no,MNHN,Cricetulus_longicaudatus; Lasiopodomys_mandarinus
+MNHN-ZM-MO-1867-146,2,no,MN; MNHN,Cricetulus_longicaudatus; Lasiopodomys_mandarinus
 MUA,2,no,,Saccopteryx_antioquensis; Carollia_monohernandezi
 MZACUT,2,no,,Sorex_antinorii; Mops_aloysiisabaudiae
 NHMBZ,2,no,,Rhinolophus_sakejiensis; Rhinolophus_smithersi
@@ -93,7 +77,7 @@ AMB5.39,1,no,AM,Microcebus_arnholdi
 AMG,1,no,AM,Pronolagus_saundersiae
 ASRU,1,no,,Scarturus_heptneri
 ABE,1,no,,Tokudaia_osimensis
-BIZ-BRG00054,1,no,,Barbastella_beijingensis
+BIZ-BRG00054,1,no,BIZ,Barbastella_beijingensis
 BMNH:MAMM:101A,1,no,BM,Pithecia_irrorata
 "BMNH:MAMM:104A,",1,no,BM,Nyctereutes_procyonoides
 BMNH:MAMM:10A,1,no,BM,Monophyllus_redmani
@@ -2390,7 +2374,7 @@ MCZ:VP:VPM-7675,1,no,MCZ,Hyperplagiodontia_araeum
 MCZ:VP:VPM-9600,1,no,MCZ,Nesophontes_micrus
 MCZ:VP:VPM-9601,1,no,MCZ,Boromys_torrei
 MCZR,1,no,MCZ,Fukomys_ilariae
-MFA-ZV-M,1,no,,Molossus_paranaensis
+MFA-ZV-M,1,no,MF,Molossus_paranaensis
 MGR-ZV-M,1,no,,Molossus_melini
 MHNCI,1,no,MHNC,Oxymycterus_itapeby
 MHNJSL,1,no,,Ctenomys_paraguayensis
@@ -2402,360 +2386,360 @@ MLZA,1,no,,Myonycteris_brachycephala
 MMK/M/7305,1,no,MMK,Elephantulus_pilicaudus
 MMNH,1,no,,Mus_macedonicus
 MMP,1,no,,Ctenomys_scagliai
-MN-UFRJ,1,no,,Abrawayaomys_ruschii
-MNHB,1,no,,Sotalia_guianensis
-MNHN-F-MAD121,1,no,MNHN,Palaeopropithecus_ingens
-"MNHN-F-MAD308A,",1,no,MNHN,Hippopotamus_lemerlei
-"MNHN-F-MAD40,",1,no,MNHN,Archaeolemur_edwardsi
-MNHN-ZM-2005-898,1,no,MNHN,Cacajao_rubicundus
-MNHN-ZM-2005-899,1,no,MNHN,Ateles_hybridus
-MNHN-ZM-2005-903,1,no,MNHN,Ateles_marginatus
-MNHN-ZM-2005-905,1,no,MNHN,Cercocebus_atys
-MNHN-ZM-2005-912,1,no,MNHN,Trachypithecus_auratus
-MNHN-ZM-2005-915,1,no,MNHN,Procolobus_verus
-MNHN-ZM-2005-928,1,no,MNHN,Pithecia_monachus
-MNHN-ZM-2005-930,1,no,MNHN,Saimiri_boliviensis
-MNHN-ZM-2005-952,1,no,MNHN,Macaca_radiata
-MNHN-ZM-2005-954,1,no,MNHN,Macaca_arctoides
-MNHN-ZM-2005-970,1,no,MNHN,Hylobates_moloch
-MNHN-ZM-2005-971,1,no,MNHN,Hylobates_funereus
-MNHN-ZM-2005-984,1,no,MNHN,Chlorocebus_pygerythrus
-MNHN-ZM-2005-987,1,no,MNHN,Mandrillus_leucophaeus
-MNHN-ZM-2007-1470,1,no,MNHN,Aotus_lemurinus
-MNHN-ZM-2007-1502,1,no,MNHN,Saguinus_weddellii
-MNHN-ZM-2007-1515,1,no,MNHN,Callithrix_aurita
-MNHN-ZM-2007-1517,1,no,MNHN,Mico_melanurus
-MNHN-ZM-2007-1522,1,no,MNHN,Mico_humeralifer
-MNHN-ZM-2007-1523,1,no,MNHN,Callithrix_geoffroyi
-MNHN-ZM-2007-1530,1,no,MNHN,Saguinus_geoffroyi
-MNHN-ZM-2007-1532,1,no,MNHN,Saguinus_labiatus
-MNHN-ZM-2007-1534,1,no,MNHN,Saguinus_illigeri
-MNHN-ZM-2007-1535,1,no,MNHN,Saguinus_nigrifrons
-MNHN-ZM-2007-1536,1,no,MNHN,Saguinus_pileatus
-MNHN-ZM-2007-1540,1,no,MNHN,Saimiri_ustus
-MNHN-ZM-2007-1542,1,no,MNHN,Cheirogaleus_major
-MNHN-ZM-2007-1543,1,no,MNHN,Microcebus_rufus
-MNHN-ZM-2007-1544,1,no,MNHN,Phaner_furcifer
-MNHN-ZM-2007-1545,1,no,MNHN,Eulemur_collaris
-MNHN-ZM-2007-1546,1,no,MNHN,Daubentonia_madagascariensis
-MNHN-ZM-2007-1547,1,no,MNHN,Galago_senegalensis
-MNHN-ZM-2007-1550,1,no,MNHN,Hapalemur_griseus
-MNHN-ZM-2007-1552,1,no,MNHN,Lepilemur_mustelinus
-MNHN-ZM-2007-1566,1,no,MNHN,Anoura_caudifer
-MNHN-ZM-2011-13,1,no,MNHN,Dendromus_lachaisei
-MNHN-ZM-2011-15,1,no,MNHN,Galemys_pyrenaicus
-MNHN-ZM-2011-164,1,no,MNHN,Ailurus_fulgens
-MNHN-ZM-2011-21,1,no,MNHN,Crocidura_flavescens
-MNHN-ZM-2011-637,1,no,MNHN,Casinycteris_campomaanensis
-MNHN-ZM-2011-713,1,no,MNHN,Scotonycteris_bergmansi
-MNHN-ZM-2011-993,1,no,MNHN,Megaloglossus_azagnyi
-"MNHN-ZM-2014-3,",1,no,MNHN,Atilax_paludinosus
-"MNHN-ZM-2014-33,",1,no,MNHN,Gazella_leptoceros
-MNHN-ZM-2014-54,1,no,MNHN,Manis_javanica
-MNHN-ZM-2016-471,1,no,MNHN,Talpa_aquitania
-MNHN-ZM-2023-12,1,no,MNHN,Myotis_nustrale
-"MNHN-ZM-AC-1870-289,",1,no,MNHN,Rhinopithecus_roxellana
-MNHN-ZM-AC-1880-550,1,no,MNHN,Sotalia_fluviatilis
-MNHN-ZM-AC-1883-1545,1,no,MNHN,Lobodon_carcinophaga
-MNHN-ZM-AC-1903-13,1,no,MNHN,Micronycteris_minuta
-MNHN-ZM-AC-1921-123,1,no,MNHN,Eubalaena_australis
-"MNHN-ZM-AC-1944-307,",1,no,MNHN,Grampus_griseus
-MNHN-ZM-AC-A10733,1,no,MNHN,Berardius_arnuxii
-MNHN-ZM-AC-A11478,1,no,MNHN,Inia_boliviensis
-"MNHN-ZM-AC-A12737,",1,no,MNHN,Bettongia_lesueur
-"MNHN-ZM-AC-A1407,",1,no,MNHN,Presbytis_comata
-MNHN-ZM-AC-A1791,1,no,MNHN,Prionailurus_rubiginosus
-MNHN-ZM-AC-A2006,1,no,MNHN,Lyncodon_patagonicus
-MNHN-ZM-AC-A3035,1,no,MNHN,Stenella_frontalis
-"MNHN-ZM-AC-A3051,",1,no,MNHN,Sousa_plumbea
-MNHN-ZM-AC-A3086,1,no,MNHN,Neophocaena_phocaenoides
-MNHN-ZM-AC-A3552,1,no,MNHN,Mesoplodon_densirostris
-MNHN-ZM-AC-A3554,1,no,MNHN,Ziphius_cavirostris
-"MNHN-ZM-AC-A3578,",1,no,MNHN,Hydrurga_leptonyx
-MNHN-ZM-AC-A3910,1,no,MNHN,Papio_anubis
-MNHN-ZM-AC-A6753,1,no,MNHN,Dobsonia_moluccensis
-"MNHN-ZM-AC-A6953,",1,no,MNHN,Myotis_emarginatus
-MNHN-ZM-AC-A6987,1,no,MNHN,Neoeptesicus_innoxius
-MNHN-ZM-AC-A8126,1,no,MNHN,Varecia_rubra
-MNHN-ZM-AC-I-577,1,no,MNHN,Furipterus_horrens
-MNHN-ZM-MO-1818-764,1,no,MNHN,Rousettus_leschenaultii
-MNHN-ZM-MO-1829-44,1,no,MNHN,Hippocamelus_antisensis
-MNHN-ZM-MO-1834-38,1,no,MNHN,Octodontomys_gliroides
-MNHN-ZM-MO-1847-1636,1,no,MNHN,Chiropotes_albinasus
-MNHN-ZM-MO-1847-1667A,1,no,MNHN,Cacajao_calvus
-MNHN-ZM-MO-1849-299,1,no,MNHN,Notamacropus_irma
-MNHN-ZM-MO-1851-61,1,no,MNHN,Andinocervus_rufinus
-MNHN-ZM-MO-1852-257,1,no,MNHN,Epomops_franqueti
-MNHN-ZM-MO-1854-1263,1,no,MNHN,Propithecus_coquereli
-MNHN-ZM-MO-1854-1275,1,no,MNHN,Genetta_servalina
-MNHN-ZM-MO-1854-1282,1,no,MNHN,Bdeogale_nigripes
-MNHN-ZM-MO-1854-1288,1,no,MNHN,Oenomys_hypoxanthus
-MNHN-ZM-MO-1859-340,1,no,MNHN,Diclidurus_scutatus
-MNHN-ZM-MO-1860-686,1,no,MNHN,Eliomys_munbyanus
-MNHN-ZM-MO-1863-655,1,no,MNHN,Sciurotamias_davidianus
-MNHN-ZM-MO-1864-412,1,no,MNHN,Pygathrix_nigripes
-MNHN-ZM-MO-1864-683,1,no,MNHN,Tamiops_rodolphii
-MNHN-ZM-MO-1866-86,1,no,MNHN,Elaphurus_davidianus
-MNHN-ZM-MO-1867-127,1,no,MNHN,Myospalax_armandii
-MNHN-ZM-MO-1867-135,1,no,MNHN,Meriones_unguiculatus
-MNHN-ZM-MO-1867-259,1,no,MNHN,Scaptochirus_moschatus
-MNHN-ZM-MO-1867-5,1,no,MNHN,Lophiomys_imhausii
-MNHN-ZM-MO-1867-552,1,no,MNHN,Eospalax_fontanierii
-MNHN-ZM-MO-1867-554,1,no,MNHN,Aeretes_melanopterus
-MNHN-ZM-MO-1867-555,1,no,MNHN,Trogopterus_xanthipes
-MNHN-ZM-MO-1867-580,1,no,MNHN,Propithecus_verreauxi
-MNHN-ZM-MO-1867-586,1,no,MNHN,Mirza_coquereli
-MNHN-ZM-MO-1867-596,1,no,MNHN,Trachypithecus_germaini
-MNHN-ZM-MO-1868-1331,1,no,MNHN,Dremomys_pernyi
-MNHN-ZM-MO-1868-1334,1,no,MNHN,Myospalax_psilurus
-MNHN-ZM-MO-1868-229,1,no,MNHN,Cheirogaleus_medius
-MNHN-ZM-MO-1869-14,1,no,MNHN,Myotis_pilosus
-MNHN-ZM-MO-1870-1,1,no,MNHN,Macaca_thibetana
-MNHN-ZM-MO-1870-10,1,no,MNHN,Nectogale_elegans
-MNHN-ZM-MO-1870-11,1,no,MNHN,Anourosorex_squamipes
-MNHN-ZM-MO-1870-15,1,no,MNHN,Euroscaptor_longirostris
-MNHN-ZM-MO-1870-20,1,no,MNHN,Niviventer_confucianus
-MNHN-ZM-MO-1870-24,1,no,MNHN,Eothenomys_melanogaster
-MNHN-ZM-MO-1870-274,1,no,MNHN,Inia_geoffrensis
-MNHN-ZM-MO-1870-32,1,no,MNHN,Micromys_pygmaeus
-MNHN-ZM-MO-1870-33,1,no,MNHN,Ochotona_thibetana
-MNHN-ZM-MO-1870-42,1,no,MNHN,Petaurista_alborufus
-MNHN-ZM-MO-1870-541,1,no,MNHN,Budorcas_tibetana
-MNHN-ZM-MO-1870-543,1,no,MNHN,Naemorhedus_griseus
-MNHN-ZM-MO-1870-551,1,no,MNHN,Elaphodus_cephalophus
-MNHN-ZM-MO-1870-574,1,no,MNHN,Sorex_cylindricauda
-MNHN-ZM-MO-1870-575,1,no,MNHN,Crocidura_attenuata
-MNHN-ZM-MO-1870-581,1,no,MNHN,Uropsilus_soricipes
-MNHN-ZM-MO-1870-584,1,no,MNHN,Murina_leucogaster
-MNHN-ZM-MO-1870-590,1,no,MNHN,Murina_aurata
-MNHN-ZM-MO-1870-605,1,no,MNHN,Apodemus_chevrieri
-MNHN-ZM-MO-1871-112,1,no,MNHN,Propithecus_coronatus
-MNHN-ZM-MO-1871-571,1,no,MNHN,Alexandromys_montebelli
-MNHN-ZM-MO-1871-87A,1,no,MNHN,Scaptonyx_fusicauda
-MNHN-ZM-MO-1873-58,1,no,MNHN,Malacomys_longipes
-MNHN-ZM-MO-1874-583,1,no,MNHN,Typhlomys_cinereus
-MNHN-ZM-MO-1876-1074,1,no,MNHN,Lampronycteris_brachyotis
-MNHN-ZM-MO-1877-1473,1,no,MNHN,Pogonomys_macrourus
-MNHN-ZM-MO-1877-1477,1,no,MNHN,Phalanger_vestitus
-MNHN-ZM-MO-1877-1484BIS,1,no,MNHN,Cercartetus_caudatus
-MNHN-ZM-MO-1877-2028,1,no,MNHN,Peroryctes_raffrayanus
-MNHN-ZM-MO-1877-562,1,no,MNHN,Saguinus_tripartitus
-MNHN-ZM-MO-1877-619,1,no,MNHN,Paraxerus_ochraceus
-MNHN-ZM-MO-1878-1110,1,no,MNHN,Pteropus_seychellensis
-MNHN-ZM-MO-1881-11,1,no,MNHN,Galegeeska_revoilii
-MNHN-ZM-MO-1881-1594,1,no,MNHN,Equus_grevyi
-MNHN-ZM-MO-1882-1515,1,no,MNHN,Eulemur_cinereiceps
-MNHN-ZM-MO-1883-469,1,no,MNHN,Talpa_davidiana
-MNHN-ZM-MO-1883-679,1,no,MNHN,Huetia_leucorhina
-MNHN-ZM-MO-1884-1817,1,no,MNHN,Mydaus_marchei
-MNHN-ZM-MO-1884-2389,1,no,MNHN,Nomascus_nasutus
-MNHN-ZM-MO-1886-109,1,no,MNHN,Piliocolobus_bouvieri
-MNHN-ZM-MO-1886-112,1,no,MNHN,Piliocolobus_tholloni
-MNHN-ZM-MO-1886-1120,1,no,MNHN,Eliurus_myoxinus
-MNHN-ZM-MO-1886-1224,1,no,MNHN,Dactylopsila_palpator
-MNHN-ZM-MO-1886-125,1,no,MNHN,Cercocebus_agilis
-MNHN-ZM-MO-1886-1536,1,no,MNHN,Myotis_anjouanensis
-MNHN-ZM-MO-1886-165,1,no,MNHN,Poemys_pecilei
-MNHN-ZM-MO-1887-755,1,no,MNHN,Propithecus_candidus
-MNHN-ZM-MO-1887-873,1,no,MNHN,Oryzorictes_tetradactylus
-MNHN-ZM-MO-1887-874,1,no,MNHN,Oryzorictes_hova
-MNHN-ZM-MO-1887-878,1,no,MNHN,Crocidura_bloyeti
-MNHN-ZM-MO-1888-1,1,no,MNHN,Pelomys_campanae
-MNHN-ZM-MO-1888-10,1,no,MNHN,Hypogeomys_antimena
-"MNHN-ZM-MO-1891-391,",1,no,MNHN,Felis_bieti
-MNHN-ZM-MO-1892-1591,1,no,MNHN,Mylomys_dybowskii
-MNHN-ZM-MO-1892-2053,1,no,MNHN,Dologale_dybowskii
-MNHN-ZM-MO-1895-549,1,no,MNHN,Eozapus_setchuanus
-MNHN-ZM-MO-1897-611BIS,1,no,MNHN,Piliocolobus_foai
-MNHN-ZM-MO-1897-71,1,no,MNHN,Rhinopithecus_bieti
-MNHN-ZM-MO-1897-981,1,no,MNHN,Rhinolophus_maclaudi
-MNHN-ZM-MO-1898-1394,1,no,MNHN,Trachypithecus_francoisi
-MNHN-ZM-MO-1898-1785,1,no,MNHN,Capromys_geayi
-MNHN-ZM-MO-1900-397,1,no,MNHN,Hyomys_goliath
-MNHN-ZM-MO-1900-398,1,no,MNHN,Xenuromys_barbatus
-"MNHN-ZM-MO-1908-258,",1,no,MNHN,Notopteris_neocaledonicus
-MNHN-ZM-MO-1908-34,1,no,MNHN,Piliocolobus_oustaleti
-MNHN-ZM-MO-1911-2208,1,no,MNHN,Acomys_chudeaui
-MNHN-ZM-MO-1911-481,1,no,MNHN,Trachypithecus_poliocephalus
-MNHN-ZM-MO-1912-134,1,no,MNHN,Macrotarsomys_bastardi
-MNHN-ZM-MO-1912-40,1,no,MNHN,Paratriaenops_furcula
-MNHN-ZM-MO-1927-3,1,no,MNHN,Kogia_breviceps
-MNHN-ZM-MO-1933-223,1,no,MNHN,Perameles_bougainville
-MNHN-ZM-MO-1940-1222,1,no,MNHN,Bos_sauveli
-MNHN-ZM-MO-1948-360C,1,no,MNHN,Hipposideros_alongensis
-MNHN-ZM-MO-1949-19,1,no,MNHN,Dendroprionomys_rousseloti
-MNHN-ZM-MO-1953-1,1,no,MNHN,Otomops_madagascariensis
-MNHN-ZM-MO-1956-576,1,no,MNHN,Myosorex_babaulti
-MNHN-ZM-MO-1957-37,1,no,MNHN,Mastomys_kollmannspergeri
-MNHN-ZM-MO-1958-636,1,no,MNHN,Macrotarsomys_ingens
-MNHN-ZM-MO-1959-938,1,no,MNHN,Genetta_bourloni
-MNHN-ZM-MO-1961-177,1,no,MNHN,Eliurus_petteri
-MNHN-ZM-MO-1961-221,1,no,MNHN,Brachytarsomys_villosus
-MNHN-ZM-MO-1962-1109,1,no,MNHN,Anourosorex_schmidi
-MNHN-ZM-MO-1966-1899,1,no,MNHN,Mus_mattheyi
-MNHN-ZM-MO-1966-2220,1,no,MNHN,Eliurus_antsingy
-MNHN-ZM-MO-1968-148,1,no,MNHN,Thylamys_karimii
-MNHN-ZM-MO-1968-408,1,no,MNHN,Rhinolophus_adami
-MNHN-ZM-MO-1970-89,1,no,MNHN,Mus_oubanguii
-MNHN-ZM-MO-1970-91,1,no,MNHN,Mus_goundae
-MNHN-ZM-MO-1971-518,1,no,MNHN,Praomys_petteri
-MNHN-ZM-MO-1972-250,1,no,MNHN,Lophuromys_melanonyx
-MNHN-ZM-MO-1974-77,1,no,MNHN,Lepilemur_ankaranensis
-MNHN-ZM-MO-1974-80,1,no,MNHN,Lepilemur_septentrionalis
-MNHN-ZM-MO-1976-401,1,no,MNHN,Salanoia_concolor
-MNHN-ZM-MO-1977-755,1,no,MNHN,Cryptoprocta_spelea
-MNHN-ZM-MO-1977-770,1,no,MNHN,Myzopoda_aurita
-MNHN-ZM-MO-1977-774,1,no,MNHN,Proechimys_cuvieri
-MNHN-ZM-MO-1977-775,1,no,MNHN,Daptomys_oyapocki
-MNHN-ZM-MO-1981-1029,1,no,MNHN,Crocidura_lamottei
-MNHN-ZM-MO-1981-1089,1,no,MNHN,Crocidura_crenata
-MNHN-ZM-MO-1981-1099,1,no,MNHN,Crocidura_douceti
-MNHN-ZM-MO-1981-1107,1,no,MNHN,Myosorex_schalleri
-MNHN-ZM-MO-1981-402,1,no,MNHN,Micropotamogale_lamottei
-MNHN-ZM-MO-1981-460,1,no,MNHN,Crocidura_thomensis
-"MNHN-ZM-MO-1981-482,",1,no,MNHN,Crocidura_eburnea
-MNHN-ZM-MO-1981-488,1,no,MNHN,Crocidura_grassei
-MNHN-ZM-MO-1981-490,1,no,MNHN,Crocidura_jouvenetae
-MNHN-ZM-MO-1981-492,1,no,MNHN,Crocidura_nimbae
-MNHN-ZM-MO-1981-494,1,no,MNHN,Crocidura_obscurior
-MNHN-ZM-MO-1981-498,1,no,MNHN,Crocidura_theresae
-MNHN-ZM-MO-1981-500,1,no,MNHN,Crocidura_viaria
-MNHN-ZM-MO-1981-547,1,no,MNHN,Trinomys_setosus
-MNHN-ZM-MO-1981-548,1,no,MNHN,Trinomys_albispinus
-MNHN-ZM-MO-1981-871,1,no,MNHN,Eliurus_ellermani
-MNHN-ZM-MO-1982-1004,1,no,MNHN,Galidia_elegans
-MNHN-ZM-MO-1982-1035,1,no,MNHN,Myopterus_daubentonii
-MNHN-ZM-MO-1982-894,1,no,MNHN,Plagiodontia_aedium
-MNHN-ZM-MO-1983-239,1,no,MNHN,Hylomyscus_parvus
-MNHN-ZM-MO-1984-487,1,no,MNHN,Hipposideros_lamottei
-MNHN-ZM-MO-1984-493,1,no,MNHN,Lamottemys_okuensis
-MNHN-ZM-MO-1984-628,1,no,MNHN,Neogale_africana
-MNHN-ZM-MO-1985-1063,1,no,MNHN,Kerivoula_africana
-MNHN-ZM-MO-1985-1925,1,no,MNHN,Myotis_dieteri
-MNHN-ZM-MO-1986-1044,1,no,MNHN,Phyllostomus_elongatus
-MNHN-ZM-MO-1986-1068,1,no,MNHN,Asellia_tridens
-MNHN-ZM-MO-1986-1083,1,no,MNHN,Gardnerycteris_crenulata
-MNHN-ZM-MO-1986-1084,1,no,MNHN,Nyctinomus_aegyptiacus
-MNHN-ZM-MO-1986-1100,1,no,MNHN,Taphozous_perforatus
-MNHN-ZM-MO-1986-387,1,no,MNHN,Microgale_brevicaudata
-MNHN-ZM-MO-1987-233,1,no,MNHN,Antechinus_minimus
-MNHN-ZM-MO-1987-296,1,no,MNHN,Myotis_davidii
-MNHN-ZM-MO-1987-297,1,no,MNHN,Cnephaeus_bottae
-MNHN-ZM-MO-1987-298,1,no,MNHN,Pteropus_mariannus
-MNHN-ZM-MO-1988-271,1,no,MNHN,Ctenomys_brasiliensis
-MNHN-ZM-MO-1988-33,1,no,MNHN,Taterillus_petteri
-MNHN-ZM-MO-1990-36,1,no,MNHN,Nyctophilus_timoriensis
-MNHN-ZM-MO-1990-396,1,no,MNHN,Macropus_fuliginosus
-MNHN-ZM-MO-1990-397,1,no,MNHN,Notamacropus_rufogriseus
-MNHN-ZM-MO-1990-399,1,no,MNHN,Setonix_brachyurus
-MNHN-ZM-MO-1990-400,1,no,MNHN,Thylogale_thetis
-MNHN-ZM-MO-1990-401,1,no,MNHN,Thylogale_billardierii
-MNHN-ZM-MO-1990-403,1,no,MNHN,Lagostrophus_fasciatus
-MNHN-ZM-MO-1990-405,1,no,MNHN,Bettongia_gaimardi
-MNHN-ZM-MO-1990-410,1,no,MNHN,Pseudochirulus_canescens
-MNHN-ZM-MO-1990-412,1,no,MNHN,Tarsipes_rostratus
-MNHN-ZM-MO-1990-413,1,no,MNHN,Cercartetus_nana
-MNHN-ZM-MO-1990-415,1,no,MNHN,Spilocuscus_papuensis
-MNHN-ZM-MO-1990-417,1,no,MNHN,Perameles_nasuta
-MNHN-ZM-MO-1990-420,1,no,MNHN,Metachirus_nudicaudatus
-MNHN-ZM-MO-1991-1506,1,no,MNHN,Suncus_remyi
-MNHN-ZM-MO-1991-1799,1,no,MNHN,Crocidura_nimbasilvanus
-MNHN-ZM-MO-1991-396,1,no,MNHN,Crocidura_cyanea
-MNHN-ZM-MO-1991-600,1,no,MNHN,Sturnira_lilium
-MNHN-ZM-MO-1992-2005,1,no,MNHN,Pronolagus_crassicaudatus
-MNHN-ZM-MO-1992-2010,1,no,MNHN,Lepus_nigricollis
-MNHN-ZM-MO-1993-4247,1,no,MNHN,Eulemur_rufus
-MNHN-ZM-MO-1993-4250,1,no,MNHN,Eulemur_rubriventer
-MNHN-ZM-MO-1993-4252,1,no,MNHN,Nycticebus_javanicus
-MNHN-ZM-MO-1994-2465,1,no,MNHN,Tarsius_tarsier
-MNHN-ZM-MO-1995-1020,1,no,MNHN,Neacomys_paracou
-MNHN-ZM-MO-1995-1030,1,no,MNHN,Micronycteris_brosseti
-MNHN-ZM-MO-1995-1321,1,no,MNHN,Isothrix_sinnamariensis
-MNHN-ZM-MO-1995-1395,1,no,MNHN,Proechimys_guyannensis
-MNHN-ZM-MO-1995-1397,1,no,MNHN,Pattonomys_semivillosus
-MNHN-ZM-MO-1996-2116,1,no,MNHN,Dobsonia_peronii
-MNHN-ZM-MO-1996-2117,1,no,MNHN,Pteropus_griseus
-MNHN-ZM-MO-1996-2118,1,no,MNHN,Dobsonia_minor
-MNHN-ZM-MO-1996-2119,1,no,MNHN,Rousettus_aegyptiacus
-MNHN-ZM-MO-1996-2121,1,no,MNHN,Pteropus_tonganus
-MNHN-ZM-MO-1996-2125,1,no,MNHN,Pteropus_tuberculatus
-MNHN-ZM-MO-1996-2129,1,no,MNHN,Afropipistrellus_grandidieri
-MNHN-ZM-MO-1997-1800,1,no,MNHN,Nycteris_thebaica
-MNHN-ZM-MO-1997-1802,1,no,MNHN,Hipposideros_diadema
-MNHN-ZM-MO-1997-1803,1,no,MNHN,Platyrrhinus_lineatus
-MNHN-ZM-MO-1997-1804,1,no,MNHN,Lasiurus_blossevillii
-MNHN-ZM-MO-1997-1805,1,no,MNHN,Myotis_levis
-MNHN-ZM-MO-1997-1813,1,no,MNHN,Tadarida_brasiliensis
-MNHN-ZM-MO-1997-1818,1,no,MNHN,Stenoderma_rufum
-MNHN-ZM-MO-1997-1821,1,no,MNHN,Nycteris_javanica
-MNHN-ZM-MO-1997-1824,1,no,MNHN,Lavia_frons
-MNHN-ZM-MO-1997-1828,1,no,MNHN,Histiotus_velatus
-MNHN-ZM-MO-1997-1832,1,no,MNHN,Eptesicus_dutertreus
-MNHN-ZM-MO-1997-1833A,1,no,MNHN,Scotophilus_robustus
-MNHN-ZM-MO-1997-1845,1,no,MNHN,Taphozous_mauritianus
-MNHN-ZM-MO-1997-1846,1,no,MNHN,Nyctiellus_lepidus
-MNHN-ZM-MO-1997-1847,1,no,MNHN,Molossus_rufus
-MNHN-ZM-MO-1997-1905,1,no,MNHN,Micronycteris_hirsuta
-MNHN-ZM-MO-1998-2055,1,no,MNHN,Hydromys_chrysogaster
-MNHN-ZM-MO-1998-2067,1,no,MNHN,Dactylomys_dactylinus
-MNHN-ZM-MO-1998-2073,1,no,MNHN,Makalata_didelphoides
-MNHN-ZM-MO-1998-2075,1,no,MNHN,Mesomys_hispidus
-MNHN-ZM-MO-1999-184,1,no,MNHN,Gerbillus_rupicola
-MNHN-ZM-MO-1999-2814,1,no,MNHN,Mus_fragilicauda
-MNHN-ZM-MO-2000-406,1,no,MNHN,Miopithecus_talapoin
-MNHN-ZM-MO-2000-639,1,no,MNHN,Taterillus_tranieri
-MNHN-ZM-MO-2001-1317,1,no,MNHN,Dasypus_guianensis
-MNHN-ZM-MO-2001-296,1,no,MNHN,Crossarchus_obscurus
-"MNHN-ZM-MO-2001-298,",1,no,MNHN,Leopardus_geoffroyi
-MNHN-ZM-MO-2001-311,1,no,MNHN,Eupleres_goudotii
-"MNHN-ZM-MO-2001-313,",1,no,MNHN,Ichneumia_albicauda
-MNHN-ZM-MO-2001-315,1,no,MNHN,Melogale_personata
-MNHN-ZM-MO-2001-325,1,no,MNHN,Lynx_pardinus
-MNHN-ZM-MO-2001-326,1,no,MNHN,Prionailurus_javanensis
-MNHN-ZM-MO-2001-338,1,no,MNHN,Viverricula_indica
-MNHN-ZM-MO-2001-340,1,no,MNHN,Genetta_pardina
-MNHN-ZM-MO-2001-350,1,no,MNHN,Lutra_perspicillata
-MNHN-ZM-MO-2001-355,1,no,MNHN,Mustela_nudipes
-MNHN-ZM-MO-2005-988,1,no,MNHN,Mus_cypriacus
-MNHN-ZM-MO-2006-399,1,no,MNHN,Hylomyscus_walterverheyeni
-MNHN-ZM-MO-2010-663,1,no,MNHN,Hylomyscus_pamfi
-MNHN-ZM-MO-2016-2792,1,no,MNHN,Glauconycteris_atra
-MNHN-ZM-MO-2017-2723,1,no,MNHN,Kerivoula_dongduongana
-"MNHN:AGAL:414A,",1,no,MNHN,Rusa_marianna
-MNHN:NGAL:79,1,no,MNHN,Rousettus_amplexicaudatus
-"MNHN:TYPE:205A,",1,no,MNHN,Submyotodon_moupinensis
-"MNHN:TYPE:233B,",1,no,MNHN,Blarinella_quadraticauda
-"MNHN:TYPE:267A,",1,no,MNHN,Geogale_aurita
-MNHN:TYPE:292,1,no,MNHN,Sundasciurus_hippurus
-MNHN:TYPE:294,1,no,MNHN,Callosciurus_pygerythrus
-MNHN:TYPE:299,1,no,MNHN,Lariscus_insignis
-MNHN:TYPE:306,1,no,MNHN,Euxerus_erythropus
-MNHN:TYPE:308,1,no,MNHN,Sciurus_nebouxii
-MNHN:TYPE:310,1,no,MNHN,Sciurus_pucheranii
-MNHN:TYPE:318,1,no,MNHN,Marmota_caudata
-MNHN:TYPE:321,1,no,MNHN,Graphiurus_murinus
-MNHN:TYPE:350,1,no,MNHN,Arvicanthis_niloticus
-MNHN:TYPE:354,1,no,MNHN,Acomys_cahirinus
-MNHN:TYPE:368,1,no,MNHN,Gerbillus_pyramidum
-MNHN:TYPE:369,1,no,MNHN,Gerbillus_burtoni
-MNHN:TYPE:370,1,no,MNHN,Taterillus_pygargus
-MNHN:TYPE:377,1,no,MNHN,Gerbillus_campestris
-MNHN:TYPE:385,1,no,MNHN,Steatomys_opimus
-MNHN:TYPE:389,1,no,MNHN,Cryptomys_hottentotus
-MNHN:TYPE:410A,1,no,MNHN,Microcavia_australis
-MNHN:TYPE:508,1,no,MNHN,Rhinoceros_sondaicus
-MNHN:TYPE:519,1,no,MNHN,Tragulus_napu
-MNHN:TYPE:540,1,no,MNHN,Rucervus_duvaucelii
-MNHN:TYPE:562,1,no,MNHN,Capra_nubiana
-MNHN:TYPE:5C,1,no,MNHN,Hylobates_agilis
-MNHN:TYPE:9,1,no,MNHN,Pygathrix_nemaeus
-MNHN:TYPE:96B,1,no,MNHN,Plecturocebus_donacophilus
-MNHN:TYPE:97,1,no,MNHN,Plecturocebus_moloch
-MNHNCL,1,no,MNHN; MNHNC,Eligmodontia_puerulus
-MNHNCL:MAMM:1546,1,no,MNHN; MNHNC,Eligmodontia_dunaris
-MNHNH,1,no,MNHN,Atopogale_arredondoi
-MNHNS,1,no,MNHN,Nannospalax_turcicus
-MNKG,1,no,,Plecotus_gobiensis
+MN-UFRJ,1,no,MN,Abrawayaomys_ruschii
+MNHB,1,no,MN,Sotalia_guianensis
+MNHN-F-MAD121,1,no,MN; MNHN,Palaeopropithecus_ingens
+"MNHN-F-MAD308A,",1,no,MN; MNHN,Hippopotamus_lemerlei
+"MNHN-F-MAD40,",1,no,MN; MNHN,Archaeolemur_edwardsi
+MNHN-ZM-2005-898,1,no,MN; MNHN,Cacajao_rubicundus
+MNHN-ZM-2005-899,1,no,MN; MNHN,Ateles_hybridus
+MNHN-ZM-2005-903,1,no,MN; MNHN,Ateles_marginatus
+MNHN-ZM-2005-905,1,no,MN; MNHN,Cercocebus_atys
+MNHN-ZM-2005-912,1,no,MN; MNHN,Trachypithecus_auratus
+MNHN-ZM-2005-915,1,no,MN; MNHN,Procolobus_verus
+MNHN-ZM-2005-928,1,no,MN; MNHN,Pithecia_monachus
+MNHN-ZM-2005-930,1,no,MN; MNHN,Saimiri_boliviensis
+MNHN-ZM-2005-952,1,no,MN; MNHN,Macaca_radiata
+MNHN-ZM-2005-954,1,no,MN; MNHN,Macaca_arctoides
+MNHN-ZM-2005-970,1,no,MN; MNHN,Hylobates_moloch
+MNHN-ZM-2005-971,1,no,MN; MNHN,Hylobates_funereus
+MNHN-ZM-2005-984,1,no,MN; MNHN,Chlorocebus_pygerythrus
+MNHN-ZM-2005-987,1,no,MN; MNHN,Mandrillus_leucophaeus
+MNHN-ZM-2007-1470,1,no,MN; MNHN,Aotus_lemurinus
+MNHN-ZM-2007-1502,1,no,MN; MNHN,Saguinus_weddellii
+MNHN-ZM-2007-1515,1,no,MN; MNHN,Callithrix_aurita
+MNHN-ZM-2007-1517,1,no,MN; MNHN,Mico_melanurus
+MNHN-ZM-2007-1522,1,no,MN; MNHN,Mico_humeralifer
+MNHN-ZM-2007-1523,1,no,MN; MNHN,Callithrix_geoffroyi
+MNHN-ZM-2007-1530,1,no,MN; MNHN,Saguinus_geoffroyi
+MNHN-ZM-2007-1532,1,no,MN; MNHN,Saguinus_labiatus
+MNHN-ZM-2007-1534,1,no,MN; MNHN,Saguinus_illigeri
+MNHN-ZM-2007-1535,1,no,MN; MNHN,Saguinus_nigrifrons
+MNHN-ZM-2007-1536,1,no,MN; MNHN,Saguinus_pileatus
+MNHN-ZM-2007-1540,1,no,MN; MNHN,Saimiri_ustus
+MNHN-ZM-2007-1542,1,no,MN; MNHN,Cheirogaleus_major
+MNHN-ZM-2007-1543,1,no,MN; MNHN,Microcebus_rufus
+MNHN-ZM-2007-1544,1,no,MN; MNHN,Phaner_furcifer
+MNHN-ZM-2007-1545,1,no,MN; MNHN,Eulemur_collaris
+MNHN-ZM-2007-1546,1,no,MN; MNHN,Daubentonia_madagascariensis
+MNHN-ZM-2007-1547,1,no,MN; MNHN,Galago_senegalensis
+MNHN-ZM-2007-1550,1,no,MN; MNHN,Hapalemur_griseus
+MNHN-ZM-2007-1552,1,no,MN; MNHN,Lepilemur_mustelinus
+MNHN-ZM-2007-1566,1,no,MN; MNHN,Anoura_caudifer
+MNHN-ZM-2011-13,1,no,MN; MNHN,Dendromus_lachaisei
+MNHN-ZM-2011-15,1,no,MN; MNHN,Galemys_pyrenaicus
+MNHN-ZM-2011-164,1,no,MN; MNHN,Ailurus_fulgens
+MNHN-ZM-2011-21,1,no,MN; MNHN,Crocidura_flavescens
+MNHN-ZM-2011-637,1,no,MN; MNHN,Casinycteris_campomaanensis
+MNHN-ZM-2011-713,1,no,MN; MNHN,Scotonycteris_bergmansi
+MNHN-ZM-2011-993,1,no,MN; MNHN,Megaloglossus_azagnyi
+"MNHN-ZM-2014-3,",1,no,MN; MNHN,Atilax_paludinosus
+"MNHN-ZM-2014-33,",1,no,MN; MNHN,Gazella_leptoceros
+MNHN-ZM-2014-54,1,no,MN; MNHN,Manis_javanica
+MNHN-ZM-2016-471,1,no,MN; MNHN,Talpa_aquitania
+MNHN-ZM-2023-12,1,no,MN; MNHN,Myotis_nustrale
+"MNHN-ZM-AC-1870-289,",1,no,MN; MNHN,Rhinopithecus_roxellana
+MNHN-ZM-AC-1880-550,1,no,MN; MNHN,Sotalia_fluviatilis
+MNHN-ZM-AC-1883-1545,1,no,MN; MNHN,Lobodon_carcinophaga
+MNHN-ZM-AC-1903-13,1,no,MN; MNHN,Micronycteris_minuta
+MNHN-ZM-AC-1921-123,1,no,MN; MNHN,Eubalaena_australis
+"MNHN-ZM-AC-1944-307,",1,no,MN; MNHN,Grampus_griseus
+MNHN-ZM-AC-A10733,1,no,MN; MNHN,Berardius_arnuxii
+MNHN-ZM-AC-A11478,1,no,MN; MNHN,Inia_boliviensis
+"MNHN-ZM-AC-A12737,",1,no,MN; MNHN,Bettongia_lesueur
+"MNHN-ZM-AC-A1407,",1,no,MN; MNHN,Presbytis_comata
+MNHN-ZM-AC-A1791,1,no,MN; MNHN,Prionailurus_rubiginosus
+MNHN-ZM-AC-A2006,1,no,MN; MNHN,Lyncodon_patagonicus
+MNHN-ZM-AC-A3035,1,no,MN; MNHN,Stenella_frontalis
+"MNHN-ZM-AC-A3051,",1,no,MN; MNHN,Sousa_plumbea
+MNHN-ZM-AC-A3086,1,no,MN; MNHN,Neophocaena_phocaenoides
+MNHN-ZM-AC-A3552,1,no,MN; MNHN,Mesoplodon_densirostris
+MNHN-ZM-AC-A3554,1,no,MN; MNHN,Ziphius_cavirostris
+"MNHN-ZM-AC-A3578,",1,no,MN; MNHN,Hydrurga_leptonyx
+MNHN-ZM-AC-A3910,1,no,MN; MNHN,Papio_anubis
+MNHN-ZM-AC-A6753,1,no,MN; MNHN,Dobsonia_moluccensis
+"MNHN-ZM-AC-A6953,",1,no,MN; MNHN,Myotis_emarginatus
+MNHN-ZM-AC-A6987,1,no,MN; MNHN,Neoeptesicus_innoxius
+MNHN-ZM-AC-A8126,1,no,MN; MNHN,Varecia_rubra
+MNHN-ZM-AC-I-577,1,no,MN; MNHN,Furipterus_horrens
+MNHN-ZM-MO-1818-764,1,no,MN; MNHN,Rousettus_leschenaultii
+MNHN-ZM-MO-1829-44,1,no,MN; MNHN,Hippocamelus_antisensis
+MNHN-ZM-MO-1834-38,1,no,MN; MNHN,Octodontomys_gliroides
+MNHN-ZM-MO-1847-1636,1,no,MN; MNHN,Chiropotes_albinasus
+MNHN-ZM-MO-1847-1667A,1,no,MN; MNHN,Cacajao_calvus
+MNHN-ZM-MO-1849-299,1,no,MN; MNHN,Notamacropus_irma
+MNHN-ZM-MO-1851-61,1,no,MN; MNHN,Andinocervus_rufinus
+MNHN-ZM-MO-1852-257,1,no,MN; MNHN,Epomops_franqueti
+MNHN-ZM-MO-1854-1263,1,no,MN; MNHN,Propithecus_coquereli
+MNHN-ZM-MO-1854-1275,1,no,MN; MNHN,Genetta_servalina
+MNHN-ZM-MO-1854-1282,1,no,MN; MNHN,Bdeogale_nigripes
+MNHN-ZM-MO-1854-1288,1,no,MN; MNHN,Oenomys_hypoxanthus
+MNHN-ZM-MO-1859-340,1,no,MN; MNHN,Diclidurus_scutatus
+MNHN-ZM-MO-1860-686,1,no,MN; MNHN,Eliomys_munbyanus
+MNHN-ZM-MO-1863-655,1,no,MN; MNHN,Sciurotamias_davidianus
+MNHN-ZM-MO-1864-412,1,no,MN; MNHN,Pygathrix_nigripes
+MNHN-ZM-MO-1864-683,1,no,MN; MNHN,Tamiops_rodolphii
+MNHN-ZM-MO-1866-86,1,no,MN; MNHN,Elaphurus_davidianus
+MNHN-ZM-MO-1867-127,1,no,MN; MNHN,Myospalax_armandii
+MNHN-ZM-MO-1867-135,1,no,MN; MNHN,Meriones_unguiculatus
+MNHN-ZM-MO-1867-259,1,no,MN; MNHN,Scaptochirus_moschatus
+MNHN-ZM-MO-1867-5,1,no,MN; MNHN,Lophiomys_imhausii
+MNHN-ZM-MO-1867-552,1,no,MN; MNHN,Eospalax_fontanierii
+MNHN-ZM-MO-1867-554,1,no,MN; MNHN,Aeretes_melanopterus
+MNHN-ZM-MO-1867-555,1,no,MN; MNHN,Trogopterus_xanthipes
+MNHN-ZM-MO-1867-580,1,no,MN; MNHN,Propithecus_verreauxi
+MNHN-ZM-MO-1867-586,1,no,MN; MNHN,Mirza_coquereli
+MNHN-ZM-MO-1867-596,1,no,MN; MNHN,Trachypithecus_germaini
+MNHN-ZM-MO-1868-1331,1,no,MN; MNHN,Dremomys_pernyi
+MNHN-ZM-MO-1868-1334,1,no,MN; MNHN,Myospalax_psilurus
+MNHN-ZM-MO-1868-229,1,no,MN; MNHN,Cheirogaleus_medius
+MNHN-ZM-MO-1869-14,1,no,MN; MNHN,Myotis_pilosus
+MNHN-ZM-MO-1870-1,1,no,MN; MNHN,Macaca_thibetana
+MNHN-ZM-MO-1870-10,1,no,MN; MNHN,Nectogale_elegans
+MNHN-ZM-MO-1870-11,1,no,MN; MNHN,Anourosorex_squamipes
+MNHN-ZM-MO-1870-15,1,no,MN; MNHN,Euroscaptor_longirostris
+MNHN-ZM-MO-1870-20,1,no,MN; MNHN,Niviventer_confucianus
+MNHN-ZM-MO-1870-24,1,no,MN; MNHN,Eothenomys_melanogaster
+MNHN-ZM-MO-1870-274,1,no,MN; MNHN,Inia_geoffrensis
+MNHN-ZM-MO-1870-32,1,no,MN; MNHN,Micromys_pygmaeus
+MNHN-ZM-MO-1870-33,1,no,MN; MNHN,Ochotona_thibetana
+MNHN-ZM-MO-1870-42,1,no,MN; MNHN,Petaurista_alborufus
+MNHN-ZM-MO-1870-541,1,no,MN; MNHN,Budorcas_tibetana
+MNHN-ZM-MO-1870-543,1,no,MN; MNHN,Naemorhedus_griseus
+MNHN-ZM-MO-1870-551,1,no,MN; MNHN,Elaphodus_cephalophus
+MNHN-ZM-MO-1870-574,1,no,MN; MNHN,Sorex_cylindricauda
+MNHN-ZM-MO-1870-575,1,no,MN; MNHN,Crocidura_attenuata
+MNHN-ZM-MO-1870-581,1,no,MN; MNHN,Uropsilus_soricipes
+MNHN-ZM-MO-1870-584,1,no,MN; MNHN,Murina_leucogaster
+MNHN-ZM-MO-1870-590,1,no,MN; MNHN,Murina_aurata
+MNHN-ZM-MO-1870-605,1,no,MN; MNHN,Apodemus_chevrieri
+MNHN-ZM-MO-1871-112,1,no,MN; MNHN,Propithecus_coronatus
+MNHN-ZM-MO-1871-571,1,no,MN; MNHN,Alexandromys_montebelli
+MNHN-ZM-MO-1871-87A,1,no,MN; MNHN,Scaptonyx_fusicauda
+MNHN-ZM-MO-1873-58,1,no,MN; MNHN,Malacomys_longipes
+MNHN-ZM-MO-1874-583,1,no,MN; MNHN,Typhlomys_cinereus
+MNHN-ZM-MO-1876-1074,1,no,MN; MNHN,Lampronycteris_brachyotis
+MNHN-ZM-MO-1877-1473,1,no,MN; MNHN,Pogonomys_macrourus
+MNHN-ZM-MO-1877-1477,1,no,MN; MNHN,Phalanger_vestitus
+MNHN-ZM-MO-1877-1484BIS,1,no,MN; MNHN,Cercartetus_caudatus
+MNHN-ZM-MO-1877-2028,1,no,MN; MNHN,Peroryctes_raffrayanus
+MNHN-ZM-MO-1877-562,1,no,MN; MNHN,Saguinus_tripartitus
+MNHN-ZM-MO-1877-619,1,no,MN; MNHN,Paraxerus_ochraceus
+MNHN-ZM-MO-1878-1110,1,no,MN; MNHN,Pteropus_seychellensis
+MNHN-ZM-MO-1881-11,1,no,MN; MNHN,Galegeeska_revoilii
+MNHN-ZM-MO-1881-1594,1,no,MN; MNHN,Equus_grevyi
+MNHN-ZM-MO-1882-1515,1,no,MN; MNHN,Eulemur_cinereiceps
+MNHN-ZM-MO-1883-469,1,no,MN; MNHN,Talpa_davidiana
+MNHN-ZM-MO-1883-679,1,no,MN; MNHN,Huetia_leucorhina
+MNHN-ZM-MO-1884-1817,1,no,MN; MNHN,Mydaus_marchei
+MNHN-ZM-MO-1884-2389,1,no,MN; MNHN,Nomascus_nasutus
+MNHN-ZM-MO-1886-109,1,no,MN; MNHN,Piliocolobus_bouvieri
+MNHN-ZM-MO-1886-112,1,no,MN; MNHN,Piliocolobus_tholloni
+MNHN-ZM-MO-1886-1120,1,no,MN; MNHN,Eliurus_myoxinus
+MNHN-ZM-MO-1886-1224,1,no,MN; MNHN,Dactylopsila_palpator
+MNHN-ZM-MO-1886-125,1,no,MN; MNHN,Cercocebus_agilis
+MNHN-ZM-MO-1886-1536,1,no,MN; MNHN,Myotis_anjouanensis
+MNHN-ZM-MO-1886-165,1,no,MN; MNHN,Poemys_pecilei
+MNHN-ZM-MO-1887-755,1,no,MN; MNHN,Propithecus_candidus
+MNHN-ZM-MO-1887-873,1,no,MN; MNHN,Oryzorictes_tetradactylus
+MNHN-ZM-MO-1887-874,1,no,MN; MNHN,Oryzorictes_hova
+MNHN-ZM-MO-1887-878,1,no,MN; MNHN,Crocidura_bloyeti
+MNHN-ZM-MO-1888-1,1,no,MN; MNHN,Pelomys_campanae
+MNHN-ZM-MO-1888-10,1,no,MN; MNHN,Hypogeomys_antimena
+"MNHN-ZM-MO-1891-391,",1,no,MN; MNHN,Felis_bieti
+MNHN-ZM-MO-1892-1591,1,no,MN; MNHN,Mylomys_dybowskii
+MNHN-ZM-MO-1892-2053,1,no,MN; MNHN,Dologale_dybowskii
+MNHN-ZM-MO-1895-549,1,no,MN; MNHN,Eozapus_setchuanus
+MNHN-ZM-MO-1897-611BIS,1,no,MN; MNHN,Piliocolobus_foai
+MNHN-ZM-MO-1897-71,1,no,MN; MNHN,Rhinopithecus_bieti
+MNHN-ZM-MO-1897-981,1,no,MN; MNHN,Rhinolophus_maclaudi
+MNHN-ZM-MO-1898-1394,1,no,MN; MNHN,Trachypithecus_francoisi
+MNHN-ZM-MO-1898-1785,1,no,MN; MNHN,Capromys_geayi
+MNHN-ZM-MO-1900-397,1,no,MN; MNHN,Hyomys_goliath
+MNHN-ZM-MO-1900-398,1,no,MN; MNHN,Xenuromys_barbatus
+"MNHN-ZM-MO-1908-258,",1,no,MN; MNHN,Notopteris_neocaledonicus
+MNHN-ZM-MO-1908-34,1,no,MN; MNHN,Piliocolobus_oustaleti
+MNHN-ZM-MO-1911-2208,1,no,MN; MNHN,Acomys_chudeaui
+MNHN-ZM-MO-1911-481,1,no,MN; MNHN,Trachypithecus_poliocephalus
+MNHN-ZM-MO-1912-134,1,no,MN; MNHN,Macrotarsomys_bastardi
+MNHN-ZM-MO-1912-40,1,no,MN; MNHN,Paratriaenops_furcula
+MNHN-ZM-MO-1927-3,1,no,MN; MNHN,Kogia_breviceps
+MNHN-ZM-MO-1933-223,1,no,MN; MNHN,Perameles_bougainville
+MNHN-ZM-MO-1940-1222,1,no,MN; MNHN,Bos_sauveli
+MNHN-ZM-MO-1948-360C,1,no,MN; MNHN,Hipposideros_alongensis
+MNHN-ZM-MO-1949-19,1,no,MN; MNHN,Dendroprionomys_rousseloti
+MNHN-ZM-MO-1953-1,1,no,MN; MNHN,Otomops_madagascariensis
+MNHN-ZM-MO-1956-576,1,no,MN; MNHN,Myosorex_babaulti
+MNHN-ZM-MO-1957-37,1,no,MN; MNHN,Mastomys_kollmannspergeri
+MNHN-ZM-MO-1958-636,1,no,MN; MNHN,Macrotarsomys_ingens
+MNHN-ZM-MO-1959-938,1,no,MN; MNHN,Genetta_bourloni
+MNHN-ZM-MO-1961-177,1,no,MN; MNHN,Eliurus_petteri
+MNHN-ZM-MO-1961-221,1,no,MN; MNHN,Brachytarsomys_villosus
+MNHN-ZM-MO-1962-1109,1,no,MN; MNHN,Anourosorex_schmidi
+MNHN-ZM-MO-1966-1899,1,no,MN; MNHN,Mus_mattheyi
+MNHN-ZM-MO-1966-2220,1,no,MN; MNHN,Eliurus_antsingy
+MNHN-ZM-MO-1968-148,1,no,MN; MNHN,Thylamys_karimii
+MNHN-ZM-MO-1968-408,1,no,MN; MNHN,Rhinolophus_adami
+MNHN-ZM-MO-1970-89,1,no,MN; MNHN,Mus_oubanguii
+MNHN-ZM-MO-1970-91,1,no,MN; MNHN,Mus_goundae
+MNHN-ZM-MO-1971-518,1,no,MN; MNHN,Praomys_petteri
+MNHN-ZM-MO-1972-250,1,no,MN; MNHN,Lophuromys_melanonyx
+MNHN-ZM-MO-1974-77,1,no,MN; MNHN,Lepilemur_ankaranensis
+MNHN-ZM-MO-1974-80,1,no,MN; MNHN,Lepilemur_septentrionalis
+MNHN-ZM-MO-1976-401,1,no,MN; MNHN,Salanoia_concolor
+MNHN-ZM-MO-1977-755,1,no,MN; MNHN,Cryptoprocta_spelea
+MNHN-ZM-MO-1977-770,1,no,MN; MNHN,Myzopoda_aurita
+MNHN-ZM-MO-1977-774,1,no,MN; MNHN,Proechimys_cuvieri
+MNHN-ZM-MO-1977-775,1,no,MN; MNHN,Daptomys_oyapocki
+MNHN-ZM-MO-1981-1029,1,no,MN; MNHN,Crocidura_lamottei
+MNHN-ZM-MO-1981-1089,1,no,MN; MNHN,Crocidura_crenata
+MNHN-ZM-MO-1981-1099,1,no,MN; MNHN,Crocidura_douceti
+MNHN-ZM-MO-1981-1107,1,no,MN; MNHN,Myosorex_schalleri
+MNHN-ZM-MO-1981-402,1,no,MN; MNHN,Micropotamogale_lamottei
+MNHN-ZM-MO-1981-460,1,no,MN; MNHN,Crocidura_thomensis
+"MNHN-ZM-MO-1981-482,",1,no,MN; MNHN,Crocidura_eburnea
+MNHN-ZM-MO-1981-488,1,no,MN; MNHN,Crocidura_grassei
+MNHN-ZM-MO-1981-490,1,no,MN; MNHN,Crocidura_jouvenetae
+MNHN-ZM-MO-1981-492,1,no,MN; MNHN,Crocidura_nimbae
+MNHN-ZM-MO-1981-494,1,no,MN; MNHN,Crocidura_obscurior
+MNHN-ZM-MO-1981-498,1,no,MN; MNHN,Crocidura_theresae
+MNHN-ZM-MO-1981-500,1,no,MN; MNHN,Crocidura_viaria
+MNHN-ZM-MO-1981-547,1,no,MN; MNHN,Trinomys_setosus
+MNHN-ZM-MO-1981-548,1,no,MN; MNHN,Trinomys_albispinus
+MNHN-ZM-MO-1981-871,1,no,MN; MNHN,Eliurus_ellermani
+MNHN-ZM-MO-1982-1004,1,no,MN; MNHN,Galidia_elegans
+MNHN-ZM-MO-1982-1035,1,no,MN; MNHN,Myopterus_daubentonii
+MNHN-ZM-MO-1982-894,1,no,MN; MNHN,Plagiodontia_aedium
+MNHN-ZM-MO-1983-239,1,no,MN; MNHN,Hylomyscus_parvus
+MNHN-ZM-MO-1984-487,1,no,MN; MNHN,Hipposideros_lamottei
+MNHN-ZM-MO-1984-493,1,no,MN; MNHN,Lamottemys_okuensis
+MNHN-ZM-MO-1984-628,1,no,MN; MNHN,Neogale_africana
+MNHN-ZM-MO-1985-1063,1,no,MN; MNHN,Kerivoula_africana
+MNHN-ZM-MO-1985-1925,1,no,MN; MNHN,Myotis_dieteri
+MNHN-ZM-MO-1986-1044,1,no,MN; MNHN,Phyllostomus_elongatus
+MNHN-ZM-MO-1986-1068,1,no,MN; MNHN,Asellia_tridens
+MNHN-ZM-MO-1986-1083,1,no,MN; MNHN,Gardnerycteris_crenulata
+MNHN-ZM-MO-1986-1084,1,no,MN; MNHN,Nyctinomus_aegyptiacus
+MNHN-ZM-MO-1986-1100,1,no,MN; MNHN,Taphozous_perforatus
+MNHN-ZM-MO-1986-387,1,no,MN; MNHN,Microgale_brevicaudata
+MNHN-ZM-MO-1987-233,1,no,MN; MNHN,Antechinus_minimus
+MNHN-ZM-MO-1987-296,1,no,MN; MNHN,Myotis_davidii
+MNHN-ZM-MO-1987-297,1,no,MN; MNHN,Cnephaeus_bottae
+MNHN-ZM-MO-1987-298,1,no,MN; MNHN,Pteropus_mariannus
+MNHN-ZM-MO-1988-271,1,no,MN; MNHN,Ctenomys_brasiliensis
+MNHN-ZM-MO-1988-33,1,no,MN; MNHN,Taterillus_petteri
+MNHN-ZM-MO-1990-36,1,no,MN; MNHN,Nyctophilus_timoriensis
+MNHN-ZM-MO-1990-396,1,no,MN; MNHN,Macropus_fuliginosus
+MNHN-ZM-MO-1990-397,1,no,MN; MNHN,Notamacropus_rufogriseus
+MNHN-ZM-MO-1990-399,1,no,MN; MNHN,Setonix_brachyurus
+MNHN-ZM-MO-1990-400,1,no,MN; MNHN,Thylogale_thetis
+MNHN-ZM-MO-1990-401,1,no,MN; MNHN,Thylogale_billardierii
+MNHN-ZM-MO-1990-403,1,no,MN; MNHN,Lagostrophus_fasciatus
+MNHN-ZM-MO-1990-405,1,no,MN; MNHN,Bettongia_gaimardi
+MNHN-ZM-MO-1990-410,1,no,MN; MNHN,Pseudochirulus_canescens
+MNHN-ZM-MO-1990-412,1,no,MN; MNHN,Tarsipes_rostratus
+MNHN-ZM-MO-1990-413,1,no,MN; MNHN,Cercartetus_nana
+MNHN-ZM-MO-1990-415,1,no,MN; MNHN,Spilocuscus_papuensis
+MNHN-ZM-MO-1990-417,1,no,MN; MNHN,Perameles_nasuta
+MNHN-ZM-MO-1990-420,1,no,MN; MNHN,Metachirus_nudicaudatus
+MNHN-ZM-MO-1991-1506,1,no,MN; MNHN,Suncus_remyi
+MNHN-ZM-MO-1991-1799,1,no,MN; MNHN,Crocidura_nimbasilvanus
+MNHN-ZM-MO-1991-396,1,no,MN; MNHN,Crocidura_cyanea
+MNHN-ZM-MO-1991-600,1,no,MN; MNHN,Sturnira_lilium
+MNHN-ZM-MO-1992-2005,1,no,MN; MNHN,Pronolagus_crassicaudatus
+MNHN-ZM-MO-1992-2010,1,no,MN; MNHN,Lepus_nigricollis
+MNHN-ZM-MO-1993-4247,1,no,MN; MNHN,Eulemur_rufus
+MNHN-ZM-MO-1993-4250,1,no,MN; MNHN,Eulemur_rubriventer
+MNHN-ZM-MO-1993-4252,1,no,MN; MNHN,Nycticebus_javanicus
+MNHN-ZM-MO-1994-2465,1,no,MN; MNHN,Tarsius_tarsier
+MNHN-ZM-MO-1995-1020,1,no,MN; MNHN,Neacomys_paracou
+MNHN-ZM-MO-1995-1030,1,no,MN; MNHN,Micronycteris_brosseti
+MNHN-ZM-MO-1995-1321,1,no,MN; MNHN,Isothrix_sinnamariensis
+MNHN-ZM-MO-1995-1395,1,no,MN; MNHN,Proechimys_guyannensis
+MNHN-ZM-MO-1995-1397,1,no,MN; MNHN,Pattonomys_semivillosus
+MNHN-ZM-MO-1996-2116,1,no,MN; MNHN,Dobsonia_peronii
+MNHN-ZM-MO-1996-2117,1,no,MN; MNHN,Pteropus_griseus
+MNHN-ZM-MO-1996-2118,1,no,MN; MNHN,Dobsonia_minor
+MNHN-ZM-MO-1996-2119,1,no,MN; MNHN,Rousettus_aegyptiacus
+MNHN-ZM-MO-1996-2121,1,no,MN; MNHN,Pteropus_tonganus
+MNHN-ZM-MO-1996-2125,1,no,MN; MNHN,Pteropus_tuberculatus
+MNHN-ZM-MO-1996-2129,1,no,MN; MNHN,Afropipistrellus_grandidieri
+MNHN-ZM-MO-1997-1800,1,no,MN; MNHN,Nycteris_thebaica
+MNHN-ZM-MO-1997-1802,1,no,MN; MNHN,Hipposideros_diadema
+MNHN-ZM-MO-1997-1803,1,no,MN; MNHN,Platyrrhinus_lineatus
+MNHN-ZM-MO-1997-1804,1,no,MN; MNHN,Lasiurus_blossevillii
+MNHN-ZM-MO-1997-1805,1,no,MN; MNHN,Myotis_levis
+MNHN-ZM-MO-1997-1813,1,no,MN; MNHN,Tadarida_brasiliensis
+MNHN-ZM-MO-1997-1818,1,no,MN; MNHN,Stenoderma_rufum
+MNHN-ZM-MO-1997-1821,1,no,MN; MNHN,Nycteris_javanica
+MNHN-ZM-MO-1997-1824,1,no,MN; MNHN,Lavia_frons
+MNHN-ZM-MO-1997-1828,1,no,MN; MNHN,Histiotus_velatus
+MNHN-ZM-MO-1997-1832,1,no,MN; MNHN,Eptesicus_dutertreus
+MNHN-ZM-MO-1997-1833A,1,no,MN; MNHN,Scotophilus_robustus
+MNHN-ZM-MO-1997-1845,1,no,MN; MNHN,Taphozous_mauritianus
+MNHN-ZM-MO-1997-1846,1,no,MN; MNHN,Nyctiellus_lepidus
+MNHN-ZM-MO-1997-1847,1,no,MN; MNHN,Molossus_rufus
+MNHN-ZM-MO-1997-1905,1,no,MN; MNHN,Micronycteris_hirsuta
+MNHN-ZM-MO-1998-2055,1,no,MN; MNHN,Hydromys_chrysogaster
+MNHN-ZM-MO-1998-2067,1,no,MN; MNHN,Dactylomys_dactylinus
+MNHN-ZM-MO-1998-2073,1,no,MN; MNHN,Makalata_didelphoides
+MNHN-ZM-MO-1998-2075,1,no,MN; MNHN,Mesomys_hispidus
+MNHN-ZM-MO-1999-184,1,no,MN; MNHN,Gerbillus_rupicola
+MNHN-ZM-MO-1999-2814,1,no,MN; MNHN,Mus_fragilicauda
+MNHN-ZM-MO-2000-406,1,no,MN; MNHN,Miopithecus_talapoin
+MNHN-ZM-MO-2000-639,1,no,MN; MNHN,Taterillus_tranieri
+MNHN-ZM-MO-2001-1317,1,no,MN; MNHN,Dasypus_guianensis
+MNHN-ZM-MO-2001-296,1,no,MN; MNHN,Crossarchus_obscurus
+"MNHN-ZM-MO-2001-298,",1,no,MN; MNHN,Leopardus_geoffroyi
+MNHN-ZM-MO-2001-311,1,no,MN; MNHN,Eupleres_goudotii
+"MNHN-ZM-MO-2001-313,",1,no,MN; MNHN,Ichneumia_albicauda
+MNHN-ZM-MO-2001-315,1,no,MN; MNHN,Melogale_personata
+MNHN-ZM-MO-2001-325,1,no,MN; MNHN,Lynx_pardinus
+MNHN-ZM-MO-2001-326,1,no,MN; MNHN,Prionailurus_javanensis
+MNHN-ZM-MO-2001-338,1,no,MN; MNHN,Viverricula_indica
+MNHN-ZM-MO-2001-340,1,no,MN; MNHN,Genetta_pardina
+MNHN-ZM-MO-2001-350,1,no,MN; MNHN,Lutra_perspicillata
+MNHN-ZM-MO-2001-355,1,no,MN; MNHN,Mustela_nudipes
+MNHN-ZM-MO-2005-988,1,no,MN; MNHN,Mus_cypriacus
+MNHN-ZM-MO-2006-399,1,no,MN; MNHN,Hylomyscus_walterverheyeni
+MNHN-ZM-MO-2010-663,1,no,MN; MNHN,Hylomyscus_pamfi
+MNHN-ZM-MO-2016-2792,1,no,MN; MNHN,Glauconycteris_atra
+MNHN-ZM-MO-2017-2723,1,no,MN; MNHN,Kerivoula_dongduongana
+"MNHN:AGAL:414A,",1,no,MN; MNHN,Rusa_marianna
+MNHN:NGAL:79,1,no,MN; MNHN,Rousettus_amplexicaudatus
+"MNHN:TYPE:205A,",1,no,MN; MNHN,Submyotodon_moupinensis
+"MNHN:TYPE:233B,",1,no,MN; MNHN,Blarinella_quadraticauda
+"MNHN:TYPE:267A,",1,no,MN; MNHN,Geogale_aurita
+MNHN:TYPE:292,1,no,MN; MNHN,Sundasciurus_hippurus
+MNHN:TYPE:294,1,no,MN; MNHN,Callosciurus_pygerythrus
+MNHN:TYPE:299,1,no,MN; MNHN,Lariscus_insignis
+MNHN:TYPE:306,1,no,MN; MNHN,Euxerus_erythropus
+MNHN:TYPE:308,1,no,MN; MNHN,Sciurus_nebouxii
+MNHN:TYPE:310,1,no,MN; MNHN,Sciurus_pucheranii
+MNHN:TYPE:318,1,no,MN; MNHN,Marmota_caudata
+MNHN:TYPE:321,1,no,MN; MNHN,Graphiurus_murinus
+MNHN:TYPE:350,1,no,MN; MNHN,Arvicanthis_niloticus
+MNHN:TYPE:354,1,no,MN; MNHN,Acomys_cahirinus
+MNHN:TYPE:368,1,no,MN; MNHN,Gerbillus_pyramidum
+MNHN:TYPE:369,1,no,MN; MNHN,Gerbillus_burtoni
+MNHN:TYPE:370,1,no,MN; MNHN,Taterillus_pygargus
+MNHN:TYPE:377,1,no,MN; MNHN,Gerbillus_campestris
+MNHN:TYPE:385,1,no,MN; MNHN,Steatomys_opimus
+MNHN:TYPE:389,1,no,MN; MNHN,Cryptomys_hottentotus
+MNHN:TYPE:410A,1,no,MN; MNHN,Microcavia_australis
+MNHN:TYPE:508,1,no,MN; MNHN,Rhinoceros_sondaicus
+MNHN:TYPE:519,1,no,MN; MNHN,Tragulus_napu
+MNHN:TYPE:540,1,no,MN; MNHN,Rucervus_duvaucelii
+MNHN:TYPE:562,1,no,MN; MNHN,Capra_nubiana
+MNHN:TYPE:5C,1,no,MN; MNHN,Hylobates_agilis
+MNHN:TYPE:9,1,no,MN; MNHN,Pygathrix_nemaeus
+MNHN:TYPE:96B,1,no,MN; MNHN,Plecturocebus_donacophilus
+MNHN:TYPE:97,1,no,MN; MNHN,Plecturocebus_moloch
+MNHNCL,1,no,MN; MNHN; MNHNC,Eligmodontia_puerulus
+MNHNCL:MAMM:1546,1,no,MN; MNHN; MNHNC,Eligmodontia_dunaris
+MNHNH,1,no,MN; MNHN,Atopogale_arredondoi
+MNHNS,1,no,MN; MNHN,Nannospalax_turcicus
+MNKG,1,no,MN,Plecotus_gobiensis
 MRSN,1,no,,Arvicola_persicus
 MSB:MAMM:192163,1,no,MSB,Neotamias_rufus
 MSB:MAMM:239826,1,no,MSB,Tapecomys_primus

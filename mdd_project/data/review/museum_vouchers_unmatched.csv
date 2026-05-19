@@ -6,28 +6,11 @@ Microcebus_danfossi,038y04koa
 Parablarinella_latimaxillata,AHNU 202109061
 Uropsilus_huanggangensis,AHNU 2022013
 Mesechinus_orientalis,AHNU XC 23001
-Chodsigoa_dabieshanensis,AHUB 2008FZL005
-Moschus_anhuiensis,AHUB 7903
-Uropsilus_dabieshanensis,AHUB AE1807FZL007
-Typhlomys_huangshanensis,AHUB AE1902HS03
-Crocidura_huangshanensis,AHUB HS10
-Crocidura_anhuiensis,AHUB HST1702
 Rhinopithecus_strykeri,AIMZ 15504
 Myotis_izecksohni,ALP 6675
 Dryadonycteris_capixaba,ALP 9667
 Scarturus_heptneri,ASRU 424
 Tokudaia_osimensis,Abe (unnumbered)
-Crocidura_wuchihensis,BIZ 13874
-Orientallactaga_balikunica,BIZ 20071
-Dobsonia_viridis,"BIZ 2A (= ""H1573""), BIZ 2B (= ""H1572""), BIZ 2C (= ""H1574""), BIZ 2D (= ""H1570""), BIZ 2E (= ""H1576""), BIZ 2F (= ""H1571""), BIZ 2G (= ""H1574"")"
-Neohylomys_hainanensis,BIZ 70886
-Niviventer_fengi,BIZ CAS JL17111
-Niviventer_gladiusmaculus,BIZ CAS XZ70
-Apodemus_nigrus,BIZ GZ14081
-Axis_calamianensis,BIZ H 1B
-Mustela_mopbie,BIZ MB240076
-Sus_cebifrons,BIZ NS 4a
-Barbastella_beijingensis,BIZ-BRG00054
 Latidens_salimalii,BNHS 1563
 Otomys_zinki,Bohmann collection 548
 Otomys_sungae,Bohmann collection 582
@@ -46,35 +29,14 @@ Bibimys_torresi,CFA-MA-5067
 Miniopterus_phillipsi,CNM 2021.03.01.NH
 Hipposideros_srilankaensis,CNM 2023.08.01NH
 Mesoplodon_hotaula,CNM 3WZ5
-Peromyscus_purepechus,CNMA 11302
-Habromys_delicatulus,CNMA 22439
-Cryptotis_woodmani,CNMA 44747
-Glossophaga_morenoi,CNMA 7383
-Cryptotis_phillipsii,CNMA 8445
-Rhogeessa_mira,CNMA 8594
-Leptonycteris_yerbabuenae,CNMA 9216
 Tympanoctomys_kirchnerorum,CNP 1862
 Oecomys_franciscorum,CNP 4260
 Akodon_philipmyersi,CNP 739
-Petrogale_coenensis,CSIRO CM10493
-Petrogale_inornata,CSIRO CM11637
-Petrogale_mareeba,CSIRO CM1506
-Petrogale_sharmani,CSIRO CM15202
-Alionoctula_wattsi,CSIRO CM1946
-Austronomus_kuboriensis,CSIRO CM2086
 Ctenomys_heniacamiare,CUNRC 38168
 Aepeomys_reigi,CVUSB-928
 Vernaya_foramena,CWNU 75003
 Calomyscus_tsolovi,CZUS III.53.1
 Ctenomys_ibicuiensis,DGIBUFRGS TR 1065
-Rhinolophus_mabuensis,DNSM 10842
-Pseudoromicia_roseveari,DNSM 12617
-Miniopterus_nimbae,DNSM 12621
-Pseudoromicia_tenuipinnis,DNSM 13235
-Myosorex_meesteri,DNSM 4693
-Neoromicia_hlandzeni,DNSM 8423
-Rhinolophus_mossambicus,DNSM 8578
-Rhinolophus_cohenae,DNSM 8626
 Nannospalax_garzanensis,DU 444
 Nannospalax_tuncelicus,DU 69
 Peromyscus_carolpattonae,ECOSUR ECO-SC-M 8626
@@ -88,12 +50,6 @@ Biswamoyopterus_laoensis,FES.MM.12.163
 Blarina_brevicauda,FHSM 37241
 Pseudoryx_nghetinhensis,FIPI MVQ001
 Muntiacus_vuquangensis,FIPI MVQ011
-Crunomys_inflatus,FMSM 323/14
-Crunomys_hylomyoides,FMSM 440/14
-Rattus_korinchi,FMSM 442/14
-Sundasciurus_altitudinis,FMSM 471/14
-Mus_crociduroides,FMSM 571/14
-Mus_vulcani,FMSM 897/16
 Scapteromys_meridionalis,FURB 20253
 Deltamys_araucaria,FURB 20296
 Microcebus_lehilahytsara,GBP 1033 through GBP 1042
@@ -112,11 +68,6 @@ Uropsilus_funiushanensis,IBE 00300
 Euroscaptor_darwini,IBVAST NTS.2024.PL.01
 Saguinus_kulina,IDSM 03594
 Cacajao_amuna,IDSM 03676
-Mesocapromys_auritus,IES CZACC-1.189 (= IES IB-6501)
-Capromys_garridoi,IES CZACC-1.194 (= IES IB-6223)
-Mesocapromys_sanfelipensis,IES CZACC-1.198 (= IES IB-6520)
-Mesocapromys_angelcabrerai,IES CZACC1.279 (= IES IZ-7102)
-Nesophontes_major,IES GEC P-682
 Miniopterus_villiersi,IFAN 54-1-1
 Ochotona_iliensis,IPHAS 83001
 Micropotamogale_ruwenzorii,IRSNB (number not known)
@@ -154,13 +105,6 @@ Crocidura_canariensis,MCLPGC ? (= ZFMK:Mamm:1986.75)
 Calassomys_apicalis,MCNPUC 2785
 Juliomys_ximenezi,MCNU 868
 Noronhomys_vespuccii,MCP 3460-PV
-Sciurus_meridionalis,MF 11481
-Crocidura_greenwoodi,MF 2881
-Huetia_tytonis,MF 4181
-Rhinolophus_blasii,"MF 4742, SNMBR N 39345, ZMB 557"
-Microtus_savii,MF 6062
-Elephas_maximus,MF 734
-Molossus_paranaensis,MFA-ZV-M 1494
 Molossus_melini,MGR-ZV-M 339
 Ctenomys_paraguayensis,MHNJSL MZ-00015
 Pipistrellus_inexspectatus,MHNLCF (number not known)
@@ -175,86 +119,8 @@ Dendrolagus_dorianus,"MMUS M.376, MMUS M.377, MMUS M.378"
 Petrogale_assimilis,MMUS M.422
 Dorcopsulus_macleayi,MMUS M381
 Isoodon_auratus,MMUS M468
-Rhipidomys_cariri,MN 10170
-Trinomys_moojeni,MN 13380
-Cryptonanus_agricolai,MN 1495
-Ctenomys_bicolor,MN 2025
-Ctenomys_rondoni,MN 2051
-Gyldenstolpia_planaltensis,MN 21300
-Kerodon_acrobata,MN 22729
-Juscelinomys_candango,MN 23870
-Oecomys_cleberi,MN 24131
-Microakodontomys_transitorius,MN 25986
-Mico_marcai,MN 2856
-Leontopithecus_caissara,MN 28861
-Trinomys_eliasi,MN 30524
-Trinomys_mirapitanga,MN 31460
-Akodon_mystax,MN 31910
-Oxymycterus_caparaoe,MN 31997
-Brucepattersonius_griserufescens,MN 32016
-Oligoryzomys_stramineus,MN 34439
-Cerradomys_vivoi,MN 35898
-Neoplatymops_mattogrossensis,MN 3597
-Trinomys_paratus,MN 4012
-Trinomys_gratiosus,MN 4024
-Hylaeamys_seuanezi,MN 42678
-Cerradomys_scotti,MN 44176
-Cerradomys_maracajuensis,MN 44178
-Oligoryzomys_rupestris,MN 50286
-Oligoryzomys_moojeni,MN 50309
-Juliomys_rimofrons,MN 61647
-Phyllomys_pattoni,MN 62391
-Phyllomys_lundi,MN 62392
-Phyllomys_mantiqueirensis,MN 62393
-Phyllomys_kerri,MN 6241
-Calomys_tocantinsi,MN 62733
-Rhipidomys_itoan,MN 63605
-Cerradomys_marinhus,MN 63830
-Wiedomys_cerradensis,MN 67022
-Cacajao_hosomi,MN 68613
-Cacajao_melanocephalus,MN 68616
-Delomys_altimontanus,MN 69746
-Juliomys_ossitenuis,MN 69752
-Cerradomys_langguthi,MN 69786
-Calomys_cerqueirai,MN 71971
-Coendou_speratus,MN 72045
-Cerradomys_goytaca,MN 73177
-Coendou_prehensilis,MN 73383
-Rhipidomys_ipukensis,MN 73741
-Neacomys_oliveirai,MN 73854
-Monodelphis_pinocchio,MN 78680
-Cerradomys_akroai,MN 80491
-Oligoryzomys_gri,MN 87921
-Rhipidomys_ybyrae,MN 91158
-Rhagomys_jequitiba,MN 91968
-Thrichomys_dandreai,MN 93435
-Abrawayaomys_ruschii,MN-UFRJ 23075
-Sotalia_guianensis,"MNHB 1516, MNHB 2349"
-Juscelinomys_huanchacae,MNK 2632
-Oecomys_sydandersoni,MNK 2679
-Hylaeamys_acritus,MNK 3628
-Neoeptesicus_langeri,MNK M 5584
-Plecotus_gobiensis,MNKG M11247
 Arvicola_persicus,MRSN (number not known)
 Leopardus_jacobita,MSNM Ma 143
-Mops_sarasinorum,MTD (unnumbered) (lost!)
-Rattus_feileri,MTD B11429
-Rattus_taliabuensis,MTD B119968
-Mysateles_prehensilis,MTD B17131
-Petinomys_hageni,"MTD B2057 (= MTD B1946), MTD B2058, RMNH.MAM.13313, RMNH.MAM.13314"
-Cercopithecus_wolfi,MTD B2073 (= MTD B2218)
-Crocidura_kegoensis,MTD B23389
-Crateromys_schadenbergi,MTD B2824 (= MTD B2385)
-Babyrousa_celebensis,MTD B3070 (= MTD B2476)
-Apomys_datae,MTD B3100
-Macaca_tonkeana,MTD B3166 (= MTD B2496)
-Alionoctula_minahassae,MTD B3804 (lost!) (= MTD B2523)
-Hypsugo_petersi,MTD B3805 (lost!) (= MTD B2524)
-Tarsius_sangirensis,"MTD B497 (= MTD ""2243"")"
-Strigocuscus_sangirensis,MTD B502
-Sicista_weigoldi,MTD B5645
-Bunomys_chrysocomus,MTD B612 (= MTD B1707)
-Sus_philippensis,"MTD B801 (= MTD B1138), MTD B802 (= MTD B1133)"
 Saccopteryx_antioquensis,MUA 11011
 Carollia_monohernandezi,MUA 11014
 Holochilus_oxe,MUFAL 00023
@@ -293,32 +159,6 @@ Rungwecebus_kipunji,Photographed specimen
 Paulamys_naso,RGM (number not known)
 Cordimus_hooijeri,RGM.444360
 Ctenomys_australis,Rusconi 376
-Neodon_medogensis,SAF 08810
-Neodon_minor,SAF 09244
-Soriculus_dexingensis,SAF 11216
-Neodon_nyalamensis,SAF 13517
-Ochotona_huanglongensis,SAF 14011
-Ochotona_flatcalvariam,SAF 15012
-Tamiops_minshanicus,SAF 181596
-Sicista_meiguites,SAF 191012
-Eozapus_wanglangensis,SAF 191248
-Vernaya_nushanensis,SAF 19287
-Vernaya_meiguites,SAF 201652
-Neodon_konggordous,SAF 230511
-Neodon_kulakangria,SAF 230542
-Alticola_yarlungius,SAF 230697
-Ochotona_legbona,SAF 240179
-Eospalax_minshanensis,SAF 98126
-Neodon_chayuensis,SAF CY37
-Uropsilus_aequodonenia,SAF LJS027
-Mictomicrotus_liangshanensis,SAF Mabian-003
-Ochotona_galunglaensis,SAF SCNU04481
-Neodon_bershulaensis,SAF XZ11010
-Neodon_liaoruii,SAF XZ11117
-Neodon_bomiensis,SAF XZ13015
-Neodon_namchabarwaensis,SAF XZGB0818009
-Neodon_shergylaensis,SAF XZGB09N195
-Neodon_linzhiensis,SAF XZLL02002
 Crocidura_zhadaensis,SCNU 01754
 Crocidura_medogensis,SCNU 02265
 Typhlomys_fengjiensis,SCNU 02616
@@ -346,11 +186,6 @@ Geomys_streckeri,TCWC:Mamm:787
 Artibeus_inopinatus,TCWC:Mamm:9517
 Sturnira_luisi,TCWC:Mamm:9959
 Megaerops_niphanae,TISTR 688
-Leopoldamys_neilli,TNRC 4330
-Rhinolophus_marshalli,TNRC 54-1669
-Hipposideros_lekaguli,TNRC 54-2200
-Hipposideros_halophyllus,TNRC 54-3694
-Niviventer_hinpoon,TNRC 797
 Allactodipus_bobrinskii,"Tashkent 401, Tashkent 402"
 Lepilemur_otto,TiHo 02y04bibo
 Microcebus_jonahi,TiHo B34
@@ -358,14 +193,6 @@ Laephotis_robertsi,UAnt DBA 43677
 Voalavo_antsahabensis,UAnt DBA 45701
 Scotophilus_tandrefana,UAnt DBA 46923
 Microcebus_tanosi,UAnt RMR 209
-Peromyscus_stirtoni,UCLA Mammals 10634 (= Dickey collection 10634)
-Peromyscus_cordillerae,UCLA Mammals 10716 (= Dickey collection 10716)
-Peromyscus_salvadorensis,UCLA Mammals 10747 (= Dickey collection 10748)
-Rheomys_thomasi,UCLA Mammals 10917 (= Dickey collection 10917)
-Peromyscus_dickeyi,UCLA Mammals 18100 (= Dickey collection 18100)
-Peromyscus_caniceps,UCLA Mammals 19683 (= CIT 50273)
-Peromyscus_pembertoni,UCLA Mammals 19757 (= CIT 50347)
-Peromyscus_sejugis,UCLA Mammals 20042 (= CIT 50632)
 Chiropodomys_calamianensis,UIMNH 33391
 Peromyscus_hooperi,UIMNH 53848
 Neacomys_serranensis,UIS:M:1608
@@ -398,35 +225,11 @@ Cuscomys_oblativus,YPM 3320
 Cercopithecus_lomamiensis,YPM MAM 014080
 Meriones_dahli,Yerevan 5504-8
 Dryomys_anatolicus,ZBEU 8715
-Crocidura_darvishi,ZMF 3759
-Calomyscus_kiabii,ZMF 5133
-Calomyscus_darvishi,ZMF 5282
-Calomyscus_behzadi,ZMF 5383
-Calomyscus_kermanensis,ZMF 5406
 Cavia_patzelti,ZMH 7593
 Murina_gracilis,ZMNTU 1996.10.3
 Harpiola_isodon,ZMNTU 1998.5.3
 Murina_bicolor,ZMNTU 2002.2.1
 Murina_recondita,ZMNTU 2003.8.1
-Blarinomys_breviceps,ZMUC (number not known)
-Rhinopoma_microphyllum,ZMUC (number not known)
-Saimiri_oerstedii,ZMUC (number not known)
-Akodon_cursor,ZMUC (unnumbered)
-Gyldenstolpia_fronto,ZMUC (unnumbered)
-Lundomys_molitor,ZMUC (unnumbered)
-Phyllomys_brasiliensis,ZMUC (unnumbered)
-Pseudoryzomys_simplex,ZMUC (unnumbered)
-Castoria_angustidens,ZMUC 1/1845:13246
-Batomys_salomonseni,ZMUC 11912
-Podogymnura_minima,ZMUC 1311
-Calomys_tener,ZMUC 252
-Bibimys_labiosus,ZMUC 259
-Ichthyomys_hydrobates,ZMUC 862
-Cabassous_squamicaudis,ZMUC L-33
-Thrichomys_apereoides,ZMUC L.117
-Marmosops_incanus,"ZMUC L.14, ZMUC L.15, ZMUC 223, ZMUC 224"
-Didelphis_albiventris,"ZMUC M02-CN4, ZMUC M02-L4"
-Halichoerus_grypus,ZMUC M11-1525
 Rhinolophus_hilli,ZMUZ 126639
 Nomascus_annamensis,ZMVNU M735
 Trachypithecus_selangorensis,ZRC 4-390
