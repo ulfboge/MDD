@@ -71,35 +71,44 @@ async function fetchJson<T>(url: string): Promise<T> {
   return r.json() as Promise<T>;
 }
 
-// ---------------------------------------------------------------------------
-// Build a single-species type-locality GeoJSON (0 or 1 feature)
-// ---------------------------------------------------------------------------
-function buildSpeciesTypeLoc(sp: SpeciesRecord): TypeLocFC {
-  const hasCoords = sp.type_lat != null && sp.type_lon != null;
-  return {
-    type: "FeatureCollection",
-    features: hasCoords
-      ? [
-          {
-            type: "Feature",
-            geometry: {
-              type: "Point",
-              coordinates: [sp.type_lon as number, sp.type_lat as number],
-            },
-            properties: {
-              sci_name: sp.sci_name,
-              sci_name_space: sp.sci_name_space,
-              main_common_name: sp.main_common_name,
-              order: sp.order,
-              family: sp.family,
-              iucn_status: sp.iucn_status,
-              type_locality: sp.type_locality,
-            },
-          },
-        ]
-      : [],
-    meta: { count: hasCoords ? 1 : 0, limit: 1 },
-  };
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function typeLocalityPopupHtml(p: Record<string, string | null>): string {
+  const museum =
+    p.museum_name != null && String(p.museum_name).trim() !== ""
+      ? escapeHtml(String(p.museum_name)) +
+        (p.museum_abbreviation ? ` (${escapeHtml(String(p.museum_abbreviation))})` : "")
+      : null;
+  const voucher =
+    p.type_voucher != null && String(p.type_voucher).trim() !== ""
+      ? escapeHtml(String(p.type_voucher))
+      : null;
+  const kind =
+    p.type_kind != null && String(p.type_kind).trim() !== ""
+      ? escapeHtml(String(p.type_kind))
+      : null;
+  const uri =
+    p.type_voucher_uris != null && String(p.type_voucher_uris).trim().startsWith("http")
+      ? escapeHtml(String(p.type_voucher_uris).trim())
+      : null;
+
+  return `
+    <div class="popup-content">
+      <h4>${escapeHtml(String(p.sci_name_space ?? p.sci_name ?? ""))}</h4>
+      ${p.main_common_name ? `<p class="common">${escapeHtml(String(p.main_common_name))}</p>` : ""}
+      <p><span class="label">Family:</span> ${escapeHtml(String(p.family ?? "—"))} · ${escapeHtml(String(p.order ?? "—"))}</p>
+      ${p.iucn_status ? `<p><span class="label">IUCN:</span> <span class="badge" style="background:${iucnColor(p.iucn_status)}">${escapeHtml(String(p.iucn_status))}</span></p>` : ""}
+      ${p.type_locality ? `<p class="locality"><span class="label">Type locality:</span> ${escapeHtml(String(p.type_locality))}</p>` : ""}
+      ${museum ? `<p><span class="label">Museum:</span> ${museum}</p>` : ""}
+      ${voucher ? `<p><span class="label">Type specimen:</span>${kind ? ` <span class="type-kind">${kind}</span> ·` : ""} ${voucher}</p>` : ""}
+      ${uri ? `<p><a class="popup-link" href="${uri}" target="_blank" rel="noopener noreferrer">View in collection</a></p>` : ""}
+    </div>`;
 }
 
 // ---------------------------------------------------------------------------
@@ -270,15 +279,7 @@ export default function App() {
         const f = e.features?.[0];
         if (!f) return;
         const p = f.properties as Record<string, string | null>;
-        const html = `
-          <div class="popup-content">
-            <h4>${p.sci_name_space ?? p.sci_name ?? ""}</h4>
-            ${p.main_common_name ? `<p class="common">${p.main_common_name}</p>` : ""}
-            <p><span class="label">Family:</span> ${p.family ?? "—"} · ${p.order ?? "—"}</p>
-            ${p.iucn_status ? `<p><span class="label">IUCN:</span> <span class="badge" style="background:${iucnColor(p.iucn_status)}">${p.iucn_status}</span></p>` : ""}
-            ${p.type_locality ? `<p class="locality"><span class="label">Type locality:</span> ${p.type_locality}</p>` : ""}
-          </div>`;
-        popup.setLngLat(e.lngLat).setHTML(html).addTo(map);
+        popup.setLngLat(e.lngLat).setHTML(typeLocalityPopupHtml(p)).addTo(map);
       });
 
       map.on("click", LYR_OCCURRENCES, (e: MapMouseEvent & { features?: MapGeoJSONFeature[] }) => {
@@ -346,11 +347,16 @@ export default function App() {
       // Revert to species-only view — use ref to avoid stale closure over `selected`
       const sp = selectedRef.current;
       if (sp) {
-        const fc = buildSpeciesTypeLoc(sp);
-        (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
-          fc as Parameters<GeoJSONSource["setData"]>[0]
-        );
-        setTypeLocalityCount(fc.meta.count);
+        fetchJson<TypeLocFC>(
+          `${API}/type-localities?species=${encodeURIComponent(sp.sci_name)}&limit=1`
+        )
+          .then((fc) => {
+            (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
+              fc as Parameters<GeoJSONSource["setData"]>[0]
+            );
+            setTypeLocalityCount(fc.meta.count);
+          })
+          .catch(console.error);
       }
     }
   }, [showAllTypeLocalities]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -411,12 +417,18 @@ export default function App() {
     const map = mapRef.current;
     if (!map) return;
 
-    // Filter type locality layer to this species only (0 or 1 point)
-    const speciesFC = buildSpeciesTypeLoc(sp);
-    (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
-      speciesFC as Parameters<GeoJSONSource["setData"]>[0]
-    );
-    setTypeLocalityCount(speciesFC.meta.count);
+    // Filter type locality layer to this species only (0 or 1 point, incl. museum)
+    try {
+      const speciesFC = await fetchJson<TypeLocFC>(
+        `${API}/type-localities?species=${encodeURIComponent(sp.sci_name)}&limit=1`
+      );
+      (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
+        speciesFC as Parameters<GeoJSONSource["setData"]>[0]
+      );
+      setTypeLocalityCount(speciesFC.meta.count);
+    } catch {
+      setTypeLocalityCount(0);
+    }
 
     // Fly to type locality if coordinates exist
     if (sp.type_lat != null && sp.type_lon != null) {

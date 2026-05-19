@@ -478,6 +478,22 @@ details[open] > .about-summary::before {
   color: #fff;
 }
 
+.popup-content .type-kind {
+  font-style: italic;
+  text-transform: capitalize;
+  color: #666;
+}
+
+.popup-content .popup-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.popup-content .popup-link:hover {
+  text-decoration: underline;
+}
+
 .popup-content .locality {
   font-size: 11px;
   color: #666;

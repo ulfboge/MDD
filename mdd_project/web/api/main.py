@@ -365,25 +365,46 @@ def get_type_localities(
         params.append(f"%{genus}%")
 
     where = "WHERE " + " AND ".join(conditions)
-    # Note: the species table has no type_country column (that column lives on
-    # the synonyms table).  Use country_distribution as the closest proxy.
+    # Museum resolved by longest matching institution abbreviation prefix on type_voucher.
+    museum_match = """
+        s.type_voucher IS NOT NULL
+        AND TRIM(s.type_voucher) <> ''
+        AND UPPER(TRIM(s.type_voucher)) LIKE UPPER(tsi.abbreviation) || '%'
+    """
     sql = f"""
         SELECT
-            species_id,
-            sci_name,
-            REPLACE(sci_name, '_', ' ') AS sci_name_space,
-            main_common_name,
-            "order",
-            family,
-            iucn_status,
-            extinct,
-            type_lat,
-            type_lon,
-            type_locality,
-            country_distribution AS type_country
-        FROM species
+            s.species_id,
+            s.sci_name,
+            REPLACE(s.sci_name, '_', ' ') AS sci_name_space,
+            s.main_common_name,
+            s."order",
+            s.family,
+            s.iucn_status,
+            s.extinct,
+            s.type_lat,
+            s.type_lon,
+            s.type_locality,
+            s.type_voucher,
+            s.type_kind,
+            s.type_voucher_uris,
+            s.country_distribution AS type_country,
+            (
+                SELECT tsi.full_name
+                FROM type_specimen_institutions tsi
+                WHERE {museum_match}
+                ORDER BY LENGTH(tsi.abbreviation) DESC
+                LIMIT 1
+            ) AS museum_name,
+            (
+                SELECT tsi.abbreviation
+                FROM type_specimen_institutions tsi
+                WHERE {museum_match}
+                ORDER BY LENGTH(tsi.abbreviation) DESC
+                LIMIT 1
+            ) AS museum_abbreviation
+        FROM species s
         {where}
-        ORDER BY "order", family, sci_name
+        ORDER BY s."order", s.family, s.sci_name
         LIMIT ?
     """
     params.append(limit)
