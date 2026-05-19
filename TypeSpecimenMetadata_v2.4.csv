@@ -1,5 +1,6 @@
 ABBREVIATION,FULL NAME,City and Country,Synonyms/Notes,ONLINE WEBSITE/DATABASE IF AVAILABLE
 ACUNHC,Abilene Christian University Natural History Collection,"Abilene, United States of America",NA,https://csvcoll.org/portal/collections/misc/collprofiles.php?collid=1029
+ALP,"Coleção Adriano Lúcio Peracchi, Universidade Federal Rural do Rio de Janeiro","Rio de Janeiro, Brazil",Catalog prefix ALP in MDD type vouchers; same collection as UFRRJ,http://r1.ufrrj.br/labmasto/colecao.html
 AHUB,Anhui Normal University,"Wuhu, Anhui, China",Catalog prefix in MDD type vouchers; verify against AHNU if needed,NA
 AHNU,Anhui Normal University,"Wuhu, Anhui, China",Catalog prefix AHNU in MDD type vouchers; same institution as AHUB,https://biology.ahnu.edu.cn/info/1066/4123.htm
 AM,Australian Museum,"Sydney, Australia",NA,https://australian.museum/learn/collections/natural-science/mammalogy/
@@ -33,6 +34,7 @@ CZL,"Centro de Zoologica, Instituto de Investigação Científica Tropical","Lis
 DM,Durban Natural Science Museum,"Durban, South Africa",Synonyms: DNSM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
 DNSM,Durban Natural Science Museum,"Durban, South Africa",Catalog prefix DNSM in MDD vouchers; same institution as DM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
 DMNH,Durban Natural Science Museum,"Durban, South Africa",Catalog prefix DMNH in MDD type vouchers; same institution as DM and DNSM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
+DU,Dicle University,"Diyarbakır, Turkey",Catalog prefix DU in MDD type vouchers; Biology Department blind mole-rat type material,https://www.dicle.edu.tr/en
 DZAB,Department of Zoology and Biological Anthropology of the University of Sassari,"Sassari, Italy",NA,https://www.uniss.it/
 DZSJRP,"Universidade Estadual Paulista “Júlio de Mesquita Filho""","São José do Rio Preto, Brazil",NA,https://www2.unesp.br/
 DZUP,"Departamento de Zoologia, Setor de Ciências Biológicas, Universidade Federal do Paraná","Curitiba, Brazil",NA,https://labceas.wordpress.com/colecao-cientifica-de-mastozoologia/
@@ -43,6 +45,7 @@ EPN,"Museo de Historia Natural Gustavo Orcés, Escuela Politécnica Nacional","Q
 E. O. Wilson Biodiversity Laboratory Collection,E. O. Wilson Biodiversity Laboratory Collection at Gorongosa National Park,"Chitengo, Mozambique",NA,https://eowilsonfoundation.org/the-biodiversity-collection/
 FMNH,Field Museum of Natural History,"Chicago, United States of America",NA,https://collections-zoology.fieldmuseum.org/page/collections-data-mammals
 FMSM,Fukushima City Museum of Natural History,"Fukushima, Japan",Catalog prefix FMSM in MDD type vouchers,NA
+FURB,Universidade Regional de Blumenau,"Blumenau, Brazil",Catalog prefix FURB in MDD type vouchers for southern Brazilian rodent type material,https://www.furb.br/
 GEC,Grupo de Exploraciones Científicas,"Havana, Cuba",NA,NA
 GNMT,Georgian National Museum,"Tbilisi, Georgia",Catalog prefix GNMT in MDD type vouchers; related to SGMT/State Georgian Museum,https://museum.ge/index.php?lng=eng&m=2
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University","Guangzhou, China",NA,http://english.gzhu.edu.cn/info/1008/1851.htm
@@ -57,7 +60,9 @@ IEBR,Institute of Ecology and Biological Resources,"Hanoi, Vietnam",NA,http://ww
 IES,Institute of Ecology and Systematics,"Havana, Cuba",Catalog prefix IES in MDD type vouchers,NA
 INPA,National Research Institute of the Amazon,"Manaus, Brazil",NA,https://www.inpa.gov.br/english/
 IOZCAS,"Institute of Zoology, Chinese Academy of Sciences","Beijing, China",Synonyms: BIZ,http://english.ioz.cas.cn/
+IRSNB,Royal Belgian Institute of Natural Sciences,"Brussels, Belgium",Catalog prefix IRSNB in MDD type vouchers; Institut Royal des Sciences Naturelles de Belgique,https://www.naturalsciences.be/
 ISAM,Iziko South African Museum,"Cape Town, South Africa",Catalog prefix ISAM in MDD type vouchers; South African Museum mammal collection,https://www.iziko.org.za/museums/south-african-museum/
+IZK,Institute of Zoology of Kazakhstan,"Almaty, Kazakhstan",Catalog prefix IZK in MDD type vouchers,https://zool.kz/en/
 IZH,Museum and Zoological Institute of the University Halle,"Halle, Germany",Catalog prefix IZH in MDD type vouchers; same institution as MIZH,https://www.uni-halle.de/central_institutions/?lang=en
 KIZ,Kunming Institute of Zoology,"Kunming, China",NA,http://english.kiz.cas.cn/
 KM,Amathole Museum,"Qonce (King William's Town), South Africa",Catalog prefix KM in MDD type vouchers; formerly Kaffrarian Museum,https://amathole.nasmus.co.za/
@@ -67,6 +72,7 @@ LACM,Natural History Museum of Los Angeles County,"Los Angeles, United States of
 LHB,Zoological Collection of the Royal Agricultural University of Berlin,"Berlin, Germany",Catalog prefix LHB in MDD type vouchers; historical Landwirtschaftliche Hochschule Berlin collection,https://www.sammlungen.hu-berlin.de/sammlungen/zoologische-lehrsammlung/
 LIVCM,National Museums Liverpool,"Liverpool, United Kingdom",NA,https://www.liverpoolmuseums.org.uk/collections/world-museum-collections
 LSUMZ,Louisiana State University Museum of Zoology,"Baton Rouge, United States of America",LSU Museum of Natural Science,https://www.lsu.edu/mns/collections/mammalogy.php
+LZH,Hanoi Zoological Museum,"Hanoi, Vietnam",Catalog prefix LZH in MDD type vouchers; likely HZM/Hanoi Zoological Museum for Dao Van Tien type material,https://bio.hus.vnu.edu.vn/en/overview-biological-museum/
 MACN,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,"Buenos Aires, Argentina",NA,https://www.macnconicet.gob.ar/investigacion/zoologia-de-vertebrados/#mastozoologia
 MACN-MA,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,"Buenos Aires, Argentina",Catalog prefix MACN-MA in MDD type vouchers; same institution as MACN,https://www.macnconicet.gob.ar/investigacion/zoologia-de-vertebrados/#mastozoologia
 MAGNT,Museum and Art Gallery of the Northern Territory,"Darwin, Australia",NA,https://www.magnt.net.au/natural-sciences
@@ -104,6 +110,7 @@ MSB,Museum of Southwestern Biology,"Albuquerque, New Mexico",NA,http://www.msb.u
 MSNG,Museum of Natural History “Giacomo Doria” (Museo Civico di Storia Naturale Giacomo Doria),"Genoa, Italy",NA,http://www.museidigenova.it/it/content/museo-di-storia-naturale
 MTQ,Museum of Tropical Queensland,"Townsville, Australia",NA,https://mtq.qm.qld.gov.au/Collections
 MTD,Senckenberg Museum für Tierkunde Dresden,"Dresden, Germany",Catalog prefix MTD in MDD type vouchers; Senckenberg Dresden,https://senckenberg.de/
+MUA,Museo de la Universidad de Antioquia,"Medellín, Colombia",Catalog prefix MUA in MDD type vouchers; same institution as CTUA,https://www.udea.edu.co/wps/portal/udea/web/inicio/cultura/museo-universitario
 MUSA,Museo de Historia Natural de la Universidad Nacional de San Agustín,"Arequipa, Peru",NA,NA
 MUSM,"Museo de Historia Natural, Universidad Nacional Mayor de San Marcos","Lima, Peru",NA,https://museohn.unmsm.edu.pe/masto_coleccion.html
 MVZ,"Museum of Vertebrate Zoology, Berkeley","Berkeley, United States of America",NA,https://mvz.berkeley.edu/mvzmamm/
@@ -121,6 +128,7 @@ NMPH,"National Museum (Natural History), Prague, Czech Republic","Prague, Czech 
 NMSL,"The National Museum of Sri Lanka, Colombo","Colombo, Sri Lanka",National Museum of Colombo,http://www.museum.gov.lk/web/index.php?option=com_divisions&task=onedivision&id=3&lang=en&Itemid=88
 NMV,Museums Victoria,"Melbourne, Australia",NA,https://collections.museumsvictoria.com.au/
 NMW,Naturhistorisches Museum Wien,"Vienna, Austria",NA,https://www.nhm-wien.ac.at/en/research/1_zoology_vertebrates/mammal_collection
+NHMBZ,Natural History Museum of Zimbabwe,"Bulawayo, Zimbabwe",Catalog prefix NHMBZ in MDD type vouchers; same institution as NMZB,https://naturalhistorymuseumzimbabwe.com/mammology/
 NMZB,Natural History Museum of Zimbabwe,"Bulawayo, Zimbabwe",NA,https://naturalhistorymuseumzimbabwe.com/mammology/
 NHRM,Naturhistoriska riksmuseet,"Stockholm, Sweden",Catalog prefix used in MDD type vouchers; same institution as NR and RNHM,https://www.nrm.se/forskningochsamlingar/zoologi.9000585.html
 NR,Naturhistoriska Riksmuseum,"Stockholm, Sweden",Synonyms: NHRM; RNHM,https://www.nrm.se/forskningochsamlingar/zoologi.9000585.html

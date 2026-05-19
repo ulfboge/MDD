@@ -26,11 +26,13 @@ UACH,Colección de Mamíferos de la Universidad Austral de Chile,4,4
 CNP,Colección de Mamíferos del Centro Nacional Patagónico,3,3
 CVULA,Colección de Vertebrados de la Universidad de los Andes,6,5
 CBF,Coleccíon Boliviana de Fauna,1,1
+ALP,"Coleção Adriano Lúcio Peracchi, Universidade Federal Rural do Rio de Janeiro",2,2
 CMUFLA,Coleção de Mamíferos da Universidade Federal de Lavras,2,2
 UFRGS,Coleção de Mamíferos do Departamento de Zoologia da UFRGS,2,2
 DZUP,"Departamento de Zoologia, Setor de Ciências Biológicas, Universidade Federal do Paraná",1,1
 THUMB,"Department of Biology, Tunghai University",1,1
 DZAB,Department of Zoology and Biological Anthropology of the University of Sassari,1,1
+DU,Dicle University,2,2
 TM,Ditsong National Museum of Natural History,22,7
 DMNH,Durban Natural Science Museum,4,2
 DNSM,Durban Natural Science Museum,8,7
@@ -42,12 +44,14 @@ UF,"Florida Museum of Natural History, University of Florida",10,8
 SMF,Forschungsinstitut und Naturmuseum Senckenberg,56,20
 FMSM,Fukushima City Museum of Natural History,6,0
 GNMT,Georgian National Museum,4,1
+LZH,Hanoi Zoological Museum,2,2
 HZM,Harrison Zoological Institute,6,6
 HNHM,Hungarian Natural History Museum,18,10
 IBSS,"Institute of Biology and Soil Science, Far East Branch of the Russian Academy of Sciences",3,3
 IEBR,Institute of Ecology and Biological Resources,8,8
 IES,Institute of Ecology and Systematics,5,3
 BIZ,Institute of Zoology (Beijing) specimen catalog,11,6
+IZK,Institute of Zoology of Kazakhstan,2,0
 ISAM,Iziko South African Museum,3,0
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University",2,2
 KIZ,Kunming Institute of Zoology,23,20
@@ -75,6 +79,7 @@ MUSM,"Museo de Historia Natural, Universidad Nacional Mayor de San Marcos",42,41
 MLP,Museo de La Plata,4,3
 MZFC,"Museo de Zoología “Alfonso L. Herrera,” Universidad Nacional Autónoma de México",4,4
 EBRG,Museo de la Estación Biológica de Rancho Grande,7,5
+MUA,Museo de la Universidad de Antioquia,2,2
 MF,Museo di Storia Naturale dell'Università di Firenze,7,3
 MN,"Museu Nacional, Universidade Federal do Rio de Janeiro",55,45
 MPEG,Museu Paraense Emílio Goeldi,14,12
@@ -112,6 +117,7 @@ INPA,National Research Institute of the Amazon,18,18
 NTU,National Taiwan University,1,1
 NMB,Natural History Museum Basel,6,2
 LACM,Natural History Museum of Los Angeles County,9,7
+NHMBZ,Natural History Museum of Zimbabwe,2,2
 BMNH,"Natural History Museum, London",1899,321
 BMNHC,"Natural History Museum, London",2,2
 NHMO,"Natural History Museum, University of Oslo, Norway",6,1
@@ -123,6 +129,7 @@ OUM,Oxford University Museum of Natural History,2,1
 PBZT,Parc Botanique et Zoologique de Tsimbazaza,2,2
 PSUZC,Princess Maha Chakri Sirindhorn Natural History Museum,5,5
 QM,Queensland Museum,24,18
+IRSNB,Royal Belgian Institute of Natural Sciences,2,1
 RMCA,Royal Museum for Central Africa,33,20
 ROM,Royal Ontario Museum,24,23
 MTD,Senckenberg Museum für Tierkunde Dresden,18,4
@@ -137,6 +144,7 @@ UCLA,UCLA Mammalogy Collection / Dickey Collection,8,5
 UFPB,Universidade Federal da Paraiba,8,7
 UFMT,Universidade Federal de Mato Grosso,5,5
 UFPA,Universidade Federal do Pará,2,2
+FURB,Universidade Regional de Blumenau,2,2
 KU,University of Kansas Biodiversity Institute and Natural History Museum,33,13
 UMMZ,University of Michigan Museum of Zoology,26,8
 UWBM,University of Washington Burke Museum,1,1

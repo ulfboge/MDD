@@ -5,8 +5,8 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 
 ## Current snapshot
 
-- **Completely unmatched vouchers:** 560 species
-- **Prefix gaps in this backlog:** 29 rows
+- **Completely unmatched vouchers:** 544 species
+- **Prefix gaps in this backlog:** 21 rows
 - **Not fixable via metadata:** `UNTRACED` (234) + `LOST` (136) = 370 species
 
 ## Priority legend
