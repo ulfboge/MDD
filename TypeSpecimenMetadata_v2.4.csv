@@ -3,6 +3,7 @@ ACUNHC,Abilene Christian University Natural History Collection,"Abilene, United 
 ALP,"Coleção Adriano Lúcio Peracchi, Universidade Federal Rural do Rio de Janeiro","Rio de Janeiro, Brazil",Catalog prefix ALP in MDD type vouchers; same collection as UFRRJ,http://r1.ufrrj.br/labmasto/colecao.html
 AHUB,Anhui Normal University,"Wuhu, Anhui, China",Catalog prefix in MDD type vouchers; verify against AHNU if needed,NA
 AHNU,Anhui Normal University,"Wuhu, Anhui, China",Catalog prefix AHNU in MDD type vouchers; same institution as AHUB,https://biology.ahnu.edu.cn/info/1066/4123.htm
+AIMZ,"Anthropological Institute and Museum, University of Zurich","Zurich, Switzerland",Catalog prefix AIMZ in MDD type vouchers,https://www.aim.uzh.ch/
 AM,Australian Museum,"Sydney, Australia",NA,https://australian.museum/learn/collections/natural-science/mammalogy/
 AMNH,American Museum of Natural History,"New York, United States of America",NA,https://sci-web-001.amnh.org/db/emuwebamnh/index.php
 ANSP,Academy of Natural Sciences of Drexel University,"Philadelphia, United States of America",NA,https://ansp.org/research/systematics-evolution/mammalogy/
@@ -54,6 +55,7 @@ GBP,Gene Bank of Primates at the German Primate Center,"Göttingen, Germany",Cat
 GNMT,Georgian National Museum,"Tbilisi, Georgia",Catalog prefix GNMT in MDD type vouchers; related to SGMT/State Georgian Museum,https://museum.ge/index.php?lng=eng&m=2
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University","Guangzhou, China",NA,http://english.gzhu.edu.cn/info/1008/1851.htm
 GZNU,Guizhou Normal University,"Guizhou, China",NA,https://e.gznu.edu.cn/
+HDZ,"Omaha's Henry Doorly Zoo and Aquarium","Omaha, United States of America",Catalog prefix HDZ in MDD type vouchers; Grewcock Center for Conservation and Research,https://www.omahazoo.com/conservation-research/
 HNHM,Hungarian Natural History Museum,"Budapest, Hungary",NA,http://www.nhmus.hu/en/collection/department_of_zoology/mammal_collection
 HZM,Harrison Zoological Institute,"Kent, United Kingdom",NA,https://www.harrison-institute.org/
 IADIZA,Instituto Argentino de Investigaciones de las Zonas Aridas,"Mendoza, Argentina",NA,"https://www.mendoza.conicet.gov.ar/portal/iadiza/#:~:text=El%20Instituto%20Argentino%20de%20Investigaciones,y%20el%20Gobierno%20de%20Mendoza."
@@ -71,6 +73,7 @@ IRSNB,Royal Belgian Institute of Natural Sciences,"Brussels, Belgium",Catalog pr
 ISAM,Iziko South African Museum,"Cape Town, South Africa",Catalog prefix ISAM in MDD type vouchers; South African Museum mammal collection,https://www.iziko.org.za/museums/south-african-museum/
 IZK,Institute of Zoology of Kazakhstan,"Almaty, Kazakhstan",Catalog prefix IZK in MDD type vouchers,https://zool.kz/en/
 IZH,Museum and Zoological Institute of the University Halle,"Halle, Germany",Catalog prefix IZH in MDD type vouchers; same institution as MIZH,https://www.uni-halle.de/central_institutions/?lang=en
+JGUM,Johannes Gutenberg University Mainz,"Mainz, Germany",Catalog prefix JGUM in MDD type vouchers for Cheirogaleus type material,https://www.uni-mainz.de/
 KIZ,Kunming Institute of Zoology,"Kunming, China",NA,http://english.kiz.cas.cn/
 KM,Amathole Museum,"Qonce (King William's Town), South Africa",Catalog prefix KM in MDD type vouchers; formerly Kaffrarian Museum,https://amathole.nasmus.co.za/
 KU,University of Kansas Biodiversity Institute and Natural History Museum,"Lawrence, United States of America",NA,https://biodiversity.ku.edu/mammalogy
@@ -105,6 +108,7 @@ MIZ,Museum and Institute of Zoology Polish Academy of Sciences,"Warsaw, Poland",
 MIZH,Museum and Zoological Institute of the University Halle,"Halle, Germany",NA,https://www.uni-halle.de/central_institutions/?lang=en
 MLP,Museo de La Plata,"La Plata, Argentina",NA,https://www.museo.fcnym.unlp.edu.ar/div_zoovertebrados
 MMK,McGregor Museum,"Kimberley, South Africa",NA,https://www.museumsnc.co.za/aboutus/depts/zoology/zoology.html#zoocollect
+MMP,Museo Municipal de Ciencias Naturales Lorenzo Scaglia,"Mar del Plata, Argentina",Catalog prefix MMP in MDD type vouchers,https://www.mardelplata.gob.ar/cienciasnaturales
 MN,"Museu Nacional, Universidade Federal do Rio de Janeiro","Rio de Janeiro, Brazil",Catalog prefix MN in MDD type vouchers; also MNRJ; MN-UFRJ alias,https://www.museunacional.ufrj.br/
 MNK,Museo de Historia Natural Noel Kempff Mercado,"Santa Cruz de la Sierra, Bolivia",Catalog prefix MNK in MDD type vouchers; mammal collection at Universidad Autonoma Gabriel Rene Moreno,https://museonoelkempff.org/museo/zoologia-vertebrados/colecciones-cientificas/
 MNKG,Mongolian Natural History Museum,"Ulaanbaatar, Mongolia",Catalog prefix MNKG in MDD type vouchers; distinct from MNK,https://nhm.gov.mn/client/en
@@ -208,6 +212,7 @@ YPM,Yale Peabody Museum,"New Haven, United States of America",Catalog prefix YPM
 ZFMK,The Zoological Research Museum Alexander Koenig,"Bonn, Germany",Zoologisches Forschungsmuseum Alexander Koenig,https://www.zfmk.de/en
 ZIN,"Zoological Institute, Russian Academy of Sciences","Saint Petersburg, Russia",NA,https://www.zin.ru/museum/expositions/mammals.html
 ZIUZ,"Zoological Institute, Zagreb University","Zagreb, Croatia",NA,https://www.pmf.unizg.hr/biol/en
+ZMH,Zoological Museum Hamburg,"Hamburg, Germany",Catalog prefix ZMH in MDD type vouchers; Zoologisches Museum Hamburg,https://www.cenak.uni-hamburg.de/en/collections/scientific-collections/zoology.html
 ZMA,"Zoölogisch Museum, Amsterdam","Amsterdam, The Netherlands",Merged with RMNH in 2010,https://bioportal.naturalis.nl/
 ZMB,Museum für Naturkunde,"Berlin, Germany",Zoologisches Museum Berlin/Zoological Museum of the Humboldt-University Berlin,https://www.museumfuernaturkunde.berlin/en/science/mammals
 ZMF,Zoological Museum Frankfurt,"Frankfurt, Germany",Catalog prefix ZMF in MDD vouchers; distinct from SMF Senckenberg Frankfurt,NA
@@ -219,3 +224,4 @@ ZRC,"Zoological Reference Collection, Lee Kong Chian Natural History Museum","Si
 ZSI,Zoological Survey of India collections at the Indian Museum,"Calcutta, India",Indian Museum,http://www.zsicollections.in/search
 ZSIS,"Zoological Survey of India, North Eastern Regional Centre","Shillong, India",Catalog prefix ZSIS in MDD type vouchers; ZSI Shillong regional centre,https://zsi.gov.in/regional-centres/en?rc=54
 ZSM,Zoologisches Staats-Sammlung München,"Munich, Germany",NA,https://www.zsm.mwn.de/?lang=en
+ZVC,"Colección Zoología Vertebrados, Facultad de Ciencias, Universidad de la República","Montevideo, Uruguay",Catalog prefix ZVC in MDD type vouchers,https://www.fcien.edu.uy/

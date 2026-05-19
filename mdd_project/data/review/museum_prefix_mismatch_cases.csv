@@ -6,13 +6,6 @@ Nannospalax_turcicus,MNHNS (number not known),MNHNS,MNHN,prefix_missing_from_met
 Crocidura_orii,Kuroda collection 836,KURODA,KU,prefix_missing_from_metadata
 Crocidura_tanakae,Kuroda collection 1651,KURODA,KU,prefix_missing_from_metadata
 Crocidura_watasei,Kuroda collection 741,KURODA,KU,prefix_missing_from_metadata
-Mogera_tokudae,Kuroda collection 379,KURODA,KU,prefix_missing_from_metadata
-Mogera_uchidai,KUF (number not known),KUF,KU,prefix_missing_from_metadata
-Atopogale_arredondoi,MNHNH V-95 (= Mayo 421/123),MNHNH,MNHN,prefix_missing_from_metadata
-Miniopterus_srinii,NHMOU.CHI.08.2017,NHMOU.CHI.08.2017,NHMO,prefix_missing_from_metadata
-Molossus_paranaensis,MFA-ZV-M 1494,MFA-ZV-M,MF,prefix_missing_from_metadata
-Sotalia_guianensis,"MNHB 1516, MNHB 2349",MNHB,MN,prefix_missing_from_metadata
-Cephalorhynchus_hectori,KUL (number not known),KUL,KU,prefix_missing_from_metadata
 Plecturocebus_parecis,UFRO M354,UFRO,UF,prefix_missing_from_metadata
 Microcebus_arnholdi,AMB5.39,AMB5.39,AM,prefix_missing_from_metadata
 Hapalemur_aureus,AMA PT-0998,AMA,AM,prefix_missing_from_metadata
@@ -23,3 +16,10 @@ Ctenomys_miguelchristie,CMIN 46,CMIN,CMI,prefix_missing_from_metadata
 Ctenomys_roigi,CMFA C-001864,CMFA,CM,prefix_missing_from_metadata
 Fukomys_ilariae,MCZR 7016,MCZR,MCZ,prefix_missing_from_metadata
 Alexandromys_kikuchii,Kuroda (unnumbered),KURODA,KU,prefix_missing_from_metadata
+Mogera_tokudae,Kuroda collection 379,KURODA,KU,prefix_missing_from_metadata
+Mogera_uchidai,KUF (number not known),KUF,KU,prefix_missing_from_metadata
+Atopogale_arredondoi,MNHNH V-95 (= Mayo 421/123),MNHNH,MNHN,prefix_missing_from_metadata
+Miniopterus_srinii,NHMOU.CHI.08.2017,NHMOU.CHI.08.2017,NHMO,prefix_missing_from_metadata
+Molossus_paranaensis,MFA-ZV-M 1494,MFA-ZV-M,MF,prefix_missing_from_metadata
+Sotalia_guianensis,"MNHB 1516, MNHB 2349",MNHB,MN,prefix_missing_from_metadata
+Cephalorhynchus_hectori,KUL (number not known),KUL,KU,prefix_missing_from_metadata

@@ -11,7 +11,6 @@ LINNMUS,2,no,,Talpa_europaea; Sciurus_vulgaris
 001Y07HELY,1,no,,Microcebus_macarthurii
 002Y09FINA,1,no,,Microcebus_gerpi
 038Y04KOA,1,no,,Microcebus_danfossi
-AIMZ,1,no,,Rhinopithecus_strykeri
 AMA,1,no,AM,Hapalemur_aureus
 AMB5.39,1,no,AM,Microcebus_arnholdi
 AMG,1,no,AM,Pronolagus_saundersiae
@@ -43,13 +42,11 @@ GIE,1,no,,Leopoldamys_hainanensis
 GNMG,1,no,,Megalomys_camerhogne
 GUNU,1,no,,Murina_liboensis
 GHENT,1,no,,Steno_bredanensis
-HDZ,1,no,,Cheirogaleus_andysabini
 IBE,1,no,,Uropsilus_funiushanensis
 IBVAST,1,no,,Euroscaptor_darwini
 IFAN,1,no,,Miniopterus_villiersi
 IZEA,1,no,,Crocidura_hutanis
 JAG,1,no,,Miniopterus_wilsoni
-JGUM,1,no,,Cheirogaleus_lavasoensis
 K-EE-12-31,1,no,,Aproteles_bulmerae
 KUF,1,no,KU,Mogera_uchidai
 KUL,1,no,KU,Cephalorhynchus_hectori
@@ -72,7 +69,6 @@ MHNLCF,1,no,,Pipistrellus_inexspectatus
 MHNSAAC,1,no,,Mazama_tschudii
 MLZA,1,no,,Myonycteris_brachycephala
 MMNH,1,no,,Mus_macedonicus
-MMP,1,no,,Ctenomys_scagliai
 MNHB,1,no,MN,Sotalia_guianensis
 MNHNCL,1,no,MN; MNHN; MNHNC,Eligmodontia_puerulus
 MNHNCL:MAMM:1546,1,no,MN; MNHN; MNHNC,Eligmodontia_dunaris
@@ -125,10 +121,8 @@ XZ2024037,1,no,,Murina_beibengensis
 XZ2024038,1,no,,Murina_medogensis
 YEREVAN,1,no,,Meriones_dahli
 ZBEU,1,no,,Dryomys_anatolicus
-ZMH,1,no,,Cavia_patzelti
 ZMUZ,1,no,,Rhinolophus_hilli
 ZMVNU,1,no,,Nomascus_annamensis
-ZVC,1,no,,Ctenomys_pearsoni
 FIGURED,1,no,,Trachypithecus_leucocephalus
 LARGER,1,no,,Molossus_molossus
 MALE,1,no,,Cercocebus_sanjei
