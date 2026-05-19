@@ -730,6 +730,10 @@ details[open] > .about-summary::before {
   margin: 0 0 10px;
 }
 
+.coverage-map-hint {
+  color: var(--accent);
+}
+
 .coverage-filters {
   display: flex;
   flex-direction: column;

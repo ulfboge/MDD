@@ -149,6 +149,22 @@ const BASEMAP_TILES =
 const BASEMAP_ATTRIBUTION =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';
 
+function fitMapToTypeLocFc(map: Map, fc: TypeLocFC) {
+  const coords = (fc.features as Array<{ geometry: { coordinates: [number, number] } }>)
+    .map((f) => f.geometry.coordinates)
+    .filter((c) => c && c.length === 2);
+  if (!coords.length) return;
+  const lngs = coords.map((c) => c[0]);
+  const lats = coords.map((c) => c[1]);
+  map.fitBounds(
+    [
+      [Math.min(...lngs), Math.min(...lats)],
+      [Math.max(...lngs), Math.max(...lats)],
+    ],
+    { padding: 80, maxZoom: 8, duration: 1200 }
+  );
+}
+
 // ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
@@ -178,6 +194,44 @@ export default function App() {
   // When a species is selected this is false (show 1 point); user can toggle
   // to true to temporarily display all ~1,941 MDD type localities.
   const [showAllTypeLocalities, setShowAllTypeLocalities] = useState(false);
+  const [coverageCountry, setCoverageCountry] = useState("");
+  const [coverageMuseum, setCoverageMuseum] = useState("");
+  const [mapReady, setMapReady] = useState(false);
+
+  const loadTypeLocalitiesForView = useCallback(async () => {
+    const map = mapRef.current;
+    if (!map || !map.isStyleLoaded()) return;
+    if (selectedTaxon) return;
+    if (selectedRef.current && !showAllTypeLocalities) return;
+
+    const hasFilter = Boolean(coverageMuseum || coverageCountry);
+    if (!hasFilter) {
+      const cached = allTypeLocCacheRef.current;
+      if (cached) {
+        (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
+          cached as Parameters<GeoJSONSource["setData"]>[0]
+        );
+        setTypeLocalityCount(cached.meta.count);
+        return;
+      }
+    }
+
+    const params = new URLSearchParams({ limit: "10000" });
+    if (coverageMuseum) params.set("museum", coverageMuseum);
+    else if (coverageCountry) params.set("country", coverageCountry);
+
+    try {
+      const fc = await fetchJson<TypeLocFC>(`${API}/type-localities?${params}`);
+      (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
+        fc as Parameters<GeoJSONSource["setData"]>[0]
+      );
+      setTypeLocalityCount(fc.meta.count);
+      if (!hasFilter) allTypeLocCacheRef.current = fc;
+      if (hasFilter) fitMapToTypeLocFc(map, fc);
+    } catch (err) {
+      console.error(err);
+    }
+  }, [coverageCountry, coverageMuseum, selectedTaxon, showAllTypeLocalities]);
 
   // ── Initialise map ────────────────────────────────────────────────────────
   useEffect(() => {
@@ -278,15 +332,7 @@ export default function App() {
       });
 
       // ── Load all type localities and cache them ────────────────────────────
-      fetchJson<TypeLocFC>(`${API}/type-localities?limit=2000`)
-        .then((fc) => {
-          allTypeLocCacheRef.current = fc;
-          (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
-            fc as Parameters<GeoJSONSource["setData"]>[0]
-          );
-          setTypeLocalityCount(fc.meta.count);
-        })
-        .catch(console.error);
+      setMapReady(true);
 
       // ── Pointer cursor on hover ───────────────────────────────────────────
       for (const lyr of [LYR_TYPE_LOC, LYR_OCCURRENCES]) {
@@ -342,6 +388,12 @@ export default function App() {
     if (!map || !map.isStyleLoaded()) return;
     map.setLayoutProperty(LYR_OCCURRENCES, "visibility", showOccurrences ? "visible" : "none");
   }, [showOccurrences]);
+
+  // ── Coverage country/museum filter → map points ───────────────────────────
+  useEffect(() => {
+    if (!mapReady) return;
+    loadTypeLocalitiesForView();
+  }, [mapReady, loadTypeLocalitiesForView, selected]);
 
   // ── Toggle: show all MDD type localities vs. selected-species only ─────────
   useEffect(() => {
@@ -533,20 +585,7 @@ export default function App() {
       setTypeLocalityCount(fc.meta.count);
 
       // Fit map bounds to the loaded features
-      const coords = (fc.features as Array<{ geometry: { coordinates: [number, number] } }>)
-        .map((f) => f.geometry.coordinates)
-        .filter((c) => c && c.length === 2);
-      if (coords.length) {
-        const lngs = coords.map((c) => c[0]);
-        const lats = coords.map((c) => c[1]);
-        map.fitBounds(
-          [
-            [Math.min(...lngs), Math.min(...lats)],
-            [Math.max(...lngs), Math.max(...lats)],
-          ],
-          { padding: 80, maxZoom: 6, duration: 1200 }
-        );
-      }
+      fitMapToTypeLocFc(map, fc);
     } catch {
       setError(`Failed to load type localities for ${t.rank} "${t.name}"`);
     }
@@ -573,21 +612,18 @@ export default function App() {
       features: [],
     });
 
-    // Restore all type localities from cache
-    const cached = allTypeLocCacheRef.current;
-    if (cached) {
-      (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
-        cached as Parameters<GeoJSONSource["setData"]>[0]
-      );
-      setTypeLocalityCount(cached.meta.count);
-    }
-  }, []);
+    loadTypeLocalitiesForView();
+  }, [loadTypeLocalitiesForView]);
 
   // ── Derived display values ────────────────────────────────────────────────
   const typeLocLayerLabel = selectedTaxon
     ? `Type localities — ${selectedTaxon.name} (${typeLocalityCount})`
     : selected && !showAllTypeLocalities
     ? "Type locality (selected species)"
+    : coverageMuseum
+    ? `Type localities — ${coverageMuseum} (${typeLocalityCount})`
+    : coverageCountry
+    ? `Type localities — ${coverageCountry} (${typeLocalityCount})`
     : "All MDD type localities";
 
   // ── Render ────────────────────────────────────────────────────────────────
@@ -759,7 +795,12 @@ export default function App() {
           </section>
         )}
 
-        <TypeCoveragePanel />
+        <TypeCoveragePanel
+          country={coverageCountry}
+          museum={coverageMuseum}
+          onCountryChange={setCoverageCountry}
+          onMuseumChange={setCoverageMuseum}
+        />
 
         {/* Layer toggles */}
         <section className="section">

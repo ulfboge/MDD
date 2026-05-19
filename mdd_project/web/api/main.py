@@ -113,6 +113,25 @@ species_with_museum AS (
 )
 """
 
+_MUSEUM_ABBREV_SUBQUERY = f"""(
+    SELECT tsi.abbreviation
+    FROM type_specimen_institutions tsi
+    WHERE {_MUSEUM_MATCH}
+    ORDER BY LENGTH(tsi.abbreviation) DESC
+    LIMIT 1
+)"""
+
+_MUSEUM_COUNTRY_SUBQUERY = f"""(
+    SELECT TRIM(regexp_extract(tsi.city_and_country, '[^,]+$', 0))
+    FROM type_specimen_institutions tsi
+    WHERE {_MUSEUM_MATCH}
+      AND tsi.city_and_country IS NOT NULL
+      AND TRIM(tsi.city_and_country) <> ''
+      AND UPPER(TRIM(tsi.city_and_country)) <> 'NA'
+    ORDER BY LENGTH(tsi.abbreviation) DESC
+    LIMIT 1
+)"""
+
 
 # ---------------------------------------------------------------------------
 # GET /species
@@ -548,6 +567,12 @@ def get_type_localities(
     order: str | None = Query(None, description="Filter by order"),
     family: str | None = Query(None, description="Filter by family"),
     genus: str | None = Query(None, description="Filter by genus"),
+    museum: str | None = Query(
+        None, description="Filter by holding museum abbreviation (e.g. USNM, BMNH)"
+    ),
+    country: str | None = Query(
+        None, description="Filter by holding museum country (from institution metadata)"
+    ),
     species: str | None = Query(
         None,
         description=(
@@ -584,6 +609,12 @@ def get_type_localities(
     if genus:
         conditions.append("genus ILIKE ?")
         params.append(f"%{genus}%")
+    if museum:
+        conditions.append(f"{_MUSEUM_ABBREV_SUBQUERY} ILIKE ?")
+        params.append(museum.strip())
+    if country:
+        conditions.append(f"{_MUSEUM_COUNTRY_SUBQUERY} ILIKE ?")
+        params.append(country.strip())
 
     where = "WHERE " + " AND ".join(conditions)
     sql = f"""

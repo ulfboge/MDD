@@ -53,12 +53,22 @@ function StatBar({ geocoded, total }: { geocoded: number; total: number }) {
   );
 }
 
-export default function TypeCoveragePanel() {
+export interface TypeCoveragePanelProps {
+  country: string;
+  museum: string;
+  onCountryChange: (country: string) => void;
+  onMuseumChange: (museum: string) => void;
+}
+
+export default function TypeCoveragePanel({
+  country,
+  museum,
+  onCountryChange,
+  onMuseumChange,
+}: TypeCoveragePanelProps) {
   const [summary, setSummary] = useState<CoverageSummary | null>(null);
   const [countries, setCountries] = useState<CoverageCountry[]>([]);
   const [museums, setMuseums] = useState<CoverageMuseum[]>([]);
-  const [country, setCountry] = useState("");
-  const [museum, setMuseum] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -84,8 +94,8 @@ export default function TypeCoveragePanel() {
     fetchJson<CoverageMuseum[]>(url)
       .then(setMuseums)
       .catch(() => setMuseums([]));
-    setMuseum("");
-  }, [country]);
+    onMuseumChange("");
+  }, [country, onMuseumChange]);
 
   const selectedCountry = useMemo(
     () => countries.find((c) => c.country === country) ?? null,
@@ -142,7 +152,7 @@ export default function TypeCoveragePanel() {
               <select
                 className="coverage-select"
                 value={country}
-                onChange={(e) => setCountry(e.target.value)}
+                onChange={(e) => onCountryChange(e.target.value)}
               >
                 <option value="">All countries</option>
                 {countries.map((c) => (
@@ -158,7 +168,7 @@ export default function TypeCoveragePanel() {
               <select
                 className="coverage-select"
                 value={museum}
-                onChange={(e) => setMuseum(e.target.value)}
+                onChange={(e) => onMuseumChange(e.target.value)}
               >
                 <option value="">Select museum…</option>
                 {museums.map((m) => (
@@ -202,6 +212,12 @@ export default function TypeCoveragePanel() {
                 total={selectionStats.with_type_voucher}
               />
             </div>
+          )}
+
+          {(country || museum) && (
+            <p className="coverage-hint coverage-map-hint">
+              Map shows geocoded type localities for this filter only.
+            </p>
           )}
 
           {exportUrl ? (
