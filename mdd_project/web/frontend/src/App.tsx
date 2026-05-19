@@ -197,24 +197,50 @@ export default function App() {
   const [coverageCountry, setCoverageCountry] = useState("");
   const [coverageMuseum, setCoverageMuseum] = useState("");
   const [mapReady, setMapReady] = useState(false);
-  const loadTypeLocalitiesForViewRef = useRef<() => Promise<void>>(async () => {});
+
+  const applyTypeLocalitiesToMap = useCallback((fc: TypeLocFC) => {
+    const map = mapRef.current;
+    const source = map?.getSource(SRC_TYPE_LOC) as GeoJSONSource | undefined;
+    if (!source) return false;
+    source.setData(fc as Parameters<GeoJSONSource["setData"]>[0]);
+    setTypeLocalityCount(fc.meta.count);
+    return true;
+  }, []);
+
+  const fetchAllTypeLocalities = useCallback(async (): Promise<TypeLocFC> => {
+    const cached = allTypeLocCacheRef.current;
+    if (cached) return cached;
+    const fc = await fetchJson<TypeLocFC>(`${API}/type-localities?limit=10000`);
+    allTypeLocCacheRef.current = fc;
+    return fc;
+  }, []);
+
+  const fetchAllTypeLocalitiesRef = useRef(fetchAllTypeLocalities);
+  const applyTypeLocalitiesToMapRef = useRef(applyTypeLocalitiesToMap);
+
+  useEffect(() => {
+    fetchAllTypeLocalitiesRef.current = fetchAllTypeLocalities;
+  }, [fetchAllTypeLocalities]);
+
+  useEffect(() => {
+    applyTypeLocalitiesToMapRef.current = applyTypeLocalitiesToMap;
+  }, [applyTypeLocalitiesToMap]);
 
   const loadTypeLocalitiesForView = useCallback(async () => {
     const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
+    if (!map) return;
     if (selectedTaxon) return;
     if (selectedRef.current && !showAllTypeLocalities) return;
 
     const hasFilter = Boolean(coverageMuseum || coverageCountry);
     if (!hasFilter) {
-      const cached = allTypeLocCacheRef.current;
-      if (cached) {
-        (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
-          cached as Parameters<GeoJSONSource["setData"]>[0]
-        );
-        setTypeLocalityCount(cached.meta.count);
-        return;
+      try {
+        const fc = await fetchAllTypeLocalities();
+        applyTypeLocalitiesToMap(fc);
+      } catch (err) {
+        console.error("Failed to load type localities:", err);
       }
+      return;
     }
 
     const params = new URLSearchParams({ limit: "10000" });
@@ -223,20 +249,37 @@ export default function App() {
 
     try {
       const fc = await fetchJson<TypeLocFC>(`${API}/type-localities?${params}`);
-      (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
-        fc as Parameters<GeoJSONSource["setData"]>[0]
-      );
-      setTypeLocalityCount(fc.meta.count);
-      if (!hasFilter) allTypeLocCacheRef.current = fc;
-      if (hasFilter) fitMapToTypeLocFc(map, fc);
+      applyTypeLocalitiesToMap(fc);
+      fitMapToTypeLocFc(map, fc);
     } catch (err) {
-      console.error(err);
+      console.error("Failed to load filtered type localities:", err);
     }
-  }, [coverageCountry, coverageMuseum, selectedTaxon, showAllTypeLocalities]);
+  }, [
+    applyTypeLocalitiesToMap,
+    coverageCountry,
+    coverageMuseum,
+    fetchAllTypeLocalities,
+    selectedTaxon,
+    showAllTypeLocalities,
+  ]);
 
+  // Warm the cache early so startup can paint points as soon as the map source exists.
   useEffect(() => {
-    loadTypeLocalitiesForViewRef.current = loadTypeLocalitiesForView;
-  }, [loadTypeLocalitiesForView]);
+    void fetchAllTypeLocalities()
+      .then((fc) => {
+        applyTypeLocalitiesToMap(fc);
+      })
+      .catch((err) => {
+        console.error("Failed to prefetch type localities:", err);
+      });
+  }, [applyTypeLocalitiesToMap, fetchAllTypeLocalities]);
+
+  // If prefetch finished before the map source existed, apply once the map is ready.
+  useEffect(() => {
+    if (!mapReady) return;
+    const cached = allTypeLocCacheRef.current;
+    if (cached) applyTypeLocalitiesToMap(cached);
+  }, [applyTypeLocalitiesToMap, mapReady]);
 
   // ── Initialise map ────────────────────────────────────────────────────────
   useEffect(() => {
@@ -280,7 +323,9 @@ export default function App() {
     });
     popupRef.current = popup;
 
-    map.on("load", () => {
+    const initMapDataLayers = () => {
+      if (map.getSource(SRC_TYPE_LOC)) return;
+
       // ── Type localities source + layer ────────────────────────────────────
       map.addSource(SRC_TYPE_LOC, {
         type: "geojson",
@@ -337,7 +382,19 @@ export default function App() {
       });
 
       setMapReady(true);
-      void loadTypeLocalitiesForViewRef.current();
+
+      const cached = allTypeLocCacheRef.current;
+      if (cached) {
+        applyTypeLocalitiesToMapRef.current(cached);
+      } else {
+        void fetchAllTypeLocalitiesRef.current()
+          .then((fc) => {
+            applyTypeLocalitiesToMapRef.current(fc);
+          })
+          .catch((err) => {
+            console.error("Failed to load initial type localities:", err);
+          });
+      }
 
       // ── Pointer cursor on hover ───────────────────────────────────────────
       for (const lyr of [LYR_TYPE_LOC, LYR_OCCURRENCES]) {
@@ -372,7 +429,14 @@ export default function App() {
           </div>`;
         popup.setLngLat(e.lngLat).setHTML(html).addTo(map);
       });
-    });
+    };
+
+    // Inline styles can finish loading before this listener is attached.
+    if (map.isStyleLoaded()) {
+      initMapDataLayers();
+    } else {
+      map.once("load", initMapDataLayers);
+    }
 
     mapRef.current = map;
     return () => {
@@ -386,15 +450,15 @@ export default function App() {
   // ── Layer visibility toggles ──────────────────────────────────────────────
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
+    if (!mapReady || !map) return;
     map.setLayoutProperty(LYR_TYPE_LOC, "visibility", showTypeLocalities ? "visible" : "none");
-  }, [showTypeLocalities]);
+  }, [mapReady, showTypeLocalities]);
 
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
+    if (!mapReady || !map) return;
     map.setLayoutProperty(LYR_OCCURRENCES, "visibility", showOccurrences ? "visible" : "none");
-  }, [showOccurrences]);
+  }, [mapReady, showOccurrences]);
 
   // ── Coverage country/museum filter → map points ───────────────────────────
   useEffect(() => {
@@ -404,45 +468,34 @@ export default function App() {
 
   // ── Toggle: show all MDD type localities vs. selected-species only ─────────
   useEffect(() => {
-    const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
+    if (!mapReady) return;
 
     if (showAllTypeLocalities) {
-      // Load all type localities (from cache where possible)
-      const cached = allTypeLocCacheRef.current;
-      if (cached) {
-        (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
-          cached as Parameters<GeoJSONSource["setData"]>[0]
-        );
-        setTypeLocalityCount(cached.meta.count);
-      } else {
-        fetchJson<TypeLocFC>(`${API}/type-localities?limit=10000`)
-          .then((fc) => {
-            allTypeLocCacheRef.current = fc;
-            (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
-              fc as Parameters<GeoJSONSource["setData"]>[0]
-            );
-            setTypeLocalityCount(fc.meta.count);
-          })
-          .catch(console.error);
-      }
-    } else {
-      // Revert to species-only view — use ref to avoid stale closure over `selected`
-      const sp = selectedRef.current;
-      if (sp) {
-        fetchJson<TypeLocFC>(
-          `${API}/type-localities?species=${encodeURIComponent(sp.sci_name)}&limit=1`
-        )
-          .then((fc) => {
-            (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
-              fc as Parameters<GeoJSONSource["setData"]>[0]
-            );
-            setTypeLocalityCount(fc.meta.count);
-          })
-          .catch(console.error);
-      }
+      void fetchAllTypeLocalities()
+        .then((fc) => {
+          applyTypeLocalitiesToMap(fc);
+        })
+        .catch(console.error);
+      return;
     }
-  }, [showAllTypeLocalities]); // eslint-disable-line react-hooks/exhaustive-deps
+
+    // Revert to species-only view — use ref to avoid stale closure over `selected`
+    const sp = selectedRef.current;
+    if (sp) {
+      fetchJson<TypeLocFC>(
+        `${API}/type-localities?species=${encodeURIComponent(sp.sci_name)}&limit=1`
+      )
+        .then((fc) => {
+          applyTypeLocalitiesToMap(fc);
+        })
+        .catch(console.error);
+      return;
+    }
+
+    if (!selectedTaxon) {
+      void loadTypeLocalitiesForView();
+    }
+  }, [applyTypeLocalitiesToMap, fetchAllTypeLocalities, loadTypeLocalitiesForView, mapReady, showAllTypeLocalities]);
 
   // ── Search (species / genus / family) ────────────────────────────────────
   const handleQueryChange = useCallback(async (value: string, currentRank: Rank) => {
