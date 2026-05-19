@@ -48,16 +48,21 @@ EBRG,Museo de la Estación Biológica de Rancho Grande,"Aragua, Venezuela",NA,ht
 ECOSUR,"El Colegio de la Frontera Sur, Colección Mastozoológica","San Cristóbal de las Casas, Mexico",Catalog prefix ECOSUR / ECO-SC-M in MDD type vouchers,https://www.ecosur.mx/
 ENCB,Escuela Nacional de Ciencias Biológicas,"Mexico City, Mexico","Colección de Mamíferos, Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional",https://www.biodiversidad.gob.mx/fichas-conabio-war/resources/coleccion/451
 EPN,"Museo de Historia Natural Gustavo Orcés, Escuela Politécnica Nacional","Quito, Ecuador",Catalog prefix EPN in MDD type vouchers; same institution as MEPN,https://www.epn.edu.ec/museo-de-historia-natural/
+EPRC,Endangered Primate Rescue Center,"Cuc Phuong National Park, Vietnam",Catalog prefix EPRC in MDD type vouchers,https://www.eprc.asia/
 E. O. Wilson Biodiversity Laboratory Collection,E. O. Wilson Biodiversity Laboratory Collection at Gorongosa National Park,"Chitengo, Mozambique",NA,https://eowilsonfoundation.org/the-biodiversity-collection/
+FES,"Faculty of Environmental Sciences, National University of Laos","Vientiane, Laos",Catalog prefix FES.MM in MDD type vouchers,https://www.nuol.edu.la/
+FHSM,Sternberg Museum of Natural History,"Hays, United States of America",Catalog prefix FHSM in MDD type vouchers; Fort Hays State University,https://sternberg.fhsu.edu/research-collections/zoology/mammalogy.html
 FMNH,Field Museum of Natural History,"Chicago, United States of America",NA,https://collections-zoology.fieldmuseum.org/page/collections-data-mammals
 FMSM,Fukushima City Museum of Natural History,"Fukushima, Japan",Catalog prefix FMSM in MDD type vouchers,NA
 FIPI,Forest Inventory and Planning Institute,"Hanoi, Vietnam",Catalog prefix FIPI in MDD type vouchers; Vietnam Forest Museum / FIPI,https://fipi.vn/
 FURB,Universidade Regional de Blumenau,"Blumenau, Brazil",Catalog prefix FURB in MDD type vouchers for southern Brazilian rodent type material,https://www.furb.br/
 GEC,Grupo de Exploraciones Científicas,"Havana, Cuba",NA,NA
 GBP,Gene Bank of Primates at the German Primate Center,"Göttingen, Germany",Catalog prefix GBP in MDD type vouchers; Deutsches Primatenzentrum tissue/DNA repository,https://www.dpz.eu/en/unit/gene-bank-of-primates/about-us.html
+GIE,Guangdong Institute of Entomology,"Guangzhou, China",Catalog prefix GIE in MDD type vouchers,NA
 GNMT,Georgian National Museum,"Tbilisi, Georgia",Catalog prefix GNMT in MDD type vouchers; related to SGMT/State Georgian Museum,https://museum.ge/index.php?lng=eng&m=2
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University","Guangzhou, China",NA,http://english.gzhu.edu.cn/info/1008/1851.htm
 GZNU,Guizhou Normal University,"Guizhou, China",NA,https://e.gznu.edu.cn/
+GUNU,Guizhou Normal University,"Guiyang, China",Catalog prefix GUNU in MDD type vouchers; variant/typo of GZNU for Murina liboensis type material,https://e.gznu.edu.cn/
 HDZ,"Omaha's Henry Doorly Zoo and Aquarium","Omaha, United States of America",Catalog prefix HDZ in MDD type vouchers; Grewcock Center for Conservation and Research,https://www.omahazoo.com/conservation-research/
 HNHM,Hungarian Natural History Museum,"Budapest, Hungary",NA,http://www.nhmus.hu/en/collection/department_of_zoology/mammal_collection
 HZM,Harrison Zoological Institute,"Kent, United Kingdom",NA,https://www.harrison-institute.org/
@@ -70,6 +75,8 @@ IEBR,Institute of Ecology and Biological Resources,"Hanoi, Vietnam",NA,http://ww
 IES,Institute of Ecology and Systematics,"Havana, Cuba",Catalog prefix IES in MDD type vouchers,NA
 IAVH,"Instituto de Investigación de Recursos Biológicos Alexander von Humboldt","Villa de Leyva, Colombia",Catalog prefix IAvH/IAVH in MDD type vouchers,https://www.humboldt.org.co/
 INPA,National Research Institute of the Amazon,"Manaus, Brazil",NA,https://www.inpa.gov.br/english/
+IBVAST,"Institute of Biology, Vietnam Academy of Science and Technology","Hanoi, Vietnam",Catalog prefix IBVAST/IB-VAST in MDD type vouchers,https://vast.gov.vn/
+IFAN,Institut Fondamental d'Afrique Noire,"Dakar, Senegal",Catalog prefix IFAN in MDD type vouchers,https://ifan.ucad.sn/
 IOZCAS,"Institute of Zoology, Chinese Academy of Sciences","Beijing, China",Synonyms: BIZ,http://english.ioz.cas.cn/
 IPHAS,Ili Prefecture Health and Antiepidemic Station,"Yining, China",Catalog prefix IPHAS in MDD type vouchers for Ili pika type material,NA
 IRSNB,Royal Belgian Institute of Natural Sciences,"Brussels, Belgium",Catalog prefix IRSNB in MDD type vouchers; Institut Royal des Sciences Naturelles de Belgique,https://www.naturalsciences.be/
@@ -83,6 +90,7 @@ KU,University of Kansas Biodiversity Institute and Natural History Museum,"Lawre
 KUZ,Kyoto University Museum,"Kyoto, Japan",NA,http://www.museum.kyoto-u.ac.jp/index_e.htm
 LACM,Natural History Museum of Los Angeles County,"Los Angeles, United States of America",NA,https://nhm.org/
 LHB,Zoological Collection of the Royal Agricultural University of Berlin,"Berlin, Germany",Catalog prefix LHB in MDD type vouchers; historical Landwirtschaftliche Hochschule Berlin collection,https://www.sammlungen.hu-berlin.de/sammlungen/zoologische-lehrsammlung/
+LIEB-M,Laboratorio de Investigaciones en Evolución y Biodiversidad,"Esquel, Argentina",Catalog prefix LIEB-M in MDD type vouchers; UNPSJB Esquel mammal collection,https://www.unp.edu.ar/
 LIVCM,National Museums Liverpool,"Liverpool, United Kingdom",NA,https://www.liverpoolmuseums.org.uk/collections/world-museum-collections
 LSUMZ,Louisiana State University Museum of Zoology,"Baton Rouge, United States of America",LSU Museum of Natural Science,https://www.lsu.edu/mns/collections/mammalogy.php
 LZH,Hanoi Zoological Museum,"Hanoi, Vietnam",Catalog prefix LZH in MDD type vouchers; likely HZM/Hanoi Zoological Museum for Dao Van Tien type material,https://bio.hus.vnu.edu.vn/en/overview-biological-museum/
@@ -94,7 +102,10 @@ MMUS,"Macleay Museum, University of Sydney","Camperdown, Australia",Catalog pref
 MBLUZ,"Museo de Biología, Universidad del Zulia","Maracaibo, Venezuela",NA,NA
 MBUCV,"Museo de Biología, Universidad Central de Venezuela","Caracas, Venezuela",NA,http://izt.ciens.ucv.ve/izet/?page_id=240
 MCNM,"Museo Civico di Storia Naturale, Milan","Milan, Italy",NA,https://museodistorianaturalemilano.it/
+MCNPUC,"Museu de Ciências Naturais, Pontifícia Universidade Católica de Minas Gerais","Belo Horizonte, Brazil",Catalog prefix MCNPUC in MDD type vouchers,https://www.pucminas.br/museu/
 MCZ,The Louis Agassiz Museum of Comparative Zoology,"Cambridge, United States of America","Museum of Comparative Zoology, Harvard",https://mcz.harvard.edu/database
+MCNU,"Museu de Ciências Naturais, Universidade Luterana do Brasil","Canoas, Brazil",Catalog prefix MCNU in MDD type vouchers,https://www.ulbra.br/
+MCP,"Museu de Ciências e Tecnologia, Pontifícia Universidade Católica do Rio Grande do Sul","Porto Alegre, Brazil",Catalog prefix MCP in MDD type vouchers; PUCRS paleontology collection,https://www.pucrs.br/mct/colecoes/paleontologia/
 MECN,"Museo Ecuatoriano de Ciencias Naturales, Ecuador","Quito, Ecuador",NA,https://museosdmqjennifermeza.wordpress.com/category/ciencias-10/
 MEPN,"Museo de Historia Natural - Escuela Politécnica Nacional, Ecuador","Quito, Ecuador",NA,https://www.epn.edu.ec/museo-de-historia-natural/
 MF,"Museo di Storia Naturale dell'Università di Firenze","Florence, Italy",Catalog prefix MF in MDD type vouchers,NA
