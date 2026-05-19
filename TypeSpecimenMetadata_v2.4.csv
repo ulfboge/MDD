@@ -28,6 +28,7 @@ CNP,Colección de Mamíferos del Centro Nacional Patagónico,"Puerto Madryn, Arg
 CNMA,Colección Nacional de Mamíferos (UNAM),"Mexico City, Mexico",Catalog prefix CNMA in MDD vouchers; same institution as IBUNAM (CNMA),http://www.ibiologia.unam.mx/cnma/
 CNM,Colección Nacional de Mamíferos (UNAM),"Mexico City, Mexico",Catalog prefix CNM in MDD vouchers; same institution as CNMA and IBUNAM,http://www.ibiologia.unam.mx/cnma/
 CMUFLA,Coleção de Mamíferos da Universidade Federal de Lavras,"Lavras, Brazil",NA,https://sites.google.com/site/lecomuflamg/colecao
+CUNRC,Colección de Mamíferos de la Universidad Nacional de Río Cuarto,"Río Cuarto, Argentina",Catalog prefix CUNRC in MDD type vouchers,https://www.unrc.edu.ar/
 CTNRC,Centre for Thai National Reference Collections,"Bangkok, Thailand",Synonyms: TNRC,NA
 CSIRO,CSIRO Australian National Wildlife Collection,"Canberra, Australia",Catalog prefix CSIRO in MDD vouchers; same collection as ANWC,https://www.csiro.au/en/Research/Collections/ANWC
 CTUA,"Colección Teriológica de la Universidad de Antioquia, Medellín","Medellín, Colombia",Museo de la Universidad de Antioquia (MUA),NA
@@ -37,6 +38,7 @@ CZL,"Centro de Zoologica, Instituto de Investigação Científica Tropical","Lis
 DM,Durban Natural Science Museum,"Durban, South Africa",Synonyms: DNSM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
 DNSM,Durban Natural Science Museum,"Durban, South Africa",Catalog prefix DNSM in MDD vouchers; same institution as DM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
 DMNH,Durban Natural Science Museum,"Durban, South Africa",Catalog prefix DMNH in MDD type vouchers; same institution as DM and DNSM,http://www.durban.gov.za/City_Services/ParksRecreation/musuems/nsm/Pages/default.aspx
+DGIBUFRGS,"Departamento de Genética, Universidade Federal do Rio Grande do Sul","Porto Alegre, Brazil",Catalog prefix DGIBUFRGS in MDD type vouchers,https://www.ufrgs.br/genetica/
 DU,Dicle University,"Diyarbakır, Turkey",Catalog prefix DU in MDD type vouchers; Biology Department blind mole-rat type material,https://www.dicle.edu.tr/en
 DZAB,Department of Zoology and Biological Anthropology of the University of Sassari,"Sassari, Italy",NA,https://www.uniss.it/
 DZSJRP,"Universidade Estadual Paulista “Júlio de Mesquita Filho""","São José do Rio Preto, Brazil",NA,https://www2.unesp.br/
