@@ -9,16 +9,4 @@ alias_prefix_missing,MNHN-ZM-MO-1867-146,2,MN; MNHN,Cricetulus_longicaudatus; La
 alias_prefix_missing,NU,2,NUPECCE,Nannospalax_karyominor; Nannospalax_colaki,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 prefix_not_in_metadata,BOHMANN,2,,Otomys_zinki; Otomys_sungae,Voucher prefix not in metadata; no related abbreviation detected.
 prefix_not_in_metadata,BUFFON'S,2,,Sciurillus_pusillus; Civettictis_civetta,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,FIPI,2,,Pseudoryx_nghetinhensis; Muntiacus_vuquangensis,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,GBP,2,,Microcebus_lehilahytsara; Lepilemur_randrianasoloi,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,IDSM,2,,Saguinus_kulina; Cacajao_amuna,Voucher prefix not in metadata; no related abbreviation detected.
 prefix_not_in_metadata,LINNMUS,2,,Talpa_europaea; Sciurus_vulgaris,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,MHNUCA,2,,Neoeptesicus_orinocensis; Coendou_vossi,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,MZACUT,2,,Sorex_antinorii; Mops_aloysiisabaudiae,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,NNPM,2,,Spalax_arenarius; Apodemus_ponticus,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,TIHO,2,,Lepilemur_otto; Microcebus_jonahi,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,UIMNH,2,,Chiropodomys_calamianensis; Peromyscus_hooperi,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,USAC,2,,Peromyscus_bakeri; Peromyscus_gardneri,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,YIO,2,,Sorex_leucogaster; Anourosorex_yamashinai,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,YPM,2,,Cuscomys_oblativus; Cercopithecus_lomamiensis,Voucher prefix not in metadata; no related abbreviation detected.
-prefix_not_in_metadata,ZRC,2,,Trachypithecus_selangorensis; Arctonyx_hoevenii,Voucher prefix not in metadata; no related abbreviation detected.

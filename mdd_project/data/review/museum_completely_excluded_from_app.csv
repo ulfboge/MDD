@@ -41,7 +41,6 @@ Trichechus_senegalensis,untraced (number not known)
 Tupaia_glis,untraced (number not known)
 Cercopithecus_ascanius,untraced (number not known)
 Cercopithecus_diana,untraced (number not known)
-Cercopithecus_lomamiensis,YPM MAM 014080
 Cercopithecus_mona,untraced (number not known)
 Cercopithecus_nictitans,untraced (number not known)
 Cercopithecus_petaurista,untraced (number not known)
@@ -75,7 +74,6 @@ Semnopithecus_johnii,lost (number not known)
 Semnopithecus_vetulus,untraced (number not known)
 Trachypithecus_leucocephalus,figured specimen
 Trachypithecus_mauritius,lost (number not known)
-Trachypithecus_selangorensis,ZRC 4-390
 Pan_troglodytes,untraced (number not known)
 Pongo_pygmaeus,lost (number not known)
 Nomascus_annamensis,ZMVNU M735
@@ -92,7 +90,6 @@ Callithrix_jacchus,lost (number not known)
 Callithrix_penicillata,lost (number not known)
 Leontopithecus_rosalia,lost (number not known)
 Saguinus_fuscus,lost (number not known)
-Saguinus_kulina,IDSM 03594
 Saguinus_midas,lost (number not known)
 Saguinus_oedipus,lost (number not known)
 Cebus_albifrons,IAvH 2844
@@ -103,7 +100,6 @@ Sapajus_robustus,untraced (number not known)
 Saimiri_cassiquiarensis,lost (number not known)
 Callicebus_personatus,lost (number not known)
 Cheracebus_lugens,lost (number not known)
-Cacajao_amuna,IDSM 03676
 Chiropotes_chiropotes,lost (number not known)
 Carlito_syrichta,lost (number not known)
 Tarsius_fuscus,lost (number not known)
@@ -111,8 +107,6 @@ Cheirogaleus_andysabini,HDZ AMB5.27
 Cheirogaleus_lavasoensis,JGUM AH-X-00-181
 Microcebus_danfossi,038y04koa
 Microcebus_gerpi,002y09fina
-Microcebus_jonahi,TiHo B34
-Microcebus_lehilahytsara,GBP 1033 through GBP 1042
 Microcebus_macarthurii,001y07hely
 Microcebus_margotmarshae,TAFO6.1
 Avahi_cleesei,"""_Avahi_ male (body weight = 830 g) captured in Bemaraha on 3 October 1991."" The specimen was released."
@@ -124,8 +118,6 @@ Eulemur_fulvus,untraced (number not known)
 Eulemur_macaco,untraced (number not known)
 Varecia_variegata,untraced (number not known)
 Lepilemur_aeeclis,UMah 2003-Lem-100
-Lepilemur_otto,TiHo 02y04bibo
-Lepilemur_randrianasoloi,GBP 941
 Sciurocheirus_makandensis,lost (number not known)
 Nycticebus_coucang,untraced (number not known)
 Nycticebus_menagensis,lost (number not known)
@@ -141,8 +133,6 @@ Galea_tixiensis,LARQ 123
 Cuniculus_taczanowskii,MIZ 77780
 Dasyprocta_fuliginosa,lost (number not known)
 Coendou_longicaudatus,untraced (number not known)
-Coendou_vossi,MHNUCa M 3432
-Cuscomys_oblativus,YPM 3320
 Ctenomys_argentinus,CFA-MA-12016
 Ctenomys_australis,Rusconi 376
 Ctenomys_bidaui,CFA-MA-11867
@@ -201,12 +191,9 @@ Microtus_lusitanicus,untraced (number not known)
 Dicrostonyx_hudsonius,untraced (number not known)
 Dinaromys_longipedis,Đulić 486
 Onychomys_leucogaster,lost (number not known)
-Peromyscus_bakeri,USAC 4644
 Peromyscus_californicus,lost (number not known)
 Peromyscus_carolpattonae,ECOSUR ECO-SC-M 8626
-Peromyscus_gardneri,USAC 4759
 Peromyscus_greenbaumi,TCWC:Mamm:45304
-Peromyscus_hooperi,UIMNH 53848
 Akodon_boliviensis,untraced (number not known)
 Bibimys_torresi,CFA-MA-5067
 Cordimus_hooijeri,RGM.444360
@@ -226,10 +213,8 @@ Juliomys_ximenezi,MCNU 868
 Gerbillus_stigmonyx,untraced (number not known)
 Meriones_dahli,Yerevan 5504-8
 Gerbilliscus_brantsii,lost (number not known)
-Apodemus_ponticus,"NNPM 7966/592 (= ""2494"")"
 Tokudaia_osimensis,Abe (unnumbered)
 Lemniscomys_barbarus,untraced (number not known)
-Chiropodomys_calamianensis,UIMNH 33391
 Chiropodomys_gliroides,lost (number not known)
 Leporillus_apicalis,lost (number not known)
 Leporillus_conditor,untraced (number not known)
@@ -250,7 +235,6 @@ Vernaya_foramena,CWNU 75003
 Brachyuromys_ramirohitra,lost (number not known)
 Nannospalax_colaki,NU 675
 Nannospalax_karyominor,NU 45
-Spalax_arenarius,"NNPM 2990/31 (= ""14"")"
 Crocidura_ansellorum,NMZ 3675
 Crocidura_canariensis,MCLPGC ? (= ZFMK:Mamm:1986.75)
 Crocidura_fingui,MUHNAC/MB01/006000
@@ -262,13 +246,10 @@ Crocidura_ramona,TAU M-9342
 Crocidura_religiosa,ÄM 690
 Crocidura_tadae,untraced (number not known)
 Diplomesodon_sonnerati,Specimen illustrated by Sonnerat
-Anourosorex_yamashinai,YIO 714
 Blarina_brevicauda,FHSM 37241
-Sorex_antinorii,MZACUT (number not known)
 Sorex_arcticus,untraced (number not known)
 Sorex_cinereus,untraced (number not known)
 Sorex_cruzi,UNAH 20180722
-Sorex_leucogaster,YIO 40
 Parascalops_breweri,lost (number not known)
 Scalopus_aquaticus,untraced (number not known)
 Euroscaptor_darwini,IBVAST NTS.2024.PL.01
@@ -298,7 +279,6 @@ Miniopterus_wilsoni,JAG 444
 Cynomops_kuizha,UV 2451
 Molossus_melini,MGR-ZV-M 339
 Molossus_molossus,larger specimen of Daubenton
-Mops_aloysiisabaudiae,MZACUT CG 2144
 Mops_condylurus,untraced (number not known)
 Murina_beibengensis,XZ2024037
 Murina_chayuensis,XZ2023107
@@ -322,7 +302,6 @@ Cnephaeus_hottentotus,untraced (number not known)
 Cnephaeus_kobayashii,untraced (number not known)
 Cnephaeus_serotinus,untraced (number not known)
 Eptesicus_fuscus,untraced (number not known)
-Neoeptesicus_orinocensis,MHNUCa 2930
 Nyctalus_lasiopterus,untraced (number not known)
 Nyctalus_noctula,untraced (number not known)
 Pipistrellus_inexspectatus,MHNLCF (number not known)
@@ -371,7 +350,6 @@ Lontra_canadensis,untraced (number not known)
 Lontra_felina,untraced (number not known)
 Pteronura_brasiliensis,specimen described by Barrère
 Arctonyx_albogularis,untraced (number not known)
-Arctonyx_hoevenii,ZRC 4.1143 (= FMSM 330/14)
 Mellivora_capensis,untraced (number not known)
 Mustela_lutreola,untraced (number not known)
 Mustela_nivalis,untraced (number not known)
@@ -512,7 +490,6 @@ Bos_grunniens,untraced (number not known)
 Bubalus_arnee,untraced (number not known)
 Bubalus_bubalis,untraced (number not known)
 Bubalus_mindorensis,SNHM 1590/1251/24231
-Pseudoryx_nghetinhensis,FIPI MVQ001
 Tragelaphus_angasii,lost (number not known)
 Tragelaphus_oryx,untraced (number not known)
 Tragelaphus_scriptus,untraced (number not known)
@@ -532,7 +509,6 @@ Cervus_canadensis,untraced (number not known)
 Rusa_unicolor,untraced (number not known)
 Muntiacus_muntjak,untraced (number not known)
 Muntiacus_vaginalis,untraced (number not known)
-Muntiacus_vuquangensis,FIPI MVQ011
 Giraffa_giraffa,untraced (number not known)
 Moschiola_meminna,untraced (number not known)
 Tragulus_javanicus,untraced (number not known)
