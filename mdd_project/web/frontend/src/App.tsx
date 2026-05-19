@@ -197,6 +197,7 @@ export default function App() {
   const [coverageCountry, setCoverageCountry] = useState("");
   const [coverageMuseum, setCoverageMuseum] = useState("");
   const [mapReady, setMapReady] = useState(false);
+  const loadTypeLocalitiesForViewRef = useRef<() => Promise<void>>(async () => {});
 
   const loadTypeLocalitiesForView = useCallback(async () => {
     const map = mapRef.current;
@@ -232,6 +233,10 @@ export default function App() {
       console.error(err);
     }
   }, [coverageCountry, coverageMuseum, selectedTaxon, showAllTypeLocalities]);
+
+  useEffect(() => {
+    loadTypeLocalitiesForViewRef.current = loadTypeLocalitiesForView;
+  }, [loadTypeLocalitiesForView]);
 
   // ── Initialise map ────────────────────────────────────────────────────────
   useEffect(() => {
@@ -331,8 +336,8 @@ export default function App() {
         },
       });
 
-      // ── Load all type localities and cache them ────────────────────────────
       setMapReady(true);
+      void loadTypeLocalitiesForViewRef.current();
 
       // ── Pointer cursor on hover ───────────────────────────────────────────
       for (const lyr of [LYR_TYPE_LOC, LYR_OCCURRENCES]) {
@@ -371,6 +376,8 @@ export default function App() {
 
     mapRef.current = map;
     return () => {
+      setMapReady(false);
+      allTypeLocCacheRef.current = null;
       map.remove();
       mapRef.current = null;
     };
@@ -409,7 +416,7 @@ export default function App() {
         );
         setTypeLocalityCount(cached.meta.count);
       } else {
-        fetchJson<TypeLocFC>(`${API}/type-localities?limit=2000`)
+        fetchJson<TypeLocFC>(`${API}/type-localities?limit=10000`)
           .then((fc) => {
             allTypeLocCacheRef.current = fc;
             (map.getSource(SRC_TYPE_LOC) as GeoJSONSource).setData(
