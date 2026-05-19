@@ -5,8 +5,8 @@ Use this file to research and resolve remaining prefix gaps before updating `Typ
 
 ## Current snapshot
 
-- **Completely unmatched vouchers:** 581 species
-- **Prefix gaps in this backlog:** 36 rows
+- **Completely unmatched vouchers:** 560 species
+- **Prefix gaps in this backlog:** 29 rows
 - **Not fixable via metadata:** `UNTRACED` (234) + `LOST` (136) = 370 species
 
 ## Priority legend
@@ -116,83 +116,6 @@ No current P4-risky prefixes after the latest metadata fixes.
 
 
 ## P4c — orphan prefixes (≥3 species, needs new institution row)
-
-### `CNP` (3 sp.)
-
-- **Priority:** P4c-orphan-medium
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 3
-- **Related metadata:** —
-- **Examples:** Tympanoctomys_kirchnerorum; Oecomys_franciscorum; Akodon_philipmyersi
-- **Suggested action:** Research institution for CNP; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `EPN` (3 sp.)
-
-- **Priority:** P4c-orphan-medium
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 3
-- **Related metadata:** —
-- **Examples:** Lonchophylla_orcesi; Anoura_fistulata; Sturnira_koopmanhilli
-- **Suggested action:** Research institution for EPN; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `ISAM` (3 sp.)
-
-- **Priority:** P4c-orphan-medium
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 3
-- **Related metadata:** —
-- **Examples:** Eremitalpa_granti; Cryptochloris_wintoni; Chlorotalpa_sclateri
-- **Suggested action:** Research institution for ISAM; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `IZH` (3 sp.)
-
-- **Priority:** P4c-orphan-medium
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 3
-- **Related metadata:** —
-- **Examples:** Sigmodon_hirsutus; Gracilinanus_agilis; Molossops_temminckii
-- **Suggested action:** Research institution for IZH; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `LHB` (3 sp.)
-
-- **Priority:** P4c-orphan-medium
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 3
-- **Related metadata:** —
-- **Examples:** Nannospalax_hungaricus; Mesocricetus_newtoni; Spalax_giganteus
-- **Suggested action:** Research institution for LHB; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `OMUS` (3 sp.)
-
-- **Priority:** P4c-orphan-medium
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 3
-- **Related metadata:** —
-- **Examples:** Spermophilus_taurensis; Microtus_dogramacii; Talpa_hakkariensis
-- **Suggested action:** Research institution for OMUS; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
-
-### `SZM` (3 sp.)
-
-- **Priority:** P4c-orphan-medium
-- **Issue:** orphan
-- **On map via shorter code:** 0
-- **Completely unmatched:** 3
-- **Related metadata:** —
-- **Examples:** Spermophilus_vorontsovi; Sorex_camtschaticus; Marmota_kastschenkoi
-- **Suggested action:** Research institution for SZM; add new metadata row if confirmed.
-- **Notes:** Voucher prefix not in metadata; no related abbreviation detected.
 
 
 ## P4d — orphan prefixes (2 species)

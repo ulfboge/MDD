@@ -23,6 +23,7 @@ CNMA,Colección Nacional de Mamíferos (UNAM),7,4
 CTUA,"Colección Teriológica de la Universidad de Antioquia, Medellín",1,1
 ICN,"Colección de Mamíferos Alberto Cadena García, Instituto de Ciencias Naturales, Bogotá",11,8
 UACH,Colección de Mamíferos de la Universidad Austral de Chile,4,4
+CNP,Colección de Mamíferos del Centro Nacional Patagónico,3,3
 CVULA,Colección de Vertebrados de la Universidad de los Andes,6,5
 CBF,Coleccíon Boliviana de Fauna,1,1
 CMUFLA,Coleção de Mamíferos da Universidade Federal de Lavras,2,2
@@ -47,6 +48,7 @@ IBSS,"Institute of Biology and Soil Science, Far East Branch of the Russian Acad
 IEBR,Institute of Ecology and Biological Resources,8,8
 IES,Institute of Ecology and Systematics,5,3
 BIZ,Institute of Zoology (Beijing) specimen catalog,11,6
+ISAM,Iziko South African Museum,3,0
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University",2,2
 KIZ,Kunming Institute of Zoology,23,20
 KUZ,Kyoto University Museum,1,1
@@ -65,6 +67,7 @@ MBUCV,"Museo de Biología, Universidad Central de Venezuela",3,1
 MBLUZ,"Museo de Biología, Universidad del Zulia",1,1
 MEPN,"Museo de Historia Natural - Escuela Politécnica Nacional, Ecuador",6,6
 MHNC-M,Museo de Historia Natural Alcide d'Orbigny de Cochabamba,1,1
+EPN,"Museo de Historia Natural Gustavo Orcés, Escuela Politécnica Nacional",3,3
 MHNLS,Museo de Historia Natural La Salle,3,2
 MNK,Museo de Historia Natural Noel Kempff Mercado,4,4
 MUSA,Museo de Historia Natural de la Universidad Nacional de San Agustín,7,7
@@ -80,6 +83,7 @@ MNHN,Museum National d'Histoire Naturelle,370,71
 MNHNU,Museum National d'Histoire Naturelle,4,3
 MZB,Museum Zoologicum Bogoriense,51,48
 MAGNT,Museum and Art Gallery of the Northern Territory,5,5
+IZH,Museum and Zoological Institute of the University Halle,3,1
 ZMB,Museum für Naturkunde,182,20
 SMNS,Museum of Natural History Stuttgart,28,6
 MSNG,Museum of Natural History “Giacomo Doria” (Museo Civico di Storia Naturale Giacomo Doria),26,4
@@ -114,6 +118,7 @@ NHMO,"Natural History Museum, University of Oslo, Norway",6,1
 RMNH,Naturalis Biodiversity Center,220,20
 NMW,Naturhistorisches Museum Wien,39,15
 NHRM,Naturhistoriska riksmuseet,20,2
+OMUS,Ondokuz Mayıs University mammal collection,3,3
 OUM,Oxford University Museum of Natural History,2,1
 PBZT,Parc Botanique et Zoologique de Tsimbazaza,2,2
 PSUZC,Princess Maha Chakri Sirindhorn Natural History Museum,5,5
@@ -121,6 +126,7 @@ QM,Queensland Museum,24,18
 RMCA,Royal Museum for Central Africa,33,20
 ROM,Royal Ontario Museum,24,23
 MTD,Senckenberg Museum für Tierkunde Dresden,18,4
+SZM,Siberian Zoological Museum,3,1
 SAF,Sichuan Academy of Forestry,26,26
 SAMA,South Australian Museum,8,5
 SCNU,South China Normal University,3,3
@@ -138,6 +144,7 @@ ULPS,"Université Louis Pasteur, Strasbourg",4,4
 UANT,"Université d'Antananarivo, Département de Biologie animale",4,4
 UUZM,"Uppsala University, Museum of Evolution, Zoology section",10,1
 WAM,Western Australian Museum,37,34
+LHB,Zoological Collection of the Royal Agricultural University of Berlin,3,0
 ZIN,"Zoological Institute, Russian Academy of Sciences",94,21
 ZMF,Zoological Museum Frankfurt,5,5
 ZMUC,Zoological Museum University of Copenhagen,19,2
