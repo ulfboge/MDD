@@ -1087,5 +1087,163 @@
     "type": "island",
     "importance": 0.43786060464304577,
     "display_name": "Pulau Bawean, Kumalasa, Gresik, Jawa Timur, Jawa, 61181, Indonesia"
+  },
+  "Borneo\" (= Buru Island, Indonesia)": {
+    "error": "no_match"
+  },
+  "Sulawesi": {
+    "lat": -1.0074826,
+    "lon": 121.2564612,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6725698814839046,
+    "display_name": "Sulawesi, Indonesia"
+  },
+  "Malengi island, Togean group, Res": {
+    "error": "no_match"
+  },
+  "Santa Rosalia, near Autlan, Jalisco, Mexico": {
+    "error": "no_match"
+  },
+  "Piaxtla, Puebla,\" Mexico": {
+    "lat": 18.0850105,
+    "lon": -98.2202174,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.3680830548051252,
+    "display_name": "Piaxtla, Puebla, M\u00e9xico"
+  },
+  "Jalapa, Veracruz, Mexico": {
+    "lat": 19.4880323,
+    "lon": -96.8080013,
+    "category": "landuse",
+    "type": "industrial",
+    "importance": 0.08005593881132217,
+    "display_name": "Cervezas y Refrescos de Jalapa S.A. de C.V., Dos R\u00edos, Emiliano Zapata, Veracruz, M\u00e9xico"
+  },
+  "Colima, Colima, Mexico": {
+    "lat": 19.2433991,
+    "lon": -103.7280738,
+    "category": "place",
+    "type": "city",
+    "importance": 0.4709705480904713,
+    "display_name": "Colima, Municipio de Colima, Colima, 28000, M\u00e9xico"
+  },
+  "San Diego, [Duval County], South Texas,\" USA": {
+    "lat": 27.7609905,
+    "lon": -98.2397142,
+    "category": "amenity",
+    "type": "fire_station",
+    "importance": 3.975814450289185e-05,
+    "display_name": "San Diego Fire Department, South Doctor E.E. Dunlap Street, County Road 111 Colonia, San Diego, Duval County, Texas, 78384, United States"
+  },
+  "near Belgrano, Prov": {
+    "error": "no_match"
+  },
+  "Mount Spurgeon, 3700 feet, north-eastern Queensland,\" Australia": {
+    "error": "no_match"
+  },
+  "El Consejo de Ciruma, eastern shore of Lake Maracaibo, Zulia state, Venezuela": {
+    "error": "no_match"
+  },
+  "Namdapha, Tirap District, Arunachal Pradesh, India": {
+    "lat": 27.557239,
+    "lon": 96.6713466,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.14667666666666662,
+    "display_name": "Namdapha, Miao ADC, Changlang, Arunachal Pradesh, India"
+  },
+  "upper and maritime districts of South Carolina,\" USA": {
+    "error": "no_match"
+  },
+  "Dougherty, Indian Territory,\" Murray County, Oklahoma, USA": {
+    "error": "no_match"
+  },
+  "Miami River, Dade County, Fla": {
+    "lat": 25.7776187,
+    "lon": -80.2055519,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.14674421225299453,
+    "display_name": "Miami River, Torch of Friendship, Miami, Miami-Dade County, Florida, United States"
+  },
+  "two miles north of Fort Myers, Lee County, Florida,\" USA": {
+    "error": "no_match"
+  },
+  "Moupin [= Baoxing], Thibet oriental,\" Sichuan, western China": {
+    "error": "no_match"
+  },
+  "Celebes [= Sulawesi, Indonesia], Bon\u00e9 [= near Gerontalo]": {
+    "error": "no_match"
+  },
+  "Mais\u00ed, Baracoa, Oriente Province, Cuba": {
+    "error": "no_match"
+  },
+  "cave in Sierra de Hato Nuevo, Matanzas Province, Cuba": {
+    "error": "no_match"
+  },
+  "Indonesia, Java": {
+    "lat": -6.7115076,
+    "lon": 110.6337137,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7131720117366189,
+    "display_name": "Jawa, Indonesia"
+  },
+  "vicinity of Vancouver, Clark County, Washington, USA": {
+    "error": "no_match"
+  },
+  "Maldonado,\" Maldonado Department, Uruguay": {
+    "error": "no_match"
+  },
+  "En Mongolie": {
+    "lat": 48.1736235,
+    "lon": 16.2891283,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 8.694209201185653e-05,
+    "display_name": "Botschaft der Republik Mongolei, 45, Fasangartengasse, Katastralgemeinde Lainz, Hietzing, Wien, 1130, \u00d6sterreich"
+  },
+  "12 miles S": {
+    "lat": 52.2630154,
+    "lon": 4.5002673,
+    "category": "place",
+    "type": "house",
+    "importance": 5.8880750743831805e-05,
+    "display_name": "12, Miles, Noordwijkerhout, Noordwijk, Zuid-Holland, Nederland, 2211 ZW, Nederland"
+  },
+  "Shibar Pass, Afghanistan": {
+    "lat": 34.9018771,
+    "lon": 68.2523093,
+    "category": "mountain_pass",
+    "type": "yes",
+    "importance": 0.3015950553092256,
+    "display_name": "Kotal-e Shibar, \u0648\u0644\u0633\u0648\u0627\u0644\u06cc \u0634\u06cc\u0628\u0631, \u0648\u0644\u0627\u06cc\u062a \u0628\u0627\u0645\u06cc\u0627\u0646, \u0627\u0641\u063a\u0627\u0646\u0633\u062a\u0627\u0646"
+  },
+  "Fergana Valley, Namangan, Uzbekistan": {
+    "lat": 40.7279076,
+    "lon": 71.2368957,
+    "category": "natural",
+    "type": "valley",
+    "importance": 0.5293815082593946,
+    "display_name": "\u0424\u0435\u0440\u0433\u0430\u043d\u0441\u043a\u0430\u044f \u0434\u043e\u043b\u0438\u043d\u0430, Namangan Viloyati, O\u02bbzbekiston"
+  },
+  "Kant, 20 miles [32 km] S": {
+    "error": "no_match"
+  },
+  "Simkoh Hills, Afghanistan": {
+    "error": "no_match"
+  },
+  "Burnoye, Jambyl Region, Kazakhstan": {
+    "error": "no_match"
+  },
+  "Van, alt": {
+    "lat": 44.9846077,
+    "lon": 20.1588763,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5163897801264064,
+    "display_name": "\u0421\u0442\u0430\u0440\u0430 \u041f\u0430\u0437\u043e\u0432\u0430, \u041e\u043f\u0448\u0442\u0438\u043d\u0430 \u0421\u0442\u0430\u0440\u0430 \u041f\u0430\u0437\u043e\u0432\u0430, \u0421\u0440\u0435\u043c\u0441\u043a\u0438 \u0443\u043f\u0440\u0430\u0432\u043d\u0438 \u043e\u043a\u0440\u0443\u0433, \u0412\u043e\u0458\u0432\u043e\u0434\u0438\u043d\u0430, 22300, \u0421\u0440\u0431\u0438\u0458\u0430"
   }
 }
