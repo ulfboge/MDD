@@ -1,0 +1,8 @@
+abbreviation,full_name,city_and_country,policy_decision,policy_rationale
+ACUNHC,Abilene Christian University Natural History Collection,"Abilene, United States of America",retain,Valid institution metadata for Abilene Christian University; retained for external alignment even though no MDD v2.4 voucher currently uses ACUNHC.
+CUMV,Cornell University Museum of Vertebrates,"Ithaca, United States of America",retain,Cornell University Museum of Vertebrates is a standard vertebrate collection code; retained for future voucher matches and cross-database use.
+DZSJRP,"Universidade Estadual Paulista “Júlio de Mesquita Filho""","São José do Rio Preto, Brazil",retain,Universidade Estadual Paulista campus/repository prefix; retained for future Brazilian type vouchers that may enter MDD.
+GEC,Grupo de Exploraciones Científicas,"Havana, Cuba",retain,Historical Cuban scientific group code already present in metadata; retained pending future voucher matches rather than removed speculatively.
+MNHNC,Museo Nacional de Historia Natural de Cuba,"Havana, Cuba",retain,National Museum of Natural History of Cuba; retained separately from MNHN Paris and other MNHN* variants for geographic clarity.
+NMSL,"The National Museum of Sri Lanka, Colombo","Colombo, Sri Lanka",retain,National Museum of Sri Lanka code; retained for future South Asian type vouchers.
+SNMB,Staatliches Naturhistorisches Museum Braunschweig,"Braunschweig, Germany",retain,Staatliches Naturhistorisches Museum Braunschweig; retained as a valid European museum code.

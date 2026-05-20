@@ -43,13 +43,15 @@ NEEDS_PRIMARY_LITERATURE_PREFIXES = {
     "ASRU": (
         "MDD confirms Scarturus heptneri type material as ASRU 424; original source is Pavlenko & "
         "Denisenko (1976), Allactaga elater heptneri, Zoologicheskii Zhurnal 55(7):1073-1077. "
-        "Open sources support an Uzbek Academy of Sciences zoological/mammal collection, but a source "
-        "expanding ASRU and tying ASRU 424 to that repository was not found."
+        "GRSciColl registers the Institute of Zoology mammal collection in Tashkent as TASZ/TASZM, "
+        "and ASRU plausibly abbreviates Academy of Sciences Republic Uzbekistan, but open sources "
+        "did not expand ASRU or tie ASRU 424 to that repository."
     ),
     "LSNSAU": (
         "Known from Aimi & Bakar (1992), Primates 33:191-206, as Presbytis melalophos bicolor "
-        "holotype LSNSAU SD 16. DOI/article page was found, but accessible sources did not expand "
-        "LSNSAU; likely requires full article/PDF or contact with Andalas University/Kyoto PRI."
+        "holotype LSNSAU SD 16. Authorship links Kyoto University and Andalas University, but "
+        "accessible sources did not expand LSNSAU; likely requires the full article/PDF or contact "
+        "with Andalas University Museum Zoologi or Kyoto PRI."
     ),
 }
 
@@ -221,6 +223,44 @@ def qc_flags(row: dict[str, object]) -> list[dict[str, object]]:
     return flags
 
 
+def qc_review(row: dict[str, object]) -> dict[str, object]:
+    """Attach a manual-review closure recommendation for each QC flag."""
+    flag = str(row["qc_flag"])
+    category = str(row["review_category"])
+    closure = "open"
+    recommendation = "Keep on unresolved backlog."
+
+    if flag == "unresolved_prefix":
+        recommendation = (
+            "Keep open until Pavlenko & Denisenko (1976) or Aimi & Bakar (1992) confirms the "
+            "repository abbreviation."
+        )
+    elif flag == "name_or_locality_with_number":
+        closure = "closed"
+        recommendation = (
+            "Accept current classification as locality/person label; no metadata prefix to add "
+            "without primary literature naming a repository."
+        )
+    elif flag == "named_collection_label":
+        closure = "closed"
+        recommendation = (
+            "Accept current classification as named private/historical collection wording; only "
+            "reopen if original description names a museum repository."
+        )
+    elif flag == "voucher_uri_present" and category == "lost_or_untraced":
+        closure = "closed"
+        recommendation = (
+            "Accept LOST voucher text; URI is a mnemonic/catalog link to a historical type record "
+            "and does not change the excluded-voucher classification."
+        )
+
+    return {
+        **row,
+        "review_closure": closure,
+        "review_recommendation": recommendation,
+    }
+
+
 def main() -> None:
     c = duckdb.connect(str(DB), read_only=True)
     inst = {
@@ -270,6 +310,7 @@ def main() -> None:
     candidates_path = REVIEW / "museum_research_candidates.csv"
     unresolved_path = REVIEW / "museum_research_unresolved.csv"
     qc_path = REVIEW / "museum_unmatched_qc_flags.csv"
+    qc_review_path = REVIEW / "museum_unmatched_qc_review.csv"
 
     REVIEW.mkdir(parents=True, exist_ok=True)
 
@@ -402,10 +443,16 @@ def main() -> None:
 
     qc_fields = [*worklist_fields, "qc_flag", "qc_reason"]
     qc_rows = [flag for row in worklist_rows for flag in qc_flags(row)]
+    qc_review_fields = [*qc_fields, "review_closure", "review_recommendation"]
+    qc_review_rows = [qc_review(row) for row in qc_rows]
     with qc_path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=qc_fields)
         w.writeheader()
         w.writerows(qc_rows)
+    with qc_review_path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=qc_review_fields)
+        w.writeheader()
+        w.writerows(qc_review_rows)
 
     summary_path = REVIEW / "museum_completely_excluded_prefix_counts.csv"
     with summary_path.open("w", newline="", encoding="utf-8") as f:
@@ -421,7 +468,13 @@ def main() -> None:
     print(f"Wrote {candidates_path}")
     print(f"Wrote {unresolved_path}")
     print(f"Wrote {qc_path}")
+    print(f"Wrote {qc_review_path}")
     print(f"QC flags for manual sanity check: {len(qc_rows)}")
+    print(
+        "QC review closures: "
+        f"{sum(1 for row in qc_review_rows if row['review_closure'] == 'closed')} closed, "
+        f"{sum(1 for row in qc_review_rows if row['review_closure'] == 'open')} open"
+    )
     print("Review categories:")
     for category, count in Counter(str(row["review_category"]) for row in worklist_rows).most_common():
         print(f"  {category:30} {count}")

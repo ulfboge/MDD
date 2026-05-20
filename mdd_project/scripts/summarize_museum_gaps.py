@@ -40,6 +40,42 @@ ZERO_MATCH_ALIAS_OVERRIDES = {
     "ZMZ": ["ZMUZ"],
 }
 
+STANDALONE_ZERO_MATCH_POLICY = {
+    "ACUNHC": (
+        "retain",
+        "Valid institution metadata for Abilene Christian University; retained for external alignment "
+        "even though no MDD v2.4 voucher currently uses ACUNHC.",
+    ),
+    "CUMV": (
+        "retain",
+        "Cornell University Museum of Vertebrates is a standard vertebrate collection code; retained "
+        "for future voucher matches and cross-database use.",
+    ),
+    "DZSJRP": (
+        "retain",
+        "Universidade Estadual Paulista campus/repository prefix; retained for future Brazilian type "
+        "vouchers that may enter MDD.",
+    ),
+    "GEC": (
+        "retain",
+        "Historical Cuban scientific group code already present in metadata; retained pending future "
+        "voucher matches rather than removed speculatively.",
+    ),
+    "MNHNC": (
+        "retain",
+        "National Museum of Natural History of Cuba; retained separately from MNHN Paris and other "
+        "MNHN* variants for geographic clarity.",
+    ),
+    "NMSL": (
+        "retain",
+        "National Museum of Sri Lanka code; retained for future South Asian type vouchers.",
+    ),
+    "SNMB": (
+        "retain",
+        "Staatliches Naturhistorisches Museum Braunschweig; retained as a valid European museum code.",
+    ),
+}
+
 
 def main() -> None:
     missing = list(csv.DictReader((REVIEW / "museum_voucher_prefixes_missing_from_metadata.csv").open(encoding="utf-8")))
@@ -192,6 +228,14 @@ def main() -> None:
     for row in zero_review_rows:
         if row["review_category"] != "standalone_zero_match":
             continue
+        policy_decision, policy_rationale = STANDALONE_ZERO_MATCH_POLICY.get(
+            row["abbreviation"],
+            (
+                "review",
+                "No explicit retention policy recorded; decide whether metadata should contain only "
+                "MDD-matched institutions.",
+            ),
+        )
         action_rows.append(
             {
                 "priority": "2",
@@ -201,7 +245,11 @@ def main() -> None:
                 "example_species": "",
                 "type_voucher": "",
                 "current_status": row["review_category"],
-                "recommended_action": "Retain as future/externally useful metadata, or remove only if this project wants metadata to contain MDD-matched institutions only.",
+                "recommended_action": (
+                    f"{policy_decision}: {policy_rationale}"
+                    if policy_decision == "retain"
+                    else policy_rationale
+                ),
             }
         )
     action_rows.sort(key=lambda r: (r["priority"], r["source"], r["item"]))
@@ -221,6 +269,38 @@ def main() -> None:
         )
         writer.writeheader()
         writer.writerows(action_rows)
+
+    policy_path = REVIEW / "museum_standalone_zero_match_policy.csv"
+    policy_rows = []
+    for row in zero_review_rows:
+        if row["review_category"] != "standalone_zero_match":
+            continue
+        policy_decision, policy_rationale = STANDALONE_ZERO_MATCH_POLICY.get(
+            row["abbreviation"],
+            ("review", "No explicit retention policy recorded."),
+        )
+        policy_rows.append(
+            {
+                "abbreviation": row["abbreviation"],
+                "full_name": row["full_name"],
+                "city_and_country": row["city_and_country"],
+                "policy_decision": policy_decision,
+                "policy_rationale": policy_rationale,
+            }
+        )
+    with policy_path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(
+            f,
+            fieldnames=[
+                "abbreviation",
+                "full_name",
+                "city_and_country",
+                "policy_decision",
+                "policy_rationale",
+            ],
+        )
+        writer.writeheader()
+        writer.writerows(policy_rows)
 
     # Zero-match metadata entries that look like they should have alias rows
     zero_by_country = defaultdict(list)
@@ -244,6 +324,7 @@ def main() -> None:
     print(f"\nWrote {out}")
     print(f"Wrote {zero_review_path}")
     print(f"Wrote {action_path}")
+    print(f"Wrote {policy_path}")
 
 
 if __name__ == "__main__":
