@@ -139,6 +139,7 @@ _MUSEUM_COUNTRY_SUBQUERY = f"""(
 # ---------------------------------------------------------------------------
 @app.get("/species", summary="List or search species")
 def list_species(
+    q: str | None = Query(None, description="Search scientific or common name (partial, case-insensitive)"),
     order: str | None = Query(None, description="Filter by order (e.g. 'Primates')"),
     family: str | None = Query(None, description="Filter by family (e.g. 'Galagidae')"),
     limit: int = Query(100, ge=1, le=5000, description="Max rows to return"),
@@ -147,6 +148,12 @@ def list_species(
     conditions: list[str] = []
     params: list[Any] = []
 
+    if q:
+        needle = f"%{q.strip()}%"
+        conditions.append(
+            "(sci_name ILIKE ? OR REPLACE(sci_name, '_', ' ') ILIKE ? OR main_common_name ILIKE ?)"
+        )
+        params.extend([needle, needle, needle])
     if order:
         conditions.append('"order" ILIKE ?')
         params.append(f"%{order}%")

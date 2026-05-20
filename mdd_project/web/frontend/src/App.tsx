@@ -157,6 +157,7 @@ const SRC_OCCURRENCES = "occurrences";
 const LYR_TYPE_LOC = "type-localities-circle";
 const LYR_ESTIMATED = "estimated-type-localities-circle";
 const LYR_OCCURRENCES = "occurrences-circle";
+const GBIF_COLOR = "#ff7043";
 
 // Neutral light basemap — keeps IUCN / GBIF colours readable vs colourful OSM
 const BASEMAP_TILES =
@@ -249,6 +250,47 @@ export default function App() {
     allEstimatedLocCacheRef.current = fc;
     return fc;
   }, []);
+
+  const loadOccurrencesForSpecies = useCallback(async (sciName: string) => {
+    const map = mapRef.current;
+    const source = map?.getSource(SRC_OCCURRENCES) as GeoJSONSource | undefined;
+    if (!map || !mapReady || !source) return;
+
+    setLoadingOcc(true);
+    try {
+      const fc = await fetchJson<{
+        features: object[];
+        meta: OccurrenceMeta;
+        type: string;
+      }>(`${API}/occurrences/${encodeURIComponent(sciName)}`);
+
+      source.setData({ type: "FeatureCollection", features: fc.features });
+      setOccurrenceMeta(fc.meta);
+
+      if (fc.features.length > 0) {
+        const coords = fc.features
+          .map((f) => (f as { geometry: { coordinates: [number, number] } }).geometry.coordinates)
+          .filter((c) => c && c.length === 2);
+        if (coords.length) {
+          const lngs = coords.map((c) => c[0]);
+          const lats = coords.map((c) => c[1]);
+          map.fitBounds(
+            [
+              [Math.min(...lngs), Math.min(...lats)],
+              [Math.max(...lngs), Math.max(...lats)],
+            ],
+            { padding: 60, maxZoom: 8, duration: 1000 }
+          );
+        }
+      }
+    } catch (err) {
+      console.error("Failed to load GBIF occurrences:", err);
+      source.setData({ type: "FeatureCollection", features: [] });
+      setOccurrenceMeta({ count: 0, limit: 500 });
+    } finally {
+      setLoadingOcc(false);
+    }
+  }, [mapReady]);
 
   const loadEstimatedLocalitiesForView = useCallback(async () => {
     const map = mapRef.current;
@@ -427,26 +469,9 @@ export default function App() {
         },
       });
 
-      // ── Occurrences source + layer ────────────────────────────────────────
       map.addSource(SRC_OCCURRENCES, {
         type: "geojson",
         data: { type: "FeatureCollection", features: [] },
-      });
-      map.addLayer({
-        id: LYR_OCCURRENCES,
-        type: "circle",
-        source: SRC_OCCURRENCES,
-        paint: {
-          "circle-radius": [
-            "interpolate", ["linear"], ["zoom"],
-            2, 4,
-            8, 8,
-          ],
-          "circle-color": "#f0a44a",
-          "circle-stroke-width": 1,
-          "circle-stroke-color": "rgba(0,0,0,0.5)",
-          "circle-opacity": 0.75,
-        },
       });
 
       map.addSource(SRC_ESTIMATED, {
@@ -468,6 +493,24 @@ export default function App() {
           "circle-stroke-width": 2,
           "circle-stroke-color": "#8a5a12",
           "circle-opacity": 0.72,
+        },
+      });
+
+      // GBIF occurrences on top so they stay visible over type-locality dots
+      map.addLayer({
+        id: LYR_OCCURRENCES,
+        type: "circle",
+        source: SRC_OCCURRENCES,
+        paint: {
+          "circle-radius": [
+            "interpolate", ["linear"], ["zoom"],
+            2, 4,
+            8, 8,
+          ],
+          "circle-color": GBIF_COLOR,
+          "circle-stroke-width": 1,
+          "circle-stroke-color": "rgba(0,0,0,0.5)",
+          "circle-opacity": 0.85,
         },
       });
 
@@ -544,6 +587,20 @@ export default function App() {
       mapRef.current = null;
     };
   }, []);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    const source = map?.getSource(SRC_OCCURRENCES) as GeoJSONSource | undefined;
+    if (!mapReady || !source) return;
+
+    if (!selected) {
+      source.setData({ type: "FeatureCollection", features: [] });
+      setOccurrenceMeta(null);
+      return;
+    }
+
+    void loadOccurrencesForSpecies(selected.sci_name);
+  }, [loadOccurrencesForSpecies, mapReady, selected]);
 
   // ── Layer visibility toggles ──────────────────────────────────────────────
   useEffect(() => {
@@ -625,15 +682,10 @@ export default function App() {
     if (value.length < 2) return;
     try {
       if (currentRank === "species") {
-        const results = await fetchJson<SpeciesRecord[]>(`${API}/species?limit=10`);
-        const q = value.toLowerCase();
-        setSuggestions(
-          results.filter(
-            (r) =>
-              r.sci_name.toLowerCase().includes(q) ||
-              (r.main_common_name ?? "").toLowerCase().includes(q)
-          )
+        const results = await fetchJson<SpeciesRecord[]>(
+          `${API}/species?q=${encodeURIComponent(value)}&limit=15`
         );
+        setSuggestions(results);
       } else {
         const results = await fetchJson<TaxonResult[]>(
           `${API}/taxonomy/search?q=${encodeURIComponent(value)}&rank=${currentRank}`
@@ -666,7 +718,6 @@ export default function App() {
     setTaxonSuggestions([]);
     setQuery(sp.sci_name_space ?? sp.sci_name);
     setError(null);
-    setOccurrenceMeta(null);
     setShowAllTypeLocalities(false); // always start in single-species mode
 
     const map = mapRef.current;
@@ -689,46 +740,6 @@ export default function App() {
     if (sp.type_lat != null && sp.type_lon != null) {
       map.flyTo({ center: [sp.type_lon, sp.type_lat], zoom: 5, duration: 1200 });
     }
-
-    // Load GBIF occurrences
-    setLoadingOcc(true);
-    try {
-      const fc = await fetchJson<{
-        features: object[];
-        meta: OccurrenceMeta;
-        type: string;
-      }>(`${API}/occurrences/${encodeURIComponent(sp.sci_name)}`);
-
-      (map.getSource(SRC_OCCURRENCES) as GeoJSONSource).setData(
-        fc as Parameters<GeoJSONSource["setData"]>[0]
-      );
-      setOccurrenceMeta(fc.meta);
-
-      if (fc.features.length > 0) {
-        const coords = fc.features
-          .map((f) => (f as { geometry: { coordinates: [number, number] } }).geometry.coordinates)
-          .filter((c) => c && c.length === 2);
-        if (coords.length) {
-          const lngs = coords.map((c) => c[0]);
-          const lats = coords.map((c) => c[1]);
-          map.fitBounds(
-            [
-              [Math.min(...lngs), Math.min(...lats)],
-              [Math.max(...lngs), Math.max(...lats)],
-            ],
-            { padding: 60, maxZoom: 8, duration: 1000 }
-          );
-        }
-      }
-    } catch {
-      (map.getSource(SRC_OCCURRENCES) as GeoJSONSource).setData({
-        type: "FeatureCollection",
-        features: [],
-      });
-      setOccurrenceMeta({ count: 0, limit: 500 });
-    } finally {
-      setLoadingOcc(false);
-    }
   }, []);
 
   // ── Select a genus or family — load all member type localities ───────────
@@ -740,17 +751,10 @@ export default function App() {
     setTaxonSuggestions([]);
     setQuery(t.name);
     setError(null);
-    setOccurrenceMeta(null);
     setShowAllTypeLocalities(false);
 
     const map = mapRef.current;
     if (!map) return;
-
-    // Clear GBIF occurrences (loaded per-species only)
-    (map.getSource(SRC_OCCURRENCES) as GeoJSONSource).setData({
-      type: "FeatureCollection",
-      features: [],
-    });
 
     // Load type localities for every species in this taxon
     const paramKey = t.rank === "genus" ? "genus" : "family";
@@ -778,18 +782,8 @@ export default function App() {
     setQuery("");
     setSuggestions([]);
     setTaxonSuggestions([]);
-    setOccurrenceMeta(null);
     setShowAllTypeLocalities(false);
     setError(null);
-
-    const map = mapRef.current;
-    if (!map) return;
-
-    // Clear occurrences
-    (map.getSource(SRC_OCCURRENCES) as GeoJSONSource).setData({
-      type: "FeatureCollection",
-      features: [],
-    });
 
     loadTypeLocalitiesForView();
   }, [loadTypeLocalitiesForView]);
@@ -1059,14 +1053,22 @@ export default function App() {
                 checked={showOccurrences}
                 onChange={(e) => setShowOccurrences(e.target.checked)}
               />
-              <span className="dot" style={{ background: "#f0a44a" }} />
+              <span className="dot" style={{ background: GBIF_COLOR }} />
               GBIF occurrences
             </label>
-            {occurrenceMeta && (
+            {selected && occurrenceMeta && (
               <span className="layer-count">{occurrenceMeta.count.toLocaleString()}</span>
             )}
           </div>
-          <p className="layer-hint">Where the species has been reported (GBIF occurrences)</p>
+          <p className="layer-hint">
+            {!selected
+              ? "Select a species to load GBIF occurrence dots (data must be imported first)."
+              : loadingOcc
+              ? "Loading GBIF occurrences for the selected species…"
+              : occurrenceMeta && occurrenceMeta.count > 0
+              ? "Orange dots show GBIF sighting and specimen records for the selected species."
+              : "No GBIF records in the local database for this species yet."}
+          </p>
         </section>
 
         {/* About these layers — collapsible explainer */}
