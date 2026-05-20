@@ -161,9 +161,11 @@ MZUCV,"Laboratorio Museo de Zoología, Universidad de Carabobo","Valencia, Venez
 MZS,Musée Zoologique de Strasbourg,"Strasbourg, France",NA,https://www.musees.strasbourg.eu/collection-musee-zoologique/-/entity/id/220396
 MZUA,Museo Universidad del Azuay,"Cuenca, Ecuador",NA,https://www.facebook.com/MZUAmuseo/
 MZUSP,Museu de Zoologia da Universidade de São Paulo,"São Paulo, Brazil",NA,http://mz.usp.br/laboratorios/mastozoologia/
+NAMRU,"United States Naval Medical Research Unit (NAMRU) zoological voucher collection","Jakarta, Indonesia",Catalog prefix NAMRU in MDD type vouchers; Dobsonia emersa holotype NAMRU 5605 per Bergmans & Sarbini (1985 Beaufortia); types cited from NAMRU-2 surveys,NA
 NHMO,"Natural History Museum, University of Oslo, Norway","Oslo, Norway",NA,NA
 NMB,Natural History Museum Basel,"Basel, Switzerland",NA,https://www.nmbs.ch/home/en/museum/sammlungen/biowissenschaftlich/typenkataloge/saeugetiere.html
 NMNS,"National Museum of Natural Science, Taichung","Taichung City, Taiwan",NA,https://eng.taiwan.net.tw/m1.aspx?sNo=0002112&id=2191
+NMU,"Northwest Minzu University (Northwest University for Nationalities) scientific mammal collection","Lanzhou, China",Catalog prefix NMU in MDD type vouchers; Spermophilus nilkaensis types per Hou & Wang (1989) in university natural sciences series (formerly Northwest Nationalities Institute),https://www.xbmu.edu.cn/
 NMP,"National Museum (Natural History), Prague, Czech Republic","Prague, Czech Republic",NA,NA
 NMPR,"National Museum (Natural History), Prague, Czech Republic","Prague, Czech Republic",Catalog prefix NMPR in MDD type vouchers; same institution as NMP,NA
 NMPH,"National Museum (Natural History), Prague, Czech Republic","Prague, Czech Republic",Catalog prefix NMPH in MDD type vouchers; same institution as NMP,NA
@@ -171,6 +173,7 @@ NMSL,"The National Museum of Sri Lanka, Colombo","Colombo, Sri Lanka",National M
 NMV,Museums Victoria,"Melbourne, Australia",NA,https://collections.museumsvictoria.com.au/
 NMW,Naturhistorisches Museum Wien,"Vienna, Austria",NA,https://www.nhm-wien.ac.at/en/research/1_zoology_vertebrates/mammal_collection
 NHMBZ,Natural History Museum of Zimbabwe,"Bulawayo, Zimbabwe",Catalog prefix NHMBZ in MDD type vouchers; same institution as NMZB,https://naturalhistorymuseumzimbabwe.com/mammology/
+NHRC,"Natural History Research Centre, University of Baghdad","Baghdad, Iraq",Catalog prefix NHRC in MDD type vouchers; Nesokia bunnii holotype (destroyed 2003) and legacy NHRC accessions per Khajuria (1981) and neotype designation (2017 Zootaxa),NA
 NMZB,Natural History Museum of Zimbabwe,"Bulawayo, Zimbabwe",NA,https://naturalhistorymuseumzimbabwe.com/mammology/
 NNPM,National Museum of Natural History of Ukraine,"Kyiv, Ukraine",Catalog prefix NNPM in MDD type vouchers; same institution as NMNHU,https://museumkiev.org/en/
 NHRM,Naturhistoriska riksmuseet,"Stockholm, Sweden",Catalog prefix used in MDD type vouchers; same institution as NR and RNHM,https://www.nrm.se/forskningochsamlingar/zoologi.9000585.html
