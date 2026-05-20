@@ -1,2 +1,1 @@
 wave_priority,issue_type,voucher_prefix,species_count,on_map_via_shorter_code,completely_unmatched,related_metadata,example_species,example_vouchers,investigation_notes,suggested_action
-P4d-orphan-low,orphan,BOHMANN,2,0,2,,Otomys_zinki; Otomys_sungae,Otomys_sungae=Bohmann collection 582; Otomys_zinki=Bohmann collection 548,"Historical Bohmann collection label for Otomys type material; repository not confirmed, so do not add a metadata row yet.",Keep in review until the repository for Bohmann collection type material is confirmed.

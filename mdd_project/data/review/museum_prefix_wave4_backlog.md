@@ -1,12 +1,12 @@
 # Museum prefix wave 4 — investigation backlog
 
-Generated after P3 alias fixes (BMNH, NMPR, MACN-MA, NSMT-M, NMNZ, OUM, CNM, …).
-Use this file to research and resolve remaining prefix gaps before updating `TypeSpecimenMetadata_v2.4.csv`.
+Generated from `museum_prefix_gap_summary.csv`.
+Use this file to research and resolve remaining count >= 2 prefix gaps before updating `TypeSpecimenMetadata_v2.4.csv`.
 
 ## Current snapshot
 
-- **Completely unmatched vouchers:** 443 species
-- **Prefix gaps in this backlog:** 1 rows
+- **Completely unmatched vouchers:** 414 species
+- **Prefix gaps in this backlog:** 0 rows
 - **Not fixable via metadata:** `UNTRACED` (234) + `LOST` (136) = 370 species
 
 ## Priority legend

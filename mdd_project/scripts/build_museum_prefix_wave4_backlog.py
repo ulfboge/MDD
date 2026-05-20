@@ -14,6 +14,19 @@ REVIEW = Path(__file__).resolve().parents[1] / "data" / "review"
 GAP = REVIEW / "museum_prefix_gap_summary.csv"
 OUT_CSV = REVIEW / "museum_prefix_wave4_backlog.csv"
 OUT_MD = REVIEW / "museum_prefix_wave4_backlog.md"
+BACKLOG_FIELDS = [
+    "wave_priority",
+    "issue_type",
+    "voucher_prefix",
+    "species_count",
+    "on_map_via_shorter_code",
+    "completely_unmatched",
+    "related_metadata",
+    "example_species",
+    "example_vouchers",
+    "investigation_notes",
+    "suggested_action",
+]
 
 MUSEUM_MATCH = """
     s.type_voucher IS NOT NULL
@@ -135,7 +148,7 @@ def main() -> None:
     backlog.sort(key=lambda r: (r["wave_priority"], -r["species_count"], r["voucher_prefix"]))
 
     with OUT_CSV.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(backlog[0].keys()))
+        writer = csv.DictWriter(f, fieldnames=BACKLOG_FIELDS)
         writer.writeheader()
         writer.writerows(backlog)
 
@@ -153,8 +166,8 @@ def main() -> None:
     lines = [
         "# Museum prefix wave 4 — investigation backlog",
         "",
-        "Generated after P3 alias fixes (BMNH, NMPR, MACN-MA, NSMT-M, NMNZ, OUM, CNM, …).",
-        "Use this file to research and resolve remaining prefix gaps before updating `TypeSpecimenMetadata_v2.4.csv`.",
+        "Generated from `museum_prefix_gap_summary.csv`.",
+        "Use this file to research and resolve remaining count >= 2 prefix gaps before updating `TypeSpecimenMetadata_v2.4.csv`.",
         "",
         "## Current snapshot",
         "",
