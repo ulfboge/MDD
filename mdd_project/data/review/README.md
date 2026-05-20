@@ -9,6 +9,7 @@ Current post-audit status:
 - Alias-style prefix gaps with count >= 2: 0
 - Orphan voucher prefixes with count >= 2: 0
 - Remaining actionable items: 9 (`museum_remaining_action_items.csv`)
+- Unmatched-voucher QC flags: 18 (`museum_unmatched_qc_flags.csv`)
 
 ## Files
 
@@ -31,6 +32,7 @@ Current post-audit status:
 | `museum_completely_excluded_worklist.csv` | Classified worklist for excluded vouchers (`lost_or_untraced`, `field_or_sequence_number`, `needs_primary_literature`, etc.). |
 | `museum_research_candidates.csv` | Verifiable museum-prefix candidates remaining after classification. Should normally be empty when the current batch is resolved. |
 | `museum_research_unresolved.csv` | Prefixes that require primary literature or direct repository confirmation; currently `ASRU` and `LSNSAU`. |
+| `museum_unmatched_qc_flags.csv` | Final sanity-check flags among otherwise closed unmatched vouchers: unresolved prefixes, voucher URI signals, named collections, and person/locality labels with numbers. |
 | `museum_zero_match_metadata_review.csv` | Metadata rows with zero direct voucher matches, split into expected alias rows vs standalone zero-match rows. |
 | `museum_remaining_action_items.csv` | Compact final action list: unresolved prefixes plus standalone zero-match metadata rows. Start here for follow-up work. |
 | `museum_vouchers_unmatched.csv` | Unmatched voucher list. |
@@ -57,6 +59,7 @@ python mdd_project/scripts/build_museum_prefix_wave4_backlog.py
 - `ASRU`: MDD confirms `Scarturus_heptneri` type material as `ASRU 424`. The correct original source is Pavlenko & Denisenko (1976), *Allactaga elater heptneri*, `Zoologicheskii Zhurnal` 55(7):1073-1077. Open sources support an Uzbek Academy of Sciences zoological/mammal collection, but a source expanding `ASRU` and tying `ASRU 424` to that repository has not been found.
 - `LSNSAU`: Known from Aimi & Bakar (1992), *Primates* 33:191-206, as `Presbytis melalophos bicolor` holotype `LSNSAU SD 16`. The DOI/article page was found, but accessible sources did not expand `LSNSAU`; likely requires the full article/PDF or contact with Andalas University/Kyoto PRI.
 - Standalone zero-match metadata rows (`ACUNHC`, `CUMV`, `DZSJRP`, `GEC`, `MNHNC`, `NMSL`, `SNMB`) can be retained as future/externally useful metadata. Remove them only if `TypeSpecimenMetadata_v2.4.csv` should strictly contain institutions that match current MDD v2.4 vouchers.
+- `museum_unmatched_qc_flags.csv` is not a prefix-add backlog. It highlights residual sanity-check cases, including lost vouchers with catalog URIs (possible future URI-based museum matching), named collection labels such as Bohmann, and locality/person labels with specimen-like numbers.
 
 ## Matching rule (web app)
 

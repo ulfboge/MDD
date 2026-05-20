@@ -175,6 +175,52 @@ def classify_excluded_voucher(prefix: str, voucher: str, uri: str | None) -> dic
     }
 
 
+def qc_flags(row: dict[str, object]) -> list[dict[str, object]]:
+    """Flag low-confidence excluded vouchers for a final human sanity check."""
+    flags: list[dict[str, object]] = []
+    category = str(row["review_category"])
+    voucher = str(row["type_voucher"])
+    voucher_lower = voucher.lower()
+
+    if category == "needs_primary_literature":
+        flags.append(
+            {
+                **row,
+                "qc_flag": "unresolved_prefix",
+                "qc_reason": "Institution-like prefix remains unresolved and requires primary literature or repository confirmation.",
+            }
+        )
+
+    if str(row["type_voucher_uris"]).strip():
+        flags.append(
+            {
+                **row,
+                "qc_flag": "voucher_uri_present",
+                "qc_reason": "Voucher text is excluded, but URI may identify a repository or catalog object.",
+            }
+        )
+
+    if category == "non_institution_description" and "collection" in voucher_lower:
+        flags.append(
+            {
+                **row,
+                "qc_flag": "named_collection_label",
+                "qc_reason": "Voucher is descriptive, but mentions a named collection; original literature may identify a repository.",
+            }
+        )
+
+    if category == "locality_or_person_name" and re.search(r"\d", voucher):
+        flags.append(
+            {
+                **row,
+                "qc_flag": "name_or_locality_with_number",
+                "qc_reason": "Looks like a person/locality label with a number; verify it is not a repository code before closing.",
+            }
+        )
+
+    return flags
+
+
 def main() -> None:
     c = duckdb.connect(str(DB), read_only=True)
     inst = {
@@ -223,6 +269,7 @@ def main() -> None:
     worklist_path = REVIEW / "museum_completely_excluded_worklist.csv"
     candidates_path = REVIEW / "museum_research_candidates.csv"
     unresolved_path = REVIEW / "museum_research_unresolved.csv"
+    qc_path = REVIEW / "museum_unmatched_qc_flags.csv"
 
     REVIEW.mkdir(parents=True, exist_ok=True)
 
@@ -353,6 +400,13 @@ def main() -> None:
             if row["review_category"] == "needs_primary_literature"
         )
 
+    qc_fields = [*worklist_fields, "qc_flag", "qc_reason"]
+    qc_rows = [flag for row in worklist_rows for flag in qc_flags(row)]
+    with qc_path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=qc_fields)
+        w.writeheader()
+        w.writerows(qc_rows)
+
     summary_path = REVIEW / "museum_completely_excluded_prefix_counts.csv"
     with summary_path.open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
@@ -366,6 +420,8 @@ def main() -> None:
     print(f"Wrote {worklist_path}")
     print(f"Wrote {candidates_path}")
     print(f"Wrote {unresolved_path}")
+    print(f"Wrote {qc_path}")
+    print(f"QC flags for manual sanity check: {len(qc_rows)}")
     print("Review categories:")
     for category, count in Counter(str(row["review_category"]) for row in worklist_rows).most_common():
         print(f"  {category:30} {count}")
