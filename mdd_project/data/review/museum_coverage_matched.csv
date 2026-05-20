@@ -62,6 +62,7 @@ SMF,Forschungsinstitut und Naturmuseum Senckenberg,56,20
 FMSM,Fukushima City Museum of Natural History,6,0
 GBP,Gene Bank of Primates at the German Primate Center,2,2
 GNMT,Georgian National Museum,4,1
+GHENT,"Ghent University Museum (Zoölogisch Museum, Universiteit Gent)",1,0
 GNMG,Grenada National Museum,1,1
 GIE,Guangdong Institute of Entomology,1,0
 GUNU,Guizhou Normal University,1,1
@@ -84,9 +85,11 @@ JGUM,Johannes Gutenberg University Mainz,1,1
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University",2,2
 KIZ,Kunming Institute of Zoology,23,20
 KUZ,Kyoto University Museum,1,1
+UIS,La Colección de Mamíferos del Museo de Historia Natural de la Universidad Industrial de Santander,1,1
 MZUCV,"Laboratorio Museo de Zoología, Universidad de Carabobo",1,1
 LIEB-M,Laboratorio de Investigaciones en Evolución y Biodiversidad,2,1
 LSUMZ,Louisiana State University Museum of Zoology,11,9
+MMNH,Macedonian Museum of Natural History,1,0
 MMUS,"Macleay Museum, University of Sydney",4,0
 MGR-ZV-M,Mammal Collection of the Museo Provincial de Ciencias Naturales “Dr. Ángel Gallardo”,1,1
 MMK,McGregor Museum,1,1
@@ -126,6 +129,7 @@ MPEG,Museu Paraense Emílio Goeldi,14,12
 MCNPUC,"Museu de Ciências Naturais, Pontifícia Universidade Católica de Minas Gerais",1,1
 MCNU,"Museu de Ciências Naturais, Universidade Luterana do Brasil",1,1
 MCP,"Museu de Ciências e Tecnologia, Pontifícia Universidade Católica do Rio Grande do Sul",1,1
+MUFAL,"Museu de História Natural, Universidade Federal de Alagoas",1,1
 MZUSP,Museu de Zoologia da Universidade de São Paulo,26,24
 MNHN,Museum National d'Histoire Naturelle,370,71
 MNHNU,Museum National d'Histoire Naturelle,4,3
@@ -163,6 +167,7 @@ NTU,National Taiwan University,1,1
 NMB,Natural History Museum Basel,6,2
 LACM,Natural History Museum of Los Angeles County,9,7
 NHMBZ,Natural History Museum of Zimbabwe,2,2
+NMZ,Natural History Museum of Zimbabwe,1,1
 BMNH,"Natural History Museum, London",1899,321
 BMNHC,"Natural History Museum, London",2,2
 NHMO,"Natural History Museum, University of Oslo, Norway",6,1
@@ -191,6 +196,7 @@ SAMA,South Australian Museum,8,5
 SCNU,South China Normal University,3,3
 SMNK,Staatliches Museum für Naturkunde Karlsruhe,1,0
 FHSM,Sternberg Museum of Natural History,1,1
+TAU,"Tel Aviv University, mammal collection (Zoological Museum)",1,1
 TISTR,Thailand Institute of Scientific and Technological Research (legacy acronym; collections now within NSTDA/BIOTEC orbit),1,1
 MCZ,The Louis Agassiz Museum of Comparative Zoology,62,11
 ZFMK,The Zoological Research Museum Alexander Koenig,38,20
@@ -211,6 +217,7 @@ UANT,"Université d'Antananarivo, Département de Biologie animale",4,4
 UUZM,"Uppsala University, Museum of Evolution, Zoology section",10,1
 VRC,"Virus Research Centre (ICMR), Pune — collection heritage; institute now National Institute of Virology",1,1
 WAM,Western Australian Museum,37,34
+WHT,"Wildlife Heritage Trust, Sri Lanka (WHT field-tag prefix)",1,1
 YPM,Yale Peabody Museum,2,1
 YIO,Yamashina Institute for Ornithology,2,0
 EPIY,Yunnan Province Endemic Disease Prevention and Control Institute (historical acronym EPIY / 云南省流行病防治研究所),1,1

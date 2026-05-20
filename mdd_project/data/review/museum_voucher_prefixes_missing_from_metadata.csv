@@ -18,7 +18,6 @@ ABE,1,no,,Tokudaia_osimensis
 CBK,1,no,,Chiromyscus_langbianis
 CMFA,1,no,CM,Ctenomys_roigi
 CMIN,1,no,CM; CMI,Ctenomys_miguelchristie
-GHENT,1,no,,Steno_bredanensis
 IBE,1,no,,Uropsilus_funiushanensis
 IZEA,1,no,,Crocidura_hutanis
 K-EE-12-31,1,no,,Aproteles_bulmerae
@@ -35,17 +34,14 @@ MHNCI,1,no,MHNC,Oxymycterus_itapeby
 MHNLCF,1,no,,Pipistrellus_inexspectatus
 MHNSAAC,1,no,,Mazama_tschudii
 MLZA,1,no,,Myonycteris_brachycephala
-MMNH,1,no,,Mus_macedonicus
 MNHB,1,no,MN,Sotalia_guianensis
 MNHNCL,1,no,MN; MNHN; MNHNC,Eligmodontia_puerulus
 MNHNCL:MAMM:1546,1,no,MN; MNHN; MNHNC,Eligmodontia_dunaris
 MNHNH,1,no,MN; MNHN,Atopogale_arredondoi
 MNHNS,1,no,MN; MNHN,Nannospalax_turcicus
-MUFAL,1,no,,Holochilus_oxe
 MUHNAC/MB01/006000,1,no,,Crocidura_fingui
 MARCGRAVE'S,1,no,,Dasypus_novemcinctus
 NHMOU.CHI.08.2017,1,no,NHMO,Miniopterus_srinii
-NMZ,1,no,NMZB,Crocidura_ansellorum
 NEUHÄUSER,1,no,,Chionomys_lasistanius
 PBS,1,no,,Petinomys_mindanensis
 PCM,1,no,,Lophocebus_osmani
@@ -57,18 +53,15 @@ RUSCONI,1,no,,Ctenomys_australis
 SEBA,1,no,,Cabassous_unicinctus
 STILLWATER,1,no,,Crocidura_glassi
 TAFO6.1,1,no,,Microcebus_margotmarshae
-TAU,1,no,,Crocidura_ramona
 TASHKENT,1,no,,Allactodipus_bobrinskii
 UFPE,1,no,UF,Sylvilagus_brasiliensis
 UFRO,1,no,UF,Plecturocebus_parecis
 UFSC,1,no,UF,Cavia_intermedia
-UIS:M:1608,1,no,,Neacomys_serranensis
 UMRCNRS,1,no,,Chimaerodipus_auritus
 UMAZC,1,no,,Murina_hkakaboraziensis
 UMAH,1,no,,Lepilemur_aeeclis
 UZDZ,1,no,,Plecotus_kolombatovici
 VG-Q1,1,no,,Octomys_rosiae
-WHT,1,no,,Crocidura_hikmiya
 WRM,1,no,,Tasmacetus_shepherdi
 XZ2023010,1,no,,Murina_milinensis
 XZ2023082,1,no,,Murina_yadongensis
