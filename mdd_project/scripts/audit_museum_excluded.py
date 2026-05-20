@@ -39,21 +39,7 @@ LOCALITY_OR_PERSON_PREFIXES = {
     "YEREVAN",
 }
 
-NEEDS_PRIMARY_LITERATURE_PREFIXES = {
-    "ASRU": (
-        "MDD confirms Scarturus heptneri type material as ASRU 424; original source is Pavlenko & "
-        "Denisenko (1976), Allactaga elater heptneri, Zoologicheskii Zhurnal 55(7):1073-1077. "
-        "GRSciColl registers the Institute of Zoology mammal collection in Tashkent as TASZ/TASZM, "
-        "and ASRU plausibly abbreviates Academy of Sciences Republic Uzbekistan, but open sources "
-        "did not expand ASRU or tie ASRU 424 to that repository."
-    ),
-    "LSNSAU": (
-        "Known from Aimi & Bakar (1992), Primates 33:191-206, as Presbytis melalophos bicolor "
-        "holotype LSNSAU SD 16. Authorship links Kyoto University and Andalas University, but "
-        "accessible sources did not expand LSNSAU; likely requires the full article/PDF or contact "
-        "with Andalas University Museum Zoologi or Kyoto PRI."
-    ),
-}
+NEEDS_PRIMARY_LITERATURE_PREFIXES: dict[str, str] = {}
 
 
 def candidate_prefix_to_research(prefix: str) -> str:

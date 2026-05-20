@@ -64,7 +64,6 @@ species_id,sci_name,main_common_name,order,family,genus,specific_epithet,type_ki
 1000630,Papio_hamadryas,Hamadryas Baboon,Primates,Cercopithecidae,Papio,hamadryas,holotype,untraced (number not known),UNTRACED,UNTRACED,Egypt.,,False,False
 1000633,Papio_ursinus,Chacma Baboon,Primates,Cercopithecidae,Papio,ursinus,nonexistent,untraced (number not known),UNTRACED,UNTRACED,"South Africa, Western Cape Province, Cape of Good Hope.",,False,False
 1000634,Rungwecebus_kipunji,Kipunji,Primates,Cercopithecidae,Rungwecebus,kipunji,holotype,Photographed specimen,PHOTOGRAPHED,PHOTOGRAPHED,"Rungwe-Livingstone (09° 07' S to 09° 11' S and 33° 40' E to 33° 55' E), Southern Highlands, Tanzania.",,False,False
-1000660,Presbytis_bicolor,Black-and-white Langur,Primates,Cercopithecidae,Presbytis,bicolor,holotype,LSNSAU SD 16,LSNSAU,LSNSAU,"Batang Kering 0° 50' S, 101° 23' E, 14 km north of Kiliranjao, West Sumatra.",,False,False
 1000688,Semnopithecus_entellus,Bengal Sacred Langur,Primates,Cercopithecidae,Semnopithecus,entellus,nonexistent,lost (number not known),LOST,LOST,"India, Bengal.",http://coldb.mnhn.fr/catalognumber/mnhn/zm/2005-957,False,False
 1000691,Semnopithecus_johnii,Nilgiri Langur,Primates,Cercopithecidae,Semnopithecus,johnii,holotype,lost (number not known),LOST,LOST,"India, Tellicherry.",,False,False
 1000694,Semnopithecus_vetulus,Purple-faced Langur,Primates,Cercopithecidae,Semnopithecus,vetulus,nonexistent,untraced (number not known),UNTRACED,UNTRACED,Ceylon (= Sri Lanka).,,False,False

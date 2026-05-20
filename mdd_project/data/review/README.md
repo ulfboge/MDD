@@ -4,13 +4,13 @@ Generated review files for MDD type-specimen museum prefix matching.
 
 Current post-audit status:
 
-- Matched museums in app: 273
+- Matched museums in app: 275
 - Prefix mismatch / alias cases: 0
 - Alias-style prefix gaps with count >= 2: 0
 - Orphan voucher prefixes with count >= 2: 0
-- Remaining actionable items: 8 (`museum_remaining_action_items.csv`)
-- Unmatched-voucher QC flags: 17 (`museum_unmatched_qc_flags.csv`)
-- QC review closures: 16 closed / 1 open (`museum_unmatched_qc_review.csv`)
+- Remaining actionable items: 7 (`museum_remaining_action_items.csv`; all standalone zero-match retain policies)
+- Unmatched-voucher QC flags: 16 (`museum_unmatched_qc_flags.csv`)
+- QC review closures: 16 closed / 0 open (`museum_unmatched_qc_review.csv`)
 - Standalone zero-match metadata: 7 retained (`museum_standalone_zero_match_policy.csv`)
 
 ## Files
@@ -33,8 +33,8 @@ Current post-audit status:
 | `museum_completely_excluded_detail.csv` | Detailed per-species list for all excluded vouchers, including taxonomy, type locality, URI, and parsed prefix. |
 | `museum_completely_excluded_worklist.csv` | Classified worklist for excluded vouchers (`lost_or_untraced`, `field_or_sequence_number`, `needs_primary_literature`, etc.). |
 | `museum_research_candidates.csv` | Verifiable museum-prefix candidates remaining after classification. Should normally be empty when the current batch is resolved. |
-| `museum_research_unresolved.csv` | Prefixes that require primary literature or direct repository confirmation; currently `LSNSAU`. |
-| `museum_manual_prefix_review.csv` | Manual review decisions for remaining unresolved prefixes (`ASRU`, `LSNSAU`). |
+| `museum_research_unresolved.csv` | Prefixes that require primary literature or direct repository confirmation. Empty when all prefix research is resolved. |
+| `museum_manual_prefix_review.csv` | Manual review decisions for formerly unresolved prefixes (`ASRU`, `LSNSAU`). |
 | `museum_unmatched_qc_flags.csv` | Final sanity-check flags among otherwise closed unmatched vouchers: unresolved prefixes, voucher URI signals, named collections, and person/locality labels with numbers. |
 | `museum_unmatched_qc_review.csv` | Manual-review closure recommendations for each QC flag (`closed` vs `open`). |
 | `museum_zero_match_metadata_review.csv` | Metadata rows with zero direct voucher matches, split into expected alias rows vs standalone zero-match rows. |
@@ -59,10 +59,10 @@ python mdd_project/scripts/build_museum_prefix_wave4_backlog.py
 
 ## Remaining manual checks
 
-`museum_remaining_action_items.csv` is the preferred follow-up list.
+Prefix research backlog is closed. `museum_remaining_action_items.csv` now lists only standalone zero-match retain policies.
 
-- `ASRU`: Added to metadata after manual review as Institute of Zoology, Academy of Sciences of the Republic of Uzbekistan (`TASZ`/`TASZM` alias note). `Scarturus_heptneri` holotype `ASRU 424` now matches in the app; confirm wording in Pavlenko & Denisenko (1976) when the PDF is available.
-- `LSNSAU`: Known from Aimi & Bakar (1992), *Primates* 33:191-206, as `Presbytis melalophos bicolor` holotype `LSNSAU SD 16`. Manual review suggests an Andalas University FMIPA-linked collection, but no open source expands `LSNSAU`; likely requires the full article/PDF or contact with Andalas University Museum Zoologi or Kyoto PRI.
+- `ASRU`: Added to metadata as Institute of Zoology, Academy of Sciences of the Republic of Uzbekistan (`TASZ`/`TASZM` alias note). `Scarturus_heptneri` holotype `ASRU 424` matches in the app; confirm wording in Pavlenko & Denisenko (1976) when the PDF is available.
+- `LSNSAU`: Added to metadata as Museum Zoologi, Universitas Andalas, with a verify note for the likely expansion *Laboratorium Studi Natural Sciences Andalas University*. `Presbytis_bicolor` holotype `LSNSAU SD 16` matches in the app; confirm in Aimi & Bakar (1992) when the PDF is available.
 - Standalone zero-match metadata rows (`ACUNHC`, `CUMV`, `DZSJRP`, `GEC`, `MNHNC`, `NMSL`, `SNMB`) are retained in `TypeSpecimenMetadata_v2.4.csv` per `museum_standalone_zero_match_policy.csv`. Remove them only if metadata should strictly contain institutions that match current MDD v2.4 vouchers.
 - `museum_unmatched_qc_flags.csv` is not a prefix-add backlog. It highlights residual sanity-check cases, including lost vouchers with catalog URIs (possible future URI-based museum matching), named collection labels such as Bohmann, and locality/person labels with specimen-like numbers. Closure recommendations are in `museum_unmatched_qc_review.csv`.
 
