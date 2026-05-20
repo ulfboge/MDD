@@ -1,19 +1,16 @@
 sci_name,type_voucher,voucher_prefix,matched_abbreviation,issue
-Plecturocebus_parecis,UFRO M354,UFRO,UF,prefix_missing_from_metadata
-Microcebus_arnholdi,AMB5.39,AMB5.39,AM,prefix_missing_from_metadata
-Hapalemur_aureus,AMA PT-0998,AMA,AM,prefix_missing_from_metadata
-Pronolagus_saundersiae,AMG (number not known),AMG,AM,prefix_missing_from_metadata
-Sylvilagus_brasiliensis,UFPE 1740,UFPE,UF,prefix_missing_from_metadata
-Cavia_intermedia,UFSC 585,UFSC,UF,prefix_missing_from_metadata
-Ctenomys_miguelchristie,CMIN 46,CMIN,CMI,prefix_missing_from_metadata
-Ctenomys_roigi,CMFA C-001864,CMFA,CM,prefix_missing_from_metadata
-Fukomys_ilariae,MCZR 7016,MCZR,MCZ,prefix_missing_from_metadata
 Mogera_uchidai,KUF (number not known),KUF,KU,prefix_missing_from_metadata
 Atopogale_arredondoi,MNHNH V-95 (= Mayo 421/123),MNHNH,MNHN,prefix_missing_from_metadata
 Miniopterus_srinii,NHMOU.CHI.08.2017,NHMOU.CHI.08.2017,NHMO,prefix_missing_from_metadata
 Molossus_paranaensis,MFA-ZV-M 1494,MFA-ZV-M,MF,prefix_missing_from_metadata
 Sotalia_guianensis,"MNHB 1516, MNHB 2349",MNHB,MN,prefix_missing_from_metadata
 Cephalorhynchus_hectori,KUL (number not known),KUL,KU,prefix_missing_from_metadata
+Microcebus_arnholdi,AMB5.39,AMB5.39,AM,prefix_missing_from_metadata
+Hapalemur_aureus,AMA PT-0998,AMA,AM,prefix_missing_from_metadata
+Pronolagus_saundersiae,AMG (number not known),AMG,AM,prefix_missing_from_metadata
+Ctenomys_miguelchristie,CMIN 46,CMIN,CMI,prefix_missing_from_metadata
+Ctenomys_roigi,CMFA C-001864,CMFA,CM,prefix_missing_from_metadata
+Fukomys_ilariae,MCZR 7016,MCZR,MCZ,prefix_missing_from_metadata
 Oxymycterus_itapeby,MHNCI 3595,MHNCI,MHNC,prefix_missing_from_metadata
 Eligmodontia_dunaris,MNHNCL:Mamm:1546,MNHNCL:MAMM:1546,MNHNC,prefix_missing_from_metadata
 Eligmodontia_puerulus,MNHNCL (number not known),MNHNCL,MNHNC,prefix_missing_from_metadata

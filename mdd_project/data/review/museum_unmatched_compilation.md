@@ -31,6 +31,7 @@ Matchningsregeln är i huvudsak: voucher börjar med institutionsförkortning (`
 
 - **Sju nya prefix:** GHENT, NMZ, UIS (kortform vid sidan av UIS-MHN-M), MMNH (Skopje), TAU, WHT, MUFAL — plus korrigerat visningsnamn för UIS-MHN-M (“La Colección…”).
 - **IBE:** *Institute of Biodiversity and Ecology*, Zhengzhou University — verifierat mot primärkälla (Jiang et al. 2025, PMC11814535, holotyp IBE00300).
+- **Brasilianska UF-alias:** **UFPE**, **UFRO** (samma statsuniversitet som ofta anges **UNIR**), **UFSC** — korrigerar felaktig match mot **UF** (Florida) för vouchrar som börjar med respektive prefix.
 
 **Effekt:** “Completely unmatched vouchers” sjönk i auditen från **443 → 435** (åtta färre helt omatchade efter dessa rader; nettot kan skilja något om andrapartslistor räknats om mellan körningar).
 
