@@ -1,20 +1,23 @@
 matched_abbreviation,matched_name,vouchers,geocoded
 ANSP,Academy of Natural Sciences of Drexel University,43,3
+AMA,"Académie Malgache (collections de zoologie, Antananarivo)",1,1
+AMG,"Albany Museum, Makhanda (Grahamstown)",1,0
 KM,Amathole Museum,4,0
 AMNH,American Museum of Natural History,335,81
 AHNU,Anhui Normal University,3,3
 AHUB,Anhui Normal University,6,6
 AIMZ,"Anthropological Institute and Museum, University of Zurich",1,1
-AM,Australian Museum,80,41
+AM,Australian Museum,77,39
 ANWC,Australian National Wildlife Collection,4,3
 BPBM,Bernice Pauahi Bishop Museum,12,10
 TCWC,Biodiversity Research and Teaching Collections Texas A&M University,13,3
 UPNG,"Biology Museum / National Museum and Art Gallery, University of Papua New Guinea",1,1
 BNHS,Bombay Natural History Society,1,0
+UMRCNRS,CNRS / Université de Franche-Comté Chrono-environnement small mammal collection,1,1
 CSIRO,CSIRO Australian National Wildlife Collection,6,4
 CAS,California Academy of Sciences,10,3
 CMN,Canadian Museum of Nature,2,1
-CM,Carnegie Museum of Natural History,22,13
+CM,Carnegie Museum of Natural History,21,12
 TNRC,Centre for Thai National Reference Collections,5,4
 UFPE,"Centro de Biociências / Coleções zoológicas, Universidade Federal de Pernambuco",1,1
 UFMG,"Centro de Coleções Taxonômicas, Universidade Federal de Minas Gerais",3,3
@@ -24,7 +27,7 @@ CZL,"Centro de Zoologica, Instituto de Investigação Científica Tropical",1,0
 CWNU,China West Normal University,1,0
 CML,Colección Mamíferos Lillo,9,9
 CFA-MA,Colección Mastozoológica de la Fundación de Historia Natural Félix de Azara,9,7
-CMI,Colección Mastozoológica del IADIZA,6,5
+CMI,Colección Mastozoológica del IADIZA,5,4
 CNM,Colección Nacional de Mamíferos (UNAM),3,3
 CNMA,Colección Nacional de Mamíferos (UNAM),7,4
 CTUA,"Colección Teriológica de la Universidad de Antioquia, Medellín",1,1
@@ -33,8 +36,11 @@ ICN,"Colección de Mamíferos Alberto Cadena García, Instituto de Ciencias Natu
 UACH,Colección de Mamíferos de la Universidad Austral de Chile,4,4
 CUNRC,Colección de Mamíferos de la Universidad Nacional de Río Cuarto,1,1
 CNP,Colección de Mamíferos del Centro Nacional Patagónico,3,3
+MFA-ZV-M,"Colección de Mamíferos, Museo Provincial de Ciencias Naturales “Florentino Ameghino”",1,1
 UV,"Colección de Mamíferos, Universidad del Valle",1,1
 CVULA,Colección de Vertebrados de la Universidad de los Andes,6,5
+CMFA,Colección mastozoológica cited as CMFA (Corrientes region Ctenomys; Contreras 1988),1,1
+CMIN,Colección mastozoológica cited as CMIN (Patagonian Ctenomys types),1,1
 CBF,Coleccíon Boliviana de Fauna,1,1
 ALP,"Coleção Adriano Lúcio Peracchi, Universidade Federal Rural do Rio de Janeiro",2,2
 UFRO,"Coleção Mastozoológica / Laboratório de Mastozoologia, Universidade Federal de Rondônia (UNIR)",1,1
@@ -52,6 +58,7 @@ DMNH,Durban Natural Science Museum,4,2
 DNSM,Durban Natural Science Museum,8,7
 JAG,E.O. Wilson Biodiversity Laboratory at Gorongosa National Park,1,1
 ECOSUR,"El Colegio de la Frontera Sur, Colección Mastozoológica",1,1
+MCLPGC,El Museo Canario (probable; exact acronym uncertain),1,0
 QCAZ,"El Museo de Zoología, Pontificia Universidad Católica del Ecuador",9,9
 EPRC,Endangered Primate Rescue Center,1,1
 ENCB,Escuela Nacional de Ciencias Biológicas,2,2
@@ -80,6 +87,7 @@ IBVAST,"Institute of Biology, Vietnam Academy of Science and Technology",1,1
 IEBR,Institute of Ecology and Biological Resources,8,8
 IES,Institute of Ecology and Systematics,5,3
 BIZ,Institute of Zoology (Beijing) specimen catalog,11,6
+IZEA,"Institute of Zoology and Animal Ecology, University of Lausanne",1,1
 IZK,Institute of Zoology of Kazakhstan,2,0
 TIHO,"Institute of Zoology, University of Veterinary Medicine Hannover",2,2
 IDSM,Instituto de Desenvolvimento Sustentável Mamirauá,2,2
@@ -89,23 +97,29 @@ JGUM,Johannes Gutenberg University Mainz,1,1
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University",2,2
 KIZ,Kunming Institute of Zoology,23,20
 KUZ,Kyoto University Museum,1,1
+KUF,Kyoto University Museum (catalog prefix KUF),1,0
 UIS,La Colección de Mamíferos del Museo de Historia Natural de la Universidad Industrial de Santander,1,1
 MZUCV,"Laboratorio Museo de Zoología, Universidad de Carabobo",1,1
+LARQ,"Laboratorio de Arqueología, Universidad Nacional de Mar del Plata",1,1
 LIEB-M,Laboratorio de Investigaciones en Evolución y Biodiversidad,2,1
+LINNMUS,"Linnaeus Museum / Linnaean type material, Uppsala University",2,0
 LSUMZ,Louisiana State University Museum of Zoology,11,9
 MMNH,Macedonian Museum of Natural History,1,0
 MMUS,"Macleay Museum, University of Sydney",4,0
 MGR-ZV-M,Mammal Collection of the Museo Provincial de Ciencias Naturales “Dr. Ángel Gallardo”,1,1
 MMK,McGregor Museum,1,1
 MNKG,Mongolian Natural History Museum,1,1
+AMB,Montagne d’Ambre / Madagascar field catalog prefix AMB (e.g. lemur survey voucher AMB5.39),1,1
 MACN,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,2,1
 MACN-MA,Museo Argentino de Ciencias Naturales Bernardino Rivadavia,17,8
 MSNM,Museo Civico di Storia Naturale di Milano,1,0
+MCZR,Museo Civico di Zoologia di Roma,1,1
 MECN,"Museo Ecuatoriano de Ciencias Naturales, Ecuador",13,13
 MMP,Museo Municipal de Ciencias Naturales Lorenzo Scaglia,1,1
 MHNSR,Museo Municipal de Historia Natural de San Rafael,1,1
 MNCN,Museo Nacional de Ciencias Naturales,8,2
-MNHNC,Museo Nacional de Historia Natural de Cuba,2,1
+MNHNH,Museo Nacional de Historia Natural de Cuba (catalog style MNHNH),1,0
+MNHNCL,"Museo Nacional de Historia Natural, Santiago",2,1
 MRSN,Museo Regionale di Scienze Naturali di Torino,1,0
 MZACUT,Museo Regionale di Scienze Naturali di Torino,2,0
 MZUA,Museo Universidad del Azuay,1,1
@@ -122,26 +136,32 @@ MUSA,Museo de Historia Natural de la Universidad Nacional de San Agustín,7,7
 MHNUCA,Museo de Historia Natural de la Universidad de Caldas,2,2
 UNAH,"Museo de Historia Natural, Universidad Nacional Autónoma de Honduras",1,1
 MUSM,"Museo de Historia Natural, Universidad Nacional Mayor de San Marcos",42,41
+MHNSAAC,"Museo de Historia Natural, Universidad Nacional de San Antonio Abad del Cusco",1,1
 USAC,"Museo de Historia Natural, Universidad de San Carlos de Guatemala",2,2
 MLP,Museo de La Plata,4,3
 MZFC,"Museo de Zoología “Alfonso L. Herrera,” Universidad Nacional Autónoma de México",4,4
 EBRG,Museo de la Estación Biológica de Rancho Grande,7,5
 MUA,Museo de la Universidad de Antioquia,2,2
-MF,Museo di Storia Naturale dell'Università di Firenze,7,3
-MN,"Museu Nacional, Universidade Federal do Rio de Janeiro",55,45
+MF,Museo di Storia Naturale dell'Università di Firenze,6,2
+MBL,"Museu Bocage, Universidade de Lisboa",1,0
+MUHNAC,"Museu Nacional de História Natural e da Ciência, Universidade de Lisboa",1,1
+MN,"Museu Nacional, Universidade Federal do Rio de Janeiro",54,45
 MPEG,Museu Paraense Emílio Goeldi,14,12
 MCNPUC,"Museu de Ciências Naturais, Pontifícia Universidade Católica de Minas Gerais",1,1
 MCNU,"Museu de Ciências Naturais, Universidade Luterana do Brasil",1,1
 MCP,"Museu de Ciências e Tecnologia, Pontifícia Universidade Católica do Rio Grande do Sul",1,1
+MHNCI,Museu de História Natural Capão da Imbuía,1,1
 MUFAL,"Museu de História Natural, Universidade Federal de Alagoas",1,1
 MZUSP,Museu de Zoologia da Universidade de São Paulo,26,24
-MNHN,Museum National d'Histoire Naturelle,370,71
+MLZA,"Museu e Laboratório Zoológico e Antropológico, Universidade de Lisboa",1,0
+MNHN,Museum National d'Histoire Naturelle,368,71
 MNHNU,Museum National d'Histoire Naturelle,4,3
 MZB,Museum Zoologicum Bogoriense,51,48
 MAGNT,Museum and Art Gallery of the Northern Territory,5,5
 MIZ,Museum and Institute of Zoology Polish Academy of Sciences,1,0
 IZH,Museum and Zoological Institute of the University Halle,3,1
 ZMB,Museum für Naturkunde,182,20
+MNHB,Museum für Naturkunde Berlin (MNHB prefix in historic marine-mammal vouchers),1,0
 SMNS,Museum of Natural History Stuttgart,28,6
 MSNG,Museum of Natural History “Giacomo Doria” (Museo Civico di Storia Naturale Giacomo Doria),26,4
 NMNZ,"Museum of New Zealand, Te Papa Tongarewa",3,2
@@ -154,9 +174,10 @@ ZMNTU,"Museum of Zoology, National Taiwan University",4,4
 NUPECCE,Museum of the Deer Research and Conservation Center at Sao Paulo State University,4,4
 NMV,Museums Victoria,15,2
 MZS,Musée Zoologique de Strasbourg,4,0
-MHNC,Musée d'Histoire Naturelle de la Chaux-de-Fonds,1,1
+MHNLCF,Musée d'Histoire Naturelle de la Chaux-de-Fonds,1,0
 MHNN,Muséum d'histoire naturelle de Neuchâtel,7,1
 MHNG,Muséum d'histoire naturelle de la Ville de Genève,29,5
+MNHNS,Muséum national d'Histoire naturelle (MNHNS voucher style),1,0
 NMPH,"National Museum (Natural History), Prague, Czech Republic",5,4
 NMPR,"National Museum (Natural History), Prague, Czech Republic",15,15
 PNGM,"National Museum and Art Gallery, Papua New Guinea, Boroko",4,3
@@ -174,9 +195,11 @@ NHMBZ,Natural History Museum of Zimbabwe,2,2
 NMZ,Natural History Museum of Zimbabwe,1,1
 BMNH,"Natural History Museum, London",1899,321
 BMNHC,"Natural History Museum, London",2,2
-NHMO,"Natural History Museum, University of Oslo, Norway",6,1
+NHMO,"Natural History Museum, University of Oslo, Norway",5,0
+NHMOU,"Natural History Museum, University of Oslo, Norway (NHMOU-prefixed catalog numbers)",1,1
 NHRC,"Natural History Research Centre, University of Baghdad",1,0
 RMNH,Naturalis Biodiversity Center,220,20
+RGM,Naturalis Biodiversity Center (former Rijksmuseum van Geologie en Mineralogie),2,0
 NMW,Naturhistorisches Museum Wien,39,15
 NHRM,Naturhistoriska riksmuseet,20,2
 NU,Niğde Ömer Halisdemir University,2,2
@@ -185,9 +208,12 @@ HDZ,Omaha's Henry Doorly Zoo and Aquarium,1,1
 OMUS,Ondokuz Mayıs University mammal collection,3,3
 OUM,Oxford University Museum of Natural History,2,1
 PBZT,Parc Botanique et Zoologique de Tsimbazaza,2,2
+PBS,Philippine Bureau of Science,1,0
+PCM,Powell-Cotton Museum,1,1
 PSUZC,Princess Maha Chakri Sirindhorn Natural History Museum,5,5
 QM,Queensland Museum,24,18
 IRSNB,Royal Belgian Institute of Natural Sciences,2,1
+KUL,Royal Belgian Institute of Natural Sciences (legacy prefix KUL in MDD; use IRSNB for new material),1,0
 RMCA,Royal Museum for Central Africa,33,20
 ROM,Royal Ontario Museum,24,23
 OMNH,Sam Noble Oklahoma Museum of Natural History,1,1
@@ -196,13 +222,14 @@ MTD,Senckenberg Museum für Tierkunde Dresden,18,4
 SNHM,Shanghai Natural History Museum,1,0
 SZM,Siberian Zoological Museum,3,1
 SAF,Sichuan Academy of Forestry,26,26
+PMS,Slovenian Museum of Natural History,1,1
 SAMA,South Australian Museum,8,5
 SCNU,South China Normal University,3,3
 SMNK,Staatliches Museum für Naturkunde Karlsruhe,1,0
 FHSM,Sternberg Museum of Natural History,1,1
 TAU,"Tel Aviv University, mammal collection (Zoological Museum)",1,1
 TISTR,Thailand Institute of Scientific and Technological Research (legacy acronym; collections now within NSTDA/BIOTEC orbit),1,1
-MCZ,The Louis Agassiz Museum of Comparative Zoology,62,11
+MCZ,The Louis Agassiz Museum of Comparative Zoology,61,10
 ZFMK,The Zoological Research Museum Alexander Koenig,38,20
 UCLA,UCLA Mammalogy Collection / Dickey Collection,8,5
 NAMRU,United States Naval Medical Research Unit (NAMRU) zoological voucher collection,1,1
@@ -213,20 +240,24 @@ FURB,Universidade Regional de Blumenau,2,2
 UNB,Universidade de Brasília,1,1
 FCV,"University of Forestry, Vietnam (Forestry University / Đại học Lâm nghiệp)",1,1
 UIMNH,University of Illinois Museum of Natural History,2,0
-KU,University of Kansas Biodiversity Institute and Natural History Museum,28,13
+KU,University of Kansas Biodiversity Institute and Natural History Museum,26,13
 UMMZ,University of Michigan Museum of Zoology,26,8
 UWBM,University of Washington Burke Museum,1,1
 ULPS,"Université Louis Pasteur, Strasbourg",4,4
 UANT,"Université d'Antananarivo, Département de Biologie animale",4,4
+UMAH,Université de Mahajanga,1,1
 UUZM,"Uppsala University, Museum of Evolution, Zoology section",10,1
 VRC,"Virus Research Centre (ICMR), Pune — collection heritage; institute now National Institute of Virology",1,1
 WAM,Western Australian Museum,37,34
+WRM,Whanganui Regional Museum,1,0
 WHT,"Wildlife Heritage Trust, Sri Lanka (WHT field-tag prefix)",1,1
 YPM,Yale Peabody Museum,2,1
 YIO,Yamashina Institute for Ornithology,2,0
 EPIY,Yunnan Province Endemic Disease Prevention and Control Institute (historical acronym EPIY / 云南省流行病防治研究所),1,1
 ZBEU,Zonguldak Bülent Ecevit University,1,1
 LHB,Zoological Collection of the Royal Agricultural University of Berlin,3,0
+UMAZC,Zoological Collection of the University of Mandalay,1,1
+UZDZ,"Zoological Collection, Division of Zoology, Faculty of Science, University of Zagreb",1,0
 CZUS,"Zoological Collection, Sofia University St. Kliment Ohridski",1,0
 ZIN,"Zoological Institute, Russian Academy of Sciences",94,21
 ZMF,Zoological Museum Frankfurt,5,5
@@ -240,3 +271,4 @@ ZSI,Zoological Survey of India collections at the Indian Museum,59,9
 ZSIS,"Zoological Survey of India, North Eastern Regional Centre",2,2
 ZSM,Zoologisches Staats-Sammlung München,22,0
 ZMA,"Zoölogisch Museum, Amsterdam",5,4
+ÄM,Ägyptisches Museum und Papyrussammlung,1,1

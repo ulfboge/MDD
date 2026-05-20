@@ -60,7 +60,11 @@ def extract_voucher_prefix(voucher: str, inst_abbr: set[str] | None = None) -> s
             next_char = upper_v[len(abbr) : len(abbr) + 1]
             if upper_v == abbr or (
                 upper_v.startswith(abbr)
-                and (next_char in CATALOG_SEPARATORS or ("-" in abbr and next_char.isdigit()))
+                and (
+                    next_char in CATALOG_SEPARATORS
+                    or ("-" in abbr and next_char.isdigit())
+                    or next_char.isdigit()
+                )
             ):
                 return abbr
     # e.g. "NHRM A63 3316", "USNM 123", "BMNH 1918.3.1.1"

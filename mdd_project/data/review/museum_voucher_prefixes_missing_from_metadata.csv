@@ -5,60 +5,25 @@ SPECIMEN,7,no,,Diplomesodon_sonnerati; Alouatta_seniculus; Philander_quica
 PHOTOGRAPHED,4,no,,Macaca_selai; Rungwecebus_kipunji; Macaca_leucogenys
 BOHMANN,2,no,,Otomys_zinki; Otomys_sungae
 BUFFON'S,2,no,,Sciurillus_pusillus; Civettictis_civetta
-LINNMUS,2,no,,Talpa_europaea; Sciurus_vulgaris
 """_AVAHI_",1,no,,Avahi_cleesei
 001Y07HELY,1,no,,Microcebus_macarthurii
 002Y09FINA,1,no,,Microcebus_gerpi
 038Y04KOA,1,no,,Microcebus_danfossi
-AMA,1,no,AM,Hapalemur_aureus
-AMB5.39,1,no,AM,Microcebus_arnholdi
-AMG,1,no,AM,Pronolagus_saundersiae
 ASRU,1,no,,Scarturus_heptneri
 ABE,1,no,,Tokudaia_osimensis
 CBK,1,no,,Chiromyscus_langbianis
-CMFA,1,no,CM,Ctenomys_roigi
-CMIN,1,no,CM; CMI,Ctenomys_miguelchristie
-IZEA,1,no,,Crocidura_hutanis
 K-EE-12-31,1,no,,Aproteles_bulmerae
-KUF,1,no,KU,Mogera_uchidai
-KUL,1,no,KU,Cephalorhynchus_hectori
-LARQ,1,no,,Galea_tixiensis
 LSNSAU,1,no,,Presbytis_bicolor
 LAÂYOUNE,1,no,,Lepus_saharae
-MBL,1,no,MBLUZ,Crocidura_nigricans
-MCLPGC,1,no,,Crocidura_canariensis
-MCZR,1,no,MCZ,Fukomys_ilariae
-MFA-ZV-M,1,no,MF,Molossus_paranaensis
-MHNCI,1,no,MHNC,Oxymycterus_itapeby
-MHNLCF,1,no,,Pipistrellus_inexspectatus
-MHNSAAC,1,no,,Mazama_tschudii
-MLZA,1,no,,Myonycteris_brachycephala
-MNHB,1,no,MN,Sotalia_guianensis
-MNHNCL,1,no,MN; MNHN; MNHNC,Eligmodontia_puerulus
-MNHNCL:MAMM:1546,1,no,MN; MNHN; MNHNC,Eligmodontia_dunaris
-MNHNH,1,no,MN; MNHN,Atopogale_arredondoi
-MNHNS,1,no,MN; MNHN,Nannospalax_turcicus
-MUHNAC/MB01/006000,1,no,,Crocidura_fingui
 MARCGRAVE'S,1,no,,Dasypus_novemcinctus
-NHMOU.CHI.08.2017,1,no,NHMO,Miniopterus_srinii
 NEUHÄUSER,1,no,,Chionomys_lasistanius
-PBS,1,no,,Petinomys_mindanensis
-PCM,1,no,,Lophocebus_osmani
-PMS,1,no,,Glis_glis
 PENNANT'S,1,no,,Potos_flavus
-RGM,1,no,,Paulamys_naso
-RGM.444360,1,no,,Cordimus_hooijeri
 RUSCONI,1,no,,Ctenomys_australis
 SEBA,1,no,,Cabassous_unicinctus
 STILLWATER,1,no,,Crocidura_glassi
 TAFO6.1,1,no,,Microcebus_margotmarshae
 TASHKENT,1,no,,Allactodipus_bobrinskii
-UMRCNRS,1,no,,Chimaerodipus_auritus
-UMAZC,1,no,,Murina_hkakaboraziensis
-UMAH,1,no,,Lepilemur_aeeclis
-UZDZ,1,no,,Plecotus_kolombatovici
 VG-Q1,1,no,,Octomys_rosiae
-WRM,1,no,,Tasmacetus_shepherdi
 XZ2023010,1,no,,Murina_milinensis
 XZ2023082,1,no,,Murina_yadongensis
 XZ2023107,1,no,,Murina_chayuensis
@@ -68,5 +33,4 @@ YEREVAN,1,no,,Meriones_dahli
 FIGURED,1,no,,Trachypithecus_leucocephalus
 LARGER,1,no,,Molossus_molossus
 MALE,1,no,,Cercocebus_sanjei
-ÄM,1,no,,Crocidura_religiosa
 ĐULIĆ,1,no,,Dinaromys_longipedis
