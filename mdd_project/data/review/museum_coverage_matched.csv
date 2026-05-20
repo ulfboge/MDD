@@ -9,6 +9,7 @@ AM,Australian Museum,80,41
 ANWC,Australian National Wildlife Collection,4,3
 BPBM,Bernice Pauahi Bishop Museum,12,10
 TCWC,Biodiversity Research and Teaching Collections Texas A&M University,13,3
+UPNG,"Biology Museum / National Museum and Art Gallery, University of Papua New Guinea",1,1
 BNHS,Bombay Natural History Society,1,0
 CSIRO,CSIRO Australian National Wildlife Collection,6,4
 CAS,California Academy of Sciences,10,3
@@ -19,6 +20,7 @@ UFMG,"Centro de Coleções Taxonômicas, Universidade Federal de Minas Gerais",3
 CEBIOMAS,"Centro de Ecología y Biodiversidad, Lima, Peru",2,2
 CIB,Centro de Investigaciones Biológicas del Noroeste,2,2
 CZL,"Centro de Zoologica, Instituto de Investigação Científica Tropical",1,0
+CWNU,China West Normal University,1,0
 CML,Colección Mamíferos Lillo,9,9
 CFA-MA,Colección Mastozoológica de la Fundación de Historia Natural Félix de Azara,9,7
 CMI,Colección Mastozoológica del IADIZA,6,5
@@ -44,6 +46,7 @@ DU,Dicle University,2,2
 TM,Ditsong National Museum of Natural History,22,7
 DMNH,Durban Natural Science Museum,4,2
 DNSM,Durban Natural Science Museum,8,7
+JAG,E.O. Wilson Biodiversity Laboratory at Gorongosa National Park,1,1
 ECOSUR,"El Colegio de la Frontera Sur, Colección Mastozoológica",1,1
 QCAZ,"El Museo de Zoología, Pontificia Universidad Católica del Ecuador",9,9
 EPRC,Endangered Primate Rescue Center,1,1
@@ -177,12 +180,14 @@ ROM,Royal Ontario Museum,24,23
 OMNH,Sam Noble Oklahoma Museum of Natural History,1,1
 SDNHM,San Diego Natural History Museum,1,1
 MTD,Senckenberg Museum für Tierkunde Dresden,18,4
+SNHM,Shanghai Natural History Museum,1,0
 SZM,Siberian Zoological Museum,3,1
 SAF,Sichuan Academy of Forestry,26,26
 SAMA,South Australian Museum,8,5
 SCNU,South China Normal University,3,3
 SMNK,Staatliches Museum für Naturkunde Karlsruhe,1,0
 FHSM,Sternberg Museum of Natural History,1,1
+TISTR,Thailand Institute of Scientific and Technological Research (legacy acronym; collections now within NSTDA/BIOTEC orbit),1,1
 MCZ,The Louis Agassiz Museum of Comparative Zoology,62,11
 ZFMK,The Zoological Research Museum Alexander Koenig,38,20
 UCLA,UCLA Mammalogy Collection / Dickey Collection,8,5
@@ -198,11 +203,14 @@ UWBM,University of Washington Burke Museum,1,1
 ULPS,"Université Louis Pasteur, Strasbourg",4,4
 UANT,"Université d'Antananarivo, Département de Biologie animale",4,4
 UUZM,"Uppsala University, Museum of Evolution, Zoology section",10,1
+VRC,"Virus Research Centre (ICMR), Pune — collection heritage; institute now National Institute of Virology",1,1
 WAM,Western Australian Museum,37,34
 YPM,Yale Peabody Museum,2,1
 YIO,Yamashina Institute for Ornithology,2,0
+EPIY,Yunnan Province Endemic Disease Prevention and Control Institute (historical acronym EPIY / 云南省流行病防治研究所),1,1
 ZBEU,Zonguldak Bülent Ecevit University,1,1
 LHB,Zoological Collection of the Royal Agricultural University of Berlin,3,0
+CZUS,"Zoological Collection, Sofia University St. Kliment Ohridski",1,0
 ZIN,"Zoological Institute, Russian Academy of Sciences",94,21
 ZMF,Zoological Museum Frankfurt,5,5
 ZMH,Zoological Museum Hamburg,1,0
