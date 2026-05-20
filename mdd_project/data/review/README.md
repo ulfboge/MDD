@@ -66,7 +66,8 @@ python mdd_project/scripts/build_museum_prefix_wave4_backlog.py
 
 Prefix research backlog is closed. `museum_remaining_action_items.csv` now lists only standalone zero-match retain policies.
 
-- `ASRU` / `LSNSAU`: Metadata rows retained with medium-high confidence. Open PDF verification did not retrieve extractable primary text (Springer paywall; Zoologicheskii Zhurnal not openly indexed). See `museum_primary_literature_verification.csv` for sources checked and status `not_confirmed_from_pdf`.
+- `LSNSAU`: Confirmed from Aimi & Bakar (1992) PDF — holotype SD 16 at **Laboratory of Sumatera Nature Study, Andalas University**; LSNSAU = that laboratory's acronym. See `museum_primary_literature_verification.csv`.
+- `ASRU`: Metadata retained with medium-high confidence; PDF not yet verified (`not_confirmed_from_pdf`). Pavlenko & Denisenko (1976) Zoologicheskii Zhurnal still needed for wording confirmation.
 - `MN`: All 54 MN-prefixed vouchers match `MN` (Museu Nacional UFRJ) in app logic. Review closed in `museum_mn_review_closure.csv`; no metadata change required.
 - URI signals: `audit_museum_uri_signals.py` exports review-only inferences for vouchers with catalog URIs. Six LOST vouchers with URIs map to MNHN (4) or BM (2); these do not override prefix matching.
 - Standalone zero-match metadata rows (`ACUNHC`, `CUMV`, `DZSJRP`, `GEC`, `MNHNC`, `NMSL`, `SNMB`) are retained in `TypeSpecimenMetadata_v2.4.csv` per `museum_standalone_zero_match_policy.csv`. Remove them only if metadata should strictly contain institutions that match current MDD v2.4 vouchers.
