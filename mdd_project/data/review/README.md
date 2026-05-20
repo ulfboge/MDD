@@ -35,6 +35,9 @@ Current post-audit status:
 | `museum_research_candidates.csv` | Verifiable museum-prefix candidates remaining after classification. Should normally be empty when the current batch is resolved. |
 | `museum_research_unresolved.csv` | Prefixes that require primary literature or direct repository confirmation. Empty when all prefix research is resolved. |
 | `museum_manual_prefix_review.csv` | Manual review decisions for formerly unresolved prefixes (`ASRU`, `LSNSAU`). |
+| `museum_primary_literature_verification.csv` | PDF/source verification log for ASRU and LSNSAU (2026-05-20). |
+| `museum_voucher_uri_inferred.csv` | Review-only URI domain → institution inference for vouchers with catalog links. |
+| `museum_mn_review_closure.csv` | MN-prefix review closure (54/54 match `MN` in app). |
 | `museum_unmatched_qc_flags.csv` | Final sanity-check flags among otherwise closed unmatched vouchers: unresolved prefixes, voucher URI signals, named collections, and person/locality labels with numbers. |
 | `museum_unmatched_qc_review.csv` | Manual-review closure recommendations for each QC flag (`closed` vs `open`). |
 | `museum_zero_match_metadata_review.csv` | Metadata rows with zero direct voucher matches, split into expected alias rows vs standalone zero-match rows. |
@@ -51,6 +54,8 @@ python mdd_project/scripts/audit_museum_matching.py
 python mdd_project/scripts/audit_museum_excluded.py
 python mdd_project/scripts/summarize_museum_gaps.py
 python mdd_project/scripts/export_mn_vouchers_for_review.py
+python mdd_project/scripts/export_mn_review_closure.py
+python mdd_project/scripts/audit_museum_uri_signals.py
 python mdd_project/scripts/build_museum_prefix_wave4_backlog.py
 ```
 
@@ -61,8 +66,9 @@ python mdd_project/scripts/build_museum_prefix_wave4_backlog.py
 
 Prefix research backlog is closed. `museum_remaining_action_items.csv` now lists only standalone zero-match retain policies.
 
-- `ASRU`: Added to metadata as Institute of Zoology, Academy of Sciences of the Republic of Uzbekistan (`TASZ`/`TASZM` alias note). `Scarturus_heptneri` holotype `ASRU 424` matches in the app; confirm wording in Pavlenko & Denisenko (1976) when the PDF is available.
-- `LSNSAU`: Added to metadata as Museum Zoologi, Universitas Andalas, with a verify note for the likely expansion *Laboratorium Studi Natural Sciences Andalas University*. `Presbytis_bicolor` holotype `LSNSAU SD 16` matches in the app; confirm in Aimi & Bakar (1992) when the PDF is available.
+- `ASRU` / `LSNSAU`: Metadata rows retained with medium-high confidence. Open PDF verification did not retrieve extractable primary text (Springer paywall; Zoologicheskii Zhurnal not openly indexed). See `museum_primary_literature_verification.csv` for sources checked and status `not_confirmed_from_pdf`.
+- `MN`: All 54 MN-prefixed vouchers match `MN` (Museu Nacional UFRJ) in app logic. Review closed in `museum_mn_review_closure.csv`; no metadata change required.
+- URI signals: `audit_museum_uri_signals.py` exports review-only inferences for vouchers with catalog URIs. Six LOST vouchers with URIs map to MNHN (4) or BM (2); these do not override prefix matching.
 - Standalone zero-match metadata rows (`ACUNHC`, `CUMV`, `DZSJRP`, `GEC`, `MNHNC`, `NMSL`, `SNMB`) are retained in `TypeSpecimenMetadata_v2.4.csv` per `museum_standalone_zero_match_policy.csv`. Remove them only if metadata should strictly contain institutions that match current MDD v2.4 vouchers.
 - `museum_unmatched_qc_flags.csv` is not a prefix-add backlog. It highlights residual sanity-check cases, including lost vouchers with catalog URIs (possible future URI-based museum matching), named collection labels such as Bohmann, and locality/person labels with specimen-like numbers. Closure recommendations are in `museum_unmatched_qc_review.csv`.
 
