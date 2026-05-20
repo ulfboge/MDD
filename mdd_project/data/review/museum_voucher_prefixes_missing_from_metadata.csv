@@ -2,7 +2,6 @@ voucher_prefix,species_count,in_metadata,related_metadata_abbreviations,example_
 UNTRACED,234,no,,Tachyglossus_aculeatus; Chironectes_minimus; Didelphis_virginiana
 LOST,136,no,,Phascogale_tapoatafa; Echymipera_kalubu; Thylogale_brunii
 SPECIMEN,7,no,,Diplomesodon_sonnerati; Alouatta_seniculus; Philander_quica
-KURODA,5,no,KU,Alexandromys_kikuchii; Crocidura_tanakae; Mogera_tokudae
 PHOTOGRAPHED,4,no,,Macaca_selai; Rungwecebus_kipunji; Macaca_leucogenys
 BOHMANN,2,no,,Otomys_zinki; Otomys_sungae
 BUFFON'S,2,no,,Sciurillus_pusillus; Civettictis_civetta
@@ -19,7 +18,6 @@ ABE,1,no,,Tokudaia_osimensis
 CBK,1,no,,Chiromyscus_langbianis
 CMFA,1,no,CM,Ctenomys_roigi
 CMIN,1,no,CM; CMI,Ctenomys_miguelchristie
-FCV,1,no,,Pygathrix_cinerea
 GHENT,1,no,,Steno_bredanensis
 IBE,1,no,,Uropsilus_funiushanensis
 IZEA,1,no,,Crocidura_hutanis
@@ -45,7 +43,6 @@ MNHNH,1,no,MN; MNHN,Atopogale_arredondoi
 MNHNS,1,no,MN; MNHN,Nannospalax_turcicus
 MUFAL,1,no,,Holochilus_oxe
 MUHNAC/MB01/006000,1,no,,Crocidura_fingui
-MZUCV,1,no,,Rhipidomys_ochoagrateroli
 MARCGRAVE'S,1,no,,Dasypus_novemcinctus
 NAMRU,1,no,,Dobsonia_emersa
 NHMOU.CHI.08.2017,1,no,NHMO,Miniopterus_srinii
@@ -82,7 +79,6 @@ XZ2023107,1,no,,Murina_chayuensis
 XZ2024037,1,no,,Murina_beibengensis
 XZ2024038,1,no,,Murina_medogensis
 YEREVAN,1,no,,Meriones_dahli
-ZMVNU,1,no,,Nomascus_annamensis
 FIGURED,1,no,,Trachypithecus_leucocephalus
 LARGER,1,no,,Molossus_molossus
 MALE,1,no,,Cercocebus_sanjei

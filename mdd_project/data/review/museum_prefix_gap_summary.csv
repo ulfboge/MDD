@@ -1,3 +1,2 @@
 issue_type,voucher_prefix,species_count,related_metadata_abbreviations,example_species,notes
-alias_prefix_missing,KURODA,5,KU,Alexandromys_kikuchii; Crocidura_tanakae; Mogera_tokudae,Voucher prefix absent from metadata; shorter/longer related code exists (NRM-style mismatch).
 prefix_not_in_metadata,BOHMANN,2,,Otomys_zinki; Otomys_sungae,Voucher prefix not in metadata; no related abbreviation detected.

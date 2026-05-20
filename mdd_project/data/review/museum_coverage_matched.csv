@@ -38,6 +38,7 @@ CBF,Coleccíon Boliviana de Fauna,1,1
 ALP,"Coleção Adriano Lúcio Peracchi, Universidade Federal Rural do Rio de Janeiro",2,2
 CMUFLA,Coleção de Mamíferos da Universidade Federal de Lavras,2,2
 UFRGS,Coleção de Mamíferos do Departamento de Zoologia da UFRGS,2,2
+KURODA,"Collection of Yoshio Kuroda (National Museum of Nature and Science, Tokyo — historical Kuroda mammalogy holdings)",5,0
 DGIBUFRGS,"Departamento de Genética, Universidade Federal do Rio Grande do Sul",1,1
 DZUP,"Departamento de Zoologia, Setor de Ciências Biológicas, Universidade Federal do Paraná",1,1
 THUMB,"Department of Biology, Tunghai University",1,1
@@ -83,6 +84,7 @@ JGUM,Johannes Gutenberg University Mainz,1,1
 GZHU,"Key Laboratory of Conservation and Application in Biodiversity of South China, School of Life Sciences, Guangzhou University",2,2
 KIZ,Kunming Institute of Zoology,23,20
 KUZ,Kyoto University Museum,1,1
+MZUCV,"Laboratorio Museo de Zoología, Universidad de Carabobo",1,1
 LIEB-M,Laboratorio de Investigaciones en Evolución y Biodiversidad,2,1
 LSUMZ,Louisiana State University Museum of Zoology,11,9
 MMUS,"Macleay Museum, University of Sydney",4,0
@@ -196,8 +198,9 @@ UFMT,Universidade Federal de Mato Grosso,5,5
 UFPA,Universidade Federal do Pará,2,2
 FURB,Universidade Regional de Blumenau,2,2
 UNB,Universidade de Brasília,1,1
+FCV,"University of Forestry, Vietnam (Forestry University / Đại học Lâm nghiệp)",1,1
 UIMNH,University of Illinois Museum of Natural History,2,0
-KU,University of Kansas Biodiversity Institute and Natural History Museum,33,13
+KU,University of Kansas Biodiversity Institute and Natural History Museum,28,13
 UMMZ,University of Michigan Museum of Zoology,26,8
 UWBM,University of Washington Burke Museum,1,1
 ULPS,"Université Louis Pasteur, Strasbourg",4,4
@@ -217,6 +220,7 @@ ZMH,Zoological Museum Hamburg,1,0
 ZMUC,Zoological Museum University of Copenhagen,19,2
 ZMMU,Zoological Museum of the Moscow State University,62,26
 ZMUZ,Zoological Museum of the University of Zurich,1,0
+ZMVNU,"Zoological Museum, Vietnam National University, Hanoi",1,1
 ZRC,"Zoological Reference Collection, Lee Kong Chian Natural History Museum",2,1
 ZSI,Zoological Survey of India collections at the Indian Museum,59,9
 ZSIS,"Zoological Survey of India, North Eastern Regional Centre",2,2

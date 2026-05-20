@@ -59,6 +59,7 @@ FHSM,Sternberg Museum of Natural History,"Hays, United States of America",Catalo
 FMNH,Field Museum of Natural History,"Chicago, United States of America",NA,https://collections-zoology.fieldmuseum.org/page/collections-data-mammals
 FMSM,Fukushima City Museum of Natural History,"Fukushima, Japan",Catalog prefix FMSM in MDD type vouchers,NA
 FIPI,Forest Inventory and Planning Institute,"Hanoi, Vietnam",Catalog prefix FIPI in MDD type vouchers; Vietnam Forest Museum / FIPI,https://fipi.vn/
+FCV,"University of Forestry, Vietnam (Forestry University / Đại học Lâm nghiệp)","Xuan Mai, Vietnam",Catalog prefix FCV in MDD type vouchers; Pygathrix cinerea holotype per Nadler (1997),https://vnuf.edu.vn/
 FURB,Universidade Regional de Blumenau,"Blumenau, Brazil",Catalog prefix FURB in MDD type vouchers for southern Brazilian rodent type material,https://www.furb.br/
 GEC,Grupo de Exploraciones Científicas,"Havana, Cuba",NA,NA
 GBP,Gene Bank of Primates at the German Primate Center,"Göttingen, Germany",Catalog prefix GBP in MDD type vouchers; Deutsches Primatenzentrum tissue/DNA repository,https://www.dpz.eu/en/unit/gene-bank-of-primates/about-us.html
@@ -93,6 +94,7 @@ JGUM,Johannes Gutenberg University Mainz,"Mainz, Germany",Catalog prefix JGUM in
 KIZ,Kunming Institute of Zoology,"Kunming, China",NA,http://english.kiz.cas.cn/
 KM,Amathole Museum,"Qonce (King William's Town), South Africa",Catalog prefix KM in MDD type vouchers; formerly Kaffrarian Museum,https://amathole.nasmus.co.za/
 KU,University of Kansas Biodiversity Institute and Natural History Museum,"Lawrence, United States of America",NA,https://biodiversity.ku.edu/mammalogy
+KURODA,"Collection of Yoshio Kuroda (National Museum of Nature and Science, Tokyo — historical Kuroda mammalogy holdings)","Tokyo, Japan",Catalog prefix Kuroda/KURODA in MDD type vouchers; field labels cite Kuroda collection numbers,https://www.kahaku.go.jp/english/
 KUZ,Kyoto University Museum,"Kyoto, Japan",NA,http://www.museum.kyoto-u.ac.jp/index_e.htm
 LACM,Natural History Museum of Los Angeles County,"Los Angeles, United States of America",NA,https://nhm.org/
 LHB,Zoological Collection of the Royal Agricultural University of Berlin,"Berlin, Germany",Catalog prefix LHB in MDD type vouchers; historical Landwirtschaftliche Hochschule Berlin collection,https://www.sammlungen.hu-berlin.de/sammlungen/zoologische-lehrsammlung/
@@ -155,6 +157,7 @@ MZUH,"Finnish Museum of Natural History, University of Helsinki","Helsinki, Finl
 MZACUT,Museo Regionale di Scienze Naturali di Torino,"Turin, Italy",Catalog prefix MZACUT in MDD type vouchers; historical University of Turin zoological collections,https://mrsntorino.it/en/zoology/
 MZB,Museum Zoologicum Bogoriense,"Bogor, Indonesia",NA,http://www.museumindonesia.com/museum/42/1/Museum_Zoologi_Bogor_Bogor
 MZFC,"Museo de Zoología “Alfonso L. Herrera,” Universidad Nacional Autónoma de México","Mexico City, Mexico",NA,http://mzfcaves.fciencias.unam.mx/
+MZUCV,"Laboratorio Museo de Zoología, Universidad de Carabobo","Valencia, Venezuela",Catalog prefix MZUCV/MZUC in MDD type vouchers; Rhipidomys ochoagrateroli holotype,https://www.uc.edu.ve/
 MZS,Musée Zoologique de Strasbourg,"Strasbourg, France",NA,https://www.musees.strasbourg.eu/collection-musee-zoologique/-/entity/id/220396
 MZUA,Museo Universidad del Azuay,"Cuenca, Ecuador",NA,https://www.facebook.com/MZUAmuseo/
 MZUSP,Museu de Zoologia da Universidade de São Paulo,"São Paulo, Brazil",NA,http://mz.usp.br/laboratorios/mastozoologia/
@@ -251,6 +254,7 @@ ZMNTU,"Museum of Zoology, National Taiwan University","Taipei, Taiwan",Catalog p
 ZMUC,Zoological Museum University of Copenhagen,"Copenhagen, Denmark",Catalog prefix ZMUC in MDD type vouchers,https://snm.ku.dk/english/
 ZMZ,Zoologisches Museum Zürich,"Zürich, Germany",NA,https://www.zm.uzh.ch/de/sammlungen/wissenschaftlichesammlungen.html
 ZMUZ,Zoological Museum of the University of Zurich,"Zurich, Switzerland",Catalog prefix ZMUZ in MDD type vouchers; same institution as ZMZ,https://www.nmz.uzh.ch/en/wissenschaftlichesammlungen/Zoological-collection.html
+ZMVNU,"Zoological Museum, Vietnam National University, Hanoi","Hanoi, Vietnam",Catalog prefix ZMVNU in MDD type vouchers; Nomascus annamensis holotype per Thinh et al. (2010),https://bio.hus.vnu.edu.vn/en/biological-museum/
 ZRC,"Zoological Reference Collection, Lee Kong Chian Natural History Museum","Singapore, Singapore",Catalog prefix ZRC in MDD type vouchers,https://lkcnhm.nus.edu.sg/research/our-collections/
 ZSI,Zoological Survey of India collections at the Indian Museum,"Calcutta, India",Indian Museum,http://www.zsicollections.in/search
 ZSIS,"Zoological Survey of India, North Eastern Regional Centre","Shillong, India",Catalog prefix ZSIS in MDD type vouchers; ZSI Shillong regional centre,https://zsi.gov.in/regional-centres/en?rc=54
