@@ -42,3 +42,6 @@ Thumbs.db
 # ── Keep placeholder files ───────────────────────────────────────────────────
 !mdd_project/data/raw/MDD/.gitkeep
 !mdd_project/data/external/occurrence_data/.gitkeep
+
+# ── Review PDFs (copyright; keep local only) ─────────────────────────────────
+mdd_project/data/review/*.pdf

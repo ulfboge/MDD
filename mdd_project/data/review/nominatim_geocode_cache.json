@@ -1,0 +1,1091 @@
+{
+  "Mount Data, altitude 7,500 feet [= 2286 m], Mountain Province, Luzon Island, Philippine Island": {
+    "error": "no_match"
+  },
+  "Sevia, Cromwell Range, Huon Peninsula, Mandated Territory of New Guinea [= Morobe Province, Papua New Guinea]; 1400 m": {
+    "error": "no_match"
+  },
+  "Cerro Casabindo, 4800 m,\" Jujuy, Argentina": {
+    "error": "no_match"
+  },
+  "Los Sombreros, Sierra Tontal": {
+    "error": "no_match"
+  },
+  "Punta de Vacas, Altitude 3000 m, North-western Mendoza,\" Argentina": {
+    "error": "no_match"
+  },
+  "Puente del Inca, Andes of Mendoza": {
+    "error": "no_match"
+  },
+  "Fort San Rafael, Mendoza,\" Argentina": {
+    "error": "no_match"
+  },
+  "Concepcion [Concepci\u00f3n], 400 m, Tucuman [Tucum\u00e1n], Argentina": {
+    "lat": -27.3459249,
+    "lon": -65.5927221,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.3883319602613017,
+    "display_name": "Municipio de Concepci\u00f3n, Departamento Chicligasta, Tucum\u00e1n, T4174, Argentina"
+  },
+  "Junin [Jun\u00edn], Central Peru": {
+    "lat": -11.4200651,
+    "lon": -75.724932,
+    "category": "amenity",
+    "type": "ice_cream",
+    "importance": 4.7708094911070686e-05,
+    "display_name": "Heladeria y productos lacteos Junin \"El Mirador\", Carretera Central, Huasqui, Cochas Bajo, Tarma, Jun\u00edn, 12651, Per\u00fa"
+  },
+  "Monteith Bay, Straits of Magellan": {
+    "error": "no_match"
+  },
+  "Coquimbo,\" Coquimbo, Chile": {
+    "lat": -29.9531851,
+    "lon": -71.3379503,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5314506401266076,
+    "display_name": "Coquimbo, Provincia de Elqui, Regi\u00f3n de Coquimbo, Chile"
+  },
+  "Valparaiso,\" Valpara\u00edso, Chile": {
+    "lat": -33.0458456,
+    "lon": -71.6196749,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6305125015307799,
+    "display_name": "Valpara\u00edso, Provincia de Valpara\u00edso, Regi\u00f3n de Valpara\u00edso, Chile"
+  },
+  "mouth of Rio Inio, south end of Chiloe Island [= Isla Grande de Chilo\u00e9],\" Los Lagos, Chile": {
+    "error": "no_match"
+  },
+  "Celebes [= Sulawesi],\" Indonesia": {
+    "lat": -5.525115,
+    "lon": 120.2284286,
+    "category": "tourism",
+    "type": "camp_site",
+    "importance": 5.5001907377691576e-05,
+    "display_name": "Indonesia, Jalan Poros Bulukumba - Tanaberu - Bira, Bulukumba, Salemba, Sulawesi Selatan, Sulawesi, 92511, Indonesia"
+  },
+  "Lirong, Talaud Islands,\" Indonesia": {
+    "lat": 3.9376005,
+    "lon": 126.6946973,
+    "category": "place",
+    "type": "village",
+    "importance": 0.16273786379520622,
+    "display_name": "Lirung, Kabupaten Kepulauan Talaud, Sulawesi Utara, Sulawesi, Indonesia"
+  },
+  "Singay, Busuanga Island, Calamianes Group, Philippine Islands": {
+    "error": "no_match"
+  },
+  "Cairo, Egypt": {
+    "lat": 30.0443879,
+    "lon": 31.2357257,
+    "category": "place",
+    "type": "city",
+    "importance": 0.7515178427815343,
+    "display_name": "\u0627\u0644\u0642\u0627\u0647\u0631\u0629, \u0645\u0635\u0631"
+  },
+  "SW Biskra, Atar, Mauritania": {
+    "error": "no_match"
+  },
+  "Sinai, Egypt": {
+    "lat": 29.5231697,
+    "lon": 33.8054726,
+    "category": "natural",
+    "type": "peninsula",
+    "importance": 0.6604130505196993,
+    "display_name": "\u0633\u064a\u0646\u0627\u0621, \u0645\u0635\u0631"
+  },
+  "Voi, Kenya": {
+    "lat": -3.5592753,
+    "lon": 38.8035102,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.24000999999999997,
+    "display_name": "Voi, Taita Taveta, 80300, Kenya"
+  },
+  "Kabwir, 2700' [= 823 m],\" Bauchi Plateau, North Nigeria": {
+    "error": "no_match"
+  },
+  "40 mi (64": {
+    "lat": -6.5858547,
+    "lon": 146.6041713,
+    "category": "landuse",
+    "type": "retail",
+    "importance": 0.08003750133516438,
+    "display_name": "40 Mile, Huon District, Morobe, Momase Region, Papua Niugini"
+  },
+  "Harar,\" Ethiopia": {
+    "lat": 9.3118397,
+    "lon": 42.1284445,
+    "category": "place",
+    "type": "city",
+    "importance": 0.5125840696773611,
+    "display_name": "\u1210\u1228\u122d / Harar, Hareri, \u1210\u1228\u122a \u1215\u12dd\u1265 \u12ad\u120d\u120d Harar \u0647\u0631\u0631, 3200, \u12a2\u1275\u12ee\u1335\u12eb"
+  },
+  "Cape of Good Hope,\" South Africa": {
+    "lat": -34.35811,
+    "lon": 18.47193,
+    "category": "natural",
+    "type": "cape",
+    "importance": 0.6161108866143697,
+    "display_name": "Cape of Good Hope, Cape Town Ward 61, City of Cape Town, Western Cape, South Africa"
+  },
+  "from Chile": {
+    "lat": -27.07277,
+    "lon": -109.3784857,
+    "category": "highway",
+    "type": "footway",
+    "importance": 0.04004490196078431,
+    "display_name": "Path from Terevaka to North Coast, Isla de Pascua, Provincia de Isla de Pascua, Regi\u00f3n de Valpara\u00edso, Chile"
+  },
+  "Osorno, S": {
+    "lat": 28.6657054,
+    "lon": -106.1133104,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05339305790798806,
+    "display_name": "Osorno, Colonia Granjas, Chihuahua, Municipio de Chihuahua, Chihuahua, 31107, M\u00e9xico"
+  },
+  "Pampa de Hui Hui, 4 km west and 2 km south of Cerro Quill\u00e9n, 1050 m, Province of Neuqu\u00e9n, Argentina": {
+    "error": "no_match"
+  },
+  "Herbert River, north Queensland,\" Australia": {
+    "error": "no_match"
+  },
+  "New Holland": {
+    "lat": 40.1847671,
+    "lon": -89.580938,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.4536252297026014,
+    "display_name": "New Holland, Logan County, Illinois, United States"
+  },
+  "no type locality given": {
+    "error": "no_match"
+  },
+  "La Loma del Morro, near Merida [M\u00e9rida], Venezuela, alt": {
+    "error": "no_match"
+  },
+  "type locality not given": {
+    "error": "no_match"
+  },
+  "Province of Hebei, China": {
+    "lat": 40.8438537,
+    "lon": 114.8795005,
+    "category": "historic",
+    "type": "citywalls",
+    "importance": 0.5993187513517793,
+    "display_name": "\u957f\u57ce, \u897f\u6c9f\u793e\u533a, \u5927\u5883\u95e8\u8857\u9053, \u6865\u897f\u533a, \u5f20\u5bb6\u53e3\u5e02, \u6cb3\u5317\u7701, 075000, \u4e2d\u56fd"
+  },
+  "Baram, Sarawak, Malaysia": {
+    "lat": 3.2032068,
+    "lon": 115.3899061,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.1467166987106126,
+    "display_name": "Baram, Bario, Miri, Bahagian Miri, Sarawak, Malaysia"
+  },
+  "obtained at San Francisco, California,\" USA": {
+    "error": "no_match"
+  },
+  "Lumu Lumu, Mt": {
+    "lat": -2.1770966,
+    "lon": 119.3243277,
+    "category": "place",
+    "type": "village",
+    "importance": 0.17283327415591612,
+    "display_name": "Lumu, Mamuju Tengah, Sulawesi Barat, Sulawesi, Indonesia"
+  },
+  "Indrapura Peak, Sumatra [Indonesia]": {
+    "error": "no_match"
+  },
+  "Pungo Andongo, Angola": {
+    "lat": -9.6694289,
+    "lon": 15.5891821,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.3668857539234569,
+    "display_name": "Pungo Andongo, Malanje, Angola"
+  },
+  "Mazoe, Mashonaland, Zimbabwe": {
+    "lat": -17.5658323,
+    "lon": 31.0076691,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.14669840009155408,
+    "display_name": "Mazoe River, Mazowe, Mashonaland Central, Zimbabwe"
+  },
+  "Machakos, Kenya": {
+    "lat": -1.2790046,
+    "lon": 37.3952698,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.4551498114694337,
+    "display_name": "Machakos, Kenya"
+  },
+  "Tette (= Tete), Zambezi River, Mozambique": {
+    "error": "no_match"
+  },
+  "Nyika Plateau, N Malawi": {
+    "error": "no_match"
+  },
+  "Chirinda Forest, Mt Selinda, E Zimbabwe": {
+    "error": "no_match"
+  },
+  "Kabwir, Bauchi Province, N Nigeria": {
+    "error": "no_match"
+  },
+  "Galanga, Angola": {
+    "lat": -12.0622657,
+    "lon": 15.1387618,
+    "category": "place",
+    "type": "village",
+    "importance": 0.14670416800183103,
+    "display_name": "Galanga, Huambo, Angola"
+  },
+  "Merelle Water, 30 miles (= 48 km) south Mount Marsabit, Kenya": {
+    "error": "no_match"
+  },
+  "Inhambane, Mozambique": {
+    "lat": -22.779116,
+    "lon": 34.5661741,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.46726781293569014,
+    "display_name": "Inhambane, Zona Sul, Mo\u00e7ambique"
+  },
+  "Adiopodoum\u00e9, Ivory Coast": {
+    "lat": 5.3414445,
+    "lon": -4.1332269,
+    "category": "place",
+    "type": "village",
+    "importance": 0.14673433203631642,
+    "display_name": "Adiopodoum\u00e9, Songon, Abidjan, C\u00f4te d\u2019Ivoire"
+  },
+  "Efulen, Cameroons [= Cameroon]": {
+    "error": "no_match"
+  },
+  "Dikume-Balue, Rumpi Highlands, Western Province, Cameroon": {
+    "error": "no_match"
+  },
+  "Tanzania, Zanzibar": {
+    "lat": -6.0999709,
+    "lon": 39.3209535,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6203321721661702,
+    "display_name": "Zanzibar \u0632\u0646\u062c\u0628\u0627\u0631, Tanzania"
+  },
+  "Bitye, Ja River, Camaroons [= Cameroon]": {
+    "error": "no_match"
+  },
+  "Rano Rano, Middle Celebes\" (= Central Sulawesi, Sulawesi, Indonesia)": {
+    "error": "no_match"
+  },
+  "Lirung, Talaut Islands\" (= Talaud Islands, Pulau Salibabu [= Salebabu], Indonesia)": {
+    "error": "no_match"
+  },
+  "septentrionalis de l'\u00eele C\u00e9l\u00e8bes [= north of Celebes Island],\" Menado, North Sulawesi, Sulawesi, Indonesia": {
+    "error": "no_match"
+  },
+  "Yang-liu-pa, NW Sichuan, China": {
+    "lat": 31.4690499,
+    "lon": 103.5757289,
+    "category": "landuse",
+    "type": "residential",
+    "importance": 0.08005583047226669,
+    "display_name": "\u6768\u67f3\u6c34\u5cb8, \u6c76\u5ddd\u53bf, \u5a01\u5dde\u9547, \u6c76\u5ddd\u53bf \u0f5d\u0f74\u0f53\u0f0b\u0f41\u0fb2\u0f7c\u0f53\u0f0b\u0f62\u0fab\u0f7c\u0f44\u0f0d, \u963f\u575d\u85cf\u65cf\u7f8c\u65cf\u81ea\u6cbb\u5dde \u0f62\u0f94\u0f0b\u0f56\u0f0b\u0f56\u0f7c\u0f51\u0f0b\u0f62\u0f72\u0f42\u0f66\u0f0b\u0f46\u0f0b\u0f56\u0f39\u0f44\u0f0b\u0f62\u0f72\u0f42\u0f66\u0f0b\u0f62\u0f44\u0f0b\u0f66\u0f90\u0fb1\u0f7c\u0f44\u0f0b\u0f41\u0f74\u0f63\u0f0b, \u56db\u5ddd\u7701, 623000, \u4e2d\u56fd"
+  },
+  "Lower Cachi": {
+    "error": "no_match"
+  },
+  "Lagoa Santa,\" Minas Gerais, Brazil": {
+    "lat": -19.6357376,
+    "lon": -43.8966132,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5582003192847464,
+    "display_name": "Lagoa Santa, Minas Gerais, Regi\u00e3o Sudeste, Brasil"
+  },
+  "Choro, 3500 m,\" Cochabamba, Bolivia": {
+    "lat": -16.792315,
+    "lon": -66.6518337,
+    "category": "place",
+    "type": "village",
+    "importance": 0.14671227664606695,
+    "display_name": "Choro, Municipio Cocapata, Ayopaya, Cochabamba, Bolivia"
+  },
+  "22 km N La Oroya (by road), Depto": {
+    "error": "no_match"
+  },
+  "Agualani, 9 km N by road Limbani, Depto": {
+    "error": "no_match"
+  },
+  "Matosa, c": {
+    "lat": 43.2399784,
+    "lon": -8.5221784,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.13338975585564963,
+    "display_name": "A Matosa, Coiro, A Laracha, Berganti\u00f1os, A Coru\u00f1a, Galicia, 15145, Espa\u00f1a"
+  },
+  "Tirapata [Puna], Peru (about 15,000 ft [= 4572 m])": {
+    "error": "no_match"
+  },
+  "Limbane [= Limbani], Dept": {
+    "error": "no_match"
+  },
+  "Tumbez [= Tumbes], N": {
+    "error": "no_match"
+  },
+  "Arrozal, 2300 m, Pico da Bandeira, western slope Mt": {
+    "error": "no_match"
+  },
+  "six miles west of Leymebamba, in mountains near headwaters of Utcubamba River, Amazonas, Peru": {
+    "error": "no_match"
+  },
+  "Carapar\u00ed, 1000 m, Tarija, Bolivia": {
+    "lat": -21.8280757,
+    "lon": -63.743706,
+    "category": "place",
+    "type": "village",
+    "importance": 0.14670416800183103,
+    "display_name": "Carapari, Municipio Carapar\u00ed, Gran Chaco, Tarija, Bolivia"
+  },
+  "Primeiro Morro, S\u00e3o Paulo, Brazil": {
+    "lat": -22.5584284,
+    "lon": -47.4300462,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05339719157701988,
+    "display_name": "Rua Primeiro de Maio, Jardim Morro Azul, Jardim Nossa Senhora de F\u00e1tima, Limeira, S\u00e3o Paulo, Regi\u00e3o Sudeste, 13484-493, Brasil"
+  },
+  "Villa Nouges, 1200 m, San Pablo, Tucum\u00e1n, Argentina": {
+    "error": "no_match"
+  },
+  "Limbani, Puno, Inambari drainage, Peru": {
+    "error": "no_match"
+  },
+  "[Hacienda] Huadqui\u00f1a, 5000 ft [= 1524 m],\" southern margin of the Urubamba River, Santa Teresa, Cusco, Peru": {
+    "error": "no_match"
+  },
+  "Cochabamba, 2400 m, Cochabamba, Bolivia": {
+    "error": "no_match"
+  },
+  "mouth of Devyatka River, Lake Evoron, Khabarovsk Krai, Russia": {
+    "error": "no_match"
+  },
+  "left bank of the Huang Ho [=Yellow] River, Inner Mongolia, China": {
+    "error": "no_match"
+  },
+  "Syrtyn, Qaidam, Qinghai, China": {
+    "error": "no_match"
+  },
+  "mouth of Omutnaya River, upper Amur Region, Chita Oblast, Russia": {
+    "error": "no_match"
+  },
+  "Dudypta River, Taymyr Peninsula, Krasnoyarskiy Krai, Russia": {
+    "error": "no_match"
+  },
+  "Omutnaya River Valley, tributary to Amur River, Transbaikalia (Chitinskaya Oblast), Russia": {
+    "error": "no_match"
+  },
+  "Fusiyama [= Mount Fuji], Honsu Island, Japan": {
+    "error": "no_match"
+  },
+  "Muja Valley, Vitim River Basin, Bauntovski District, Buryatia, Russia": {
+    "error": "no_match"
+  },
+  "Olen'ya River Estuary, Sakhalin Island, Russia": {
+    "error": "no_match"
+  },
+  "Bolshoi Shantar Island, Russia": {
+    "error": "no_match"
+  },
+  "les environs de Nagasaki,\" Kyushu, Japan": {
+    "error": "no_match"
+  },
+  "Insula Papuana, \u2018Duke of York' [Islands],\" East New Britain Province, Papua New Guinea": {
+    "error": "no_match"
+  },
+  "Muree, Punjab province, Pakistan, in the Pir Panjal Range of the W Himalayas": {
+    "error": "no_match"
+  },
+  "Horobe, Ashiro-cho, Ninohe-Gun, Iwate Prefecture, Honshu, Japan": {
+    "error": "no_match"
+  },
+  "Tomohon, Minahassa, Nord Cel\u00e9bes [= north Sulawesi],\" Indonesia": {
+    "error": "no_match"
+  },
+  "Christmas I, Indian Ocean, Australia": {
+    "error": "no_match"
+  },
+  "Salawati [Island],\" West Papua, Indonesia": {
+    "lat": -1.1239967,
+    "lon": 130.877044,
+    "category": "place",
+    "type": "island",
+    "importance": 0.43069650486564387,
+    "display_name": "Pulau Salawati, Raja Ampat, Papua Barat Daya, Irian Barat, 98423, Indonesia"
+  },
+  "Upper Burma [= Myanmar]": {
+    "error": "no_match"
+  },
+  "Sarawak, Borneo,\" Malaysia": {
+    "lat": 1.3998286,
+    "lon": 110.324372,
+    "category": "office",
+    "type": "company",
+    "importance": 6.0899519340764743e-05,
+    "display_name": "Sarawak Forestry Corporation (Kuching Regional Office), Jalan Puncak Borneo, Kampung Sri Arjuna, Kuching, Bahagian Kuching, Sarawak, Malaysia"
+  },
+  "Hillsborough Island [= Hahajima],\" Bonin Islands, Japan": {
+    "error": "no_match"
+  },
+  "Sumatra, Indonesia": {
+    "lat": -0.1432941,
+    "lon": 101.6241024,
+    "category": "place",
+    "type": "island",
+    "importance": 0.7063859252466634,
+    "display_name": "Sumatra, Sumatera, Indonesia"
+  },
+  "Tamar-Utkul', Taldy-Kurgan District, Kazakhstan": {
+    "error": "no_match"
+  },
+  "Khala-Ata, 140 km NW Bukhara, Uzbekistan": {
+    "error": "no_match"
+  },
+  "Upper Congo": {
+    "lat": -2.5769249,
+    "lon": 21.5670695,
+    "category": "natural",
+    "type": "wood",
+    "importance": 0.10667666666666664,
+    "display_name": "Upper, Tshuapa, R\u00e9publique d\u00e9mocratique du Congo"
+  },
+  "Madagascar, between Tamatave and Morondava": {
+    "error": "no_match"
+  },
+  "Congo (= DR Congo)": {
+    "lat": -0.6494883,
+    "lon": 17.6652217,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.5988305862345064,
+    "display_name": "Congo, R\u00e9publique d\u00e9mocratique du Congo"
+  },
+  "Cameroon, Victoria": {
+    "lat": 4.010289,
+    "lon": 9.207058,
+    "category": "place",
+    "type": "city",
+    "importance": 0.4529144226503214,
+    "display_name": "Limb\u00e9, Limb\u00e9 I, Communaut\u00e9 urbaine de Limb\u00e9, Fako, Southwest, Cameroun"
+  },
+  "Iren Dabasu [= Erenhot], Mongolia, [China]": {
+    "error": "no_match"
+  },
+  "near Orenburg, Orenburg Oblast, Russia": {
+    "error": "no_match"
+  },
+  "Paraguay": {
+    "lat": -23.3165935,
+    "lon": -58.1693445,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7687249581928821,
+    "display_name": "Paraguay / Paragu\u00e1i"
+  },
+  "Forte Curup\u00e1 (= Gurup\u00e1), Par\u00e1, Brazil": {
+    "error": "no_match"
+  },
+  "coast of Demerara (Guyana)": {
+    "lat": 6.8093451,
+    "lon": -58.1682406,
+    "category": "amenity",
+    "type": "bus_station",
+    "importance": 5.000152590214416e-05,
+    "display_name": "West Coast Parika Bus Park, Brickdam Street, Stabroek, City of Georgetown, Eccles-Ramsburg Village District, Demerara-Mahaica, Guyana"
+  },
+  "Caracas, Venezuela": {
+    "lat": 10.5060934,
+    "lon": -66.9146008,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6926979363264775,
+    "display_name": "Caracas, Parroquia Catedral, Municipio Libertador, Distrito Metropolitano de Caracas, Distrito Capital, Venezuela"
+  },
+  "Uaxact\u00fan, Pet\u00e9n, Guatemala": {
+    "lat": 17.3921707,
+    "lon": -89.6346181,
+    "category": "place",
+    "type": "village",
+    "importance": 0.14671473029678794,
+    "display_name": "Uaxact\u00fan, Flores, Pet\u00e9n, Guatemala"
+  },
+  "Province of Sara, department of Santa Cruz, Bolivia, 450 m above sea level": {
+    "error": "no_match"
+  },
+  "Brazil, Miritiba (= Humberto de Campos), northern Maranh\u00e3o": {
+    "error": "no_match"
+  },
+  "Braldu Valley, Baltistan [= Northern Areas, Parkistan]": {
+    "error": "no_match"
+  },
+  "Alichur, Murgab District, Pamir Mountains, Tajikistan": {
+    "error": "no_match"
+  },
+  "Dzun Saykhan, Gurvan Saykhan Ridge, Govi Altai Mountains, S Mongolia": {
+    "error": "no_match"
+  },
+  "Kelsey Station, Plover Bay, Bering Strait, [Chukotskiy], Siberia [Russia]": {
+    "error": "no_match"
+  },
+  "H\u00f6he \u00fcber 7000' im \u00f6stlichen Sajan-Gebirge, \u00fcber der Baumgrenze [= above 7000 feet in the eastern Sayan Mountains, above tree line],\" Siberia, Russia": {
+    "error": "no_match"
+  },
+  "Central Kashmir, [N India], 11,000 feet [= 3353 m]": {
+    "error": "no_match"
+  },
+  "EC Lake Baikal, Olkhon Island, Irkutskaya Oblast, S Russia": {
+    "error": "no_match"
+  },
+  "India (Cashmere [= Kashmir])": {
+    "error": "no_match"
+  },
+  "Sain Noin Khan, Mongolia": {
+    "error": "no_match"
+  },
+  "Nubra valley, Lad\u00e1k [= Ladakh]; Akt\u00e1gh near Karakoram Pass,\" India": {
+    "error": "no_match"
+  },
+  "vicinity of town Kyzyl, Tuvan Republic (S Siberia), Russia": {
+    "error": "no_match"
+  },
+  "Knysna, Western Cape, South Africa": {
+    "lat": -34.035734,
+    "lon": 23.048485,
+    "category": "place",
+    "type": "town",
+    "importance": 0.44274316916110606,
+    "display_name": "Knysna, Garden Route District Municipality, Western Cape, 6570, South Africa"
+  },
+  "interior parts of South Africa\" (= Grahamstown, Eastern Cape, South Africa)": {
+    "error": "no_match"
+  },
+  "Ubombo, KwaZulu-Natal, South Africa": {
+    "lat": -27.5870899,
+    "lon": 32.0667985,
+    "category": "leisure",
+    "type": "nature_reserve",
+    "importance": 0.08004193713282975,
+    "display_name": "Ubombo Mountain Nature Reserve, Mkuze, Jozini Local Municipality, Umkhanyakude District Municipality, KwaZulu-Natal, South Africa"
+  },
+  "Brazils, Para": {
+    "error": "no_match"
+  },
+  "Buroa Wells, East-Central Somaliland": {
+    "error": "no_match"
+  },
+  "El Paso, [El Paso Co": {
+    "lat": 31.7601001,
+    "lon": -106.4870476,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6548295810741123,
+    "display_name": "El Paso, El Paso County, Texas, United States"
+  },
+  "San Gorgonio Pass, [Riverside Co": {
+    "lat": 33.9188203,
+    "lon": -116.7491537,
+    "category": "mountain_pass",
+    "type": "yes",
+    "importance": 0.31074813956852465,
+    "display_name": "San Gorgonio Pass, Riverside County, California, 92230, United States"
+  },
+  "Tipton, San Joaquin Valley [Tulare Co": {
+    "error": "no_match"
+  },
+  "hills between Cuddapah and Nellox [= Nellore], in what may be termed the Eastern Ghats [= Velikonda Range],\" Andhra Pradesh, India": {
+    "error": "no_match"
+  },
+  "west bank of R\u00edo Amanao, 15 km (on route 62) W Andalgal\u00e1, Catamarca, Argentina": {
+    "error": "no_match"
+  },
+  "410 km (by road) NW Villa Hayes, Boquer\u00f3n, Paraguay": {
+    "error": "no_match"
+  },
+  "Lloa Valley, Pichincha (Ecuador)": {
+    "error": "no_match"
+  },
+  "El Cabrado, between Potosi and Sucre [Potos\u00ed], Bolivia": {
+    "error": "no_match"
+  },
+  "Avera, Aroa River, British New Guinea [= Central Province, Papua New Guinea]": {
+    "error": "no_match"
+  },
+  "Fernando Po\" (Bioko Island, Equatorial Guinea, West Africa)": {
+    "error": "no_match"
+  },
+  "Bellima and Tingasi, Monbuttu\" (= Niangara, DR Congo)": {
+    "error": "no_match"
+  },
+  "Ilong Peak, 1370 m, Halcon Range, Mindoro Island, Philippines": {
+    "error": "no_match"
+  },
+  "Mount Pichincha, Ecuador: mountain-streams at 11,500 feet [= 3505 m]": {
+    "error": "no_match"
+  },
+  "Ilambo [= Illambo], near Gualea, Pichincha, Ecuador": {
+    "error": "no_match"
+  },
+  "Rio de Janeiro,\" Rio de Janeiro, Brazil": {
+    "lat": -22.9110137,
+    "lon": -43.2093727,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.784945829582724,
+    "display_name": "Rio de Janeiro, Regi\u00e3o Sudeste, Brasil"
+  },
+  "on Pico Avila, 2150 m, 5 km NNE Caracas (= \"Hotel Humbolt [sic], 9": {
+    "error": "no_match"
+  },
+  "Cueva del Salado, 4 km E Bailadores, Estado M\u00e9rida, Venezuela, elevation 2000 m": {
+    "error": "no_match"
+  },
+  "Subsasugu, Assam,\" India": {
+    "error": "no_match"
+  },
+  "Bomdi La [= Bomdila] \u2026 \u00e0 l'altitude de 2": {
+    "error": "no_match"
+  },
+  "probably Moupin (= Baoxing), Sichuan, China": {
+    "error": "no_match"
+  },
+  "Taiheizan, Taihoku-siu, 5500 feet [= 1676 m], northern Formosa [= Taiwan],\" China": {
+    "error": "no_match"
+  },
+  "interior New South Wales, Australia": {
+    "lat": -33.7639038,
+    "lon": 150.7743903,
+    "category": "shop",
+    "type": "furniture",
+    "importance": 8.246051728079679e-05,
+    "display_name": "T & L Furniture Interior Gifts, Queen Street, St Marys, Sydney, New South Wales, 2760, Australia"
+  },
+  "Western Australia, Australia": {
+    "lat": -25.2303005,
+    "lon": 121.0187246,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7146119265503152,
+    "display_name": "Western Australia, Australia"
+  },
+  "Charlotte Waters, Northern Territory, Australia": {
+    "lat": -25.9145006,
+    "lon": 134.8929728,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.13338187762264436,
+    "display_name": "Charlotte Waters, Ghan, Northern Territory, 0872, Australia"
+  },
+  "South Alligator River, Northern Territory, Australia": {
+    "lat": -13.3142426,
+    "lon": 132.3453243,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.14670666742961772,
+    "display_name": "South Alligator River, Northern Territory, Australia"
+  },
+  "north of Hunter River, New South Wales, Australia": {
+    "error": "no_match"
+  },
+  "Manly (Spring Cove, Sydney Harbour), New South Wales, Australia": {
+    "error": "no_match"
+  },
+  "Van Diemen's Land\" (= Tasmania), Australia": {
+    "lat": -41.2047308,
+    "lon": 147.9872861,
+    "category": "natural",
+    "type": "peak",
+    "importance": 0.16004472953383686,
+    "display_name": "Australia Hill, Tasmania, Australia"
+  },
+  "Kia-ting-fu, West Sze-chuen [= Sichuan, China]": {
+    "error": "no_match"
+  },
+  "A-tun-tsi [= Deqen Xian], N": {
+    "error": "no_match"
+  },
+  "Wushi [= Wuxu], southwest of Tatsienlu, Szechwan [= Sichuan], China": {
+    "error": "no_match"
+  },
+  "Chao-tung-fu [= Zhaotung Xian, Yunnan, China]": {
+    "error": "no_match"
+  },
+  "Lichiang Range [= Yulongxuen], N": {
+    "error": "no_match"
+  },
+  "23 miles [= 37 km] S": {
+    "error": "no_match"
+  },
+  "Chamutong [= Tra-mu-tang], Upper Salween drainage-area, W": {
+    "error": "no_match"
+  },
+  "Aola, Guadalcanar [= Guadalcanal Island], Solomon Islands": {
+    "error": "no_match"
+  },
+  "Cueva del Hoyo Garc\u00eda, Municipio de San Juan y Mart\u00ednez, Provincia de Pinar del R\u00edo, Cuba": {
+    "error": "no_match"
+  },
+  "California,\" USA": {
+    "lat": 36.7014631,
+    "lon": -118.755997,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.8641679537633348,
+    "display_name": "California, United States"
+  },
+  "Rio Paraguay area": {
+    "error": "no_match"
+  },
+  "Hacienda Cincinnati, Santa Marta, and Rio Sin\u00fa Ceret\u00e9, Bol\u00edvar, Colombia": {
+    "error": "no_match"
+  },
+  "Colombia, Santa F\u00e9 de Bogot\u00e1": {
+    "lat": 4.6955315,
+    "lon": -74.0337557,
+    "category": "highway",
+    "type": "bus_stop",
+    "importance": 7.831921873803338e-05,
+    "display_name": "Paradero Fundaci\u00f3n Santa f\u00e9 de Bogot\u00e1, Avenida Carrera 9, Usaqu\u00e9n, UPZs de Bogot\u00e1, Localidad Usaqu\u00e9n, Bogot\u00e1, Bogot\u00e1, Distrito Capital, RAP (Especial) Central, 110111, Colombia"
+  },
+  "Peru, Amazonas, San Nicolas, 1372 m above sea level": {
+    "error": "no_match"
+  },
+  "right bank of R\u00edo Samiria above Estaci\u00f3n Pithecia, Reserva Nacional Pacaya-Samiria, Loreto, Peru, elevation c": {
+    "error": "no_match"
+  },
+  "Peru, Chanchamayo, 1000 m": {
+    "lat": -11.059485,
+    "lon": -75.4993163,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.3687910674753876,
+    "display_name": "Chanchamayo, Jun\u00edn, Per\u00fa"
+  },
+  "Tabatinga, upper R\u00edo Mara\u00f1\u00f3n, Peru": {
+    "error": "no_match"
+  },
+  "Panama, Gat\u00fan, Canal Zone": {
+    "error": "no_match"
+  },
+  "Allg\u00e4u, Osterachtal, Germany": {
+    "error": "no_match"
+  },
+  "Moupin, Sichuan, China": {
+    "error": "no_match"
+  },
+  "Kuatun, NW Fujian, China": {
+    "error": "no_match"
+  },
+  "Laprak, Ghorkha, Nepal": {
+    "error": "no_match"
+  },
+  "Hirkauski Reserve, 450 m, Caucasus, Azerbaidjan": {
+    "error": "no_match"
+  },
+  "Salween\u2013Mekong divide (28\u00b0 20' N), Yunnan, China": {
+    "error": "no_match"
+  },
+  "Tatsienlu, W Sechuan, China": {
+    "error": "no_match"
+  },
+  "Zebil, Bulgar Dagh [= Bolkar Mountains], Adana Province, Turkey": {
+    "error": "no_match"
+  },
+  "Surhad Wakhan, Pamir Altai, E Tajikistan": {
+    "error": "no_match"
+  },
+  "Min-gyoung, 110 mi [= 177 km] S": {
+    "error": "no_match"
+  },
+  "Olgino village (Black Sea), N": {
+    "error": "no_match"
+  },
+  "Central Kashmir, India": {
+    "lat": 34.234317,
+    "lon": 74.7237357,
+    "category": "office",
+    "type": "government",
+    "importance": 4.4055085069001564e-05,
+    "display_name": "Central University Kashmir, Manasbal-Ganderbal road, Thuru, Lar, Ganderbal, Jammu and Kashmir, 191131, India"
+  },
+  "Shul, Fars Province, Iran": {
+    "lat": 30.1830991,
+    "lon": 53.1911901,
+    "category": "place",
+    "type": "village",
+    "importance": 0.26922332516764147,
+    "display_name": "\u06a9\u0631\u062f\u0634\u0648\u0644, \u062f\u0647\u0633\u062a\u0627\u0646 \u0645\u0627\u062f\u0631\u0633\u0644\u06cc\u0645\u0627\u0646, \u0628\u062e\u0634 \u067e\u0627\u0633\u0627\u0631\u06af\u0627\u062f, \u0634\u0647\u0631\u0633\u062a\u0627\u0646 \u067e\u0627\u0633\u0627\u0631\u06af\u0627\u062f, \u0627\u0633\u062a\u0627\u0646 \u0641\u0627\u0631\u0633, \u0627\u06cc\u0631\u0627\u0646"
+  },
+  "Massisiat, altitude 3500 feet [= 1067 m], Abra Province, Luzon Island, Philippine Islands": {
+    "error": "no_match"
+  },
+  "Berge Data, Lepanto, Nord Luzon [Island], von 8000 Fuss [= Mount Data, Mountain Province, Luzon Island, Philippines, 2438 m]": {
+    "error": "no_match"
+  },
+  "Mount Apo at 6,000 feet altitude [= 1829 m], southern Mindanao, Philippine Islands": {
+    "error": "no_match"
+  },
+  "Bugasan, altitude 50 feet [= 15 m], Cotabato Province, Mindanao Island, Philippine Islands": {
+    "error": "no_match"
+  },
+  "Biga [= Viga], Catanduanes Island,\" Catanduanes Province, Bicol Region, Philippines": {
+    "error": "no_match"
+  },
+  "Camp John Hay, Baguio, Benguet, Luzon (altitude 5000 ft [= 1524 m]),\" Philippines": {
+    "error": "no_match"
+  },
+  "Sacobia River, Clark Air Base, Pampanga Province, Luzon, Philippine Islands": {
+    "error": "no_match"
+  },
+  "2 km south-east of Chuave Government Station, 1530 m, Chimbu Province, Papua New Guinea": {
+    "error": "no_match"
+  },
+  "Oman (Jebel Taw, Jebel Akhdar Range)": {
+    "error": "no_match"
+  },
+  "Redwoods, near Arcata, Humboldt Bay [Humboldt Co": {
+    "error": "no_match"
+  },
+  "Marshfield, Coos County, Oregon": {
+    "lat": 43.3604578,
+    "lon": -124.2214034,
+    "category": "amenity",
+    "type": "school",
+    "importance": 0.21080589711721126,
+    "display_name": "Marshfield High School, South 10th Street, Coos Bay, Coos County, Oregon, 97420, United States"
+  },
+  "B\u00e9lo, Madagascar": {
+    "lat": -19.7014439,
+    "lon": 44.5483552,
+    "category": "place",
+    "type": "town",
+    "importance": 0.3602803386784236,
+    "display_name": "Belo-Tsiribihina, Belo Sur Tsiribihina, Menabe, Province de Toliara, 608, Madagasikara / Madagascar"
+  },
+  "altitude of 6560 feet [= 1999 m] on Mount Isarog,\" Camarines Sur Province, SE Luzon Island, Philippines": {
+    "error": "no_match"
+  },
+  "80 km from mouth of Benito River, Equatorial Guinea": {
+    "error": "no_match"
+  },
+  "Wenman Island,\" Galapagos Islands, Ecuador": {
+    "error": "no_match"
+  },
+  "Guadalupe Island, off Lower California\u2026collected on the beach on west side of Guadalupe\" (Mexico)": {
+    "error": "no_match"
+  },
+  "North coast of Australia": {
+    "lat": -34.1613599,
+    "lon": 136.3153151,
+    "category": "highway",
+    "type": "unclassified",
+    "importance": 0.053378445868619784,
+    "display_name": "North Coast Road, Port Neill, The District Council of Tumby Bay, South Australia, 5604, Australia"
+  },
+  "type locality restricted to \"Java, Buitenzorg\"": {
+    "error": "no_match"
+  },
+  "Sungai Kumbang, 4700 ft, Gunung Kerinci, West Sumatra, Indonesia": {
+    "error": "no_match"
+  },
+  "Island of Dominica [Lesser Antilles], West Indies": {
+    "error": "no_match"
+  },
+  "L'\u00eele de Java, dans le district sauvage de Tapos,\" Indonesia": {
+    "error": "no_match"
+  },
+  "Dilan, Drung Valley, NW Yunnan, China": {
+    "error": "no_match"
+  },
+  "Zaruma, Loja [Loja Province], S": {
+    "error": "no_match"
+  },
+  "Kasmera, 21 km SW Machiques, Estado Zulia, Venezuela, 270 m, in a damp cave in a cliff across the R\u00edo Yasa from the Kasmera Biological Station, eastern foothills of the Sierra de Perij\u00e1": {
+    "error": "no_match"
+  },
+  "Paramaribo (Surinam [= Suriname])": {
+    "error": "no_match"
+  },
+  "Portovelo, Provincia del Oro, Ecuador; altitude, 2000 ft": {
+    "error": "no_match"
+  },
+  "La Salada, Michoacan, Mexico": {
+    "lat": 18.0523766,
+    "lon": -102.6255718,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.13336833524071104,
+    "display_name": "La Salada, L\u00e1zaro C\u00e1rdenas, Michoac\u00e1n, M\u00e9xico"
+  },
+  "Choluteca, 10 ft [= 3 m], Depto": {
+    "error": "no_match"
+  },
+  "San Jos\u00e9, Department of San Jos\u00e9, Costa Rica (c": {
+    "lat": -6.755358,
+    "lon": -79.8456075,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.053370834668497714,
+    "display_name": "Costa Rica, Jos\u00e9 Leonardo Ortiz, Chiclayo, Lambayeque, 14009, Per\u00fa"
+  },
+  "Ostk\u00fcste von Brasilien": {
+    "error": "no_match"
+  },
+  "suburbiis Bahiae": {
+    "error": "no_match"
+  },
+  "Mesopotamia, 350 ft": {
+    "error": "no_match"
+  },
+  "Entschetqab, Simien Mountains, Simien Province, Ethiopia": {
+    "error": "no_match"
+  },
+  "Hora Mountain Base Camp, Southern Chilalo Mountains, Abyssinia [= Ethiopia], altitude 9,000 feet [= 2750 m]": {
+    "error": "no_match"
+  },
+  "Sadi Malka, Hawash River, Abyssinia [= Ethiopia], altitude 2800 ft": {
+    "error": "no_match"
+  },
+  "Nairobi, Kenya": {
+    "lat": -1.302398,
+    "lon": 36.8288509,
+    "category": "place",
+    "type": "city",
+    "importance": 0.6767112080878018,
+    "display_name": "Nairobi, Zimmerman, Soko ya Mawe, Nairobi, Kenya"
+  },
+  "Gardula, Southern Abyssinia [= Ethiopia], altitude 4,000 feet": {
+    "error": "no_match"
+  },
+  "Elmina, Ghana": {
+    "lat": 5.085879,
+    "lon": -1.350578,
+    "category": "place",
+    "type": "town",
+    "importance": 0.16005515907530327,
+    "display_name": "Elmina, Komenda/Edina/Eguafo/Abirem Municipal District, Central Region, Ghana"
+  },
+  "Didessa River, near Guma, Abyssinia [= Ethiopia]\"": {
+    "error": "no_match"
+  },
+  "Northern Somali-land": {
+    "error": "no_match"
+  },
+  "Santo Domingo de Silos, Province of Burgos, Spain": {
+    "error": "no_match"
+  },
+  "Oddur,\" Somalia": {
+    "lat": 2.5823464,
+    "lon": 44.8278298,
+    "category": "place",
+    "type": "locality",
+    "importance": 0.06670666742961776,
+    "display_name": "Oddur Uein, Eeloole, Wanle Weyne \u0648\u0646\u0644\u0648\u064a\u0646, Shabeellaha Hoose \u0634\u0628\u064a\u0644\u064a \u0627\u0644\u0633\u0641\u0644\u0649, Koonfur Galbeed \u062c\u0646\u0648\u0628 \u063a\u0631\u0628, Soomaaliya \u0627\u0644\u0635\u0648\u0645\u0627\u0644"
+  },
+  "Zona di Gaarre,\" Dancalia, Ethiopia": {
+    "error": "no_match"
+  },
+  "Penang Island, Malaysia": {
+    "lat": 5.4065013,
+    "lon": 100.2559077,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6405098236669253,
+    "display_name": "Pulau Pinang, Malaysia"
+  },
+  "Amboina, Molucca Islands, Indonesia": {
+    "error": "no_match"
+  },
+  "Taf, in Central Somaliland [= Somalia]": {
+    "error": "no_match"
+  },
+  "South America": {
+    "lat": -21.0002179,
+    "lon": -61.0006565,
+    "category": "place",
+    "type": "continent",
+    "importance": 0.7929103881035928,
+    "display_name": "Am\u00e9rica do Sul;Am\u00e9rica del Sur"
+  },
+  "valley of the R\u00edo Magdalena, Colombia": {
+    "error": "no_match"
+  },
+  "Brazil, Rio de Janeiro": {
+    "lat": -22.9110137,
+    "lon": -43.2093727,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.784945829582724,
+    "display_name": "Rio de Janeiro, Regi\u00e3o Sudeste, Brasil"
+  },
+  "Par\u00e1, Brazil": {
+    "lat": -4.7493933,
+    "lon": -52.8973006,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6520134617143145,
+    "display_name": "Par\u00e1, Regi\u00e3o Norte, Brasil"
+  },
+  "West Africa, Sierra Leone": {
+    "lat": 8.48933,
+    "lon": -13.2080505,
+    "category": "office",
+    "type": "government",
+    "importance": 6.552452887765343e-05,
+    "display_name": "Sea Board West Africa, Cline Street, Cline Town, Freetown, Western Area Urban, Western Area, Sierra Leone"
+  },
+  "Cape of Good Hope, South Africa": {
+    "lat": -34.3571503,
+    "lon": 18.4739571,
+    "category": "historic",
+    "type": "memorial",
+    "importance": 0.6161108866143697,
+    "display_name": "Cape of Good Hope, Cape Town Ward 61, City of Cape Town, Western Cape, South Africa"
+  },
+  "Cueva Paredones, 3 km SW Ceiba del Agua, San Antonio de los Ba\u00f1os, La Habana Province, Cuba": {
+    "error": "no_match"
+  },
+  "Bayamo, Granma Province, Oriente region, Cuba": {
+    "error": "no_match"
+  },
+  "Bolivia, near Potosi [Potos\u00ed]": {
+    "error": "no_match"
+  },
+  "Jun\u00edn, 13,700 ft (= 4176 m), Jun\u00edn, Peru": {
+    "error": "no_match"
+  },
+  "Rinconado Malo pass, above Caylloma, on the Sumbay road, Peru": {
+    "error": "no_match"
+  },
+  "Calamian Islands": {
+    "lat": 12.0001117,
+    "lon": 120.000002,
+    "category": "place",
+    "type": "island",
+    "importance": 0.17338151140611885,
+    "display_name": "Calamian Group, Coron, Palawan, Mimaropa, Philippines"
+  },
+  "Bawean Island": {
+    "lat": -5.7933465,
+    "lon": 112.6598223,
+    "category": "place",
+    "type": "island",
+    "importance": 0.43786060464304577,
+    "display_name": "Pulau Bawean, Kumalasa, Gresik, Jawa Timur, Jawa, 61181, Indonesia"
+  }
+}

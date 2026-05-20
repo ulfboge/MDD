@@ -612,6 +612,8 @@ def run_geocoder(
     nominatim_sleep_s: float = 1.1,
     nominatim_cache: dict[str, dict[str, object]] | None = None,
     write_nominatim_cache: bool = False,
+    output: Path | None = None,
+    checkpoint_every: int = 100,
 ) -> list[dict[str, Any]]:
     out_rows: list[dict[str, Any]] = []
     rows_list = list(rows)
@@ -626,9 +628,11 @@ def run_geocoder(
             write_nominatim_cache=write_nominatim_cache,
         )
         out_rows.append({**row, **result_to_output(result)})
+        if output and checkpoint_every and index % checkpoint_every == 0:
+            write_geocoded_csv(out_rows, output)
         if use_nominatim and index % 100 == 0:
             proposed = sum(1 for r in out_rows if r.get("type_lat_suggested"))
-            print(f"  progress {index}/{len(rows_list)} · proposed={proposed}")
+            print(f"  progress {index}/{len(rows_list)} · proposed={proposed}", flush=True)
     if use_nominatim and nominatim_cache is not None and write_nominatim_cache:
         save_nominatim_cache(nominatim_cache)
     return out_rows
@@ -727,6 +731,8 @@ def main() -> None:
         nominatim_sleep_s=args.nominatim_sleep,
         nominatim_cache=load_nominatim_cache() if "nominatim" in phases else None,
         write_nominatim_cache="nominatim" in phases,
+        output=args.output,
+        checkpoint_every=100,
     )
     write_geocoded_csv(out_rows, args.output)
 
