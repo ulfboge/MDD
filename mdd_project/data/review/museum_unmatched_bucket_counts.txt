@@ -1,0 +1,55 @@
+Total unmatched species rows: 435
+
+Primary buckets:
+   234  untraced
+   136  lost
+    37  other_alphanumeric
+     7  specimen_narrative
+     5  xz_field_code
+     4  photographed
+     3  cheirogaleid_tag
+     2  collector_bohmann
+     2  historic_buffon
+     2  historic_linnmus
+     2  figured
+     1  historic_seba
+
+Distinct rough prefixes in 'other_alphanumeric' (37 rows): 37
+All (alphabetical by prefix):
+    1  ABE
+    1  ASRU
+    1  CBK
+    1  IZEA
+    1  K-EE-12-31
+    1  LARGER
+    1  LARQ
+    1  LAÂYOUNE
+    1  LSNSAU
+    1  MALE
+    1  MBL
+    1  MCLPGC
+    1  MHNLCF
+    1  MHNSAAC
+    1  MLZA
+    1  MUHNAC/MB01/006000
+    1  NEUHÄUSER
+    1  PBS
+    1  PCM
+    1  PENNANT'S
+    1  PMS
+    1  RGM
+    1  RGM.444360
+    1  RUSCONI
+    1  STILLWATER
+    1  TAFO6.1
+    1  TASHKENT
+    1  UMAH
+    1  UMAZC
+    1  UMRCNRS
+    1  UZDZ
+    1  VG-Q1
+    1  WRM
+    1  YEREVAN
+    1  _AVAHI_
+    1  ÄM
+    1  ĐULIĆ
