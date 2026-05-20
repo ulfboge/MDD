@@ -114,6 +114,14 @@ def _split_statements(sql: str) -> list[str]:
     return stmts
 
 
+def _table_exists(con: duckdb.DuckDBPyConnection, name: str) -> bool:
+    row = con.execute(
+        "SELECT COUNT(*) FROM information_schema.tables WHERE table_name = ?",
+        [name],
+    ).fetchone()
+    return bool(row and row[0])
+
+
 def print_summary(con: duckdb.DuckDBPyConnection) -> None:
     """Print key statistics from the loaded database."""
     print("\n" + "=" * 60)
@@ -130,6 +138,10 @@ def print_summary(con: duckdb.DuckDBPyConnection) -> None:
         "Orders":                    'SELECT COUNT(DISTINCT "order") FROM species',
         "Families":                  "SELECT COUNT(DISTINCT family) FROM species",
     }
+    if _table_exists(con, "estimated_type_localities"):
+        queries["Estimated type localities (review)"] = (
+            "SELECT COUNT(*) FROM estimated_type_localities"
+        )
     for label, q in queries.items():
         try:
             val = con.execute(q).fetchone()[0]
@@ -194,6 +206,20 @@ def main() -> None:
             run_sql_file(con, SQL_DIR / "export_for_qgis.sql", export_params)
         else:
             print("\n[STEP 3] Skipped (--skip-exports).")
+
+        # Step 4: Optional estimated type localities (review CSV → separate table)
+        estimated_csv = PROJECT_DIR / "data" / "review" / "estimated_type_localities.csv"
+        if estimated_csv.exists():
+            print("\n[STEP 4] Importing estimated type localities (review-only) …")
+            import sys
+
+            sys.path.insert(0, str(SCRIPT_DIR))
+            from import_estimated_type_localities import import_estimated_csv
+
+            count = import_estimated_csv(con, estimated_csv)
+            print(f"  estimated_type_localities rows: {count}")
+        else:
+            print("\n[STEP 4] Skipped (no estimated_type_localities.csv).")
 
         # Summary
         print_summary(con)

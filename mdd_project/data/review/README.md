@@ -67,9 +67,11 @@ python mdd_project/scripts/build_museum_prefix_wave4_backlog.py
 python mdd_project/scripts/geocode_type_localities.py --museum NHRM --curated nhrm \
   --output mdd_project/data/review/nhrm_type_specimens_missing_coords_geocoded.csv
 
-# Phase A only across all species missing official coordinates
-python mdd_project/scripts/geocode_type_localities.py --all-missing --phases explicit \
+# Phase A+B pilot: explicit parse + Nominatim (cached in nominatim_geocode_cache.json)
+python mdd_project/scripts/geocode_type_localities.py --all-missing --phases explicit,nominatim \
   --output mdd_project/data/review/estimated_type_localities.csv
+python mdd_project/scripts/import_estimated_type_localities.py
+# Or re-run setup_database.py — step 4 imports the CSV when present.
 
 # From a coverage export CSV
 python mdd_project/scripts/geocode_type_localities.py --input-csv export.csv --phases curated,explicit,nominatim

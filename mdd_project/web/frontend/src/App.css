@@ -826,3 +826,22 @@ details[open] > .about-summary::before {
 .coverage-export-btn:hover {
   background: var(--accent);
 }
+
+.coverage-stat-estimated .coverage-stat-n {
+  color: #8a5a12;
+}
+
+.layer-hint-estimated {
+  color: #8a5a12;
+}
+
+.popup-estimated-banner {
+  margin: 0 0 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #fff3df;
+  border: 1px solid #e0c28a;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #5c3d0a;
+}

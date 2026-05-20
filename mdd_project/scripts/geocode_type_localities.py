@@ -38,6 +38,7 @@ DEFAULT_OUTPUT = REVIEW_DIR / "estimated_type_localities.csv"
 
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
 USER_AGENT = "MDD-geocoder/1.0 (research; contact: ulfboge@github)"
+NOMINATIM_CACHE_PATH = REVIEW_DIR / "nominatim_geocode_cache.json"
 
 MUSEUM_MATCH = """
     s.type_voucher IS NOT NULL
@@ -134,7 +135,21 @@ class GeocodeResult:
     phase: str = "none"
 
 
-def nominatim_search(query: str) -> dict | None:
+def load_nominatim_cache() -> dict[str, dict[str, object]]:
+    if not NOMINATIM_CACHE_PATH.exists():
+        return {}
+    try:
+        return json.loads(NOMINATIM_CACHE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def save_nominatim_cache(cache: dict[str, dict[str, object]]) -> None:
+    REVIEW_DIR.mkdir(parents=True, exist_ok=True)
+    NOMINATIM_CACHE_PATH.write_text(json.dumps(cache, indent=2), encoding="utf-8")
+
+
+def _nominatim_search_remote(query: str) -> dict | None:
     params = urllib.parse.urlencode(
         {
             "q": query,
@@ -162,6 +177,26 @@ def nominatim_search(query: str) -> dict | None:
     }
 
 
+def resolve_nominatim_hit(
+    query: str,
+    *,
+    cache: dict[str, dict[str, object]] | None = None,
+    write_cache: bool = False,
+    sleep_s: float = 1.1,
+) -> dict | None:
+    if cache is not None and query in cache:
+        cached = cache[query]
+        return None if cached.get("error") else cached  # type: ignore[return-value]
+
+    hit = _nominatim_search_remote(query)
+    if cache is not None:
+        cache[query] = hit if hit else {"error": "no_match"}
+        if write_cache:
+            save_nominatim_cache(cache)
+    time.sleep(sleep_s)
+    return hit
+
+
 def pick_uncertainty(category: str | None, type_: str | None, base: int) -> int:
     if type_ in {"peak", "volcano", "mountain"}:
         return min(base, 5000)
@@ -182,10 +217,16 @@ def geocode_with_nominatim(
     notes: str = "",
     *,
     sleep_s: float = 1.1,
+    cache: dict[str, dict[str, object]] | None = None,
+    write_cache: bool = False,
 ) -> GeocodeResult:
     try:
-        hit = nominatim_search(query)
-        time.sleep(sleep_s)
+        hit = resolve_nominatim_hit(
+            query,
+            cache=cache,
+            write_cache=write_cache,
+            sleep_s=sleep_s,
+        )
     except Exception as exc:  # noqa: BLE001
         return GeocodeResult(
             query,
@@ -215,8 +256,8 @@ def geocode_with_nominatim(
     detail = hit.get("display_name", "")
     return GeocodeResult(
         query=query,
-        latitude=hit["lat"],
-        longitude=hit["lon"],
+        latitude=float(hit["lat"]),
+        longitude=float(hit["lon"]),
         uncertainty_m=uncertainty,
         method="nominatim",
         confidence=confidence,
@@ -371,6 +412,8 @@ def geocode_row(
     phases: list[str],
     curated: dict[str, GeocodeResult] | None = None,
     nominatim_sleep_s: float = 1.1,
+    nominatim_cache: dict[str, dict[str, object]] | None = None,
+    write_nominatim_cache: bool = False,
 ) -> GeocodeResult:
     sci_name = str(row.get("sci_name", ""))
     voucher = row.get("type_voucher")
@@ -399,6 +442,8 @@ def geocode_row(
                 base_uncertainty_m=50000,
                 notes=f"Nominatim query derived from type_locality for {sci_name}.",
                 sleep_s=nominatim_sleep_s,
+                cache=nominatim_cache,
+                write_cache=write_nominatim_cache,
             )
 
     return GeocodeResult(
@@ -442,10 +487,36 @@ def load_rows_from_duckdb(
                 s.type_locality,
                 s.type_lat,
                 s.type_lon,
-                NULL AS museum_abbreviation,
-                NULL AS museum_name,
-                NULL AS museum_location,
-                NULL AS museum_country
+                (
+                    SELECT tsi.abbreviation
+                    FROM type_specimen_institutions tsi
+                    WHERE {MUSEUM_MATCH.replace("s.", "s.")}
+                    ORDER BY LENGTH(tsi.abbreviation) DESC
+                    LIMIT 1
+                ) AS museum_abbreviation,
+                (
+                    SELECT tsi.full_name
+                    FROM type_specimen_institutions tsi
+                    WHERE {MUSEUM_MATCH.replace("s.", "s.")}
+                    ORDER BY LENGTH(tsi.abbreviation) DESC
+                    LIMIT 1
+                ) AS museum_name,
+                (
+                    SELECT tsi.city_and_country
+                    FROM type_specimen_institutions tsi
+                    WHERE {MUSEUM_MATCH.replace("s.", "s.")}
+                    ORDER BY LENGTH(tsi.abbreviation) DESC
+                    LIMIT 1
+                ) AS museum_location,
+                (
+                    SELECT TRIM(regexp_extract(tsi.city_and_country, '[^,]+$', 0))
+                    FROM type_specimen_institutions tsi
+                    WHERE {MUSEUM_MATCH.replace("s.", "s.")}
+                      AND tsi.city_and_country IS NOT NULL
+                      AND TRIM(tsi.city_and_country) <> ''
+                    ORDER BY LENGTH(tsi.abbreviation) DESC
+                    LIMIT 1
+                ) AS museum_country
             FROM species s
         """
         conditions.append("s.type_locality IS NOT NULL AND TRIM(s.type_locality) <> ''")
@@ -539,16 +610,27 @@ def run_geocoder(
     phases: list[str],
     curated: dict[str, GeocodeResult] | None = None,
     nominatim_sleep_s: float = 1.1,
+    nominatim_cache: dict[str, dict[str, object]] | None = None,
+    write_nominatim_cache: bool = False,
 ) -> list[dict[str, Any]]:
     out_rows: list[dict[str, Any]] = []
-    for row in rows:
+    rows_list = list(rows)
+    use_nominatim = "nominatim" in phases
+    for index, row in enumerate(rows_list, start=1):
         result = geocode_row(
             row,
             phases=phases,
             curated=curated,
             nominatim_sleep_s=nominatim_sleep_s,
+            nominatim_cache=nominatim_cache,
+            write_nominatim_cache=write_nominatim_cache,
         )
         out_rows.append({**row, **result_to_output(result)})
+        if use_nominatim and index % 100 == 0:
+            proposed = sum(1 for r in out_rows if r.get("type_lat_suggested"))
+            print(f"  progress {index}/{len(rows_list)} · proposed={proposed}")
+    if use_nominatim and nominatim_cache is not None and write_nominatim_cache:
+        save_nominatim_cache(nominatim_cache)
     return out_rows
 
 
@@ -643,6 +725,8 @@ def main() -> None:
         phases=phases,
         curated=curated,
         nominatim_sleep_s=args.nominatim_sleep,
+        nominatim_cache=load_nominatim_cache() if "nominatim" in phases else None,
+        write_nominatim_cache="nominatim" in phases,
     )
     write_geocoded_csv(out_rows, args.output)
 

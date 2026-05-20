@@ -11,6 +11,7 @@ interface CoverageSummary {
   voucher_unmatched_museum: number;
   voucher_geocoded: number;
   voucher_missing_geolocation: number;
+  estimated_on_map?: number;
 }
 
 interface CoverageMuseum {
@@ -139,11 +140,22 @@ export default function TypeCoveragePanel({
               </span>
               <span className="coverage-stat-l">voucher, no coordinates</span>
             </div>
+            {(summary.estimated_on_map ?? 0) > 0 && (
+              <div className="coverage-stat coverage-stat-estimated">
+                <span className="coverage-stat-n">
+                  {summary.estimated_on_map!.toLocaleString()}
+                </span>
+                <span className="coverage-stat-l">estimated (review)</span>
+              </div>
+            )}
           </div>
           <StatBar geocoded={summary.geocoded} total={summary.with_type_voucher} />
           <p className="coverage-hint">
             {summary.total_species.toLocaleString()} accepted species in MDD v2.4 ·{" "}
             {summary.voucher_with_museum_match.toLocaleString()} vouchers matched to a museum
+            {(summary.estimated_on_map ?? 0) > 0
+              ? ` · ${summary.estimated_on_map!.toLocaleString()} estimated review points available in map layer`
+              : ""}
           </p>
 
           <div className="coverage-filters">

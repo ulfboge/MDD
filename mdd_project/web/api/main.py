@@ -401,6 +401,14 @@ def taxonomy_search(
 # ---------------------------------------------------------------------------
 # Type locality coverage (museum / country statistics & export)
 # ---------------------------------------------------------------------------
+def _table_exists(conn: duckdb.DuckDBPyConnection, name: str) -> bool:
+    count = conn.execute(
+        "SELECT COUNT(*) FROM information_schema.tables WHERE table_name = ?",
+        [name],
+    ).fetchone()[0]
+    return count > 0
+
+
 @app.get("/type-localities/coverage/summary", summary="Global type specimen coverage summary")
 def type_locality_coverage_summary() -> dict[str, Any]:
     """Counts for comparing type vouchers, geocoded localities, and museum matches."""
@@ -424,6 +432,17 @@ def type_locality_coverage_summary() -> dict[str, Any]:
     """
     with _get_conn() as conn:
         row = _rows_to_dicts(conn, sql)[0]
+        if _table_exists(conn, "estimated_type_localities"):
+            est = conn.execute(
+                """
+                SELECT COUNT(*) FROM estimated_type_localities e
+                JOIN species s ON s.species_id = e.species_id
+                WHERE (s.type_lat IS NULL OR s.type_lon IS NULL)
+                """
+            ).fetchone()[0]
+            row["estimated_on_map"] = int(est)
+        else:
+            row["estimated_on_map"] = 0
     return row
 
 
@@ -683,6 +702,138 @@ def get_type_localities(
             "type": "FeatureCollection",
             "features": features,
             "meta": {"count": len(features), "limit": limit},
+        },
+    )
+
+
+@app.get("/type-localities/estimated", summary="Get estimated type locality points (review-only)")
+def get_estimated_type_localities(
+    order: str | None = Query(None, description="Filter by order"),
+    family: str | None = Query(None, description="Filter by family"),
+    genus: str | None = Query(None, description="Filter by genus"),
+    museum: str | None = Query(None, description="Filter by holding museum abbreviation"),
+    country: str | None = Query(None, description="Filter by holding museum country"),
+    species: str | None = Query(None, description="Filter to a single accepted species"),
+    min_confidence: str | None = Query(
+        None,
+        description="Optional minimum geocode_confidence: high, medium, or low",
+    ),
+    limit: int = Query(10000, ge=1, le=20000),
+) -> JSONResponse:
+    """
+    Return review-only estimated type localities as GeoJSON.
+
+    These are **not** official MDD coordinates. Points are shown only for species
+    without official type_lat/type_lon in MDD v2.4.
+    """
+    with _get_conn() as conn:
+        if not _table_exists(conn, "estimated_type_localities"):
+            return JSONResponse(
+                status_code=200,
+                content={
+                    "type": "FeatureCollection",
+                    "features": [],
+                    "meta": {"count": 0, "limit": limit, "coord_source": "estimated"},
+                },
+            )
+
+        conditions = [
+            "(s.type_lat IS NULL OR s.type_lon IS NULL)",
+            "e.estimated_lat IS NOT NULL",
+            "e.estimated_lon IS NOT NULL",
+        ]
+        params: list[Any] = []
+
+        if species:
+            normalised = species.replace(" ", "_")
+            space_form = species.replace("_", " ")
+            conditions.append("(e.sci_name = ? OR e.sci_name = ?)")
+            params.extend([normalised, space_form])
+        if order:
+            conditions.append('e."order" ILIKE ?')
+            params.append(f"%{order}%")
+        if family:
+            conditions.append("e.family ILIKE ?")
+            params.append(f"%{family}%")
+        if genus:
+            conditions.append("e.genus ILIKE ?")
+            params.append(f"%{genus}%")
+        if museum:
+            conditions.append("e.museum_abbreviation ILIKE ?")
+            params.append(museum.strip())
+        if country:
+            conditions.append("e.museum_country ILIKE ?")
+            params.append(country.strip())
+        if min_confidence:
+            rank = {"high": 3, "medium": 2, "low": 1}.get(min_confidence.strip().lower())
+            if rank:
+                conditions.append(
+                    "CASE lower(e.geocode_confidence) "
+                    "WHEN 'high' THEN 3 WHEN 'medium' THEN 2 WHEN 'low' THEN 1 ELSE 0 END >= ?"
+                )
+                params.append(rank)
+
+        where = "WHERE " + " AND ".join(conditions)
+        sql = f"""
+            SELECT
+                e.species_id,
+                e.sci_name,
+                e.sci_name_space,
+                e.main_common_name,
+                e."order",
+                e.family,
+                s.iucn_status,
+                s.extinct,
+                e.estimated_lat,
+                e.estimated_lon,
+                e.type_locality,
+                e.type_voucher,
+                e.type_kind,
+                e.museum_name,
+                e.museum_abbreviation,
+                e.museum_location,
+                e.museum_country,
+                e.geocode_phase,
+                e.geocode_method,
+                e.geocode_confidence,
+                e.coordinate_uncertainty_m,
+                e.geocode_query,
+                e.geocode_notes,
+                e.review_status
+            FROM estimated_type_localities e
+            JOIN species s ON s.species_id = e.species_id
+            {where}
+            ORDER BY e."order", e.family, e.sci_name
+            LIMIT ?
+        """
+        params.append(limit)
+        rows = _rows_to_dicts(conn, sql, params)
+
+    features = [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [row["estimated_lon"], row["estimated_lat"]],
+            },
+            "properties": {
+                **{k: v for k, v in row.items() if k not in ("estimated_lat", "estimated_lon")},
+                "coord_source": "estimated",
+            },
+        }
+        for row in rows
+    ]
+
+    return JSONResponse(
+        status_code=200,
+        content={
+            "type": "FeatureCollection",
+            "features": features,
+            "meta": {
+                "count": len(features),
+                "limit": limit,
+                "coord_source": "estimated",
+            },
         },
     )
 

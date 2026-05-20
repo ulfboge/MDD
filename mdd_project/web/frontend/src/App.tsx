@@ -135,12 +135,27 @@ function typeLocalityPopupHtml(p: Record<string, string | null>): string {
     </div>`;
 }
 
+function estimatedLocalityPopupHtml(p: Record<string, string | null>): string {
+  const confidence = p.geocode_confidence ? escapeHtml(String(p.geocode_confidence)) : "unknown";
+  const uncertainty = p.coordinate_uncertainty_m
+    ? `${escapeHtml(String(p.coordinate_uncertainty_m))} m`
+    : "—";
+  const base = typeLocalityPopupHtml(p);
+  return base.replace(
+    '<div class="popup-content popup-content--type-loc">',
+    `<div class="popup-content popup-content--type-loc popup-content--estimated">
+      <p class="popup-estimated-banner"><strong>Estimated location</strong> — not official MDD data. Confidence: ${confidence}; uncertainty ± ${uncertainty}.</p>`
+  );
+}
+
 // ---------------------------------------------------------------------------
 // Map source / layer IDs
 // ---------------------------------------------------------------------------
 const SRC_TYPE_LOC = "type-localities";
+const SRC_ESTIMATED = "estimated-type-localities";
 const SRC_OCCURRENCES = "occurrences";
 const LYR_TYPE_LOC = "type-localities-circle";
+const LYR_ESTIMATED = "estimated-type-localities-circle";
 const LYR_OCCURRENCES = "occurrences-circle";
 
 // Neutral light basemap — keeps IUCN / GBIF colours readable vs colourful OSM
@@ -176,6 +191,7 @@ export default function App() {
   // Cache the full global type-localities dataset so we can toggle back
   // without re-fetching from the server.
   const allTypeLocCacheRef = useRef<TypeLocFC | null>(null);
+  const allEstimatedLocCacheRef = useRef<TypeLocFC | null>(null);
   // Mirror of `selected` in a ref so effects can read it without stale closures.
   const selectedRef = useRef<SpeciesRecord | null>(null);
 
@@ -189,8 +205,10 @@ export default function App() {
   const [loadingOcc, setLoadingOcc] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showTypeLocalities, setShowTypeLocalities] = useState(true);
+  const [showEstimatedLocalities, setShowEstimatedLocalities] = useState(false);
   const [showOccurrences, setShowOccurrences] = useState(true);
   const [typeLocalityCount, setTypeLocalityCount] = useState<number>(0);
+  const [estimatedLocalityCount, setEstimatedLocalityCount] = useState<number>(0);
   // When a species is selected this is false (show 1 point); user can toggle
   // to true to temporarily display all ~1,941 MDD type localities.
   const [showAllTypeLocalities, setShowAllTypeLocalities] = useState(false);
@@ -214,6 +232,56 @@ export default function App() {
     allTypeLocCacheRef.current = fc;
     return fc;
   }, []);
+
+  const applyEstimatedLocalitiesToMap = useCallback((fc: TypeLocFC) => {
+    const map = mapRef.current;
+    const source = map?.getSource(SRC_ESTIMATED) as GeoJSONSource | undefined;
+    if (!source) return false;
+    source.setData(fc as Parameters<GeoJSONSource["setData"]>[0]);
+    setEstimatedLocalityCount(fc.meta.count);
+    return true;
+  }, []);
+
+  const fetchAllEstimatedLocalities = useCallback(async (): Promise<TypeLocFC> => {
+    const cached = allEstimatedLocCacheRef.current;
+    if (cached) return cached;
+    const fc = await fetchJson<TypeLocFC>(`${API}/type-localities/estimated?limit=20000`);
+    allEstimatedLocCacheRef.current = fc;
+    return fc;
+  }, []);
+
+  const loadEstimatedLocalitiesForView = useCallback(async () => {
+    const map = mapRef.current;
+    if (!map || !showEstimatedLocalities) return;
+
+    const hasFilter = Boolean(coverageMuseum || coverageCountry);
+    if (!hasFilter) {
+      try {
+        const fc = await fetchAllEstimatedLocalities();
+        applyEstimatedLocalitiesToMap(fc);
+      } catch (err) {
+        console.error("Failed to load estimated type localities:", err);
+      }
+      return;
+    }
+
+    const params = new URLSearchParams({ limit: "20000" });
+    if (coverageMuseum) params.set("museum", coverageMuseum);
+    else if (coverageCountry) params.set("country", coverageCountry);
+
+    try {
+      const fc = await fetchJson<TypeLocFC>(`${API}/type-localities/estimated?${params}`);
+      applyEstimatedLocalitiesToMap(fc);
+    } catch (err) {
+      console.error("Failed to load filtered estimated type localities:", err);
+    }
+  }, [
+    applyEstimatedLocalitiesToMap,
+    coverageCountry,
+    coverageMuseum,
+    fetchAllEstimatedLocalities,
+    showEstimatedLocalities,
+  ]);
 
   const fetchAllTypeLocalitiesRef = useRef(fetchAllTypeLocalities);
   const applyTypeLocalitiesToMapRef = useRef(applyTypeLocalitiesToMap);
@@ -381,6 +449,28 @@ export default function App() {
         },
       });
 
+      map.addSource(SRC_ESTIMATED, {
+        type: "geojson",
+        data: { type: "FeatureCollection", features: [] },
+      });
+      map.addLayer({
+        id: LYR_ESTIMATED,
+        type: "circle",
+        source: SRC_ESTIMATED,
+        layout: { visibility: "none" },
+        paint: {
+          "circle-radius": [
+            "interpolate", ["linear"], ["zoom"],
+            2, 3,
+            8, 6,
+          ],
+          "circle-color": "#d4a056",
+          "circle-stroke-width": 2,
+          "circle-stroke-color": "#8a5a12",
+          "circle-opacity": 0.72,
+        },
+      });
+
       setMapReady(true);
 
       const cached = allTypeLocCacheRef.current;
@@ -397,7 +487,7 @@ export default function App() {
       }
 
       // ── Pointer cursor on hover ───────────────────────────────────────────
-      for (const lyr of [LYR_TYPE_LOC, LYR_OCCURRENCES]) {
+      for (const lyr of [LYR_TYPE_LOC, LYR_ESTIMATED, LYR_OCCURRENCES]) {
         map.on("mouseenter", lyr, () => {
           map.getCanvas().style.cursor = "pointer";
         });
@@ -412,6 +502,13 @@ export default function App() {
         if (!f) return;
         const p = f.properties as Record<string, string | null>;
         popup.setLngLat(e.lngLat).setHTML(typeLocalityPopupHtml(p)).addTo(map);
+      });
+
+      map.on("click", LYR_ESTIMATED, (e: MapMouseEvent & { features?: MapGeoJSONFeature[] }) => {
+        const f = e.features?.[0];
+        if (!f) return;
+        const p = f.properties as Record<string, string | null>;
+        popup.setLngLat(e.lngLat).setHTML(estimatedLocalityPopupHtml(p)).addTo(map);
       });
 
       map.on("click", LYR_OCCURRENCES, (e: MapMouseEvent & { features?: MapGeoJSONFeature[] }) => {
@@ -442,6 +539,7 @@ export default function App() {
     return () => {
       setMapReady(false);
       allTypeLocCacheRef.current = null;
+      allEstimatedLocCacheRef.current = null;
       map.remove();
       mapRef.current = null;
     };
@@ -460,11 +558,32 @@ export default function App() {
     map.setLayoutProperty(LYR_OCCURRENCES, "visibility", showOccurrences ? "visible" : "none");
   }, [mapReady, showOccurrences]);
 
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!mapReady || !map) return;
+    map.setLayoutProperty(
+      LYR_ESTIMATED,
+      "visibility",
+      showEstimatedLocalities ? "visible" : "none"
+    );
+    if (showEstimatedLocalities) {
+      void loadEstimatedLocalitiesForView();
+    }
+  }, [loadEstimatedLocalitiesForView, mapReady, showEstimatedLocalities]);
+
+  useEffect(() => {
+    allEstimatedLocCacheRef.current = null;
+    if (showEstimatedLocalities) {
+      void loadEstimatedLocalitiesForView();
+    }
+  }, [coverageCountry, coverageMuseum, loadEstimatedLocalitiesForView, showEstimatedLocalities]);
+
   // ── Coverage country/museum filter → map points ───────────────────────────
   useEffect(() => {
     if (!mapReady) return;
     loadTypeLocalitiesForView();
-  }, [mapReady, loadTypeLocalitiesForView, selected]);
+    void loadEstimatedLocalitiesForView();
+  }, [mapReady, loadTypeLocalitiesForView, loadEstimatedLocalitiesForView, selected]);
 
   // ── Toggle: show all MDD type localities vs. selected-species only ─────────
   useEffect(() => {
@@ -912,6 +1031,26 @@ export default function App() {
             <p className="layer-hint">~1,941 species have geocoded coords in MDD v2.4 · coloured by IUCN status</p>
           )}
 
+          <div className="layer-row" style={{ marginTop: 8 }}>
+            <label className="toggle">
+              <input
+                type="checkbox"
+                checked={showEstimatedLocalities}
+                onChange={(e) => setShowEstimatedLocalities(e.target.checked)}
+              />
+              <span className="dot dot-estimated" style={{ background: "#d4a056", border: "2px solid #8a5a12" }} />
+              Estimated type localities
+            </label>
+            {showEstimatedLocalities && (
+              <span className="layer-count">{estimatedLocalityCount.toLocaleString()}</span>
+            )}
+          </div>
+          {showEstimatedLocalities && (
+            <p className="layer-hint layer-hint-estimated">
+              Review-only estimates from type locality text — not official MDD or museum coordinates.
+            </p>
+          )}
+
           {/* GBIF occurrences row */}
           <div className="layer-row" style={{ marginTop: selected ? 8 : 0 }}>
             <label className="toggle">
@@ -941,6 +1080,12 @@ export default function App() {
                 site where its holotype specimen was collected. Of ~14,000 valid
                 species, roughly 1,941 have geocoded coordinates in MDD v2.4; the
                 rest have text descriptions only, so no map point appears.
+              </p>
+              <p>
+                <strong>Estimated type localities</strong> (optional layer) are machine-assisted
+                guesses for species without official MDD coordinates. They are derived from
+                type locality text and are shown only when no official point exists. Always
+                treat them as provisional — not museum or MDD data.
               </p>
               <p>
                 <strong>GBIF occurrences</strong> are independent sighting and
