@@ -58,14 +58,14 @@ const IUCN_COLOR: Record<string, string> = {
   DD: "#aaa",
 };
 const IUCN_LABEL: Record<string, string> = {
-  LC: "Livskraftig",
-  NT: "Nära hotad",
-  VU: "Sårbar",
-  EN: "Starkt hotad",
-  CR: "Akut hotad",
-  EW: "Utdöd i vilt tillstånd",
-  EX: "Utdöd",
-  DD: "Kunskapsbrist",
+  LC: "Least Concern",
+  NT: "Near Threatened",
+  VU: "Vulnerable",
+  EN: "Endangered",
+  CR: "Critically Endangered",
+  EW: "Extinct in the Wild",
+  EX: "Extinct",
+  DD: "Data Deficient",
 };
 function iucnColor(status: string | null): string {
   return IUCN_COLOR[status ?? ""] ?? "#4f9cf9";
@@ -1192,40 +1192,38 @@ export default function App() {
           )}
         </section>
 
-        {/* About these layers — collapsible explainer (Swedish) */}
+        {/* About these layers — collapsible explainer */}
         <section className="section">
           <details className="about-layers">
-            <summary className="about-summary">Om datalagren</summary>
+            <summary className="about-summary">About these layers</summary>
             <div className="about-body">
               <p>
-                <strong>MDD</strong> (Mammal Diversity Database) är en global taxonomisk
-                referensdatabas för däggdjur — inte en museumskatalog. Den innehåller
-                accepterade artnamn, synonymer, typmaterial och typ-lokaliteter från
-                vetenskaplig litteratur. Av ~14&nbsp;000 arter har ungefär 1&nbsp;941
-                geokodade typ-lokaliteter i MDD v2.4; resten har bara textbeskrivning.
+                <strong>MDD</strong> (Mammal Diversity Database) is a global taxonomic
+                reference for mammals — not a museum catalogue. It holds accepted names,
+                synonyms, type specimens, and type localities from the scientific
+                literature. Of ~14,000 species, roughly 1,941 have geocoded type
+                localities in MDD v2.4; the rest have text only.
               </p>
               <p>
-                <strong>Uppskattade typ-lokaliteter</strong> (valfritt lager) är
-                maskinassisterade gissningar för arter utan officiella MDD-koordinater.
-                De är granskningsobjekt — inte MDD- eller museidata. Använd dem som
-                ledtrådar, inte som facit.
+                <strong>Estimated type localities</strong> (optional layer) are
+                machine-assisted guesses for species without official MDD coordinates.
+                They are review-only — not MDD or museum data. Treat them as leads, not
+                ground truth.
               </p>
               <p>
-                <strong>GBIF-förekomster</strong> är oberoende observations- och
-                samlingsposter (museer, citizen science m.m.) via GBIF. En art kan sakna
-                typ-lokalitet men ha många GBIF-punkter, eller tvärtom. Det är medvetet
-                separata lager.
+                <strong>GBIF occurrences</strong> are independent sighting and specimen
+                records from GBIF (museums, iNaturalist, etc.). A species may lack a type
+                locality dot yet have many GBIF records, or vice versa — by design.
               </p>
               <p>
-                <strong>IUCN-status</strong> (färg på typ-lokaliteter) kommer från MDD:s
-                inbäddade rödlisteklassificering per art — inte från IUCN:s kartlager.
-                Klicka på en art för länk till IUCN Red List.
+                <strong>IUCN status</strong> (colour on type localities) comes from
+                MDD&apos;s embedded Red List field per species — not IUCN range maps.
+                Click a species card for a link to the IUCN Red List.
               </p>
               <p>
-                <strong>VertNet / iDigBio</strong> används här bara som kompletterande
-                kataloglänkar till typmaterial (voucher-URI), när MDD har sådan
-                information. De ersätter inte MDD-taxonomin och ger inte full
-                samlingsöversikt.
+                <strong>VertNet / iDigBio</strong> appear only as supplementary catalogue
+                links on type specimens when MDD has voucher URIs. They do not replace MDD
+                taxonomy and are not full collection databases.
               </p>
             </div>
           </details>
@@ -1233,7 +1231,7 @@ export default function App() {
 
         {/* IUCN legend */}
         <section className="section">
-          <label className="section-label">IUCN (typ-lokaliteter)</label>
+          <label className="section-label">IUCN (type localities)</label>
           <div className="legend">
             {Object.entries(IUCN_COLOR).map(([code, color]) => (
               <div key={code} className="legend-row">

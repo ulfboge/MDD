@@ -39,9 +39,9 @@ COPY mdd_project/data/review/estimated_type_localities.csv mdd_project/data/revi
 
 RUN python mdd_project/scripts/setup_database.py --skip-exports
 
-# Demo GBIF occurrences for galagos (Galagidae) — baked into image for Render
+# Demo GBIF occurrences for primates — baked into image for Render (Galagidae included)
 RUN python mdd_project/scripts/gbif_import.py \
-    --from-mdd --family Galagidae --limit-per-species 300 --no-export
+    --from-mdd --order Primates --limit-per-species 100 --no-export
 
 # -----------------------------------------------------------------------------
 # Stage 3: Runtime — python slim + nginx, static dist, app, duckdb

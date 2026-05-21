@@ -82,6 +82,25 @@ python mdd_project/scripts/import_estimated_type_localities.py
 python mdd_project/scripts/summarize_estimated_type_localities.py
 # Or re-run setup_database.py — step 4 imports the CSV when present.
 
+### Manual QC of proposed coordinates
+
+Export a review batch (fill in `qc_decision` / `qc_notes`: accept, reject, relocate):
+
+```bash
+# 30 galagos — good starter set
+python mdd_project/scripts/export_estimated_qc_sample.py --family Galagidae --limit 30
+
+# High/medium confidence only, any family
+python mdd_project/scripts/export_estimated_qc_sample.py --confidence high,medium --limit 50
+
+# One museum batch
+python mdd_project/scripts/export_estimated_qc_sample.py --museum NHRM --limit 20
+```
+
+Output: `mdd_project/data/review/estimated_qc_sample.csv`
+
+**How to review:** open the CSV (Excel, QGIS, or the map — search species, toggle *Estimated type localities*). Check whether the orange/gold dot matches the type locality text. Mark `qc_decision` as `accept`, `reject`, or `needs_curated_override`. Rejected rows stay out of any future promotion; accepted rows can inform curated overrides in `geocode_curated_overrides.py`.
+
 # From a coverage export CSV
 python mdd_project/scripts/geocode_type_localities.py --input-csv export.csv --phases curated,explicit,nominatim
 ```
@@ -97,7 +116,7 @@ Suggested coordinates stay in review CSVs until explicitly promoted — they are
 Prefix research backlog is closed. `museum_remaining_action_items.csv` now lists only standalone zero-match retain policies.
 
 - `LSNSAU`: Confirmed from Aimi & Bakar (1992) PDF — holotype SD 16 at **Laboratory of Sumatera Nature Study, Andalas University**; LSNSAU = that laboratory's acronym. See `museum_primary_literature_verification.csv`.
-- `ASRU`: Metadata retained with medium-high confidence; PDF not yet verified (`not_confirmed_from_pdf`). Pavlenko & Denisenko (1976) Zoologicheskii Zhurnal still needed for wording confirmation.
+- `ASRU`: Metadata retained with medium-high confidence; PDF not yet verified (`not_confirmed_from_pdf`). **Next step:** obtain Pavlenko & Denisenko (1976) *Zoologicheskii Zhurnal* 55(7):1073–1077 and confirm holotype wording for ASRU 424 (*Scarturus heptneri*). See `museum_primary_literature_verification.csv`.
 - `MN`: All 54 MN-prefixed vouchers match `MN` (Museu Nacional UFRJ) in app logic. Review closed in `museum_mn_review_closure.csv`; no metadata change required.
 - URI signals: `audit_museum_uri_signals.py` exports review-only inferences for vouchers with catalog URIs. Six LOST vouchers with URIs map to MNHN (4) or BM (2); these do not override prefix matching.
 - Standalone zero-match metadata rows (`ACUNHC`, `CUMV`, `DZSJRP`, `GEC`, `MNHNC`, `NMSL`, `SNMB`) are retained in `TypeSpecimenMetadata_v2.4.csv` per `museum_standalone_zero_match_policy.csv`. Remove them only if metadata should strictly contain institutions that match current MDD v2.4 vouchers.
