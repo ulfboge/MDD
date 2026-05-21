@@ -266,7 +266,7 @@ def get_synonyms(name: str) -> list[dict[str, Any]]:
 def get_occurrences(
     species: str,
     limit: int = Query(500, ge=1, le=5000, description="Max records to return"),
-    matched_only: bool = Query(False, description="Return only MDD-matched records"),
+    matched_only: bool = Query(True, description="Return only MDD-matched records"),
 ) -> JSONResponse:
     """
     Return occurrence records from the ``observations`` table for a species.
@@ -330,7 +330,6 @@ def get_occurrences(
             WHERE (
                 mdd_sci_name = ?
                 OR mdd_sci_name = ?
-                OR reported_name ILIKE ?
             )
             {matched_filter}
             ORDER BY event_date DESC NULLS LAST
@@ -338,7 +337,7 @@ def get_occurrences(
         """
         rows = _rows_to_dicts(
             conn, sql,
-            [normalised, species.replace("_", " "), f"%{species.replace('_', ' ')}%", limit]
+            [normalised, species.replace("_", " "), limit]
         )
 
     # Build minimal GeoJSON FeatureCollection

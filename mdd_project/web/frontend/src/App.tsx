@@ -235,6 +235,8 @@ export default function App() {
   const allEstimatedLocCacheRef = useRef<TypeLocFC | null>(null);
   // Mirror of `selected` in a ref so effects can read it without stale closures.
   const selectedRef = useRef<SpeciesRecord | null>(null);
+  const selectedTaxonRef = useRef<TaxonResult | null>(null);
+  const showAllTypeLocalitiesRef = useRef(false);
 
   const [rank, setRank] = useState<Rank>("species");
   const [query, setQuery] = useState("");
@@ -257,6 +259,20 @@ export default function App() {
   const [coverageMuseum, setCoverageMuseum] = useState("");
   const [mapReady, setMapReady] = useState(false);
 
+  useEffect(() => {
+    showAllTypeLocalitiesRef.current = showAllTypeLocalities;
+  }, [showAllTypeLocalities]);
+
+  useEffect(() => {
+    selectedTaxonRef.current = selectedTaxon;
+  }, [selectedTaxon]);
+
+  const shouldShowGlobalTypeLocalities = useCallback(() => {
+    if (selectedTaxonRef.current) return false;
+    if (selectedRef.current && !showAllTypeLocalitiesRef.current) return false;
+    return true;
+  }, []);
+
   const applyTypeLocalitiesToMap = useCallback((fc: TypeLocFC) => {
     const map = mapRef.current;
     const source = map?.getSource(SRC_TYPE_LOC) as GeoJSONSource | undefined;
@@ -265,6 +281,14 @@ export default function App() {
     setTypeLocalityCount(fc.meta.count);
     return true;
   }, []);
+
+  const applyTypeLocalitiesIfAllowed = useCallback(
+    (fc: TypeLocFC) => {
+      if (!shouldShowGlobalTypeLocalities()) return false;
+      return applyTypeLocalitiesToMap(fc);
+    },
+    [applyTypeLocalitiesToMap, shouldShowGlobalTypeLocalities]
+  );
 
   const fetchAllTypeLocalities = useCallback(async (): Promise<TypeLocFC> => {
     const cached = allTypeLocCacheRef.current;
@@ -338,6 +362,34 @@ export default function App() {
   const loadEstimatedLocalitiesForView = useCallback(async () => {
     const map = mapRef.current;
     if (!map || !showEstimatedLocalities) return;
+
+    const sp = selectedRef.current;
+    const taxon = selectedTaxonRef.current;
+
+    if (sp && !showAllTypeLocalitiesRef.current) {
+      try {
+        const fc = await fetchJson<TypeLocFC>(
+          `${API}/type-localities/estimated?species=${encodeURIComponent(sp.sci_name)}&limit=5`
+        );
+        applyEstimatedLocalitiesToMap(fc);
+      } catch (err) {
+        console.error("Failed to load estimated type localities for species:", err);
+      }
+      return;
+    }
+
+    if (taxon) {
+      const paramKey = taxon.rank === "genus" ? "genus" : "family";
+      try {
+        const fc = await fetchJson<TypeLocFC>(
+          `${API}/type-localities/estimated?${paramKey}=${encodeURIComponent(taxon.name)}&limit=2000`
+        );
+        applyEstimatedLocalitiesToMap(fc);
+      } catch (err) {
+        console.error("Failed to load estimated type localities for taxon:", err);
+      }
+      return;
+    }
 
     const hasFilter = Boolean(coverageMuseum || coverageCountry);
     if (!hasFilter) {
@@ -420,19 +472,19 @@ export default function App() {
   useEffect(() => {
     void fetchAllTypeLocalities()
       .then((fc) => {
-        applyTypeLocalitiesToMap(fc);
+        applyTypeLocalitiesIfAllowed(fc);
       })
       .catch((err) => {
         console.error("Failed to prefetch type localities:", err);
       });
-  }, [applyTypeLocalitiesToMap, fetchAllTypeLocalities]);
+  }, [applyTypeLocalitiesIfAllowed, fetchAllTypeLocalities]);
 
   // If prefetch finished before the map source existed, apply once the map is ready.
   useEffect(() => {
     if (!mapReady) return;
     const cached = allTypeLocCacheRef.current;
-    if (cached) applyTypeLocalitiesToMap(cached);
-  }, [applyTypeLocalitiesToMap, mapReady]);
+    if (cached) applyTypeLocalitiesIfAllowed(cached);
+  }, [applyTypeLocalitiesIfAllowed, mapReady]);
 
   // ── Initialise map ────────────────────────────────────────────────────────
   useEffect(() => {
@@ -561,11 +613,15 @@ export default function App() {
 
       const cached = allTypeLocCacheRef.current;
       if (cached) {
-        applyTypeLocalitiesToMapRef.current(cached);
+        if (shouldShowGlobalTypeLocalities()) {
+          applyTypeLocalitiesToMapRef.current(cached);
+        }
       } else {
         void fetchAllTypeLocalitiesRef.current()
           .then((fc) => {
-            applyTypeLocalitiesToMapRef.current(fc);
+            if (shouldShowGlobalTypeLocalities()) {
+              applyTypeLocalitiesToMapRef.current(fc);
+            }
           })
           .catch((err) => {
             console.error("Failed to load initial type localities:", err);
@@ -757,6 +813,7 @@ export default function App() {
     setSelected(sp);
     setSelectedTaxon(null);
     selectedRef.current = sp;
+    selectedTaxonRef.current = null;
     setSuggestions([]);
     setTaxonSuggestions([]);
     setQuery(sp.sci_name_space ?? sp.sci_name);
@@ -790,6 +847,7 @@ export default function App() {
     setSelectedTaxon(t);
     setSelected(null);
     selectedRef.current = null;
+    selectedTaxonRef.current = t;
     setSuggestions([]);
     setTaxonSuggestions([]);
     setQuery(t.name);
@@ -822,6 +880,7 @@ export default function App() {
     setSelected(null);
     setSelectedTaxon(null);
     selectedRef.current = null;
+    selectedTaxonRef.current = null;
     setQuery("");
     setSuggestions([]);
     setTaxonSuggestions([]);
@@ -1068,6 +1127,7 @@ export default function App() {
           {selected && !showAllTypeLocalities && (
             <p className="type-loc-help">
               Type locality = holotype collection site. One per accepted species in MDD.
+              Map shows only the selected species unless you enable “Show all MDD type localities”.
             </p>
           )}
           {/* Taxon hint */}
@@ -1125,6 +1185,11 @@ export default function App() {
               ? "Orange dots show GBIF sighting and specimen records for the selected species."
               : "No GBIF records in the local database for this species yet."}
           </p>
+          {selected && showEstimatedLocalities && (
+            <p className="layer-hint layer-hint-estimated">
+              Estimated layer is filtered to the selected species only.
+            </p>
+          )}
         </section>
 
         {/* About these layers — collapsible explainer (Swedish) */}

@@ -63,10 +63,10 @@ Frontend uses `fetch('/api/...')` so the UI and API share one origin (no CORS).
 The Docker build **pre-bakes** a small GBIF demo dataset:
 
 ```bash
-python mdd_project/scripts/gbif_import.py --from-mdd --family Galagidae --limit-per-species 100 --no-export
+python mdd_project/scripts/gbif_import.py --from-mdd --family Galagidae --limit-per-species 300 --no-export
 ```
 
-That gives orange occurrence dots for **Galagidae** species when selected in the map (~18/19 species with GBIF data). No runtime network import is needed on Render.
+That gives orange occurrence dots for **Galagidae** species when selected in the map (~18/19 species with GBIF data). The per-species cap keeps Docker build time and image size reasonable; increase `--limit-per-species` in the Dockerfile if you want denser maps.
 
 To change the demo set, edit the `gbif_import.py` step in the repo-root `Dockerfile` (e.g. another `--family` or `--order`). Do **not** import full-mammal GBIF into the image — build time and image size would explode.
 
