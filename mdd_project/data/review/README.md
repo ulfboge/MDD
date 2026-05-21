@@ -70,6 +70,14 @@ python mdd_project/scripts/geocode_type_localities.py --museum NHRM --curated nh
 # Phase A+B pilot: explicit parse + Nominatim (cached in nominatim_geocode_cache.json)
 python mdd_project/scripts/geocode_type_localities.py --all-missing --phases explicit,nominatim \
   --output mdd_project/data/review/estimated_type_localities.csv
+
+# Retry failures from an existing review CSV (429 rate limits, improved queries)
+python mdd_project/scripts/geocode_type_localities.py \
+  --input-csv mdd_project/data/review/estimated_type_localities.csv \
+  --only-review-status no_estimate --phases explicit,nominatim \
+  --retry-cache-errors --nominatim-sleep 2.0 \
+  --output mdd_project/data/review/estimated_type_localities.csv
+
 python mdd_project/scripts/import_estimated_type_localities.py
 python mdd_project/scripts/summarize_estimated_type_localities.py
 # Or re-run setup_database.py — step 4 imports the CSV when present.

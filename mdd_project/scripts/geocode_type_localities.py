@@ -183,10 +183,15 @@ def resolve_nominatim_hit(
     cache: dict[str, dict[str, object]] | None = None,
     write_cache: bool = False,
     sleep_s: float = 1.1,
+    retry_cache_errors: bool = False,
 ) -> dict | None:
     if cache is not None and query in cache:
         cached = cache[query]
-        return None if cached.get("error") else cached  # type: ignore[return-value]
+        if cached.get("error"):
+            if not retry_cache_errors:
+                return None
+        else:
+            return cached  # type: ignore[return-value]
 
     hit = _nominatim_search_remote(query)
     if cache is not None:
@@ -219,6 +224,7 @@ def geocode_with_nominatim(
     sleep_s: float = 1.1,
     cache: dict[str, dict[str, object]] | None = None,
     write_cache: bool = False,
+    retry_cache_errors: bool = False,
 ) -> GeocodeResult:
     try:
         hit = resolve_nominatim_hit(
@@ -226,6 +232,7 @@ def geocode_with_nominatim(
             cache=cache,
             write_cache=write_cache,
             sleep_s=sleep_s,
+            retry_cache_errors=retry_cache_errors,
         )
     except Exception as exc:  # noqa: BLE001
         return GeocodeResult(
@@ -396,13 +403,29 @@ def skip_reason(voucher: str | None, locality: str | None) -> str | None:
     return None
 
 
-def build_nominatim_query(locality: str) -> str:
+def build_nominatim_query(locality: str, *, museum_country: str | None = None) -> str:
     text = locality.strip().strip('"')
     text = re.sub(r"^Restricted by .*? to ", "", text, flags=re.I)
     text = re.sub(r"^Corrected by .*? to ", "", text, flags=re.I)
     text = re.sub(r"\s+", " ", text)
+
+    bracket = re.search(r"\[=\s*([^\]]+)\]", text)
+    if bracket:
+        text = bracket.group(1).strip()
+
+    # Drop trailing citation clauses after the first sentence.
     if "." in text:
         text = text.split(".")[0]
+
+    text = re.sub(r"\s*;\s*.*$", "", text)
+    text = re.sub(r"\s*,\s*altitude\b.*$", "", text, flags=re.I)
+    text = re.sub(r"\s*,\s*\d[\d,]*\s*(?:ft|feet|m)\b.*$", "", text, flags=re.I)
+    text = text.strip(" ,;")
+
+    country = (museum_country or "").strip()
+    if country and country.lower() not in text.lower():
+        text = f"{text}, {country}"
+
     return text[:240]
 
 
@@ -414,6 +437,7 @@ def geocode_row(
     nominatim_sleep_s: float = 1.1,
     nominatim_cache: dict[str, dict[str, object]] | None = None,
     write_nominatim_cache: bool = False,
+    retry_cache_errors: bool = False,
 ) -> GeocodeResult:
     sci_name = str(row.get("sci_name", ""))
     voucher = row.get("type_voucher")
@@ -435,8 +459,9 @@ def geocode_row(
             return parsed
 
     if "nominatim" in phases:
-        query = build_nominatim_query(str(locality))
-        if len(query) >= 8:
+        museum_country = str(row.get("museum_country") or "").strip() or None
+        query = build_nominatim_query(str(locality), museum_country=museum_country)
+        if len(query) >= 4:
             return geocode_with_nominatim(
                 query,
                 base_uncertainty_m=50000,
@@ -444,6 +469,7 @@ def geocode_row(
                 sleep_s=nominatim_sleep_s,
                 cache=nominatim_cache,
                 write_cache=write_nominatim_cache,
+                retry_cache_errors=retry_cache_errors,
             )
 
     return GeocodeResult(
@@ -604,6 +630,19 @@ def write_geocoded_csv(rows: list[dict[str, Any]], output: Path) -> None:
         writer.writerows(rows)
 
 
+def row_matches_filters(
+    row: dict[str, Any],
+    *,
+    only_review_status: str | None = None,
+    only_geocode_method: str | None = None,
+) -> bool:
+    if only_review_status and str(row.get("review_status", "")) != only_review_status:
+        return False
+    if only_geocode_method and str(row.get("geocode_method", "")) != only_geocode_method:
+        return False
+    return True
+
+
 def run_geocoder(
     rows: Iterable[dict[str, Any]],
     *,
@@ -612,27 +651,52 @@ def run_geocoder(
     nominatim_sleep_s: float = 1.1,
     nominatim_cache: dict[str, dict[str, object]] | None = None,
     write_nominatim_cache: bool = False,
+    retry_cache_errors: bool = False,
+    only_review_status: str | None = None,
+    only_geocode_method: str | None = None,
     output: Path | None = None,
     checkpoint_every: int = 100,
 ) -> list[dict[str, Any]]:
     out_rows: list[dict[str, Any]] = []
     rows_list = list(rows)
     use_nominatim = "nominatim" in phases
-    for index, row in enumerate(rows_list, start=1):
-        result = geocode_row(
+    reprocess_total = sum(
+        1
+        for row in rows_list
+        if row_matches_filters(
             row,
-            phases=phases,
-            curated=curated,
-            nominatim_sleep_s=nominatim_sleep_s,
-            nominatim_cache=nominatim_cache,
-            write_nominatim_cache=write_nominatim_cache,
+            only_review_status=only_review_status,
+            only_geocode_method=only_geocode_method,
         )
-        out_rows.append({**row, **result_to_output(result)})
+    )
+    reprocessed = 0
+    for index, row in enumerate(rows_list, start=1):
+        if row_matches_filters(
+            row,
+            only_review_status=only_review_status,
+            only_geocode_method=only_geocode_method,
+        ):
+            result = geocode_row(
+                row,
+                phases=phases,
+                curated=curated,
+                nominatim_sleep_s=nominatim_sleep_s,
+                nominatim_cache=nominatim_cache,
+                write_nominatim_cache=write_nominatim_cache,
+                retry_cache_errors=retry_cache_errors,
+            )
+            out_rows.append({**row, **result_to_output(result)})
+            reprocessed += 1
+        else:
+            out_rows.append(row)
         if output and checkpoint_every and index % checkpoint_every == 0:
             write_geocoded_csv(out_rows, output)
-        if use_nominatim and index % 100 == 0:
+        if use_nominatim and reprocessed and reprocessed % 100 == 0:
             proposed = sum(1 for r in out_rows if r.get("type_lat_suggested"))
-            print(f"  progress {index}/{len(rows_list)} · proposed={proposed}", flush=True)
+            print(
+                f"  progress {reprocessed}/{reprocess_total} · proposed={proposed}",
+                flush=True,
+            )
     if use_nominatim and nominatim_cache is not None and write_nominatim_cache:
         save_nominatim_cache(nominatim_cache)
     return out_rows
@@ -698,6 +762,19 @@ def build_arg_parser() -> argparse.ArgumentParser:
         default=1.1,
         help="Seconds to sleep between Nominatim requests (default: 1.1).",
     )
+    parser.add_argument(
+        "--only-review-status",
+        help="When using --input-csv, re-geocode only rows with this review_status.",
+    )
+    parser.add_argument(
+        "--only-geocode-method",
+        help="When using --input-csv, re-geocode only rows with this geocode_method.",
+    )
+    parser.add_argument(
+        "--retry-cache-errors",
+        action="store_true",
+        help="Retry Nominatim queries previously cached as errors (e.g. HTTP 429).",
+    )
     return parser
 
 
@@ -731,6 +808,9 @@ def main() -> None:
         nominatim_sleep_s=args.nominatim_sleep,
         nominatim_cache=load_nominatim_cache() if "nominatim" in phases else None,
         write_nominatim_cache="nominatim" in phases,
+        retry_cache_errors=args.retry_cache_errors,
+        only_review_status=args.only_review_status,
+        only_geocode_method=args.only_geocode_method,
         output=args.output,
         checkpoint_every=100,
     )
