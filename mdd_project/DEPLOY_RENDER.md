@@ -31,8 +31,9 @@ One container runs **nginx** (static Vite build + reverse proxy) and **uvicorn**
 ## Build time
 
 - **Frontend** (`npm ci` + `vite build`): ~1–2 minutes.
-- **DuckDB** (`setup_database.py --skip-exports`): ~1–3 minutes depending on plan CPU.
-- **Total first deploy**: often **5–10 minutes** on free tier.
+- **DuckDB** (`setup_database.py --skip-exports` + estimated CSV): ~1–3 minutes depending on plan CPU.
+- **GBIF demo import** (Galagidae, 100 records/species): ~2–5 minutes (network calls to api.gbif.org).
+- **Total first deploy**: often **8–15 minutes** on free tier.
 
 Image size is typically **~800 MB–1.2 GB** (Python slim + nginx + ~116 MB DuckDB + dependencies).
 
@@ -59,12 +60,19 @@ Frontend uses `fetch('/api/...')` so the UI and API share one origin (no CORS).
 
 ## GBIF occurrences on Render
 
-`setup_database.py` does **not** create the `observations` table. On the **free** tier:
+The Docker build **pre-bakes** a small GBIF demo dataset:
 
-- Do **not** run `gbif_import.py` at container startup (slow, network-heavy, ephemeral disk).
-- Occurrence dots stay empty unless you **pre-bake** a small demo DB in the image (run import locally, commit or copy `mdd.duckdb` — not recommended for full GBIF data) or attach a **persistent disk** and import once on a paid instance.
+```bash
+python mdd_project/scripts/gbif_import.py --from-mdd --family Galagidae --limit-per-species 100 --no-export
+```
 
-Type localities (~1,941 points) work out of the box from the baked taxonomy DB.
+That gives orange occurrence dots for **Galagidae** species when selected in the map (~18/19 species with GBIF data). No runtime network import is needed on Render.
+
+To change the demo set, edit the `gbif_import.py` step in the repo-root `Dockerfile` (e.g. another `--family` or `--order`). Do **not** import full-mammal GBIF into the image — build time and image size would explode.
+
+The `observations` table is **not** created by `setup_database.py` alone; it appears only after this build step (or a manual local import).
+
+Type localities (~1,941 official + ~1,647 estimated review points) work from the baked taxonomy DB.
 
 ## Render free tier limitations
 

@@ -34,7 +34,14 @@ RUN mkdir -p mdd_project/data/processed
 # MDD v2.4 CSVs (repo root); setup_database.py also checks REPO_ROOT
 COPY MDD_v2.4_6871species.csv Species_Syn_v2.4.csv TypeSpecimenMetadata_v2.4.csv META_v2.4.csv Diff_v2.3-v2.4.csv ./
 
+# Review CSV → estimated type localities table (separate from official MDD coords)
+COPY mdd_project/data/review/estimated_type_localities.csv mdd_project/data/review/estimated_type_localities.csv
+
 RUN python mdd_project/scripts/setup_database.py --skip-exports
+
+# Demo GBIF occurrences for galagos (Galagidae) — baked into image for Render
+RUN python mdd_project/scripts/gbif_import.py \
+    --from-mdd --family Galagidae --limit-per-species 100 --no-export
 
 # -----------------------------------------------------------------------------
 # Stage 3: Runtime — python slim + nginx, static dist, app, duckdb
