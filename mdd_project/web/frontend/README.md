@@ -33,7 +33,10 @@ npm run dev
 - **Type localities layer** — 4,000+ georeferenced MDD type specimens, coloured by IUCN status
 - **Species search** — type any mammal name → autocomplete → fly to type locality
 - **GBIF occurrences layer** — orange dots loaded when a species is selected
-  (requires data in DB from `gbif_import.py`)
+  (requires data in DB from `gbif_import.py`; Galagidae batch pre-import recommended)
+- **IUCN status** — type-locality colours from MDD; species card links to IUCN Red List
+- **Voucher links** — VertNet / iDigBio / GBIF catalogue URIs in type-locality popups when MDD has them
+- **About panel** — Swedish explainer under *Om datalagren* (MDD vs GBIF vs museum data)
 - **Popup info** — click any point for details
 
 ## Loading GBIF occurrences

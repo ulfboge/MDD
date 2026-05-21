@@ -203,6 +203,23 @@
   width: fit-content;
 }
 
+.iucn-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.iucn-link {
+  font-size: 11px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.iucn-link:hover {
+  text-decoration: underline;
+}
+
 .countries {
   font-size: 11px;
   color: var(--text-dim);
@@ -606,6 +623,12 @@ details[open] > .about-summary::before {
   margin-top: 12px;
   padding-top: 10px;
   border-top: 1px solid #e8ecf2;
+}
+
+.popup-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
 }
 
 .popup-link {

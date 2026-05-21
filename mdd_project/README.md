@@ -344,6 +344,20 @@ fully reproducible by re-running `setup_database.py`.
 
 MDD is the **taxonomy backbone**, not a spatial or occurrence database.
 
+| Data | Role in this project | Source |
+|------|----------------------|--------|
+| Taxonomy, synonyms, type localities | Core map layers | [MDD v2.4](https://www.mammaldiversity.org/) |
+| IUCN status colours | Per-species field in MDD; links to Red List | MDD → [IUCN Red List](https://www.iucnredlist.org/) |
+| GBIF occurrences | Separate orange layer per selected species | [GBIF API](https://www.gbif.org/) |
+| Estimated type localities | Review-only geocoding fallback | Local pipeline (`geocode_type_localities.py`) |
+| Voucher catalogue links | Popup links when MDD has URIs (VertNet, iDigBio, GBIF specimen pages) | MDD `type_voucher_uris` — not full museum catalogues |
+
+Recommended batch import for galago work:
+
+```bash
+python mdd_project/scripts/gbif_import.py --from-mdd --family Galagidae --limit-per-species 100 --no-export
+```
+
 - Every species, synonym, and name has a stable `species_id` integer key
 - All external datasets (GBIF, IUCN, iNaturalist, camera trap CSVs) should be
   **joined to MDD**, not the other way around

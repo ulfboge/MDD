@@ -57,8 +57,48 @@ const IUCN_COLOR: Record<string, string> = {
   EX: "#888",
   DD: "#aaa",
 };
+const IUCN_LABEL: Record<string, string> = {
+  LC: "Livskraftig",
+  NT: "Nära hotad",
+  VU: "Sårbar",
+  EN: "Starkt hotad",
+  CR: "Akut hotad",
+  EW: "Utdöd i vilt tillstånd",
+  EX: "Utdöd",
+  DD: "Kunskapsbrist",
+};
 function iucnColor(status: string | null): string {
   return IUCN_COLOR[status ?? ""] ?? "#4f9cf9";
+}
+function iucnRedListUrl(sciNameSpace: string): string {
+  return `https://www.iucnredlist.org/search?query=${encodeURIComponent(sciNameSpace)}`;
+}
+function voucherUriLabel(url: string): string {
+  const host = url.toLowerCase();
+  if (host.includes("portal.vertnet.org")) return "VertNet";
+  if (host.includes("idigbio.org")) return "iDigBio";
+  if (host.includes("gbif.org")) return "GBIF";
+  if (host.includes("data.nhm.ac.uk")) return "NHM Data Portal";
+  return "Samlingskatalog";
+}
+function parseVoucherUris(raw: string | null): string[] {
+  if (!raw) return [];
+  return raw
+    .split("|")
+    .map((part) => part.trim())
+    .filter((part) => part.startsWith("http"));
+}
+function voucherUriLinksHtml(raw: string | null): string {
+  const uris = parseVoucherUris(raw);
+  if (!uris.length) return "";
+  const links = uris
+    .slice(0, 4)
+    .map(
+      (uri) =>
+        `<a class="popup-link" href="${escapeHtml(uri)}" target="_blank" rel="noopener noreferrer">${escapeHtml(voucherUriLabel(uri))} ↗</a>`
+    )
+    .join("");
+  return `<footer class="popup-footer popup-footer-links">${links}</footer>`;
 }
 
 // ---------------------------------------------------------------------------
@@ -104,8 +144,8 @@ function typeLocalityPopupHtml(p: Record<string, string | null>): string {
       ? escapeHtml(String(p.type_kind))
       : null;
   const uri =
-    p.type_voucher_uris != null && String(p.type_voucher_uris).trim().startsWith("http")
-      ? escapeHtml(String(p.type_voucher_uris).trim())
+    p.type_voucher_uris != null && String(p.type_voucher_uris).trim() !== ""
+      ? String(p.type_voucher_uris).trim()
       : null;
 
   const specimenValue = voucher
@@ -131,7 +171,7 @@ function typeLocalityPopupHtml(p: Record<string, string | null>): string {
         </div>
       </header>
       ${details.length ? `<dl class="popup-details">${details.join("")}</dl>` : ""}
-      ${uri ? `<footer class="popup-footer"><a class="popup-link" href="${uri}" target="_blank" rel="noopener noreferrer">View in collection ↗</a></footer>` : ""}
+      ${uri ? voucherUriLinksHtml(uri) : ""}
     </div>`;
 }
 
@@ -264,7 +304,10 @@ export default function App() {
         type: string;
       }>(`${API}/occurrences/${encodeURIComponent(sciName)}`);
 
-      source.setData({ type: "FeatureCollection", features: fc.features });
+      source.setData({
+        type: "FeatureCollection",
+        features: fc.features,
+      } as Parameters<GeoJSONSource["setData"]>[0]);
       setOccurrenceMeta(fc.meta);
 
       if (fc.features.length > 0) {
@@ -902,11 +945,24 @@ export default function App() {
               <span>{selected.family}</span>
             </div>
             {selected.iucn_status && (
-              <div
-                className="iucn-badge"
-                style={{ background: iucnColor(selected.iucn_status) }}
-              >
-                {selected.iucn_status}
+              <div className="iucn-row">
+                <div
+                  className="iucn-badge"
+                  style={{ background: iucnColor(selected.iucn_status) }}
+                >
+                  {selected.iucn_status}
+                  {IUCN_LABEL[selected.iucn_status]
+                    ? ` · ${IUCN_LABEL[selected.iucn_status]}`
+                    : ""}
+                </div>
+                <a
+                  className="iucn-link"
+                  href={iucnRedListUrl(selected.sci_name_space ?? selected.sci_name.replace(/_/g, " "))}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  IUCN Red List ↗
+                </a>
               </div>
             )}
             {selected.country_distribution && (
@@ -1071,29 +1127,40 @@ export default function App() {
           </p>
         </section>
 
-        {/* About these layers — collapsible explainer */}
+        {/* About these layers — collapsible explainer (Swedish) */}
         <section className="section">
           <details className="about-layers">
-            <summary className="about-summary">About these layers</summary>
+            <summary className="about-summary">Om datalagren</summary>
             <div className="about-body">
               <p>
-                <strong>MDD</strong> is a mammal taxonomy authority, not a museum
-                catalogue. Each accepted species has at most one type locality — the
-                site where its holotype specimen was collected. Of ~14,000 valid
-                species, roughly 1,941 have geocoded coordinates in MDD v2.4; the
-                rest have text descriptions only, so no map point appears.
+                <strong>MDD</strong> (Mammal Diversity Database) är en global taxonomisk
+                referensdatabas för däggdjur — inte en museumskatalog. Den innehåller
+                accepterade artnamn, synonymer, typmaterial och typ-lokaliteter från
+                vetenskaplig litteratur. Av ~14&nbsp;000 arter har ungefär 1&nbsp;941
+                geokodade typ-lokaliteter i MDD v2.4; resten har bara textbeskrivning.
               </p>
               <p>
-                <strong>Estimated type localities</strong> (optional layer) are machine-assisted
-                guesses for species without official MDD coordinates. They are derived from
-                type locality text and are shown only when no official point exists. Always
-                treat them as provisional — not museum or MDD data.
+                <strong>Uppskattade typ-lokaliteter</strong> (valfritt lager) är
+                maskinassisterade gissningar för arter utan officiella MDD-koordinater.
+                De är granskningsobjekt — inte MDD- eller museidata. Använd dem som
+                ledtrådar, inte som facit.
               </p>
               <p>
-                <strong>GBIF occurrences</strong> are independent sighting and
-                specimen records sourced from GBIF. A species
-                can have no type locality dot (coordinates absent from MDD) yet many
-                GBIF records, or vice versa — the two layers are separate datasets.
+                <strong>GBIF-förekomster</strong> är oberoende observations- och
+                samlingsposter (museer, citizen science m.m.) via GBIF. En art kan sakna
+                typ-lokalitet men ha många GBIF-punkter, eller tvärtom. Det är medvetet
+                separata lager.
+              </p>
+              <p>
+                <strong>IUCN-status</strong> (färg på typ-lokaliteter) kommer från MDD:s
+                inbäddade rödlisteklassificering per art — inte från IUCN:s kartlager.
+                Klicka på en art för länk till IUCN Red List.
+              </p>
+              <p>
+                <strong>VertNet / iDigBio</strong> används här bara som kompletterande
+                kataloglänkar till typmaterial (voucher-URI), när MDD har sådan
+                information. De ersätter inte MDD-taxonomin och ger inte full
+                samlingsöversikt.
               </p>
             </div>
           </details>
@@ -1101,12 +1168,15 @@ export default function App() {
 
         {/* IUCN legend */}
         <section className="section">
-          <label className="section-label">IUCN (type localities)</label>
+          <label className="section-label">IUCN (typ-lokaliteter)</label>
           <div className="legend">
             {Object.entries(IUCN_COLOR).map(([code, color]) => (
               <div key={code} className="legend-row">
                 <span className="legend-dot" style={{ background: color }} />
-                <span>{code}</span>
+                <span>
+                  {code}
+                  {IUCN_LABEL[code] ? ` · ${IUCN_LABEL[code]}` : ""}
+                </span>
               </div>
             ))}
           </div>
@@ -1116,8 +1186,12 @@ export default function App() {
           Data:{" "}
           <a href="https://www.mammaldiversity.org/" target="_blank" rel="noreferrer">
             MDD v2.4
-          </a>{" "}
-          · Occurrences:{" "}
+          </a>
+          {" · "}
+          <a href="https://www.iucnredlist.org/" target="_blank" rel="noreferrer">
+            IUCN Red List
+          </a>
+          {" · "}
           <a href="https://gbif.org" target="_blank" rel="noreferrer">
             GBIF
           </a>

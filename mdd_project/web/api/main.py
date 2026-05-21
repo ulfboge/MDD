@@ -796,6 +796,7 @@ def get_estimated_type_localities(
                 e.type_locality,
                 e.type_voucher,
                 e.type_kind,
+                s.type_voucher_uris,
                 e.museum_name,
                 e.museum_abbreviation,
                 e.museum_location,
