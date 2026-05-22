@@ -52,6 +52,11 @@ def main() -> None:
         help="Comma-separated confidence levels to include (high, medium, low)",
     )
     parser.add_argument("--limit", type=int, default=50, help="Max rows to export (default: 50)")
+    parser.add_argument(
+        "--exclude-reviewed",
+        action="store_true",
+        help="Skip rows that already have qc_reviewed set in the main CSV.",
+    )
     args = parser.parse_args()
 
     if not args.input.exists():
@@ -77,6 +82,8 @@ def main() -> None:
             ):
                 continue
             if conf_filter and row.get("geocode_confidence", "").lower() not in conf_filter:
+                continue
+            if args.exclude_reviewed and (row.get("qc_reviewed") or "").strip():
                 continue
             rows.append(row)
 

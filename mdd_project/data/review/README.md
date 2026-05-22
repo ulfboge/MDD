@@ -31,6 +31,7 @@ Current post-audit status:
 | `estimated_qc_sample_batch2.csv` | Second QC export (50 rows, post country-validation re-geocode) |
 | `estimated_qc_sample_batch2_reviewed.csv` | Batch 2 after human review |
 | `estimated_qc_sample_batch2_summary.csv` | Batch 2 decision counts |
+| `estimated_qc_sample_batch3.csv` | Third QC export (50 unreviewed proposed, medium confidence) |
 | `estimated_type_localities_qc_applied.csv` | Full 4,930-row CSV annotated with QC columns (review export; rejects not yet cleared) |
 | `estimated_type_localities_qc_summary.csv` | Decision counts from QC review batch |
 | `museum_coverage_matched.csv` | Museums that appear in the web app filter (≥1 matched type voucher). |
