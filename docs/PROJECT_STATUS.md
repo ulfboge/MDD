@@ -147,7 +147,7 @@ The **MDD web map** is deployed and working on Render. The stack is a single Doc
 | Nominatim cache | `mdd_project/data/review/geocoding/nominatim_geocode_cache.json` |
 | Web frontend | `mdd_project/web/frontend/src/App.tsx` |
 | FastAPI | `mdd_project/web/api/main.py` |
-| Render deploy guide | `mdd_project/DEPLOY_RENDER.md` |
+| Render deploy guide | `docs/DEPLOY_RENDER.md` |
 | Dockerfile | `Dockerfile` (repo root) |
 
 ---

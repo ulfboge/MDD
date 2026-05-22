@@ -9,8 +9,10 @@ from pathlib import Path
 
 import duckdb
 
+from data_paths import TYPE_SPECIMEN_METADATA_CSV
+
 DB = Path(__file__).resolve().parents[1] / "data" / "processed" / "mdd.duckdb"
-META = Path(__file__).resolve().parents[2] / "TypeSpecimenMetadata_v2.4.csv"
+META = TYPE_SPECIMEN_METADATA_CSV
 OUT_DIR = Path(__file__).resolve().parents[1] / "data" / "review" / "museum"
 
 MUSEUM_MATCH = """

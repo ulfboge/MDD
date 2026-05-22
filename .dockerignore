@@ -22,7 +22,7 @@ env
 mdd_project/web/frontend/node_modules
 mdd_project/web/frontend/dist
 
-# Rebuilt during image build (CSVs at repo root are included)
+# Rebuilt during image build
 mdd_project/data/processed/*.duckdb
 mdd_project/data/processed/*.duckdb.wal
 mdd_project/data/processed/exports
@@ -35,7 +35,7 @@ mdd_project/qgis
 
 # Docs and misc (not needed in image)
 *.md
-!mdd_project/DEPLOY_RENDER.md
+!mdd_project/data/raw/MDD/README.md
 
 # Agent / local tooling
 agent-transcripts

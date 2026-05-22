@@ -3,9 +3,13 @@
 | File | Description |
 |------|-------------|
 | [`PROJECT_STATUS.md`](PROJECT_STATUS.md) | Session log — deployment status, QC progress, open tasks |
+| [`DEPLOY_RENDER.md`](DEPLOY_RENDER.md) | Render / Docker deployment guide |
 
-Operational docs live next to the code they describe:
+## By topic
 
-- [`mdd_project/README.md`](../mdd_project/README.md) — setup, DuckDB, web map
-- [`mdd_project/DEPLOY_RENDER.md`](../mdd_project/DEPLOY_RENDER.md) — Render deployment
-- [`mdd_project/data/review/README.md`](../mdd_project/data/review/README.md) — museum audit & geocoding review data
+| Topic | Location |
+|-------|----------|
+| Setup, DuckDB, web map | [`mdd_project/README.md`](../mdd_project/README.md) |
+| MDD v2.4 CSV inputs | [`mdd_project/data/raw/MDD/`](../mdd_project/data/raw/MDD/) |
+| Review / geocoding / museum QC | [`mdd_project/data/review/README.md`](../mdd_project/data/review/README.md) |
+| QGIS connection | [`qgis/QGIS_CONNECTION.md`](qgis/QGIS_CONNECTION.md) |

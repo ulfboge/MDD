@@ -5,7 +5,7 @@ Usage:
     python mdd_project/scripts/setup_database.py [--raw-dir PATH] [--db PATH] [--skip-exports]
 
 The script:
-  1. Locates raw CSV files (defaults: repo root → mdd_project/data/raw/MDD/)
+  1. Locates raw CSV files (default: mdd_project/data/raw/MDD/, legacy: repo root)
   2. Creates data/processed/ directories
   3. Imports all MDD tables and creates indexes (import_mdd.sql)
   4. Creates analytical views (create_views.sql)
@@ -23,12 +23,13 @@ from pathlib import Path
 
 import duckdb
 
+from data_paths import CSV_FILES, find_raw_dir
+
 # ---------------------------------------------------------------------------
 # Path resolution
 # ---------------------------------------------------------------------------
 SCRIPT_DIR  = Path(__file__).resolve().parent
 PROJECT_DIR = SCRIPT_DIR.parent                          # mdd_project/
-REPO_ROOT   = PROJECT_DIR.parent                         # repo root
 
 SQL_DIR          = SCRIPT_DIR
 PROCESSED_DIR    = PROJECT_DIR / "data" / "processed"
@@ -36,45 +37,6 @@ EXPORTS_DIR      = PROCESSED_DIR / "exports"
 GEOPARQUET_DIR   = PROCESSED_DIR / "geoparquet"
 
 DB_PATH          = PROCESSED_DIR / "mdd.duckdb"
-
-# ---------------------------------------------------------------------------
-# CSV file names (MDD v2.4)
-# ---------------------------------------------------------------------------
-CSV_FILES = {
-    "species_csv":       "MDD_v2.4_6871species.csv",
-    "synonyms_csv":      "Species_Syn_v2.4.csv",
-    "type_specimen_csv": "TypeSpecimenMetadata_v2.4.csv",
-    "meta_csv":          "META_v2.4.csv",
-    "diff_csv":          "Diff_v2.3-v2.4.csv",
-}
-
-
-def find_raw_dir(hint: Path | None) -> Path:
-    """Return the directory containing all MDD CSV files, or raise."""
-    candidates = []
-    if hint:
-        candidates.append(Path(hint))
-    candidates += [
-        REPO_ROOT,                                    # files live at repo root
-        PROJECT_DIR / "data" / "raw" / "MDD",
-    ]
-    for d in candidates:
-        if all((d / name).exists() for name in CSV_FILES.values()):
-            return d.resolve()
-    missing = [name for name in CSV_FILES.values()
-               if not any((d / name).exists() for d in candidates)]
-    print(
-        "\n[ERROR] Could not find all MDD CSV files.\n"
-        f"  Missing: {missing}\n"
-        "  Looked in:\n" +
-        "\n".join(f"    {d}" for d in candidates) +
-        "\n\n  Download MDD v2.4 from:\n"
-        "    https://www.mammaldiversity.org/\n"
-        "  or Zenodo: https://doi.org/10.5281/zenodo.18135819\n"
-        "  Place all CSV files in one of the candidate directories above.",
-        file=sys.stderr,
-    )
-    sys.exit(1)
 
 
 def run_sql_file(con: duckdb.DuckDBPyConnection, path: Path, params: dict) -> None:

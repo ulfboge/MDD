@@ -7,8 +7,10 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
+from data_paths import TYPE_SPECIMEN_METADATA_CSV
+
 REVIEW = Path(__file__).resolve().parents[1] / "data" / "review" / "museum"
-METADATA = Path(__file__).resolve().parents[2] / "TypeSpecimenMetadata_v2.4.csv"
+METADATA = TYPE_SPECIMEN_METADATA_CSV
 
 SKIP_PREFIXES = {
     "UNTRACED",

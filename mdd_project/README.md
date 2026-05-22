@@ -12,7 +12,7 @@
 # 1. Install Python dependencies
 pip install -r requirements.txt
 
-# 2. Build the DuckDB database (CSV files must be in repo root or data/raw/MDD/)
+# 2. Build the DuckDB database (CSV files in mdd_project/data/raw/MDD/)
 python mdd_project/scripts/setup_database.py
 
 # 3. Query interactively
@@ -42,7 +42,7 @@ script or API call will work. Run from the **repo root**:
 python mdd_project/scripts/setup_database.py
 ```
 
-This reads the five raw CSV files at the repo root (or `data/raw/MDD/`) and
+This reads the five MDD CSV files from `mdd_project/data/raw/MDD/` (legacy fallback: repo root) and
 produces `mdd_project/data/processed/mdd.duckdb` plus initial GeoParquet exports.
 It takes about 15–30 seconds. You only need to run it once per machine (or after
 deleting the DB file).
@@ -139,19 +139,16 @@ duckdb --version
 ## Folder Layout
 
 ```
-MDD/                                  ← repo root (CSV files live here)
-├── MDD_v2.4_6871species.csv
-├── Species_Syn_v2.4.csv
-├── TypeSpecimenMetadata_v2.4.csv
-├── META_v2.4.csv
-├── Diff_v2.3-v2.4.csv
-├── release.toml
+MDD/                                  ← repo root
+├── README.md
+├── docs/                             ← deployment, session log, QGIS
 ├── requirements.txt
-├── .gitignore
+├── Dockerfile
 └── mdd_project/
     ├── README.md                     ← this file
     ├── data/
-    │   ├── raw/MDD/                  ← place CSVs here OR keep in repo root
+    │   ├── raw/MDD/                  ← MDD v2.4 CSV source files
+    │   ├── review/                   ← geocoding + museum audit (see review/README.md)
     │   ├── processed/
     │   │   ├── mdd.duckdb            ← built by setup_database.py (gitignored)
     │   │   ├── exports/              ← CSVs for QGIS (gitignored)
@@ -159,6 +156,7 @@ MDD/                                  ← repo root (CSV files live here)
     │   └── external/occurrence_data/ ← place GBIF/iNat exports here
     ├── scripts/
     │   ├── setup_database.py         ← main entry point
+    │   ├── data_paths.py             ← MDD CSV path constants
     │   ├── import_mdd.sql            ← schema + CSV ingestion
     │   ├── create_views.sql          ← analytical views (default + taxonomy schema)
     │   ├── export_for_qgis.sql       ← GeoParquet + CSV exports
@@ -166,14 +164,14 @@ MDD/                                  ← repo root (CSV files live here)
     │   ├── export_for_postgres.sql   ← PostgreSQL/PostGIS migration guide
     │   ├── harmonize_names.py        ← CLI: resolve CSV name column → MDD accepted names
     │   └── gbif_import.py            ← GBIF occurrence download + DuckDB ingest
-    ├── qgis/
-    │   └── QGIS_CONNECTION.md        ← step-by-step QGIS connection guide
     └── web/
         ├── api/
         │   ├── main.py               ← FastAPI application (working)
         │   └── README.md             ← API docs + uvicorn quickstart
         └── frontend/README.md        ← planned React + MapLibre scaffold
 ```
+
+QGIS guide: [`docs/qgis/QGIS_CONNECTION.md`](../docs/qgis/QGIS_CONNECTION.md)
 
 ---
 
@@ -282,7 +280,7 @@ WHERE sci_name = 'Ursus_arctos'
 
 ## QGIS Connection
 
-See [qgis/QGIS_CONNECTION.md](qgis/QGIS_CONNECTION.md) for full instructions.
+See [docs/qgis/QGIS_CONNECTION.md](../docs/qgis/QGIS_CONNECTION.md) for full instructions.
 
 **TL;DR — fastest path:**
 1. Run `setup_database.py` to generate `geoparquet/type_localities.parquet`

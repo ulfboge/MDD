@@ -31,8 +31,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY mdd_project/scripts/ mdd_project/scripts/
 RUN mkdir -p mdd_project/data/processed
 
-# MDD v2.4 CSVs (repo root); setup_database.py also checks REPO_ROOT
-COPY MDD_v2.4_6871species.csv Species_Syn_v2.4.csv TypeSpecimenMetadata_v2.4.csv META_v2.4.csv Diff_v2.3-v2.4.csv ./
+# MDD v2.4 CSVs; setup_database.py reads mdd_project/data/raw/MDD/
+COPY mdd_project/data/raw/MDD/ mdd_project/data/raw/MDD/
 
 # Review CSV → estimated type localities table (separate from official MDD coords)
 COPY mdd_project/data/review/geocoding/estimated_type_localities.csv mdd_project/data/review/geocoding/estimated_type_localities.csv

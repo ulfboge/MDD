@@ -5,7 +5,7 @@ One container runs **nginx** (static Vite build + reverse proxy) and **uvicorn**
 ## Prerequisites
 
 1. Push this repository to GitHub (or GitLab).
-2. Ensure these CSV files are in the **repo root** (required for the image build):
+2. Ensure the MDD v2.4 CSV files are in **`mdd_project/data/raw/MDD/`** (required for the image build):
    - `MDD_v2.4_6871species.csv`
    - `Species_Syn_v2.4.csv`
    - `TypeSpecimenMetadata_v2.4.csv`
