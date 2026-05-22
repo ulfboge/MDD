@@ -187,6 +187,15 @@ def build_qc_geocodes() -> dict[str, GeocodeResult]:
             "medium",
             "Type locality given as Vietnam only. Placed in Annamite Mountains (Vu Quang / saola range).",
         ),
+        "Plecturocebus_baptista": manual(
+            "Lago do Baptista area, Amazonas, Brazil",
+            -3.58,
+            -59.13,
+            60000,
+            "low",
+            "Original type locality unknown; restricted to Lago do Baptista, Amazonas. "
+            "Approximate location in central Amazonas (Autazes / lower Madeira basin).",
+        ),
     }
 
 
