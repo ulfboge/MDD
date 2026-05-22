@@ -31,6 +31,8 @@ from typing import Any, Callable, Iterable
 
 import duckdb
 
+from geocode_country_validate import display_name_matches_locality, infer_query_country
+
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "mdd_project" / "data" / "processed" / "mdd.duckdb"
 REVIEW_DIR = ROOT / "mdd_project" / "data" / "review"
@@ -221,6 +223,7 @@ def geocode_with_nominatim(
     base_uncertainty_m: int,
     notes: str = "",
     *,
+    locality: str | None = None,
     sleep_s: float = 1.1,
     cache: dict[str, dict[str, object]] | None = None,
     write_cache: bool = False,
@@ -258,9 +261,23 @@ def geocode_with_nominatim(
             phase="nominatim",
         )
 
+    detail = str(hit.get("display_name", ""))
+    if locality:
+        ok, reject_reason = display_name_matches_locality(locality, detail)
+        if not ok:
+            return GeocodeResult(
+                query,
+                None,
+                None,
+                None,
+                "nominatim_rejected",
+                "none",
+                f"{notes}; match={detail}; rejected={reject_reason}".strip("; "),
+                phase="nominatim",
+            )
+
     uncertainty = pick_uncertainty(hit.get("category"), hit.get("type"), base_uncertainty_m)
     confidence = "high" if uncertainty <= 25000 else "medium" if uncertainty <= 100000 else "low"
-    detail = hit.get("display_name", "")
     return GeocodeResult(
         query=query,
         latitude=float(hit["lat"]),
@@ -422,7 +439,7 @@ def build_nominatim_query(locality: str, *, museum_country: str | None = None) -
     text = re.sub(r"\s*,\s*\d[\d,]*\s*(?:ft|feet|m)\b.*$", "", text, flags=re.I)
     text = text.strip(" ,;")
 
-    country = (museum_country or "").strip()
+    country = infer_query_country(text, museum_country)
     if country and country.lower() not in text.lower():
         text = f"{text}, {country}"
 
@@ -466,6 +483,7 @@ def geocode_row(
                 query,
                 base_uncertainty_m=50000,
                 notes=f"Nominatim query derived from type_locality for {sci_name}.",
+                locality=str(locality),
                 sleep_s=nominatim_sleep_s,
                 cache=nominatim_cache,
                 write_cache=write_nominatim_cache,

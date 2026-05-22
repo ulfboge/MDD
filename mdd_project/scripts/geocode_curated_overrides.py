@@ -158,8 +158,33 @@ def build_nhrm_geocodes() -> dict[str, GeocodeResult]:
     }
 
 
+def build_qc_geocodes() -> dict[str, GeocodeResult]:
+    """Curated fixes from QC review (parser / homonym failures)."""
+    return {
+        "Alexandromys_kikuchii": manual(
+            "Mount Morrison (= Yushan), Taiwan",
+            23.470028,
+            120.957383,
+            8000,
+            "high",
+            "Type locality: Mt Morrison, Taiwan. English name for Yushan (Jade Mountain); "
+            "Nominatim query was wrongly reduced to 'Mt, Japan'.",
+        ),
+        "Plecotus_taivanus": manual(
+            "Mt An-ma Shan, Ho-ping, Taichung County, Taiwan",
+            24.181944,
+            120.866389,
+            8000,
+            "high",
+            "Type locality: Mt An-ma Shan, Ho-ping, Tai-chung Hsien, central Taiwan. "
+            "Nominatim query was wrongly reduced to 'Mt, Japan'.",
+        ),
+    }
+
+
 CURATED_REGISTRY: dict[str, Callable[[], dict[str, GeocodeResult]]] = {
     "nhrm": build_nhrm_geocodes,
+    "qc": build_qc_geocodes,
 }
 
 
