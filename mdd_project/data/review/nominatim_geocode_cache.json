@@ -22226,5 +22226,2193 @@
   },
   "Nahuatzin, Michoacan, Mexico, United States of America": {
     "error": "no_match"
+  },
+  "Concepcion [Concepci\u00f3n], United Kingdom": {
+    "error": "no_match"
+  },
+  "Coquimbo,\" Coquimbo, Chile, United Kingdom": {
+    "error": "no_match"
+  },
+  "Valparaiso,\" Valpara\u00edso, Chile, United Kingdom": {
+    "error": "no_match"
+  },
+  "Sulawesi, Germany": {
+    "lat": 52.5059807,
+    "lon": 13.5288797,
+    "category": "natural",
+    "type": "sand",
+    "importance": 0.10675542153047987,
+    "display_name": "Kerabau, Sulawesi-Hirscheber, Friedrichsfelde, Lichtenberg, Berlin, Deutschland"
+  },
+  "Voi, Kenya, United Kingdom": {
+    "error": "no_match"
+  },
+  "40 mi (64, United Kingdom": {
+    "error": "no_match"
+  },
+  "from Chile, United Kingdom": {
+    "error": "no_match"
+  },
+  "Osorno, S, United Kingdom": {
+    "error": "no_match"
+  },
+  "Pungo Andongo, Angola, United Kingdom": {
+    "error": "no_match"
+  },
+  "Mazoe, Mashonaland, Zimbabwe, United Kingdom": {
+    "error": "no_match"
+  },
+  "Machakos, Kenya, United Kingdom": {
+    "error": "no_match"
+  },
+  "Galanga, Angola, United Kingdom": {
+    "error": "no_match"
+  },
+  "Inhambane, Mozambique, United Kingdom": {
+    "error": "no_match"
+  },
+  "Adiopodoum\u00e9, Ivory Coast, Belgium": {
+    "error": "no_match"
+  },
+  "Tanzania, Zanzibar, France": {
+    "error": "no_match"
+  },
+  "Choro, United Kingdom": {
+    "error": "no_match"
+  },
+  "Matosa, c, United States of America": {
+    "error": "no_match"
+  },
+  "Carapar\u00ed, United Kingdom": {
+    "error": "no_match"
+  },
+  "Upper Congo, Democratic Republic of the Congo": {
+    "error": "no_match"
+  },
+  "Congo (= DR Congo), Democratic Republic of the Congo": {
+    "lat": -11.6388651,
+    "lon": 27.5200952,
+    "category": "place",
+    "type": "quarter",
+    "importance": 0.1333833348592355,
+    "display_name": "Congo, Itengo I, Congo, Ruashi, Ville de Lubumbashi, Haut-Katanga, R\u00e9publique d\u00e9mocratique du Congo"
+  },
+  "Cameroon, Victoria, Germany": {
+    "error": "no_match"
+  },
+  "El Paso, [El Paso Co, United States of America": {
+    "lat": 31.7601001,
+    "lon": -106.4870476,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6548295810741123,
+    "display_name": "El Paso, El Paso County, Texas, United States"
+  },
+  "San Gorgonio Pass, [Riverside Co, United States of America": {
+    "lat": 33.9188203,
+    "lon": -116.7491537,
+    "category": "mountain_pass",
+    "type": "yes",
+    "importance": 0.31074813956852465,
+    "display_name": "San Gorgonio Pass, Riverside County, California, 92230, United States"
+  },
+  "Brazil": {
+    "lat": -10.3333333,
+    "lon": -53.2,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.9029823800375192,
+    "display_name": "Brasil"
+  },
+  "California,\" USA, United States of America": {
+    "lat": 33.1260211,
+    "lon": -117.3095609,
+    "category": "tourism",
+    "type": "hotel",
+    "importance": 6.131761654073423e-05,
+    "display_name": "LEGOLAND California Hotel, Miniland USA, Carlsbad, San Diego County, California, 92011, United States"
+  },
+  "Peru, Chanchamayo": {
+    "lat": -11.0147253,
+    "lon": -75.0892243,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.4332019127802897,
+    "display_name": "Chanchamayo, Jun\u00edn, Per\u00fa"
+  },
+  "Japan": {
+    "lat": 36.5748441,
+    "lon": 139.2394179,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.9383765725984483,
+    "display_name": "\u65e5\u672c"
+  },
+  "Central Kashmir, India, United States of America": {
+    "error": "no_match"
+  },
+  "Taiwan": {
+    "lat": 23.9739374,
+    "lon": 120.9820179,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.8048557845543529,
+    "display_name": "\u81fa\u7063"
+  },
+  "Shul, Fars Province, Iran, United Kingdom": {
+    "error": "no_match"
+  },
+  "Marshfield, Coos County, Oregon, United States of America": {
+    "lat": 43.3604578,
+    "lon": -124.2214034,
+    "category": "amenity",
+    "type": "school",
+    "importance": 0.21080589711721126,
+    "display_name": "Marshfield High School, South 10th Street, Coos Bay, Coos County, Oregon, 97420, United States"
+  },
+  "San Jos\u00e9, Department of San Jos\u00e9, Costa Rica (c, United States of America": {
+    "error": "no_match"
+  },
+  "Ethiopia": {
+    "lat": 10.2116702,
+    "lon": 38.6521203,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7735270609889997,
+    "display_name": "\u12a2\u1275\u12ee\u1335\u12eb"
+  },
+  "Nairobi, Kenya, United States of America": {
+    "error": "no_match"
+  },
+  "Egypt": {
+    "lat": 26.2540493,
+    "lon": 29.2675469,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.8377043589365253,
+    "display_name": "\u0645\u0635\u0631"
+  },
+  "Elmina, Ghana, The Netherlands": {
+    "error": "no_match"
+  },
+  "Oddur,\" Somalia, Italy": {
+    "error": "no_match"
+  },
+  "Calamian Islands, China": {
+    "error": "no_match"
+  },
+  "Bawean Island, The Netherlands": {
+    "error": "no_match"
+  },
+  "San Diego, [Duval County], South Texas,\" USA, United Kingdom": {
+    "error": "no_match"
+  },
+  "Mexico City, Mexico": {
+    "lat": 19.3207722,
+    "lon": -99.1514678,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7820130584016439,
+    "display_name": "Ciudad de M\u00e9xico, M\u00e9xico"
+  },
+  "Gabon": {
+    "lat": -0.8999695,
+    "lon": 11.6899699,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7266809753159451,
+    "display_name": "Gabon"
+  },
+  "Florida, United States of America": {
+    "lat": 27.7567667,
+    "lon": -81.4639835,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.8085777143682812,
+    "display_name": "Florida, United States"
+  },
+  "Nepal": {
+    "lat": 28.3780464,
+    "lon": 83.9999901,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7641040022523001,
+    "display_name": "\u0928\u0947\u092a\u093e\u0932"
+  },
+  "Mexico": {
+    "lat": 23.6585116,
+    "lon": -102.0077097,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.8936823669554844,
+    "display_name": "M\u00e9xico"
+  },
+  "DR Congo, Democratic Republic of the Congo": {
+    "lat": -4.306662,
+    "lon": 15.3066402,
+    "category": "amenity",
+    "type": "bank",
+    "importance": 7.549172198057553e-05,
+    "display_name": "FINCA DR Congo, 1286, Avenue Tombalbaye, Golf, Gombe, Kinshasa, R\u00e9publique d\u00e9mocratique du Congo"
+  },
+  "Colima City, Mexico": {
+    "lat": 19.2433991,
+    "lon": -103.7280738,
+    "category": "place",
+    "type": "city",
+    "importance": 0.4709705480904713,
+    "display_name": "Colima, Municipio de Colima, Colima, 28000, M\u00e9xico"
+  },
+  "Papua New Guinea, Indonesia": {
+    "lat": -2.6081452,
+    "lon": 141.0015896,
+    "category": "highway",
+    "type": "primary",
+    "importance": 0.05337333409628439,
+    "display_name": "Vanimo - Indonesia Border Road, Wutung, Vanimo-Green River District, Sandaun, Momase Region, Papua Niugini"
+  },
+  "S\u00e3o Paulo, Germany": {
+    "lat": -23.5868817,
+    "lon": -46.6818921,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 7.861829556720863e-05,
+    "display_name": "Consulado Geral da Alemanha, 3477, Avenida Brigadeiro Faria Lima, Vila Ol\u00edmpia, Itaim Bibi, S\u00e3o Paulo, Regi\u00e3o Sudeste, 04538-133, Brasil"
+  },
+  "Peru": {
+    "lat": -6.8699697,
+    "lon": -75.0458515,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.8194562003951543,
+    "display_name": "Per\u00fa"
+  },
+  "Equatorial Guinea, Bioko, United Kingdom": {
+    "error": "no_match"
+  },
+  "Mount Kilimanjaro, Tanzania, United States of America": {
+    "error": "no_match"
+  },
+  "East slope of Mt, United States of America": {
+    "lat": 33.3182398,
+    "lon": -111.9901954,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.053406635385671745,
+    "display_name": "East Rocky Slope Drive, Ahwatukee Foothills, Phoenix, Maricopa County, Arizona, 85044, United States"
+  },
+  "Kumasi, Ghana, United Kingdom": {
+    "error": "no_match"
+  },
+  "Caluquembe, Angola, Switzerland": {
+    "error": "no_match"
+  },
+  "Mt Coffee, Liberia, United States of America": {
+    "error": "no_match"
+  },
+  "Chich\u00e9n-Itz\u00e1, United States of America": {
+    "lat": 34.4085932,
+    "lon": -118.4282448,
+    "category": "highway",
+    "type": "track",
+    "importance": 0.053394708934157285,
+    "display_name": "Chichen Itza, Sand Canyon, Santa Clarita, Los Angeles County, California, 91387, United States"
+  },
+  "\u00eeles Philippines, The Netherlands": {
+    "error": "no_match"
+  },
+  "Guyana": {
+    "lat": 4.8417097,
+    "lon": -58.6416891,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7217167502928632,
+    "display_name": "Guyana"
+  },
+  "Bel\u00e9m, France": {
+    "lat": 43.0992556,
+    "lon": 1.3984664,
+    "category": "place",
+    "type": "isolated_dwelling",
+    "importance": 0.10672754177157241,
+    "display_name": "Belem, Sabarat, Saint-Girons, Ari\u00e8ge, Occitanie, France m\u00e9tropolitaine, 09350, France"
+  },
+  "Fort Churchill, Manitoba, Canada, United States of America": {
+    "error": "no_match"
+  },
+  "Unalaska, Alaska,\" USA, United States of America": {
+    "error": "no_match"
+  },
+  "Cetinje, Montenegro, United Kingdom": {
+    "error": "no_match"
+  },
+  "Ukiah, Mendocino Co, United States of America": {
+    "lat": 39.1501662,
+    "lon": -123.2077861,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5134147177896339,
+    "display_name": "Ukiah, Mendocino County, California, 95482, United States"
+  },
+  "Padre Island, Cameron Co, United States of America": {
+    "lat": 26.1036887,
+    "lon": -97.1646938,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.4867875020047143,
+    "display_name": "South Padre Island, Cameron County, Texas, 78597, United States"
+  },
+  "Henrietta, Clay Co, United States of America": {
+    "lat": 33.8166258,
+    "lon": -98.194682,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5116633199479257,
+    "display_name": "Henrietta, Clay County, Texas, United States"
+  },
+  "Sierra Nevada,\" California, USA, United States": {
+    "error": "no_match"
+  },
+  "El Paso, El Paso Co, United States of America": {
+    "lat": 31.7601001,
+    "lon": -106.4870476,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6548295810741123,
+    "display_name": "El Paso, El Paso County, Texas, United States"
+  },
+  "Dulzura, San Diego Co, United States of America": {
+    "lat": 32.6442247,
+    "lon": -116.7814093,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.359473463574925,
+    "display_name": "Dulzura, San Diego County, California, 91917, United States"
+  },
+  "Santa Cruz, Santa Cruz Co, United States of America": {
+    "lat": 36.9743626,
+    "lon": -122.0294673,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5849667189179498,
+    "display_name": "Santa Cruz, Santa Cruz County, California, United States"
+  },
+  "Baram [Sarawak], N, United Kingdom": {
+    "error": "no_match"
+  },
+  "Sri Lanka, Italy": {
+    "lat": 6.9115878,
+    "lon": 79.8574037,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 7.168307011516011e-05,
+    "display_name": "Italy, Ananda Coomaraswamy Mawatha, Town Hall, Cinnamon Gardens, Slave Island, Colombo, Colombo District, Western Province, 00300, Sri Lanka"
+  },
+  "Challapata, Oruro, Bolivia, United Kingdom": {
+    "error": "no_match"
+  },
+  "Trinidad,\" Trinidad and Tobago, United Kingdom": {
+    "error": "no_match"
+  },
+  "Tatsienlu (Kangding), Sichuan Prov, China": {
+    "lat": 30.0297731,
+    "lon": 101.956298,
+    "category": "amenity",
+    "type": "fuel",
+    "importance": 5.730754558628241e-05,
+    "display_name": "China Petro Station, \u6caa\u8042\u7ebf, \u9053\u5b50\u575d\u6751, \u5eb7\u5b9a\u5e02 \u0f51\u0f62\u0f0b\u0f58\u0f51\u0f7c\u0f0b\u0f42\u0fb2\u0f7c\u0f44\u0f0b\u0f41\u0fb1\u0f7a\u0f62\u0f0d, \u7518\u5b5c\u85cf\u65cf\u81ea\u6cbb\u5dde \u0f51\u0f40\u0f62\u0f0b\u0f58\u0f5b\u0f7a\u0f66\u0f0b\u0f56\u0f7c\u0f51\u0f0b\u0f62\u0f72\u0f42\u0f66\u0f0b\u0f62\u0f44\u0f0b\u0f66\u0f90\u0fb1\u0f7c\u0f44\u0f0b\u0f41\u0f74\u0f63\u0f0d, \u56db\u5ddd\u7701, 626000, \u4e2d\u56fd"
+  },
+  "46 miles S, United Kingdom": {
+    "lat": 51.3854574,
+    "lon": -2.3627996,
+    "category": "highway",
+    "type": "pedestrian",
+    "importance": 0.05340239795529103,
+    "display_name": "Miles's Buildings, Kingsmead, Bath, Bath and North East Somerset, West of England, England, BA1 2QR, United Kingdom"
+  },
+  "2286 m, United Kingdom": {
+    "lat": 52.1900033,
+    "lon": -1.4933057,
+    "category": "highway",
+    "type": "unclassified",
+    "importance": 0.05338315785458149,
+    "display_name": "M, JLR Gaydon Vehicle Proving Ground, Gaydon, Stratford-on-Avon, Warwickshire, England, CV35 0BB, United Kingdom"
+  },
+  "Darjeeling, India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Tete, Mozambique, Germany": {
+    "error": "no_match"
+  },
+  "Gambia": {
+    "lat": 13.470062,
+    "lon": -15.4900464,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7052586466940586,
+    "display_name": "Gambia"
+  },
+  "Dundo, Lunda, Angola, United States of America": {
+    "error": "no_match"
+  },
+  "Dundo, Lunda, Angola, United Kingdom": {
+    "error": "no_match"
+  },
+  "Zanzibar,\" Tanzania, United Kingdom": {
+    "error": "no_match"
+  },
+  "Mary, Turkmenistan, Germany": {
+    "error": "no_match"
+  },
+  "1341 m, United States of America": {
+    "lat": 41.6028108,
+    "lon": -84.799373,
+    "category": "place",
+    "type": "house",
+    "importance": 9.99999999995449e-06,
+    "display_name": "1341, County Road M, Florence Township, Williams County, Ohio, 43518, United States"
+  },
+  "Kilimanjaro district, Kenya, United Kingdom": {
+    "error": "no_match"
+  },
+  "Cuiab\u00e1, Austria": {
+    "lat": -15.5833169,
+    "lon": -56.1216591,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05339754711223007,
+    "display_name": "Rua Austria, Santa Rosa, Cuiab\u00e1, Mato Grosso, Regi\u00e3o Centro-Oeste, 78040-000, Brasil"
+  },
+  "Buenos Aires, United Kingdom": {
+    "lat": 51.4616079,
+    "lon": -0.302797,
+    "category": "amenity",
+    "type": "restaurant",
+    "importance": 9.307927061870783e-05,
+    "display_name": "Buenos Aires, 13-19, Old Palace Terrace, St Margarets, London Borough of Richmond upon Thames, Greater London, England, TW9 1EA, United Kingdom"
+  },
+  "Brasilien, United States of America": {
+    "lat": 38.9188782,
+    "lon": -77.0609693,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 0.3883319602613017,
+    "display_name": "Embassy of Brazil, 3006, Massachusetts Avenue Northwest, Woodland-Normanstone, Woodley Park, Ward 3, Washington, District of Columbia, 20008, United States"
+  },
+  "Salta Province, N, United Kingdom": {
+    "error": "no_match"
+  },
+  "Carapari, United Kingdom": {
+    "error": "no_match"
+  },
+  "South Seas, United Kingdom": {
+    "lat": 52.6718626,
+    "lon": 1.7199161,
+    "category": "building",
+    "type": "house",
+    "importance": 3.750133516437045e-05,
+    "display_name": "South Seas, California Road, Ormesby St. Margaret with Scratby, California, Great Yarmouth, Norfolk, England, NR29 3QP, United Kingdom"
+  },
+  "Kottawa, Sri Lanka, Austria": {
+    "error": "no_match"
+  },
+  "Congo,\" Angola, Democratic Republic of the Congo": {
+    "error": "no_match"
+  },
+  "la Mana,\" French Guiana, France": {
+    "lat": 4.6615979,
+    "lon": -53.6125346,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.3140788844789178,
+    "display_name": "La Mana, Guyane, France"
+  },
+  "Patria, Brasilia, Russia": {
+    "error": "no_match"
+  },
+  "Farasan Is, Saudi Arabia, Germany": {
+    "error": "no_match"
+  },
+  "Deccan, India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Morocco, Mogador, United Kingdom": {
+    "error": "no_match"
+  },
+  "Fernando Po, United Kingdom": {
+    "error": "no_match"
+  },
+  "Borgou, Togo, Germany": {
+    "error": "no_match"
+  },
+  "Rockport, Aransas Co, United States of America": {
+    "lat": 28.0205733,
+    "lon": -97.0544341,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5148939282501245,
+    "display_name": "Rockport, Aransas County, Texas, United States"
+  },
+  "Morehouse Parish, La, United States of America": {
+    "lat": 32.8326959,
+    "lon": -91.8374127,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5073659717672456,
+    "display_name": "Morehouse Parish, Louisiana, United States"
+  },
+  "Lamar, Prowers Co, United States of America": {
+    "lat": 38.0872306,
+    "lon": -102.620749,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5100541349580675,
+    "display_name": "Lamar, Prowers County, Colorado, 81052, United States"
+  },
+  "Mobile Bay, Alabama\", USA, United States of America": {
+    "error": "no_match"
+  },
+  "Padre Island, [Cameron Co, United States of America": {
+    "lat": 26.1036887,
+    "lon": -97.1646938,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.4916826333919277,
+    "display_name": "South Padre Island, Cameron County, Texas, 78597, United States"
+  },
+  "Carrizo Springs, Dimmit Co, United States of America": {
+    "lat": 28.5249088,
+    "lon": -99.8616529,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5118749212116382,
+    "display_name": "Carrizo Springs, Dimmit County, Texas, 78834, United States"
+  },
+  "Mason, Mason County, Texas,\" USA, United States of America": {
+    "error": "no_match"
+  },
+  "Gambaga, Ghana, United Kingdom": {
+    "error": "no_match"
+  },
+  "Aguleri, Nigeria, United Kingdom": {
+    "error": "no_match"
+  },
+  "Lake Eyasi, NW Tanzania, Germany": {
+    "error": "no_match"
+  },
+  "Columbia River, Oregon, USA, United States of America": {
+    "error": "no_match"
+  },
+  "Republic of the Congo, Democratic Republic of the Congo": {
+    "lat": -4.3167652,
+    "lon": 15.2800748,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 7.549172198057553e-05,
+    "display_name": "Ambassade de la R\u00e9publique du Congo, Boulevard du 30 Juin, Gombe, Batetela, Gombe, Kinshasa, R\u00e9publique d\u00e9mocratique du Congo"
+  },
+  "Pawa, ca, Belgium": {
+    "error": "no_match"
+  },
+  "Port Antonio, Jamaica, United States of America": {
+    "error": "no_match"
+  },
+  "Isla Santa Sofia, 30 km, United States of America": {
+    "error": "no_match"
+  },
+  "\u201cMaria Madre Id, United States of America": {
+    "lat": 36.2492931,
+    "lon": -115.1401679,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05338896391241318,
+    "display_name": "Madre Maria Court, Craig Ranch, North Las Vegas, Clark County, Nevada, 89031, United States"
+  },
+  "Cuiab\u00e1, Germany": {
+    "lat": -15.5868138,
+    "lon": -56.1158674,
+    "category": "shop",
+    "type": "car_repair",
+    "importance": 6.42137788967272e-05,
+    "display_name": "Germany Car Service, Avenida Maria Arruda Muller, Santa Rosa, Cuiab\u00e1, Mato Grosso, Regi\u00e3o Centro-Oeste, 78040-020, Brasil"
+  },
+  "Molo, Kenya, United States of America": {
+    "error": "no_match"
+  },
+  "Lukenya Mt, United States of America": {
+    "error": "no_match"
+  },
+  "Zomba, Malawi, United Kingdom": {
+    "error": "no_match"
+  },
+  "Rio Negro, United Kingdom": {
+    "error": "no_match"
+  },
+  "Zomba, southern Malawi, United Kingdom": {
+    "error": "no_match"
+  },
+  "Moirang, Manipur, India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Bignay, Mt, United States of America": {
+    "lat": 27.0693036,
+    "lon": -82.0913279,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05338659571221481,
+    "display_name": "Bignay Road, North Port, Sarasota County, Florida, 34288, United States"
+  },
+  "Cayenne, French Guiana, France": {
+    "lat": 4.9371544,
+    "lon": -52.3258736,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.582955250900979,
+    "display_name": "Cayenne, Guyane, 97300, France"
+  },
+  "Tenasserim,\" Myanmar, India": {
+    "error": "no_match"
+  },
+  "Santa Clara, Costa Rica, United States of America": {
+    "error": "no_match"
+  },
+  "Trinidad, United Kingdom": {
+    "lat": 51.4998437,
+    "lon": -0.1520781,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 0.31673068536229987,
+    "display_name": "High Commission of Trinidad and Tobago, 42, Belgrave Square, Belgravia, City of Westminster, Greater London, England, SW1X 8NT, United Kingdom"
+  },
+  "Central India, United Kingdom": {
+    "lat": 51.5115059,
+    "lon": -0.00981,
+    "category": "amenity",
+    "type": "place_of_worship",
+    "importance": 9.307927061870783e-05,
+    "display_name": "Poplar Central Mosque, East India Dock Road, Poplar, London Borough of Tower Hamlets, Greater London, England, E14 0EG, United Kingdom"
+  },
+  "Timor [Island], France": {
+    "error": "no_match"
+  },
+  "India, (Madras, United Kingdom": {
+    "error": "no_match"
+  },
+  "Penang, United Kingdom": {
+    "lat": 53.4842929,
+    "lon": -2.2330063,
+    "category": "amenity",
+    "type": "restaurant",
+    "importance": 7.817273212782509e-05,
+    "display_name": "Penang, 90, Oldham Street, Northern Quarter, City Centre, Manchester, Greater Manchester, England, M4 1LJ, United Kingdom"
+  },
+  "Kandy, Sri Lanka, United Kingdom": {
+    "error": "no_match"
+  },
+  "Fly River,\" Western Province, Papua New Guinea, Indonesia": {
+    "error": "no_match"
+  },
+  "Little Nicobar Island,\" India, United States of America": {
+    "error": "no_match"
+  },
+  "Botanic Gardens, Singapore, United Kingdom": {
+    "error": "no_match"
+  },
+  "Mogador, Morocco, Spain": {
+    "error": "no_match"
+  },
+  "Caiza,\" Bolivia, United Kingdom": {
+    "error": "no_match"
+  },
+  "Brasilien\" (Brazil)": {
+    "lat": -15.8032581,
+    "lon": -47.8854767,
+    "category": "office",
+    "type": "government",
+    "importance": 0.550720540379801,
+    "display_name": "Banco Central do Brasil, Bloco B, SBS Quadra 3, Setor Banc\u00e1rio Sul, Asa Sul, Bras\u00edlia, Plano Piloto, Distrito Federal, Regi\u00e3o Centro-Oeste, 70074-900, Brasil"
+  },
+  "Surinamo, Brazil": {
+    "lat": 5.0092321,
+    "lon": -55.5247674,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.13337505836575875,
+    "display_name": "Villa Brazil, Boven Saramacca, Sipaliwini, Suriname"
+  },
+  "Peren\u00e9, Department of Junin, Peru": {
+    "lat": -10.9914881,
+    "lon": -74.7647896,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.36736730413826313,
+    "display_name": "Peren\u00e9, Jun\u00edn, Per\u00fa"
+  },
+  "Philippines, Sulu Islands, France": {
+    "error": "no_match"
+  },
+  "Pungo Andongo, [Angola], United Kingdom": {
+    "error": "no_match"
+  },
+  "2130 m, United Kingdom": {
+    "lat": 52.1900033,
+    "lon": -1.4933057,
+    "category": "highway",
+    "type": "unclassified",
+    "importance": 0.05338315785458149,
+    "display_name": "M, JLR Gaydon Vehicle Proving Ground, Gaydon, Stratford-on-Avon, Warwickshire, England, CV35 0BB, United Kingdom"
+  },
+  "Rancho Redondo [San Jos\u00e9], Costa Rica, United Kingdom": {
+    "error": "no_match"
+  },
+  "Rangoon, Myanmar, India": {
+    "error": "no_match"
+  },
+  "Arakan, Myanmar, India": {
+    "error": "no_match"
+  },
+  "2591 m, United States of America": {
+    "lat": 41.6025764,
+    "lon": -84.7773119,
+    "category": "place",
+    "type": "house",
+    "importance": 9.99999999995449e-06,
+    "display_name": "2591, County Road M, Florence Township, Williams County, Ohio, 43518, United States"
+  },
+  "Western Africa, United States of America": {
+    "error": "no_match"
+  },
+  "Pisa, Italy, United Kingdom": {
+    "error": "no_match"
+  },
+  "Chung-yang, United Kingdom": {
+    "error": "no_match"
+  },
+  "Fort Clark, Kinney County, Texas, United States of America": {
+    "lat": 29.3068921,
+    "lon": -100.4181504,
+    "category": "historic",
+    "type": "memorial",
+    "importance": 3.500190737769158e-05,
+    "display_name": "Fort Clark, Avenida Juarez Road, Fort Clark Springs, Kinney County, Texas, 78832, United States"
+  },
+  "Rio Guapore, Austria": {
+    "error": "no_match"
+  },
+  "Calcutta,\" India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Philippines, United Kingdom": {
+    "lat": 51.5086102,
+    "lon": -0.1306614,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 0.3411720307708333,
+    "display_name": "Embassy of the Philippines, 6-11, Suffolk Street, St. James's, Westminster, Covent Garden, City of Westminster, Greater London, England, SW1Y 4HG, United Kingdom"
+  },
+  "Old Calabar,\" Nigeria, United Kingdom": {
+    "error": "no_match"
+  },
+  "Isabella, N, United Kingdom": {
+    "lat": 51.4650094,
+    "lon": -0.2612492,
+    "category": "shop",
+    "type": "florist",
+    "importance": 9.307927061870783e-05,
+    "display_name": "Isabella, 203, Upper Richmond Road West, East Sheen, London Borough of Richmond upon Thames, Greater London, England, SW14 8QT, United Kingdom"
+  },
+  "Cayenne,\" French Guiana, France": {
+    "lat": 4.9371544,
+    "lon": -52.3258736,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.582955250900979,
+    "display_name": "Cayenne, Guyane, 97300, France"
+  },
+  "Trinidad, Cuba, Germany": {
+    "error": "no_match"
+  },
+  "Hawaii, USA, United States of America": {
+    "error": "no_match"
+  },
+  "Pigeon Spring, Mt, United States of America": {
+    "lat": 37.4200047,
+    "lon": -117.6673579,
+    "category": "place",
+    "type": "locality",
+    "importance": 0.0667016685740444,
+    "display_name": "Pigeon Spring, Esmeralda County, Nevada, United States"
+  },
+  "Sabah, Malaysia": {
+    "lat": 5.4257359,
+    "lon": 117.0326392,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6499553701277425,
+    "display_name": "Sabah, Malaysia"
+  },
+  "Cura\u00e7ao, West Indies, United States of America": {
+    "error": "no_match"
+  },
+  "Seoul, United Kingdom": {
+    "lat": 57.1445796,
+    "lon": -2.1033336,
+    "category": "amenity",
+    "type": "restaurant",
+    "importance": 6.999237048900615e-05,
+    "display_name": "Seoul, 13, Crown Street, City Centre, Aberdeen City, Alba / Scotland, AB11 6HA, United Kingdom"
+  },
+  "Bastia,\" Corsica, France, United Kingdom": {
+    "error": "no_match"
+  },
+  "Malabar,\" Madras, India, France": {
+    "error": "no_match"
+  },
+  "China": {
+    "lat": 35.000074,
+    "lon": 104.999927,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.9041723947646134,
+    "display_name": "\u4e2d\u56fd"
+  },
+  "Zanzibar, United Kingdom": {
+    "lat": 51.4899879,
+    "lon": 0.2953614,
+    "category": "building",
+    "type": "house",
+    "importance": 5.710612649724601e-05,
+    "display_name": "Zanzibar, 45, Grifon Road, Chafford Hundred, South Ockendon, Thurrock, Essex, England, RM16 6RL, United Kingdom"
+  },
+  "91 m, United Kingdom": {
+    "lat": 52.1900033,
+    "lon": -1.4933057,
+    "category": "highway",
+    "type": "unclassified",
+    "importance": 0.05338315785458149,
+    "display_name": "M, JLR Gaydon Vehicle Proving Ground, Gaydon, Stratford-on-Avon, Warwickshire, England, CV35 0BB, United Kingdom"
+  },
+  "Lamar\u00e3o, N, United Kingdom": {
+    "error": "no_match"
+  },
+  "Patagonia, United Kingdom": {
+    "lat": 53.4811758,
+    "lon": -2.2449785,
+    "category": "shop",
+    "type": "clothes",
+    "importance": 7.817273212782509e-05,
+    "display_name": "Patagonia, 51, King Street, Civic Quarter, City Centre, Manchester, Greater Manchester, England, M2 7AZ, United Kingdom"
+  },
+  "India, Madras, United Kingdom": {
+    "error": "no_match"
+  },
+  "Yaunde, S Cameroon, Germany": {
+    "error": "no_match"
+  },
+  "NW Peru": {
+    "lat": 44.578486,
+    "lon": -73.527031,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.43433333885256975,
+    "display_name": "Town of Peru, Clinton County, New York, United States"
+  },
+  "Portugal, France": {
+    "lat": 41.6497623,
+    "lon": -7.4707404,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.13339082856488896,
+    "display_name": "France, Moreiras, Chaves, Vila Real, Portugal"
+  },
+  "9, South Africa": {
+    "lat": -26.1606675,
+    "lon": 28.1458476,
+    "category": "landuse",
+    "type": "grass",
+    "importance": 0.08007422217135879,
+    "display_name": "9, Essexwold, Ekurhuleni Ward 19, City of Ekurhuleni Metropolitan Municipality, Gauteng, South Africa"
+  },
+  "Fort Yuma [Imperial Co, United States of America": {
+    "lat": 32.7749721,
+    "lon": -114.659617,
+    "category": "boundary",
+    "type": "aboriginal_lands",
+    "importance": 0.06669536659800106,
+    "display_name": "Kwats\u00e1an, Winterhaven, Imperial County, California, 92283, United States"
+  },
+  "Haiti, United Kingdom": {
+    "error": "no_match"
+  },
+  "Damaraland, Namibia, United Kingdom": {
+    "error": "no_match"
+  },
+  "Abyssinia, United Kingdom": {
+    "lat": 51.5525452,
+    "lon": -0.2106267,
+    "category": "amenity",
+    "type": "restaurant",
+    "importance": 9.307927061870783e-05,
+    "display_name": "Abyssinia, 9, Cricklewood Broadway, Kilburn, London Borough of Camden, Greater London, England, NW2 3HD, United Kingdom"
+  },
+  "Am\u00e9rique m\u00e9ridionale, France": {
+    "error": "no_match"
+  },
+  "Oda, Ghana, United Kingdom": {
+    "error": "no_match"
+  },
+  "Asia, America, United Kingdom": {
+    "error": "no_match"
+  },
+  "Himalaya, The Netherlands": {
+    "lat": 52.0589997,
+    "lon": 5.1351233,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05340627832455936,
+    "display_name": "Himalaya, Lunetten-Zuid, Lunetten, Zuid, Utrecht, Nederland, 3524 XC, Nederland"
+  },
+  "Tomska\u00e2 obl, Russia": {
+    "lat": 58.6124279,
+    "lon": 82.0475315,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.6275556148889595,
+    "display_name": "\u0422\u043e\u043c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c, \u0421\u0438\u0431\u0438\u0440\u0441\u043a\u0438\u0439 \u0444\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043e\u043a\u0440\u0443\u0433, \u0420\u043e\u0441\u0441\u0438\u044f"
+  },
+  "Madras, India, United Kingdom": {
+    "error": "no_match"
+  },
+  "San Francisco Mtn, United States": {
+    "lat": 35.3418309,
+    "lon": -111.6540575,
+    "category": "natural",
+    "type": "volcano",
+    "importance": 0.39384141776543397,
+    "display_name": "San Francisco Mountain, Coconino County, Arizona, United States"
+  },
+  "Humboldt Bay, Humboldt Co, United States of America": {
+    "lat": 40.7498484,
+    "lon": -124.2095057,
+    "category": "natural",
+    "type": "bay",
+    "importance": 0.3791875842706339,
+    "display_name": "Humboldt Bay, Spruce Point, Humboldt County, California, 95537, United States"
+  },
+  "Witch Creek, United States of America": {
+    "lat": 43.0517919,
+    "lon": -70.7293575,
+    "category": "waterway",
+    "type": "tidal_channel",
+    "importance": 0.13337833447775996,
+    "display_name": "Witch Creek, Rye, Rockingham County, New Hampshire, 03854, United States"
+  },
+  "Columbia river, United States of America": {
+    "lat": 48.0840348,
+    "lon": -119.6804409,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.6099656766914436,
+    "display_name": "Columbia River, United States"
+  },
+  "Suerre, Lim\u00f3n, Costa Rica, United States of America": {
+    "error": "no_match"
+  },
+  "Manzanares, United States of America": {
+    "lat": 35.0233961,
+    "lon": -82.1525031,
+    "category": "place",
+    "type": "neighbourhood",
+    "importance": 0.0800452559700923,
+    "display_name": "Manzanares, Spartanburg County, South Carolina, United States"
+  },
+  "S China": {
+    "lat": 44.3956249,
+    "lon": -69.5711544,
+    "category": "place",
+    "type": "neighbourhood",
+    "importance": 0.30663527500158994,
+    "display_name": "South China, China, Kennebec County, Maine, 04358, United States"
+  },
+  "Southern Burma, France": {
+    "error": "no_match"
+  },
+  "Marrakesh, Morocco, Spain": {
+    "error": "no_match"
+  },
+  "Mongolia, United Kingdom": {
+    "lat": 51.5015028,
+    "lon": -0.1868381,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 0.3172483997907332,
+    "display_name": "Embassy of Mongolia, 7, Kensington Court, South Kensington, Royal Borough of Kensington and Chelsea, Greater London, England, W8 5NX, United Kingdom"
+  },
+  "Tabriz, Azerbaidjan, Iran, Russia": {
+    "error": "no_match"
+  },
+  "Kushka, Turkmenistan, Russia": {
+    "error": "no_match"
+  },
+  "Aleppo, Syria, United Kingdom": {
+    "error": "no_match"
+  },
+  "near Tbilisi, Georgia, Russia": {
+    "error": "no_match"
+  },
+  "Chilecito, United Kingdom": {
+    "error": "no_match"
+  },
+  "Laguna Blanca, Catamarca, United Kingdom": {
+    "error": "no_match"
+  },
+  "Desert Valley, United States of America": {
+    "lat": 33.3294238,
+    "lon": -111.5879473,
+    "category": "landuse",
+    "type": "residential",
+    "importance": 0.08006342641336688,
+    "display_name": "Desert Valley, Mesa, Maricopa County, Arizona, United States"
+  },
+  "Halleck, Elko Co, United States of America": {
+    "lat": 40.9507552,
+    "lon": -115.452839,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.13336833524071104,
+    "display_name": "Halleck, Elko County, Nevada, United States"
+  },
+  "San Juan del Norte, Argentina": {
+    "lat": -27.460378,
+    "lon": -58.977795,
+    "category": "amenity",
+    "type": "pharmacy",
+    "importance": 5.529640650029782e-05,
+    "display_name": "Argentina, Juan B. Justo, Central Norte, Resistencia, Municipio de Resistencia, Departamento San Fernando, Chaco, H3500, Argentina"
+  },
+  "Boneno, Mt, United Kingdom": {
+    "error": "no_match"
+  },
+  "Costa Rica, Jimenez, United States of America": {
+    "error": "no_match"
+  },
+  "Camigliatello Silano, Calabria, Italy, Germany": {
+    "error": "no_match"
+  },
+  "Larissa, Thessaly, Greece, United Kingdom": {
+    "error": "no_match"
+  },
+  "Bombay,\" India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Grande Comore, United Kingdom": {
+    "error": "no_match"
+  },
+  "Guimar\u00e1s Island,\" Philippines, United States of America": {
+    "error": "no_match"
+  },
+  "Philippine Islands, United Kingdom": {
+    "lat": 51.4922948,
+    "lon": -0.1924611,
+    "category": "amenity",
+    "type": "bank",
+    "importance": 9.307927061870783e-05,
+    "display_name": "BPI, 26a, Earl's Court Gardens, Earl's Court, Royal Borough of Kensington and Chelsea, Greater London, England, SW5 0TR, United Kingdom"
+  },
+  "Saman\u00e1, Dominican Republic, United States of America": {
+    "error": "no_match"
+  },
+  "Toro, western Uganda, Italy": {
+    "error": "no_match"
+  },
+  "Keren, Eritrea, Germany": {
+    "error": "no_match"
+  },
+  "Antananarivo, United States of America": {
+    "lat": -18.8526058,
+    "lon": 47.4778763,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 1e-10,
+    "display_name": "Ambassade des \u00c9tats-Unis d'Am\u00e9rique, N 4, Ambohibao, District d'Ambohidratrimo, Analamanga, Province d\u2019Antananarivo, 105, Madagasikara / Madagascar"
+  },
+  "Massawa, Eritrea, Germany": {
+    "error": "no_match"
+  },
+  "Faradje,\" DR Congo, Democratic Republic of the Congo": {
+    "error": "no_match"
+  },
+  "Trinidad, Cuba, United States of America": {
+    "error": "no_match"
+  },
+  "Eastern Ghats\", India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Tawau, Sabah (Borneo), Malaysia": {
+    "error": "no_match"
+  },
+  "Lamto, Ivory Coast, Belgium": {
+    "error": "no_match"
+  },
+  "Northern Cape Province, United Kingdom": {
+    "error": "no_match"
+  },
+  "Accra, Ghana, France": {
+    "error": "no_match"
+  },
+  "Zambia, United Kingdom": {
+    "lat": 51.5007505,
+    "lon": -0.1836722,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 0.31568281446101826,
+    "display_name": "High Commission of Zambia, 2, Palace Gate, South Kensington, Royal Borough of Kensington and Chelsea, Greater London, England, W8 5LS, United Kingdom"
+  },
+  "Victoria, Cameroon, Germany": {
+    "error": "no_match"
+  },
+  "2408 m, Japan": {
+    "lat": 35.6582915,
+    "lon": 139.4064692,
+    "category": "highway",
+    "type": "unclassified",
+    "importance": 0.053419268329900016,
+    "display_name": "M, \u5357\u5e73\u4e00\u4e01\u76ee, \u5357\u5e73, \u65e5\u91ce\u5e02, \u6771\u4eac\u90fd, 191-0042, \u65e5\u672c"
+  },
+  "Haida Gwaii Islands, British Columbia, Canada, United States of America": {
+    "error": "no_match"
+  },
+  "C Canada, United Kingdom": {
+    "lat": 50.9625195,
+    "lon": -1.5884921,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.1333850637064164,
+    "display_name": "Canada, Wellow, Test Valley, Hampshire, England, SO51 6HA, United Kingdom"
+  },
+  "S\u00e3o Tom\u00e9 Island, S\u00e3o Tom\u00e9 and Pr\u00edncipe, Portugal": {
+    "error": "no_match"
+  },
+  "Africa (Angola), United Kingdom": {
+    "error": "no_match"
+  },
+  "Kivu,\" DR Congo, Democratic Republic of the Congo": {
+    "lat": -5.2599877,
+    "lon": 14.8618194,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05337955977721825,
+    "display_name": "Avenue Kivu, Mbanza-Ngungu, Kongo-Central, R\u00e9publique d\u00e9mocratique du Congo"
+  },
+  "Anjouan [Island],\" Comoros, France": {
+    "error": "no_match"
+  },
+  "Hacienda Limache, Valpara\u00edso, Chile, United States of America": {
+    "error": "no_match"
+  },
+  "Tarpon Springs [Pinellas County], Florida,\" USA, United States of America": {
+    "error": "no_match"
+  },
+  "Duque de Braganc\u0327a, Angola, Germany": {
+    "error": "no_match"
+  },
+  "Sicily, Italy, United Kingdom": {
+    "error": "no_match"
+  },
+  "Sabang [Island], N, United Kingdom": {
+    "error": "no_match"
+  },
+  "Cambodia, The Netherlands": {
+    "error": "no_match"
+  },
+  "Halifax, Nova Scotia, Canada, United States of America": {
+    "error": "no_match"
+  },
+  "Kopet Dag, Turkmenistan, Russia": {
+    "error": "no_match"
+  },
+  "Fort Yuma, United States of America": {
+    "lat": 29.53386,
+    "lon": -98.3274365,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05338801632715339,
+    "display_name": "Fort Yuma, Converse, Bexar County, Texas, 78109, United States"
+  },
+  "Burma (Myanmar), United Kingdom": {
+    "error": "no_match"
+  },
+  "Jaffa (= Tel Aviv), Israel, Germany": {
+    "error": "no_match"
+  },
+  "Mount Parnassus, Greece, Hungary": {
+    "error": "no_match"
+  },
+  "Pirot, Serbia, Hungary": {
+    "error": "no_match"
+  },
+  "Restigouche River, New Brunswick, Canada, United Kingdom": {
+    "error": "no_match"
+  },
+  "Daiquir\u00ed, Santiago de Cuba, United States of America": {
+    "error": "no_match"
+  },
+  "Maldonado,\" Maldonado, Uruguay, United Kingdom": {
+    "error": "no_match"
+  },
+  "Sikkim, India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Georgiana, Brevard County, Florida, USA, United States of America": {
+    "error": "no_match"
+  },
+  "Yangtze, Prov, United States of America": {
+    "error": "no_match"
+  },
+  "Cahata, Angola, United Kingdom": {
+    "error": "no_match"
+  },
+  "Fort Klamath, [Klamath County,] Oregon,\" USA, United States of America": {
+    "error": "no_match"
+  },
+  "San Francisco Mountain, [Coconino County,] Arizona,\" USA, United States": {
+    "error": "no_match"
+  },
+  "Farmer, Douglas County, Washington,\" USA, United States of America": {
+    "error": "no_match"
+  },
+  "Mendocino, [Mendocino Co, United States of America": {
+    "lat": 39.311383,
+    "lon": -123.7940454,
+    "category": "boundary",
+    "type": "census",
+    "importance": 0.4383493422407134,
+    "display_name": "Mendocino, Mendocino County, California, United States"
+  },
+  "Charleston Peak,\" Clark County, Nevada, USA, United States": {
+    "error": "no_match"
+  },
+  "Upper St, United States of America": {
+    "lat": 21.2742189,
+    "lon": -157.8084242,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05340533836881053,
+    "display_name": "Upper Street, Kapahulu, East Honolulu, Honolulu, Honolulu County, Hawaii, 96828, United States"
+  },
+  "One mile [1, United States of America": {
+    "lat": 45.671674,
+    "lon": -84.914775,
+    "category": "place",
+    "type": "house",
+    "importance": 9.99999999995449e-06,
+    "display_name": "1, One Mile Road, Bliss Township, Emmet County, Michigan, 49755, United States"
+  },
+  "Petaluma, Sonoma County, California, USA, United States of America": {
+    "error": "no_match"
+  },
+  "San Diego, San Diego County, California, USA, United Kingdom": {
+    "error": "no_match"
+  },
+  "671 m, United Kingdom": {
+    "lat": 53.7264568,
+    "lon": -2.538587,
+    "category": "building",
+    "type": "house",
+    "importance": 6.21782253757079e-05,
+    "display_name": "671, Preston Old Road, Cherry Tree, Livesey, Blackburn, Blackburn with Darwen, Lancashire, England, BB2 5ER, United Kingdom"
+  },
+  "NW Ethiopia": {
+    "lat": 38.9412038,
+    "lon": -77.0669912,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 0.35614271866453184,
+    "display_name": "Embassy of Ethiopia, 3506, International Drive Northwest, Van Ness, Northwest, Cleveland Park, Ward 3, Washington, District of Columbia, 20008, United States"
+  },
+  "2680 m, United Kingdom": {
+    "lat": 52.1900033,
+    "lon": -1.4933057,
+    "category": "highway",
+    "type": "unclassified",
+    "importance": 0.05338315785458149,
+    "display_name": "M, JLR Gaydon Vehicle Proving Ground, Gaydon, Stratford-on-Avon, Warwickshire, England, CV35 0BB, United Kingdom"
+  },
+  "Vietnam, Tonkin, United Kingdom": {
+    "error": "no_match"
+  },
+  "Vietnam, Thua Luu, United Kingdom": {
+    "error": "no_match"
+  },
+  "St, The Netherlands": {
+    "lat": 45.4183631,
+    "lon": -75.7028791,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 0.26704010519783294,
+    "display_name": "Embassy of the Kingdom of the Netherlands, 350, Albert Street, Centretown, Somerset, Ottawa, Eastern Ontario, Ontario, K1R 1A4, Canada"
+  },
+  "Cape York, N, United Kingdom": {
+    "lat": 54.1058838,
+    "lon": -1.0057628,
+    "category": "landuse",
+    "type": "farmyard",
+    "importance": 0.08003838330663002,
+    "display_name": "Cape of Good Hope Farm, Sheriff Hutton, North Yorkshire, York and North Yorkshire, England, United Kingdom"
+  },
+  "Adiopodoume, Ivory Coast, Switzerland": {
+    "error": "no_match"
+  },
+  "l'Am\u00e9rique m\u00e9ridionale, The Netherlands": {
+    "lat": 52.0860721,
+    "lon": 4.2903715,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 7.773327229720023e-05,
+    "display_name": "Residentie van de Verenigde Staten van Amerika, 4, Tobias Asserlaan, Zorgvliet, Scheveningen, Den Haag, Zuid-Holland, Nederland, 2517 KC, Nederland"
+  },
+  "Milne Bay [Milne Bay Province], S, United Kingdom": {
+    "error": "no_match"
+  },
+  "Malaita Island, Solomon Islands, United States of America": {
+    "error": "no_match"
+  },
+  "Umboi, United Kingdom": {
+    "error": "no_match"
+  },
+  "Rocky Mountains, United Kingdom": {
+    "error": "no_match"
+  },
+  "Lachen, United Kingdom": {
+    "error": "no_match"
+  },
+  "1069 m, United States of America": {
+    "lat": 41.6028271,
+    "lon": -84.8043728,
+    "category": "place",
+    "type": "house",
+    "importance": 9.99999999995449e-06,
+    "display_name": "1069, County Road M, Florence Township, Williams County, Ohio, 43518, United States"
+  },
+  "Sierra de M\u00e9rida, United Kingdom": {
+    "error": "no_match"
+  },
+  "coast of California, USA, United States of America": {
+    "lat": 33.1273886,
+    "lon": -117.3115386,
+    "category": "tourism",
+    "type": "attraction",
+    "importance": 6.131761654073423e-05,
+    "display_name": "Coast Guard Build-A-Boat, Miniland USA, Carlsbad, San Diego County, California, 92011, United States"
+  },
+  "San Marcos, United States of America": {
+    "lat": 29.8826436,
+    "lon": -97.9405828,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5570181475804088,
+    "display_name": "San Marcos, Hays County, Texas, 78666, United States"
+  },
+  "Rockport, Aransas County, Texas, United States of America": {
+    "lat": 28.0205733,
+    "lon": -97.0544341,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5148939282501245,
+    "display_name": "Rockport, Aransas County, Texas, United States"
+  },
+  "Yukon, Alaska, United States of America": {
+    "lat": 65.7963587,
+    "lon": -152.4239927,
+    "category": "place",
+    "type": "county",
+    "importance": 0.24000999999999997,
+    "display_name": "Yukon-Koyukuk (CA), Alaska, United States"
+  },
+  "Kamchatka Peninsula, Russia": {
+    "lat": 55.8680319,
+    "lon": 158.8025312,
+    "category": "natural",
+    "type": "peninsula",
+    "importance": 0.6152667434453777,
+    "display_name": "\u043f\u043e\u043b\u0443\u043e\u0441\u0442\u0440\u043e\u0432 \u041a\u0430\u043c\u0447\u0430\u0442\u043a\u0430, \u0414\u0430\u043b\u044c\u043d\u0435\u0432\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 \u0444\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043e\u043a\u0440\u0443\u0433, \u0420\u043e\u0441\u0441\u0438\u044f"
+  },
+  "Laghouat, Algeria, United Kingdom": {
+    "error": "no_match"
+  },
+  "Lumu-Lumu, United States of America": {
+    "error": "no_match"
+  },
+  "Repetek, Turkmenistan, Russia": {
+    "error": "no_match"
+  },
+  "Kenya, Mazeras, United States of America": {
+    "error": "no_match"
+  },
+  "1676 m, United Kingdom": {
+    "lat": 52.1900033,
+    "lon": -1.4933057,
+    "category": "highway",
+    "type": "unclassified",
+    "importance": 0.05338315785458149,
+    "display_name": "M, JLR Gaydon Vehicle Proving Ground, Gaydon, Stratford-on-Avon, Warwickshire, England, CV35 0BB, United Kingdom"
+  },
+  "Nouvelle-Hollande, France": {
+    "lat": 50.3577325,
+    "lon": 3.5251302,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05340280842298005,
+    "display_name": "Rue de la Nouvelle Hollande, Faubourg de Paris, Valenciennes, Nord, Hauts-de-France, France m\u00e9tropolitaine, 59300, France"
+  },
+  "Kenya, Kakamega Forest, United Kingdom": {
+    "error": "no_match"
+  },
+  "Ghana, Elmina, The Netherlands": {
+    "error": "no_match"
+  },
+  "Fort Verde, Yavapai Co, United States of America": {
+    "lat": 34.5642333,
+    "lon": -111.8519762,
+    "category": "tourism",
+    "type": "information",
+    "importance": 5.175936522464359e-05,
+    "display_name": "Fort Verde, East Hollamon Street, Fort River Caves, Tres Rios, Camp Verde, Yavapai County, Arizona, 86322, United States"
+  },
+  "Buford, Williams Co, The Netherlands": {
+    "error": "no_match"
+  },
+  "Kennedy, Cherry Co, United States of America": {
+    "lat": 42.5472257,
+    "lon": -100.8168113,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.13336833524071104,
+    "display_name": "Kennedy, Cherry County, Nebraska, United States"
+  },
+  "Fresno, Fresno Co, United States of America": {
+    "lat": 36.7394421,
+    "lon": -119.78483,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.644640337248762,
+    "display_name": "Fresno, Fresno County, California, United States"
+  },
+  "Brownsville, Cameron Co, United States of America": {
+    "lat": 25.9024289,
+    "lon": -97.4981698,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5986413172323499,
+    "display_name": "Brownsville, Cameron County, Texas, United States"
+  },
+  "[San Juan Bautista,] Coixtlahuaca, Oaxaca, Mexico, Argentina": {
+    "error": "no_match"
+  },
+  "Turtle Creek, Kerr County, Texas, USA, United States of America": {
+    "error": "no_match"
+  },
+  "Monterey, Monterey County, California, USA, United States of America": {
+    "error": "no_match"
+  },
+  "Georgia,\" USA, United States of America": {
+    "error": "no_match"
+  },
+  "1402 m, United States of America": {
+    "lat": 41.6026546,
+    "lon": -84.8004152,
+    "category": "place",
+    "type": "house",
+    "importance": 9.99999999995449e-06,
+    "display_name": "1402, County Road M, Florence Township, Williams County, Ohio, 43518, United States"
+  },
+  "Estes Park, Larimer County, Colorado, USA, United States of America": {
+    "error": "no_match"
+  },
+  "La Carpintera, Cartago, Costa Rica, United States of America": {
+    "error": "no_match"
+  },
+  "Mato Grosso, Austria": {
+    "lat": -15.5833169,
+    "lon": -56.1216591,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05339754711223007,
+    "display_name": "Rua Austria, Santa Rosa, Cuiab\u00e1, Mato Grosso, Regi\u00e3o Centro-Oeste, 78040-000, Brasil"
+  },
+  "Port of Spain, Trinidad, United States of America": {
+    "error": "no_match"
+  },
+  "Near Madras, India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Basilan I, Philippines, United States of America": {
+    "error": "no_match"
+  },
+  "Karibib, Namibia, United Kingdom": {
+    "error": "no_match"
+  },
+  "Insel Samar,\" Philippines, Germany": {
+    "error": "no_match"
+  },
+  "Cayenne,\" French Guiana, The Netherlands": {
+    "error": "no_match"
+  },
+  "Piura, N, United Kingdom": {
+    "error": "no_match"
+  },
+  "Tanzania, Zanzibar, United Kingdom": {
+    "error": "no_match"
+  },
+  "Equatorial Guinea, Fernando Poo (Bioko) Island, United Kingdom": {
+    "error": "no_match"
+  },
+  "Madeira [Islands],\" Portugal, United Kingdom": {
+    "error": "no_match"
+  },
+  "Damaraland, United Kingdom": {
+    "error": "no_match"
+  },
+  "Taita,\" Kenya, Germany": {
+    "error": "no_match"
+  },
+  "Jammu and Kashmir, India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Gainesville, Alachua County, Florida, USA, United States of America": {
+    "error": "no_match"
+  },
+  "Bioko Island, Equatorial Guinea, United Kingdom": {
+    "error": "no_match"
+  },
+  "Sydney, Australia": {
+    "lat": -33.8698439,
+    "lon": 151.2082848,
+    "category": "place",
+    "type": "city",
+    "importance": 0.7815069337380703,
+    "display_name": "Sydney, New South Wales, Australia"
+  },
+  "Singapore, United Kingdom": {
+    "lat": 50.9868448,
+    "lon": -1.4937227,
+    "category": "building",
+    "type": "house",
+    "importance": 5.1730373083039866e-05,
+    "display_name": "Singapore, Burma Road, Tadburn, Romsey, Test Valley, Hampshire, England, SO51 9LA, United Kingdom"
+  },
+  "Malaya, Malacca, The Netherlands": {
+    "error": "no_match"
+  },
+  "Pondicherry, India, France": {
+    "error": "no_match"
+  },
+  "Sa\u00fcl (S21), Guyane fran\u00e7aise,\" French Guiana, France": {
+    "lat": 3.6225597,
+    "lon": -53.210934,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.4032238424858545,
+    "display_name": "Sa\u00fcl, Saint-Laurent-du-Maroni, Guyane, 97314, France"
+  },
+  "Rio Jord\u00e3o, S, United Kingdom": {
+    "error": "no_match"
+  },
+  "Durban, KwaZulu-Natal, South Africa": {
+    "lat": -29.861825,
+    "lon": 31.009909,
+    "category": "place",
+    "type": "city",
+    "importance": 0.6577377739737574,
+    "display_name": "Durban, eThekwini Metropolitan Municipality, KwaZulu-Natal, 4057, South Africa"
+  },
+  "Somaliland,\" Somalia, United Kingdom": {
+    "error": "no_match"
+  },
+  "Arfak Mountains, N, Indonesia": {
+    "lat": -1.156944,
+    "lon": 133.9788709,
+    "category": "natural",
+    "type": "peak",
+    "importance": 0.1600375013351644,
+    "display_name": "Arfak, Manokwari, Papua Barat, Irian Barat, Indonesia"
+  },
+  "New Guinea, Arfak Mountains, Indonesia": {
+    "error": "no_match"
+  },
+  "North Solomons, United Kingdom": {
+    "error": "no_match"
+  },
+  "Trinidad [Island],\" Trinidad and Tobago, United Kingdom": {
+    "error": "no_match"
+  },
+  "1, United States of America": {
+    "lat": 47.0214038,
+    "lon": 28.8191492,
+    "category": "landuse",
+    "type": "commercial",
+    "importance": 0.08007086518654151,
+    "display_name": "Ambasada Statelor Unite ale Americii / Embassy of the United States of America, sectorul Buiucani, Chi\u0219in\u0103u, Municipiul Chi\u0219in\u0103u, Moldova"
+  },
+  "Cafetal St, Germany": {
+    "error": "no_match"
+  },
+  "Admiralty Islands,\" Papua New Guinea, Indonesia": {
+    "error": "no_match"
+  },
+  "Car Nicobar [Island],\" Nicobar Islands, India, United States of America": {
+    "error": "no_match"
+  },
+  "Seram Island, Germany": {
+    "error": "no_match"
+  },
+  "New Caledonia, United Kingdom": {
+    "error": "no_match"
+  },
+  "Tongatapu Island, Kingdom of Tonga, France": {
+    "error": "no_match"
+  },
+  "Vietnam, Saigon, France": {
+    "lat": 10.7825549,
+    "lon": 106.6992567,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 6.703364614323671e-05,
+    "display_name": "T\u1ed5ng L\u00e3nh s\u1ef1 qu\u00e1n Ph\u00e1p, 27, Nguy\u1ec5n Th\u1ecb Minh Khai, Khu ph\u1ed1 2, Ph\u01b0\u1eddng S\u00e0i G\u00f2n, Th\u1ee7 \u0110\u1ee9c, Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh, 71006, Vi\u1ec7t Nam"
+  },
+  "Cape of Good Hope, Sweden": {
+    "error": "no_match"
+  },
+  "Trinkat Island, Nicobar Islands, India, United States of America": {
+    "error": "no_match"
+  },
+  "Henry Lawrence Island, Andaman [Islands],\" India, United States of America": {
+    "error": "no_match"
+  },
+  "Assam\", India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Maldonado, Maldonado, Uruguay, United Kingdom": {
+    "error": "no_match"
+  },
+  "San Jos\u00e9, Costa Rica, United States of America": {
+    "error": "no_match"
+  },
+  "Tres R\u00edos, Cartago, Costa Rica, United Kingdom": {
+    "error": "no_match"
+  },
+  "Luzon,\" Philippines, Germany": {
+    "error": "no_match"
+  },
+  "south-eastern Europe, Italy": {
+    "error": "no_match"
+  },
+  "Baram, E, United Kingdom": {
+    "error": "no_match"
+  },
+  "Malacca, Singapore, United Kingdom": {
+    "error": "no_match"
+  },
+  "Darjeeling,\" West Bengal, India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Manila,\" Luzon, Philippines, United Kingdom": {
+    "error": "no_match"
+  },
+  "Bengal,\" India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Agua Dulce, W, United Kingdom": {
+    "error": "no_match"
+  },
+  "Merida [M\u00e9rida], United Kingdom": {
+    "lat": 55.6033413,
+    "lon": -2.9509355,
+    "category": "highway",
+    "type": "path",
+    "importance": 0.04003000152590218,
+    "display_name": "Merida Switcheroo, Scottish Borders, Alba / Scotland, United Kingdom"
+  },
+  "38 km, United States of America": {
+    "lat": 39.9604779,
+    "lon": -74.1772929,
+    "category": "highway",
+    "type": "tertiary",
+    "importance": 0.05338752498664832,
+    "display_name": "Clifton Avenue, Lauren Estates, Toms River, Ocean County, New Jersey, 08753, United States"
+  },
+  "Timor Island, The Netherlands": {
+    "error": "no_match"
+  },
+  "Port Moresby, Papua New Guinea, Indonesia": {
+    "error": "no_match"
+  },
+  "Suriname, The Netherlands": {
+    "lat": 52.0874727,
+    "lon": 4.2864947,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 0.31877743112977514,
+    "display_name": "Ambassade van Suriname, 2, Alexander Gogelweg, Zorgvliet, Scheveningen, Den Haag, Zuid-Holland, Nederland, 2517 JH, Nederland"
+  },
+  "Panama": {
+    "lat": 8.559559,
+    "lon": -81.1308434,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7666152803515663,
+    "display_name": "Panam\u00e1"
+  },
+  "Cayenne [French Guiana], United States of America": {
+    "error": "no_match"
+  },
+  "396 m, Argentina": {
+    "lat": 39.467653,
+    "lon": -6.3825175,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.14673288090333406,
+    "display_name": "Argentina, C\u00e1ceres, Extremadura, Espa\u00f1a"
+  },
+  "Shoalwater Bay,\" Pacific County, Washington, USA, United States of America": {
+    "error": "no_match"
+  },
+  "161 km, France": {
+    "lat": 43.8115525,
+    "lon": 4.3379473,
+    "category": "place",
+    "type": "suburb",
+    "importance": 0.14673697337300676,
+    "display_name": "Km Delta, N\u00eemes, Gard, Occitanie, France m\u00e9tropolitaine, 30907, France"
+  },
+  "12 miles S, United Kingdom": {
+    "lat": 51.3848797,
+    "lon": -2.3630346,
+    "category": "office",
+    "type": "employment_agency",
+    "importance": 6.9064621957687e-05,
+    "display_name": "Juice Recruitment Ltd, 12, Miles's Buildings, Kingsmead, Bath, Bath and North East Somerset, West of England, England, BA1 2QS, United Kingdom"
+  },
+  "Shibar Pass, Afghanistan, United Kingdom": {
+    "error": "no_match"
+  },
+  "Van, alt, United Kingdom": {
+    "error": "no_match"
+  },
+  "Fort Whipple,\" Yavapai County, Arizona, USA, United States": {
+    "error": "no_match"
+  },
+  "California, France": {
+    "lat": 33.8511778,
+    "lon": -115.6029427,
+    "category": "natural",
+    "type": "peak",
+    "importance": 0.16000999999999999,
+    "display_name": "France, Riverside County, California, United States"
+  },
+  "Mt Elgon, Kenya, United Kingdom": {
+    "error": "no_match"
+  },
+  "Kitui, Kenya, United Kingdom": {
+    "error": "no_match"
+  },
+  "Mian Mir, Lahore, Punjab, Pakistan, India": {
+    "error": "no_match"
+  },
+  "R\u00e9union Island, The Netherlands": {
+    "error": "no_match"
+  },
+  "East Cape, Milne Bay Province, Papua New Guinea, Indonesia": {
+    "error": "no_match"
+  },
+  "2134\u20132743 m, Russia": {
+    "error": "no_match"
+  },
+  "2652 m, United States of America": {
+    "lat": 41.602398,
+    "lon": -84.7761388,
+    "category": "place",
+    "type": "house",
+    "importance": 9.99999999995449e-06,
+    "display_name": "2652, County Road M, Florence Township, Williams County, Ohio, 43518, United States"
+  },
+  "Hispaniola, Russia": {
+    "error": "no_match"
+  },
+  "Santa Isabel, Solomon Islands, United Kingdom": {
+    "error": "no_match"
+  },
+  "New York, United Kingdom": {
+    "lat": 55.0252998,
+    "lon": -1.4869496,
+    "category": "place",
+    "type": "village",
+    "importance": 0.33113623856093605,
+    "display_name": "New York, North Tyneside, Tyne and Wear, North East, England, NE29 8EP, United Kingdom"
+  },
+  "La Granja, Segovia, Spain, United Kingdom": {
+    "error": "no_match"
+  },
+  "foot of Mt, Japan": {
+    "lat": 35.4981077,
+    "lon": 137.9837638,
+    "category": "natural",
+    "type": "tree",
+    "importance": 5.027924010066403e-05,
+    "display_name": "\u9b3c\u9762\u5c71\u9e93\u30c8\u30c1\u30ce\u30ad, \u9b3c\u9762\u5c71\u767b\u5c71\u9053\u3000\u5730\u8535\u5ce0\u30eb\u30fc\u30c8, \u8c4a\u4e18\u6751, \u4e0b\u4f0a\u90a3\u90e1, \u9577\u91ce\u770c, \u65e5\u672c"
+  },
+  "Racine, Wisconsin, USA, United States of America": {
+    "error": "no_match"
+  },
+  "61 m, Japan": {
+    "lat": 35.6582915,
+    "lon": 139.4064692,
+    "category": "highway",
+    "type": "unclassified",
+    "importance": 0.053419268329900016,
+    "display_name": "M, \u5357\u5e73\u4e00\u4e01\u76ee, \u5357\u5e73, \u65e5\u91ce\u5e02, \u6771\u4eac\u90fd, 191-0042, \u65e5\u672c"
+  },
+  "Wolfville, Kings County, Nova Scotia,\" Canada, United States of America": {
+    "error": "no_match"
+  },
+  "Estes Park [Larimer Co, United States of America": {
+    "lat": 40.3771926,
+    "lon": -105.523216,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.4518665517490398,
+    "display_name": "Estes Park, Larimer County, Colorado, 80517, United States"
+  },
+  "Makado, N, United Kingdom": {
+    "error": "no_match"
+  },
+  "Qaidam, Russia": {
+    "error": "no_match"
+  },
+  "Astoria [Clatsop Co, United States of America": {
+    "lat": 46.1882007,
+    "lon": -123.8319802,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.5322293714676855,
+    "display_name": "Astoria, Clatsop County, Oregon, 97103, United States"
+  },
+  "Willapa Bay, Pacific Co, United States of America": {
+    "lat": 46.5757115,
+    "lon": -123.9725601,
+    "category": "natural",
+    "type": "bay",
+    "importance": 0.31298735030903774,
+    "display_name": "Willapa Bay, Pacific County, Washington, United States"
+  },
+  "Manipur, Assam, India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Rosario, Sinaloa, W, United Kingdom": {
+    "error": "no_match"
+  },
+  "Wenchi, Ashanti, Ghana, United Kingdom": {
+    "error": "no_match"
+  },
+  "Cameroon, Sweden": {
+    "lat": 59.5664152,
+    "lon": 18.2382222,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 5.535133897912592e-05,
+    "display_name": "Kameruns honor\u00e4rkonsulat, Sundbyv\u00e4gen, Sundby, Karby, Vallentuna kommun, Stockholms l\u00e4n, 186 70, Sverige"
+  },
+  "Summit of Mt, United States of America": {
+    "lat": 40.7720313,
+    "lon": -76.4038412,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.13337833447775996,
+    "display_name": "Locust Summit, Mount Carmel Township, Northumberland County, Pennsylvania, 17943, United States"
+  },
+  "Madras Presidency, [southern] India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Pisa, Italy, Germany": {
+    "error": "no_match"
+  },
+  "Madras,\" India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Sumatra, Batang Singgalang, The Netherlands": {
+    "error": "no_match"
+  },
+  "Mindanao I (Philippines), United States of America": {
+    "error": "no_match"
+  },
+  "Balabac\" (Philippines), United Kingdom": {
+    "error": "no_match"
+  },
+  "Cebu Island, Philippines, China": {
+    "error": "no_match"
+  },
+  "Manado, Celebes, The Netherlands": {
+    "error": "no_match"
+  },
+  "Luzon, Philippines, Germany": {
+    "error": "no_match"
+  },
+  "San Francisco,\" San Francisco Co, United States of America": {
+    "lat": 37.776547,
+    "lon": -122.3948371,
+    "category": "building",
+    "type": "train_station",
+    "importance": 8.251392385743523e-05,
+    "display_name": "San Francisco 4th & King Street, 4th Street, Mission Bay, San Francisco, California, 94107, United States"
+  },
+  "Sebastian River, Brevard Co, United States of America": {
+    "lat": 27.8503811,
+    "lon": -80.4944334,
+    "category": "waterway",
+    "type": "river",
+    "importance": 0.3294460664555125,
+    "display_name": "Saint Sebastian River, Roseland, Indian River County, Florida, United States"
+  },
+  "Tres Marias Islands, United States of America": {
+    "lat": 26.9411652,
+    "lon": -97.5180424,
+    "category": "place",
+    "type": "island",
+    "importance": 0.17334333333333332,
+    "display_name": "Tres Marias, Kenedy County, Texas, United States"
+  },
+  "New London Co, United States of America": {
+    "lat": 32.237752,
+    "lon": -94.9409173,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.46306549857676693,
+    "display_name": "New London, Rusk County, Texas, 75682, United States"
+  },
+  "Rio del Rey, Cameroon, United Kingdom": {
+    "error": "no_match"
+  },
+  "Fianarantsoa, E, United Kingdom": {
+    "error": "no_match"
+  },
+  "Chin-wang-tao, N, United Kingdom": {
+    "error": "no_match"
+  },
+  "Shores of Columbia River, United States of America": {
+    "error": "no_match"
+  },
+  "Rocky Mountains, United States of America": {
+    "lat": 43.3578532,
+    "lon": -110.917506,
+    "category": "natural",
+    "type": "mountain_range",
+    "importance": 0.6450044924002287,
+    "display_name": "Rocky Mountains, Teton County, Wyoming, United States"
+  },
+  "Tenasserim, Burma, United Kingdom": {
+    "error": "no_match"
+  },
+  "Rifle Creek, Mt, United States of America": {
+    "lat": 45.8147246,
+    "lon": -108.5913723,
+    "category": "highway",
+    "type": "residential",
+    "importance": 0.05336833524071104,
+    "display_name": "Rifle Creek Trail, Billings, Yellowstone County, Montana, 59102, United States"
+  },
+  "Wadelai, Uganda, United Kingdom": {
+    "error": "no_match"
+  },
+  "Lake Naivasha, E Kenya, United States of America": {
+    "error": "no_match"
+  },
+  "Parque Nacional de Bras\u00edlia, United States of America": {
+    "error": "no_match"
+  },
+  "Hacienda San Francisco, United States of America": {
+    "lat": 35.6232981,
+    "lon": -106.0339516,
+    "category": "landuse",
+    "type": "residential",
+    "importance": 0.08006652704661628,
+    "display_name": "Santa Fe Mobile Home Hacienda, 1115, Santa Fe, Santa Fe County, New Mexico, United States"
+  },
+  "2438\u20132743 m, United States of America": {
+    "error": "no_match"
+  },
+  "Puerta del Monte, ca, United States of America": {
+    "error": "no_match"
+  },
+  "Goncha, United Kingdom": {
+    "lat": 53.3771025,
+    "lon": -1.4704932,
+    "category": "amenity",
+    "type": "cafe",
+    "importance": 7.319523918512272e-05,
+    "display_name": "Als Goncha Bubble Tea, 10, Eyre Street, Moorhead, The Heart of the City, City Centre, Sheffield, South Yorkshire, England, S1 4QY, United Kingdom"
+  },
+  "Birch Creek, Idaho, United States of America": {
+    "lat": 42.228248,
+    "lon": -111.7249543,
+    "category": "waterway",
+    "type": "stream",
+    "importance": 0.10669783093003736,
+    "display_name": "Birch Creek, Mink Creek, Franklin County, Idaho, United States"
+  },
+  "Crater Lake, Mt, United States of America": {
+    "lat": 48.1170286,
+    "lon": -113.9000443,
+    "category": "water",
+    "type": "lake",
+    "importance": 0.1333433333333333,
+    "display_name": "Crater Lake, Flathead County, Montana, United States"
+  },
+  "New Ireland, Papua New Guinea, Indonesia": {
+    "error": "no_match"
+  },
+  "fluvium St, Germany": {
+    "error": "no_match"
+  },
+  "El Gallo, 8 mi, United States of America": {
+    "error": "no_match"
+  },
+  "Burma, Arakan, India": {
+    "lat": 20.1260814,
+    "lon": 92.886014,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 5.109102006556828e-05,
+    "display_name": "\u1021\u102d\u1014\u1039\u1012\u102d\u101a\u1014\u102d\u102f\u1004\u103a\u1004\u1036 \u1000\u1031\u102c\u1004\u103a\u1005\u1005\u103a\u101d\u1004\u103a\u101b\u102f\u1036\u1038, \u1015\u103c\u100a\u103a\u1010\u1031\u102c\u103a\u101e\u102c\u101c\u1019\u103a\u1038, \u1015\u103c\u100a\u103a\u1010\u1031\u102c\u103a\u101e\u102c\u101b\u1015\u103a\u1000\u103d\u1000\u103a, \u1005\u1005\u103a\u1010\u103d\u1031\u1019\u103c\u102d\u102f\u1037, \u1005\u1005\u103a\u1010\u103d\u1031\u1019\u103c\u102d\u102f\u1037\u1014\u101a\u103a, \u1005\u1005\u103a\u1010\u103d\u1031\u1001\u101b\u102d\u102f\u1004\u103a, \u101b\u1001\u102d\u102f\u1004\u103a\u1015\u103c\u100a\u103a\u1014\u101a\u103a, \u1019\u103c\u1014\u103a\u1019\u102c"
+  },
+  "Senegambia, W Africa, United Kingdom": {
+    "error": "no_match"
+  },
+  "W Africa, United Kingdom": {
+    "lat": 51.5111705,
+    "lon": -0.229447,
+    "category": "highway",
+    "type": "tertiary",
+    "importance": 0.053426412603952055,
+    "display_name": "South Africa Road, White City Estate, Shepherd's Bush, London Borough of Hammersmith and Fulham, Greater London, England, W12 7PU, United Kingdom"
+  },
+  "Balabac, Philippines, United Kingdom": {
+    "error": "no_match"
+  },
+  "Talamanca, Lim\u00f3n, Costa Rica, United States of America": {
+    "error": "no_match"
+  },
+  "Momba\u00e7a,\" Mombasa County, Kenya, Germany": {
+    "error": "no_match"
+  },
+  "Am\u00e9rique, France": {
+    "lat": 50.1701959,
+    "lon": 3.2655516,
+    "category": "place",
+    "type": "suburb",
+    "importance": 0.14673580910963602,
+    "display_name": "Am\u00e9rique, Cambrai, Nord, Hauts-de-France, France m\u00e9tropolitaine, 59400, France"
+  },
+  "Zamboanga, W, United Kingdom": {
+    "error": "no_match"
+  },
+  "Palawan\" Island, Philippines, United Kingdom": {
+    "error": "no_match"
+  },
+  "Baram [District], N, United Kingdom": {
+    "error": "no_match"
+  },
+  "Donner, [Placer Co, United States of America": {
+    "lat": 39.3175888,
+    "lon": -120.5992395,
+    "category": "tourism",
+    "type": "caravan_site",
+    "importance": 9.99999999995449e-06,
+    "display_name": "Donner, Crystal Lake Road, Nevada County, California, 95729, United States"
+  },
+  "New Meadows, Adams County, Idaho, [USA], United States of America": {
+    "error": "no_match"
+  },
+  "Antelope, Wasco County, Oregon, [USA], United States of America": {
+    "error": "no_match"
+  },
+  "Fort Bridger,\" Uinta Co, United States of America": {
+    "lat": 41.3168326,
+    "lon": -110.384961,
+    "category": "place",
+    "type": "locality",
+    "importance": 0.3772346674060423,
+    "display_name": "Fort Bridger, Uinta County, Wyoming, United States"
+  },
+  "Touchet, Walla Walla Co, United States of America": {
+    "lat": 46.042658,
+    "lon": -118.6727986,
+    "category": "boundary",
+    "type": "census",
+    "importance": 0.3113151607222326,
+    "display_name": "Touchet, Walla Walla County, Washington, 99360, United States"
+  },
+  "San Miguel Island, California, USA, United States of America": {
+    "error": "no_match"
+  },
+  "Bombay (?), India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Travancore, South India, United Kingdom": {
+    "error": "no_match"
+  },
+  "Huallaga, United Kingdom": {
+    "error": "no_match"
+  },
+  "46 m, United Kingdom": {
+    "lat": 52.1900033,
+    "lon": -1.4933057,
+    "category": "highway",
+    "type": "unclassified",
+    "importance": 0.05338315785458149,
+    "display_name": "M, JLR Gaydon Vehicle Proving Ground, Gaydon, Stratford-on-Avon, Warwickshire, England, CV35 0BB, United Kingdom"
+  },
+  "Qionglai Shan, 48, United States of America": {
+    "error": "no_match"
+  },
+  "Pakistan, United Kingdom": {
+    "lat": 51.4993841,
+    "lon": -0.1589121,
+    "category": "office",
+    "type": "diplomatic",
+    "importance": 0.33359242145229745,
+    "display_name": "High Commission of Pakistan, 34-36, Lowndes Square, Hans Town, Chelsea, Royal Borough of Kensington and Chelsea, Greater London, England, SW1X 9JT, United Kingdom"
+  },
+  "California, USA, United States of America": {
+    "lat": 33.1260211,
+    "lon": -117.3095609,
+    "category": "tourism",
+    "type": "hotel",
+    "importance": 6.131761654073423e-05,
+    "display_name": "LEGOLAND California Hotel, Miniland USA, Carlsbad, San Diego County, California, 92011, United States"
+  },
+  "Sudan": {
+    "lat": 14.5844444,
+    "lon": 29.4917691,
+    "category": "boundary",
+    "type": "administrative",
+    "importance": 0.7524114574079375,
+    "display_name": "\u0627\u0644\u0633\u0648\u062f\u0627\u0646"
+  },
+  "Fort Yuma,\" Imperial County, California, USA, United States of America": {
+    "error": "no_match"
+  },
+  "Crater Lake, Mt Mazama, Oregon, USA, United States of America": {
+    "error": "no_match"
+  },
+  "Florida, La Plata Co, United States of America": {
+    "lat": 37.2150036,
+    "lon": -107.7525626,
+    "category": "place",
+    "type": "hamlet",
+    "importance": 0.24158668584662718,
+    "display_name": "Florida, La Plata County, Colorado, United States"
+  },
+  "El Saibal, W, United Kingdom": {
+    "error": "no_match"
   }
 }
