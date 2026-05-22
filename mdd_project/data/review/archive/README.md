@@ -27,7 +27,7 @@ Closed prefix-research and snapshot docs:
 - `museum_unmatched_compilation.md` — 2026-05-20 unmatched-voucher summary
 - `Taxonomy_and_distribution_ofPresbytis_me.pdf` — local literature PDF (not in git)
 
-Regenerating wave-4 backlog (if needed) writes fresh files to `../`:
+Regenerating wave-4 backlog (if needed) writes fresh files to `../museum/`:
 
 ```bash
 python mdd_project/scripts/build_museum_prefix_wave4_backlog.py

@@ -10,7 +10,7 @@ from pathlib import Path
 import duckdb
 
 DB = Path(__file__).resolve().parents[1] / "data" / "processed" / "mdd.duckdb"
-REVIEW = Path(__file__).resolve().parents[1] / "data" / "review"
+REVIEW = Path(__file__).resolve().parents[1] / "data" / "review" / "museum"
 GAP = REVIEW / "museum_prefix_gap_summary.csv"
 OUT_CSV = REVIEW / "museum_prefix_wave4_backlog.csv"
 OUT_MD = REVIEW / "museum_prefix_wave4_backlog.md"

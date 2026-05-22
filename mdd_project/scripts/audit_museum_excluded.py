@@ -6,7 +6,7 @@ from pathlib import Path
 import duckdb
 
 DB = Path("mdd_project/data/processed/mdd.duckdb")
-REVIEW = Path("mdd_project/data/review")
+REVIEW = Path("mdd_project/data/review/museum")
 
 NON_INSTITUTION_PREFIXES = {
     "UNTRACED",

@@ -7,8 +7,8 @@ import re
 from collections import Counter
 from pathlib import Path
 
-UNMATCHED = Path(__file__).resolve().parents[1] / "data/review/museum_vouchers_unmatched.csv"
-OUT = Path(__file__).resolve().parents[1] / "data/review/museum_unmatched_bucket_counts.txt"
+UNMATCHED = Path(__file__).resolve().parents[1] / "data/review/museum/museum_vouchers_unmatched.csv"
+OUT = Path(__file__).resolve().parents[1] / "data/review/museum/museum_unmatched_bucket_counts.txt"
 
 
 def main() -> None:

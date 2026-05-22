@@ -9,7 +9,7 @@ needs_curated_override rows stay proposed with QC notes appended.
 Example:
   python mdd_project/scripts/apply_estimated_qc_decisions.py --dry-run
   python mdd_project/scripts/apply_estimated_qc_decisions.py \\
-    --qc mdd_project/data/review/estimated_qc_sample_reviewed.csv
+    --qc mdd_project/data/review/qc/estimated_qc_sample_reviewed.csv
 """
 
 from __future__ import annotations
@@ -18,10 +18,11 @@ import argparse
 import csv
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_QC = ROOT / "mdd_project" / "data" / "review" / "estimated_qc_sample_reviewed.csv"
-FALLBACK_QC = ROOT / "mdd_project" / "data" / "review" / "estimated_qc_sample.csv"
-DEFAULT_MAIN = ROOT / "mdd_project" / "data" / "review" / "estimated_type_localities.csv"
+from review_paths import ARCHIVE_QC, ESTIMATED_TYPE_LOCALITIES_CSV, QC, QC_SAMPLE_CSV
+
+DEFAULT_QC = ARCHIVE_QC / "estimated_qc_sample_reviewed.csv"
+FALLBACK_QC = QC_SAMPLE_CSV
+DEFAULT_MAIN = ESTIMATED_TYPE_LOCALITIES_CSV
 
 QC_COLUMNS = ("qc_reviewed", "qc_review_notes")
 

@@ -7,8 +7,9 @@ import csv
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT = ROOT / "mdd_project" / "data" / "review" / "estimated_type_localities.csv"
+from review_paths import ESTIMATED_TYPE_LOCALITIES_CSV
+
+DEFAULT = ESTIMATED_TYPE_LOCALITIES_CSV
 
 
 def main() -> None:

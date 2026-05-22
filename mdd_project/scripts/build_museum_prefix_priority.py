@@ -6,7 +6,7 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parents[1] / "data" / "review" / "museum_prefix_priority_backlog.csv"
+OUT = Path(__file__).resolve().parents[1] / "data" / "review" / "archive" / "museum_research" / "museum_prefix_priority_backlog.csv"
 
 # Curated backlog: priority 1 = highest
 ROWS = [

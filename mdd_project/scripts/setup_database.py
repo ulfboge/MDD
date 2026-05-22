@@ -208,7 +208,9 @@ def main() -> None:
             print("\n[STEP 3] Skipped (--skip-exports).")
 
         # Step 4: Optional estimated type localities (review CSV → separate table)
-        estimated_csv = PROJECT_DIR / "data" / "review" / "estimated_type_localities.csv"
+        from review_paths import ESTIMATED_TYPE_LOCALITIES_CSV
+
+        estimated_csv = ESTIMATED_TYPE_LOCALITIES_CSV
         if estimated_csv.exists():
             print("\n[STEP 4] Importing estimated type localities (review-only) …")
             import sys

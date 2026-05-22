@@ -8,9 +8,11 @@ from pathlib import Path
 
 import duckdb
 
+from review_paths import ESTIMATED_TYPE_LOCALITIES_CSV
+
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "mdd_project" / "data" / "processed" / "mdd.duckdb"
-DEFAULT_CSV = ROOT / "mdd_project" / "data" / "review" / "estimated_type_localities.csv"
+DEFAULT_CSV = ESTIMATED_TYPE_LOCALITIES_CSV
 
 
 def import_estimated_csv(con: duckdb.DuckDBPyConnection, csv_path: Path) -> int:

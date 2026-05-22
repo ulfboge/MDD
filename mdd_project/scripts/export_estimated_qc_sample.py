@@ -14,9 +14,10 @@ import argparse
 import csv
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT = ROOT / "mdd_project" / "data" / "review" / "estimated_type_localities.csv"
-DEFAULT_OUTPUT = ROOT / "mdd_project" / "data" / "review" / "estimated_qc_sample.csv"
+from review_paths import ESTIMATED_TYPE_LOCALITIES_CSV, QC, QC_SAMPLE_CSV
+
+DEFAULT_INPUT = ESTIMATED_TYPE_LOCALITIES_CSV
+DEFAULT_OUTPUT = QC_SAMPLE_CSV
 
 QC_FIELDS = [
     "species_id",

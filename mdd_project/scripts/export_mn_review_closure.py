@@ -8,7 +8,7 @@ from pathlib import Path
 import duckdb
 
 DB = Path(__file__).resolve().parents[1] / "data" / "processed" / "mdd.duckdb"
-REVIEW = Path(__file__).resolve().parents[1] / "data" / "review"
+REVIEW = Path(__file__).resolve().parents[1] / "data" / "review" / "museum"
 OUT = REVIEW / "museum_mn_review_closure.csv"
 
 MUSEUM_MATCH = """

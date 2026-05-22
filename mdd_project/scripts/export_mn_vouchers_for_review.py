@@ -8,7 +8,7 @@ from pathlib import Path
 import duckdb
 
 DB = Path(__file__).resolve().parents[1] / "data" / "processed" / "mdd.duckdb"
-REVIEW_DIR = Path(__file__).resolve().parents[1] / "data" / "review"
+REVIEW_DIR = Path(__file__).resolve().parents[1] / "data" / "review" / "archive" / "museum_research"
 OUT = REVIEW_DIR / "mn_vouchers_for_review.csv"
 OUT_ENRICHED = REVIEW_DIR / "mn_vouchers_for_review_enriched.csv"
 

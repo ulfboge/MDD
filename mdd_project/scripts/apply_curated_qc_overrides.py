@@ -6,8 +6,9 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-CSV_PATH = ROOT / "mdd_project" / "data" / "review" / "estimated_type_localities.csv"
+from review_paths import ESTIMATED_TYPE_LOCALITIES_CSV
+
+CSV_PATH = ESTIMATED_TYPE_LOCALITIES_CSV
 
 
 def main() -> None:

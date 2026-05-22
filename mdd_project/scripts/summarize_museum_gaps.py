@@ -7,7 +7,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-REVIEW = Path(__file__).resolve().parents[1] / "data" / "review"
+REVIEW = Path(__file__).resolve().parents[1] / "data" / "review" / "museum"
 METADATA = Path(__file__).resolve().parents[2] / "TypeSpecimenMetadata_v2.4.csv"
 
 SKIP_PREFIXES = {

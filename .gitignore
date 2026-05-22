@@ -44,4 +44,4 @@ Thumbs.db
 !mdd_project/data/external/occurrence_data/.gitkeep
 
 # ── Review PDFs (copyright; keep local only) ─────────────────────────────────
-mdd_project/data/review/*.pdf
+mdd_project/data/review/**/*.pdf

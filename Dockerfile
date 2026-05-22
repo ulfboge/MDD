@@ -35,7 +35,7 @@ RUN mkdir -p mdd_project/data/processed
 COPY MDD_v2.4_6871species.csv Species_Syn_v2.4.csv TypeSpecimenMetadata_v2.4.csv META_v2.4.csv Diff_v2.3-v2.4.csv ./
 
 # Review CSV → estimated type localities table (separate from official MDD coords)
-COPY mdd_project/data/review/estimated_type_localities.csv mdd_project/data/review/estimated_type_localities.csv
+COPY mdd_project/data/review/geocoding/estimated_type_localities.csv mdd_project/data/review/geocoding/estimated_type_localities.csv
 
 RUN python mdd_project/scripts/setup_database.py --skip-exports
 

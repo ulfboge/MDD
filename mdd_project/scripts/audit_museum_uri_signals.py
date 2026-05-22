@@ -11,7 +11,7 @@ from urllib.parse import urlparse
 import duckdb
 
 DB = Path(__file__).resolve().parents[1] / "data" / "processed" / "mdd.duckdb"
-REVIEW = Path(__file__).resolve().parents[1] / "data" / "review"
+REVIEW = Path(__file__).resolve().parents[1] / "data" / "review" / "museum"
 OUT = REVIEW / "museum_voucher_uri_inferred.csv"
 
 # Domain (or substring) -> inferred institution metadata abbreviation.

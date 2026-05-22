@@ -16,8 +16,9 @@ import csv
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT = ROOT / "mdd_project" / "data" / "review" / "estimated_qc_sample.csv"
+from review_paths import QC_SAMPLE_CSV
+
+DEFAULT_INPUT = QC_SAMPLE_CSV
 
 
 def main() -> None:

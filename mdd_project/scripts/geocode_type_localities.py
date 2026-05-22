@@ -33,14 +33,13 @@ import duckdb
 
 from geocode_country_validate import display_name_matches_locality, infer_query_country
 
+from review_paths import DEFAULT_OUTPUT, NOMINATIM_CACHE_PATH, REVIEW_DIR
+
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "mdd_project" / "data" / "processed" / "mdd.duckdb"
-REVIEW_DIR = ROOT / "mdd_project" / "data" / "review"
-DEFAULT_OUTPUT = REVIEW_DIR / "estimated_type_localities.csv"
 
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
 USER_AGENT = "MDD-geocoder/1.0 (research; contact: ulfboge@github)"
-NOMINATIM_CACHE_PATH = REVIEW_DIR / "nominatim_geocode_cache.json"
 
 MUSEUM_MATCH = """
     s.type_voucher IS NOT NULL

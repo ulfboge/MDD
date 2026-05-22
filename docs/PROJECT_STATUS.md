@@ -1,9 +1,11 @@
 # MDD Project — Session Status Log
 
-**Last updated:** 2026-05-20 (session 2)  
+**Last updated:** 2026-05-20  
 **Repo:** `c:\Users\galag\GitHub\MDD`  
-**Remote:** https://github.com/ulfboge/MDD.git (`main`, commit `632bbc6`)  
+**Remote:** https://github.com/ulfboge/MDD.git (`main`)  
 **Live app:** https://mdd-map.onrender.com (Render free tier, service **mdd-map**)
+
+Review data layout: `mdd_project/data/review/{geocoding,museum,qc,archive}/` — see `mdd_project/data/review/README.md`.
 
 ---
 
@@ -140,9 +142,9 @@ The **MDD web map** is deployed and working on Render. The stack is a single Doc
 |------|------|
 | Repo root | `c:\Users\galag\GitHub\MDD` |
 | DuckDB (local, gitignored) | `mdd_project/data/processed/mdd.duckdb` |
-| Estimated localities CSV | `mdd_project/data/review/estimated_type_localities.csv` |
-| QC sample | `mdd_project/data/review/estimated_qc_sample.csv` |
-| Nominatim cache | `mdd_project/data/review/nominatim_geocode_cache.json` |
+| Estimated localities CSV | `mdd_project/data/review/geocoding/estimated_type_localities.csv` |
+| QC sample (new batches) | `mdd_project/data/review/qc/estimated_qc_sample.csv` |
+| Nominatim cache | `mdd_project/data/review/geocoding/nominatim_geocode_cache.json` |
 | Web frontend | `mdd_project/web/frontend/src/App.tsx` |
 | FastAPI | `mdd_project/web/api/main.py` |
 | Render deploy guide | `mdd_project/DEPLOY_RENDER.md` |
