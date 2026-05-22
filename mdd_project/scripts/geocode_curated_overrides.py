@@ -179,6 +179,14 @@ def build_qc_geocodes() -> dict[str, GeocodeResult]:
             "Type locality: Mt An-ma Shan, Ho-ping, Tai-chung Hsien, central Taiwan. "
             "Nominatim query was wrongly reduced to 'Mt, Japan'.",
         ),
+        "Pseudoryx_nghetinhensis": manual(
+            "Annamite Mountains, Vietnam (saola range)",
+            17.750,
+            105.850,
+            50000,
+            "medium",
+            "Type locality given as Vietnam only. Placed in Annamite Mountains (Vu Quang / saola range).",
+        ),
     }
 
 
